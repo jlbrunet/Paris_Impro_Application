@@ -98,91 +98,91 @@ user4.save!
 # Lessons
 
 lesson1_course1 = Lesson.new(
-  occurs_on: Time.new(2023, 9, 4, 21, 0, 0),
+  occurs_on: Time.new(2023, 9, 4, 22, 0, 0),
   course_id: course1.id
 )
 lesson1_course1.save!
 
 lesson2_course1 = Lesson.new(
-  occurs_on: Time.new(2023, 9, 11, 21, 0, 0),
+  occurs_on: Time.new(2023, 9, 11, 22, 0, 0),
   course_id: course1.id
 )
 lesson2_course1.save!
 
 lesson3_course1 = Lesson.new(
-  occurs_on: Time.new(2023, 9, 18, 21, 0, 0),
+  occurs_on: Time.new(2023, 9, 18, 22, 0, 0),
   course_id: course1.id
 )
 lesson3_course1.save!
 
 lesson1_course2 = Lesson.new(
-  occurs_on: Time.new(2023, 9, 5, 21, 0, 0),
+  occurs_on: Time.new(2023, 9, 5, 22, 0, 0),
   course_id: course2.id
 )
 lesson1_course2.save!
 
 lesson2_course2 = Lesson.new(
-  occurs_on: Time.new(2023, 9, 12, 21, 0, 0),
+  occurs_on: Time.new(2023, 9, 12, 22, 0, 0),
   course_id: course2.id
 )
 lesson2_course2.save!
 
 lesson3_course2 = Lesson.new(
-  occurs_on: Time.new(2023, 9, 19, 21, 0, 0),
+  occurs_on: Time.new(2023, 9, 19, 22, 0, 0),
   course_id: course2.id
 )
 lesson3_course2.save!
 
 lesson1_course3 = Lesson.new(
-  occurs_on: Time.new(2023, 9, 8, 21, 0, 0),
+  occurs_on: Time.new(2023, 9, 8, 22, 0, 0),
   course_id: course3.id
 )
 lesson1_course3.save!
 
 lesson2_course3 = Lesson.new(
-  occurs_on: Time.new(2023, 9, 15, 21, 0, 0),
+  occurs_on: Time.new(2023, 9, 15, 22, 0, 0),
   course_id: course3.id
 )
 lesson2_course3.save!
 
 lesson3_course3 = Lesson.new(
-  occurs_on: Time.new(2023, 9, 22, 21, 0, 0),
+  occurs_on: Time.new(2023, 9, 22, 22, 0, 0),
   course_id: course3.id
 )
 lesson3_course3.save!
 
 lesson1_course4 = Lesson.new(
-  occurs_on: Time.new(2023, 9, 6, 21, 0, 0),
+  occurs_on: Time.new(2023, 9, 6, 22, 0, 0),
   course_id: course4.id
 )
 lesson1_course4.save!
 
 lesson2_course4 = Lesson.new(
-  occurs_on: Time.new(2023, 9, 13, 21, 0, 0),
+  occurs_on: Time.new(2023, 9, 13, 22, 0, 0),
   course_id: course4.id
 )
 lesson2_course4.save!
 
 lesson3_course4 = Lesson.new(
-  occurs_on: Time.new(2023, 9, 20, 21, 0, 0),
+  occurs_on: Time.new(2023, 9, 20, 22, 0, 0),
   course_id: course4.id
 )
 lesson3_course4.save!
 
 lesson1_course5 = Lesson.new(
-  occurs_on: Time.new(2023, 9, 7, 21, 0, 0),
+  occurs_on: Time.new(2023, 9, 7, 22, 0, 0),
   course_id: course5.id
 )
 lesson1_course5.save!
 
 lesson2_course5 = Lesson.new(
-  occurs_on: Time.new(2023, 9, 14, 21, 0, 0),
+  occurs_on: Time.new(2023, 9, 14, 22, 0, 0),
   course_id: course5.id
 )
 lesson2_course5.save!
 
 lesson3_course5 = Lesson.new(
-  occurs_on: Time.new(2023, 9, 21, 21, 0, 0),
+  occurs_on: Time.new(2023, 9, 21, 22, 0, 0),
   course_id: course5.id
 )
 lesson3_course5.save!
