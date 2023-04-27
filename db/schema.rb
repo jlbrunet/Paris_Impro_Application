@@ -10,9 +10,44 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2023_04_27_144705) do
+ActiveRecord::Schema[7.0].define(version: 2023_04_27_145603) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "absences", force: :cascade do |t|
+    t.bigint "user_id", null: false
+    t.bigint "lesson_id", null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["lesson_id"], name: "index_absences_on_lesson_id"
+    t.index ["user_id"], name: "index_absences_on_user_id"
+  end
+
+  create_table "courses", force: :cascade do |t|
+    t.string "level"
+    t.string "location"
+    t.string "day"
+    t.time "hour"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "lessons", force: :cascade do |t|
+    t.time "occurs_on"
+    t.bigint "course_id", null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["course_id"], name: "index_lessons_on_course_id"
+  end
+
+  create_table "rattrapages", force: :cascade do |t|
+    t.bigint "user_id", null: false
+    t.bigint "lesson_id", null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["lesson_id"], name: "index_rattrapages_on_lesson_id"
+    t.index ["user_id"], name: "index_rattrapages_on_user_id"
+  end
 
   create_table "users", force: :cascade do |t|
     t.string "email", default: "", null: false
@@ -22,8 +57,18 @@ ActiveRecord::Schema[7.0].define(version: 2023_04_27_144705) do
     t.datetime "remember_created_at"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.bigint "course_id"
+    t.string "first_name"
+    t.string "last_name"
+    t.index ["course_id"], name: "index_users_on_course_id"
     t.index ["email"], name: "index_users_on_email", unique: true
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
   end
 
+  add_foreign_key "absences", "lessons"
+  add_foreign_key "absences", "users"
+  add_foreign_key "lessons", "courses"
+  add_foreign_key "rattrapages", "lessons"
+  add_foreign_key "rattrapages", "users"
+  add_foreign_key "users", "courses"
 end
