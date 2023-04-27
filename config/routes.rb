@@ -12,5 +12,5 @@ Rails.application.routes.draw do
   post "rattrapages", to: "rattrapages#create"
   get "rattrapages/:id", to: "rattrapages#show"
   get "courses", to: "courses#index"
-  get "absences", to: "restaurants#index"
+  get "absences", to: "absences#index"
 end
