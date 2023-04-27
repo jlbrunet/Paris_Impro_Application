@@ -5,4 +5,12 @@ Rails.application.routes.draw do
 
   # Defines the root path route ("/")
   # root "articles#index"
+  get 'dashboard', to: 'pages#dashboard'
+  get "absences/new", to: "absences#new"
+  post "absences", to: "absences#create"
+  get "rattrapages/new", to: "rattrapages#new"
+  post "rattrapages", to: "rattrapages#create"
+  get "rattrapages/:id", to: "rattrapages#show"
+  get "courses", to: "courses#index"
+  get "absences", to: "restaurants#index"
 end
