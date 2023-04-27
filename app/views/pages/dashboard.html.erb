@@ -1,0 +1,8 @@
+<h1>Hello <%= @user.first_name %></h1>
+<h2>Cours actuel: <%= @course.day %></h2>
+<h2>Level: <%= @course.level %></h2>
+
+<h3>Tes absences:</h3>
+<% @lessons.each do |lesson| %>
+  <p><%= lesson.occurs_on %></p>
+<% end %>

@@ -5,5 +5,12 @@ class PagesController < ApplicationController
   end
 
   def dashboard
+    @user = current_user
+    @course = Course.find(current_user.course_id)
+    @absences = Absence.where(user_id: current_user.id)
+    @lessons = []
+    @absences.each do |absence|
+      @lessons.push(Lesson.find(absence.lesson_id))
+    end
   end
 end

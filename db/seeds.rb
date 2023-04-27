@@ -17,7 +17,7 @@ course1 = Course.new(
   location: "Hotel de Ville",
   level: "Niveau 2",
   day: "Lundi",
-  hour: Time.new(2000, 1, 1, 21, 0, 0)
+  hour: Time.new(2001, 1, 1, 21, 0, 0)
 )
 course1.save!
 
@@ -25,7 +25,7 @@ course2 = Course.new(
   location: "Gare de l'Est",
   level: "Niveau 1",
   day: "Mardi",
-  hour: Time.new(2000, 1, 1, 21, 0, 0)
+  hour: Time.new(2001, 1, 1, 21, 0, 0)
 )
 course2.save!
 
@@ -33,7 +33,7 @@ course3 = Course.new(
   location: "Strasbourg Saint-Denis",
   level: "Niveau 1",
   day: "Vendredi",
-  hour: Time.new(2000, 1, 1, 21, 0, 0)
+  hour: Time.new(2001, 1, 1, 21, 0, 0)
 )
 course3.save!
 
@@ -41,7 +41,7 @@ course4 = Course.new(
   location: "Gare du Nord",
   level: "Niveau 2",
   day: "Mercredi",
-  hour: Time.new(2000, 1, 1, 21, 0, 0)
+  hour: Time.new(2001, 1, 1, 21, 0, 0)
 )
 course4.save!
 
@@ -49,7 +49,7 @@ course5 = Course.new(
   location: "Strasbourg Saint-Denis",
   level: "Niveau 3",
   day: "Jeudi",
-  hour: Time.new(2000, 1, 1, 21, 0, 0)
+  hour: Time.new(2001, 1, 1, 21, 0, 0)
 )
 course5.save!
 
@@ -200,3 +200,9 @@ absence2 = Absence.new(
   lesson_id: lesson1_course3.id
 )
 absence2.save!
+
+absence3 = Absence.new(
+  user_id: user3.id,
+  lesson_id: lesson2_course2.id
+)
+absence3.save!
