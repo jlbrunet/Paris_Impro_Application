@@ -3,6 +3,34 @@
 <h2>Level: <%= @course.level %></h2>
 
 <h3>Tes absences:</h3>
-<% @lessons.each do |lesson| %>
-  <p><%= lesson.occurs_on %></p>
+<% if @absences_lessons == [] %>
+  <p>Pas d'absence</p>
+<% else %>
+  <% @absences_lessons.each do |lesson| %>
+    <p><%= lesson.occurs_on %></p>
+  <% end %>
 <% end %>
+
+<%= link_to "Déclarer une absence", "/absences/new" %>
+
+<h3>Tes rattrapages:</h3>
+<h3>3 rattrapages / trimestre possibles</h3>
+
+<% if @rattrapages_lessons == [] %>
+  <p>Pas de rattrapage</p>
+<% else %>
+  <% @rattrapages_lessons.each do |lesson| %>
+    <p><%= lesson.occurs_on %></p>
+  <% end %>
+<% end %>
+
+<%# terminer en mettant 2 en deux %>
+<%# ajouter les liens du footer %>
+
+<% if (@absences_lessons.count - @rattrapages_lessons) == 1 %>
+  <p>Tu as une absence pour laquelle tu n'as pas de rattrapage programmé.</p>
+<% elsif absences_lessons.count > @rattrapages_lessons %>
+  <p>Tu as <%=  %> absences pour lesquelles tu n'as pas de rattrapage programmé. </p>
+<% end %>
+
+<%= link_to "Choisir un rattrapage", "/rattrapages/new" %>

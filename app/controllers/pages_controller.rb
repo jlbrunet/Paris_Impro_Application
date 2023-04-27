@@ -7,10 +7,17 @@ class PagesController < ApplicationController
   def dashboard
     @user = current_user
     @course = Course.find(current_user.course_id)
+
     @absences = Absence.where(user_id: current_user.id)
-    @lessons = []
+    @absences_lessons = []
     @absences.each do |absence|
-      @lessons.push(Lesson.find(absence.lesson_id))
+      @absences_lessons.push(Lesson.find(absence.lesson_id))
+    end
+
+    @rattrapages = Rattrapage.where(user_id: current_user.id)
+    @rattrapages_lessons = []
+    @rattrapages.each do |rattrapage|
+      @rattrapages_lessons.push(Lesson.find(rattrapage.lesson_id))
     end
   end
 end
