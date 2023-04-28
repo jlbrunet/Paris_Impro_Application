@@ -24,13 +24,12 @@
   <% end %>
 <% end %>
 
-<%# terminer en mettant 2 en deux %>
-<%# ajouter les liens du footer %>
-
-<% if (@absences_lessons.count - @rattrapages_lessons) == 1 %>
-  <p>Tu as une absence pour laquelle tu n'as pas de rattrapage programmé.</p>
-<% elsif absences_lessons.count > @rattrapages_lessons %>
-  <p>Tu as <%=  %> absences pour lesquelles tu n'as pas de rattrapage programmé. </p>
+<% if (@absences_lessons.count - @rattrapages_lessons.count) == 1 %>
+  <p>Tu as 1 absence pour laquelle tu n'as pas de rattrapage programmé.</p>
+<% elsif @absences_lessons.count > @rattrapages_lessons.count %>
+  <p>Tu as <%= @absences_lessons.count - @rattrapages_lessons.count %> absences pour lesquelles tu n'as pas de rattrapage programmé. </p>
 <% end %>
 
 <%= link_to "Choisir un rattrapage", "/rattrapages/new" %>
+
+<%# ajouter les liens du footer dans une partiale %>
