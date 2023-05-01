@@ -1,1 +1,74 @@
 // Specific CSS for your home-page
+.hello {
+  display: flex;
+  padding: 20px;
+}
+
+.hello-texte {
+  text-align: center;
+
+  h2 {
+    font-family: $body;
+    font-size: 15px;
+    color: $font-grey;
+    margin-top: 8px;
+  }
+
+  h1 {
+    font-family: $headers;
+    font-size: 26px;
+  }
+}
+
+.course {
+  background-color: $background-grey;
+  border-radius: 20px;
+  padding: 5px 35px;
+  margin-top: 13px;
+}
+
+.rectangle {
+  position: relative;
+  padding: 20px;
+  margin: 50px 20px;
+  border: solid 2px $light-red;
+  border-radius: 20px;
+  width: 90%;
+}
+
+.absences-content {
+  padding-top: 20px;
+}
+
+.title-rectangle {
+  border-bottom: solid 2px $light-red;
+  padding: 3px 0;
+}
+
+.title-red {
+  color: $medium-red;
+  font-size: 20px;
+  font-family: $headers;
+}
+
+body {
+  font-family: $body;
+}
+
+.alerte-rattrapages {
+  background-color: $super-light-red;
+  font-size: 13px;
+  color: $dark-red;
+  padding: 5px;
+  display: flex;
+  border-radius: 10px
+}
+
+.alerte-icone {
+  font-size: 35px;
+  padding: 10px;
+}
+
+.absences-content {
+  margin-bottom: 15px;
+}
