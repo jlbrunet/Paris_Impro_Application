@@ -1,0 +1,27 @@
+.background {
+  background-color: $light-red;
+  background-size: cover;
+  height: 100vh;
+  width: 100vw;
+}
+
+.background-form {
+  background-color: white;
+  border-radius: 30px;
+  margin: 10px;
+}
+
+.background-padding-new-session {
+  padding: 20px;
+}
+
+.background-padding-new-registration {
+  padding: 40px 20px;
+}
+
+.background-new {
+  position: absolute;
+  width: 360px;
+  top: 135px;
+  left: 5%;
+}

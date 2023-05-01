@@ -1,0 +1,13 @@
+.logo {
+  padding: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo-img {
+  width: 140px;
+  border-radius: 100%;
+  border: solid 2px $medium-red;
+  z-index: 1;
+}
