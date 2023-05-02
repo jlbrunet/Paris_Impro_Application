@@ -57,3 +57,34 @@
   left: 50%;
   transform: translate(-50%, -50%);
 }
+
+.btn-left {
+  z-index: 1;
+  position: absolute;
+  bottom: -25px;
+  right: 0px;
+}
+
+.btn-rattrapages {
+  z-index: 1;
+  position: absolute;
+}
+
+.btn-red-small {
+  background-color: #ee736f;
+  border-radius: 30px;
+  width: 250px;
+  height: 45px;
+  display: grid;
+  font-family: "Outfit", sans-serif;
+  font-size: 18px;
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  align-items: center;
+}
+
+.btn-red-small:hover {
+  background-color: $medium-red;
+  color: white;
+}

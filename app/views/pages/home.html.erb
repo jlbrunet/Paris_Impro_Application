@@ -1,35 +1,66 @@
-<h1>Hello <%= @user.first_name %></h1>
-<h2>Cours actuel: <%= @course.day %></h2>
-<h2>Level: <%= @course.level %></h2>
+<div class="container background-home">
+  <div class="hello">
+    <div class="hello-img">
+      <%= image_tag("logo_paris_impro2.jpeg", class: "logo-img-home") %>
+    </div>
+    <div class="hello-texte">
+      <h1>Hello <%= @user.first_name %></h1>
+      <div class="course">
+        <h2>Cours actuel: <%= @course.day %></h2>
+        <h2><%= @course.level %></h2>
+      </div>
+    </div>
+  </div>
 
-<h3>Tes absences:</h3>
-<% if @absences_lessons == [] %>
-  <p>Pas d'absence</p>
-<% else %>
-  <% @absences_lessons.each do |lesson| %>
-    <p><%= lesson.occurs_on %></p>
-  <% end %>
-<% end %>
+  <div class="tableau">
+    <div class="absences rectangle">
+      <div class="title-rectangle">
+        <h3 class="title-red">Tes absences</h3>
+      </div>
+      <div class="absences-content">
+        <% if @absences_lessons == [] %>
+          <p>Pas d'absence</p>
+        <% else %>
+          <% @absences_lessons.each do |lesson| %>
+            <p><%= lesson.occurs_on %></p>
+          <% end %>
+        <% end %>
+      </div>
 
-<%= link_to "Déclarer une absence", "/absences/new" %>
+      <%= link_to "Déclarer une absence", "/absences/new", class: "btn-red-small btn-left" %>
+    </div>
 
-<h3>Tes rattrapages:</h3>
-<h3>3 rattrapages / trimestre possibles</h3>
+    <div class="rattrapages rectangle">
+      <div class="title-rectangle">
+        <h3 class="title-red">Tes rattrapages</h3>
+        <p style="color: #666666">3 rattrapages / trimestre possibles</p>
+      </div>
+      <div class="absences-content">
+        <% if @rattrapages_lessons == [] %>
+          <p>Pas de rattrapage</p>
+        <% else %>
+          <% @rattrapages_lessons.each do |lesson| %>
+            <p><i class="fa-solid fa-circle"></i><%= lesson.occurs_on %></p>
+          <% end %>
+        <% end %>
 
-<% if @rattrapages_lessons == [] %>
-  <p>Pas de rattrapage</p>
-<% else %>
-  <% @rattrapages_lessons.each do |lesson| %>
-    <p><%= lesson.occurs_on %></p>
-  <% end %>
-<% end %>
+        <div>
+          <% if (@absences_lessons.count - @rattrapages_lessons.count) == 1 %>
+            <div class="alerte-rattrapages">
+              <i class="fa-solid fa-triangle-exclamation alerte-icone"></i>
+              <p>Tu as 1 absence pour laquelle tu n'as pas de rattrapage programmé.</p>
+            </div>
+          <% elsif @absences_lessons.count > @rattrapages_lessons.count %>
+            <div class="alerte-rattrapages">
+              <i class="fa-solid fa-triangle-exclamation alerte-icone"></i>
+              <p>Tu as <%= @absences_lessons.count - @rattrapages_lessons.count %> absences pour lesquelles tu n'as pas de rattrapage programmé. </p>
+            </div>
+          <% end %>
+        </div>
+      </div>
 
-<% if (@absences_lessons.count - @rattrapages_lessons.count) == 1 %>
-  <p>Tu as 1 absence pour laquelle tu n'as pas de rattrapage programmé.</p>
-<% elsif @absences_lessons.count > @rattrapages_lessons.count %>
-  <p>Tu as <%= @absences_lessons.count - @rattrapages_lessons.count %> absences pour lesquelles tu n'as pas de rattrapage programmé. </p>
-<% end %>
+      <%= link_to "Choisir un rattrapage", "/rattrapages/new", class: "btn-red-small btn-left" %>
+    </div>
+  </div>
 
-<%= link_to "Choisir un rattrapage", "/rattrapages/new" %>
-
-<%# ajouter les liens du footer dans une partiale %>
+</div>
