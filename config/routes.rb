@@ -10,6 +10,7 @@ Rails.application.routes.draw do
   get "rattrapages/new", to: "rattrapages#new"
   post "rattrapages", to: "rattrapages#create"
   get "rattrapages/:id", to: "rattrapages#show"
+  get "pages/myaccount", to: "pages#myaccount"
   resources :courses, only: [:index] do
     resources :lessons, only: [:index]
   end
