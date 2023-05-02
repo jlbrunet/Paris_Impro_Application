@@ -4,7 +4,6 @@
 <%= simple_form_for(@lesson, url: absences_path) do |f| %>
   <%= f.input :occurs_on, collection: Lesson.where(course_id: current_user.course_id).map {|lesson| lesson.occurs_on} %>
   <%= f.submit %>
-  <% raise %>
 <% end %>
 
 <%# <%= simple_form_for [@lesson, @absence] do |f| %>
