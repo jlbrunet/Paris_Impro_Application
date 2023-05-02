@@ -10,6 +10,7 @@ Rails.application.routes.draw do
   get "rattrapages/new", to: "rattrapages#new"
   post "rattrapages", to: "rattrapages#create"
   get "rattrapages/:id", to: "rattrapages#show"
-  get "courses", to: "courses#index"
-  get "absences", to: "absences#index"
+  resources :courses, only: [:index] do
+    resources :absences, only: [:index]
+  end
 end

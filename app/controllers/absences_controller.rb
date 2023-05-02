@@ -6,5 +6,6 @@ class AbsencesController < ApplicationController
   end
 
   def index
+    
   end
 end
