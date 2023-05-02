@@ -3,5 +3,5 @@
 
 <% @courses.each do |course| %>
   <p><%= course.day %> - <%= course.level %> - <%=  course.location %></p>
-  <p><%= link_to "Absences", course_absences_path(course) %></p>
+  <p><%= link_to "Absences", course_lessons_path(course) %></p>
 <% end %>
