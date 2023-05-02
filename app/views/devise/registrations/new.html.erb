@@ -24,11 +24,11 @@
         <%= f.input :password_confirmation,
                     required: true,
                     input_html: { autocomplete: "new-password" } %>
-        <%# <%= f.input :course_id,  %> 
+        <%= f.input :course_id, collection: Course.all.map {|course| "#{course.day} #{course.hour} | #{course.level}"} %>
       </div>
     </div>
     <div class="form-actions">
-      <%= f.button :submit, "Se connecter", class: "btn-red btn-new-registration" %>
+      <%= f.button :submit, "Se connecter", class: "btn-red btn-new-registration" %>exi
     </div>
   <% end %>
 
