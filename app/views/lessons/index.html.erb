@@ -1,0 +1,36 @@
+<h1>Hello <%= @user.first_name %></h1>
+<h2>Absences</h2>
+<h2><%= @course.day %> | <%= @course.level %></h2>
+
+<% @lessons.each do |lesson| %>
+  <p><%= lesson.occurs_on %></p>
+
+  <% @absences_lesson = [] %>
+  <% @absences.each do |absence| %>
+    <% if absence.lesson_id == lesson.id %>
+      <% @absences_lesson << absence %>
+    <% end %>
+  <% end %>
+  <% if @absences_lesson == [] %>
+    <p>Pas d'absence pour ce cours</p>
+  <% else %>
+    <% @absences_lesson.each do |absence| %>
+      <p><%= absence.user.first_name %> <%= absence.user.last_name %></p>
+    <% end %>
+  <% end %>
+
+    <% @rattrapages_lesson = [] %>
+  <% @rattrapages.each do |rattrapage| %>
+    <% if rattrapage.lesson_id == lesson.id %>
+      <% @rattrapages_lesson << rattrapage %>
+    <% end %>
+  <% end %>
+  <% if @rattrapages_lesson == [] %>
+    <p>Pas de rattrapage pour ce cours</p>
+  <% else %>
+    <% @rattrapages_lesson.each do |rattrapage| %>
+      <p><%= rattrapage.user.first_name %> <%= rattrapage.user.last_name %></p>
+    <% end %>
+  <% end %>
+
+<% end %>
