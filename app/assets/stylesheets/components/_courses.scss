@@ -1,0 +1,79 @@
+.title-c {
+  border-bottom: solid 2px $light-red;
+  color: $medium-red;
+  font-size: 20px;
+  font-family: $headers;
+  margin: 0px 40px;
+  padding: 8px;
+  text-align: center;
+}
+
+.tiret {
+  border-bottom: solid 2px $light-red;
+  //margin-bottom: 10px;
+  margin-top: 5px;
+}
+
+.text-gras {
+  font-family: $headers;
+  font-size: 16px;
+  margin-bottom: 1px;
+}
+
+.text-lieu {
+  margin-bottom: 1px;
+  font-size: 14px;
+}
+
+.no-text-deco {
+  text-decoration: none;
+  color: white;
+}
+
+.font-headers {
+  font-family: $headers;
+}
+
+.hello-admin {
+  display: flex;
+  align-items: center;
+  margin: 20px;
+}
+
+.margin-rectangle-admin {
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 30px;
+  margin-bottom: 150px;
+}
+
+.bloc-courses {
+  padding-top: 12px;
+}
+
+.separation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+
+.tab-courses {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* ou ajustez la largeur selon vos besoins */
+  grid-gap: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.space-chevron {
+  padding-left: 7px;
+}
+
+.courses {
+  margin-bottom: 80px;
+}
+
+.container.background-home {
+  height: 250%;
+}

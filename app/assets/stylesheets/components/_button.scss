@@ -89,6 +89,25 @@
   color: white;
 }
 
+.btn-absence {
+  background-color: #ee736f;
+  border-radius: 30px;
+  width: 130px;
+  height: 55px;
+  padding: 12px 10px;
+  font-family: "Outfit", sans-serif;
+  font-size: 18px;
+  text-align: center;
+  text-decoration: none;
+}
+
+.btn-absence:hover {
+  text-decoration: none;
+}
+
+.btn-absence a {
+  text-decoration: none;
+
 .btn-red-back {
   margin: 0 auto;
   background-color: #ee736f;

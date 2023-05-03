@@ -38,10 +38,13 @@
 .rectangle {
   position: relative;
   padding: 20px;
-  margin: 50px 20px;
   border: solid 2px $light-red;
   border-radius: 20px;
   width: 90%;
+}
+
+.margin-rectangle-dashboard {
+  margin: 50px 20px;
 }
 
 .absences-content {
