@@ -2,6 +2,7 @@
 .hello {
   display: flex;
   padding: 20px;
+  align-items: center;
 }
 
 .hello-texte {
@@ -27,6 +28,13 @@
   margin-top: 13px;
 }
 
+.border-tableau{
+  margin: 0 auto;
+  border-bottom: solid 2px #f4bbb9;
+  width: 80%;
+  padding-top: 10px;
+}
+
 .rectangle {
   position: relative;
   padding: 20px;
@@ -38,6 +46,7 @@
 
 .absences-content {
   padding-top: 20px;
+  margin-bottom: 15px;
 }
 
 .title-rectangle {
@@ -67,8 +76,4 @@ body {
 .alerte-icone {
   font-size: 35px;
   padding: 10px;
-}
-
-.absences-content {
-  margin-bottom: 15px;
 }
