@@ -1,7 +1,42 @@
-<h1>Hello <%= @user.first_name %></h1>
-<h2>Liste des cours</h2>
+<div class="container background-home">
+  <div class="hello">
+    <div class="hello-img">
+      <%= image_tag("logo_paris_impro2.jpeg", class: "logo-img-home") %>
+    </div>
+    <div class="hello-texte hello-admin">
+      <h1>Hello <%= @user.first_name %></h1>
+    </div>
+  </div>
 
-<% @courses.each do |course| %>
-  <p><%= course.day %> - <%= course.level %> - <%=  course.location %></p>
-  <p><%= link_to "Absences", course_lessons_path(course) %></p>
-<% end %>
+  <div class="courses">
+    <div class="title-c">
+      <h2 class="font-headers">Liste des cours</h2>
+    </div>
+
+    <div class="tableau">
+      <div class="absences margin-rectangle-admin rectangle">
+        <div class="tab-courses">
+          <% @courses.each_with_index do |course, index| %>
+            <div class="separation">
+              <div class="bloc-courses">
+                <p class="text-gras"><%= course.day %> | <%= course.level %></p>
+                <p class="text-lieu"><%=  course.location %></p>
+              </div>
+
+              <div class="btn-absence">
+                <%= link_to course_lessons_path(course) do %>
+                  <p class="no-text-deco">Absences<i class="fa-solid fa-circle-chevron-right space-chevron"></i></p>
+                <% end %>
+              </div>
+            </div>
+
+            <% if index != @courses.size - 1 %>
+              <div class="tiret"></div>
+            <% end %>
+          <% end %>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
