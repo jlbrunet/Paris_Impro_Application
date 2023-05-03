@@ -9,11 +9,12 @@ export default class extends Controller {
     let array_string = this.arraydataTarget.dataset.flatpickrAvailableDatesString
     let array = JSON.parse(array_string)
     let new_array = []
-    array.forEach(element => new_array.push(element.slice(0,19)));
+    array.forEach(element => new_array.push(element.slice(0,16)));
 
     flatpickr(this.arraydataTarget, {
       enable: new_array,
-      dateFormat: "Y-m-d H:i:S",
+      enableTime: true,
+      dateFormat: "Y-m-d H:i",
     })
   }
 }
