@@ -6,7 +6,6 @@ class AbsencesController < ApplicationController
   def create
     @absence = Absence.new(absence_params)
     @absence.user = current_user
-    raise
     if @absence.save
       redirect_to root_path
     else
