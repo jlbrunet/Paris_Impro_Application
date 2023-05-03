@@ -1,36 +1,73 @@
-<h1>Hello <%= @user.first_name %></h1>
-<h2>Absences</h2>
-<h2><%= @course.day %> | <%= @course.level %></h2>
+<div class="container background-absence">
 
-<% @lessons.each do |lesson| %>
-  <p><%= lesson.occurs_on %></p>
+  <div class="hellos">
+    <div class="hello-img">
+      <%= image_tag("logo_paris_impro2.jpeg", class: "logo-img-home") %>
+    </div>
+    <div class="hello-texte">
+      <h1>Hello <%= @user.first_name %></h1>
+    </div>
+  </div>
 
-  <% @absences_lesson = [] %>
-  <% @absences.each do |absence| %>
-    <% if absence.lesson_id == lesson.id %>
-      <% @absences_lesson << absence %>
+  <div class="courses">
+    <h2>Absences</h2>
+    <h2><%= @course.day %> | <%= @course.level %></h2>
+  </div>
+
+  <div class="border-tableau"></div>
+
+  <% @lessons.each do |lesson| %>
+    <div class="tableau">
+      <div class="absences rectangles">
+        <div class="title-rectangle">
+          <h3 class="title-red" style="font-size:16px"><%= lesson.occurs_on.strftime('%A %d %B') %></h3>
+        </div>
+
+        <div class="absences-contents">
+          <% @absences_lesson = [] %>
+          <% @absences.each do |absence| %>
+            <% if absence.lesson_id == lesson.id %>
+              <% @absences_lesson << absence %>
+            <% end %>
+          <% end %>
+          <% if @absences_lesson == [] %>
+            <p>Pas d'absence pour ce cours</p>
+          <% else %>
+            <p>Absent.e.s :</p>
+            <% @absences_lesson.each do |absence| %>
+            <div class="student">
+              <i class="fa-solid fa-circle"></i> <%= absence.user.first_name %> <%= absence.user.last_name %>
+            </div>
+            <% end %>
+          <% end %>
+          </div>
+
+        <div class="rattrapages-content">
+            <% @rattrapages_lesson = [] %>
+          <% @rattrapages.each do |rattrapage| %>
+            <% if rattrapage.lesson_id == lesson.id %>
+              <% @rattrapages_lesson << rattrapage %>
+            <% end %>
+          <% end %>
+          <% if @rattrapages_lesson == [] %>
+            <p>Pas de rattrapage pour ce cours</p>
+          <% else %>
+          <p>En rattrapage :</p>
+            <% @rattrapages_lesson.each do |rattrapage| %>
+            <div class="students">
+              <i class="fa-solid fa-circle"></i> <%= rattrapage.user.first_name %> <%= rattrapage.user.last_name %>
+           </div>
+            <% end %>
+          <% end %>
+          </div>
+
+        </div>
+      </div>
     <% end %>
-  <% end %>
-  <% if @absences_lesson == [] %>
-    <p>Pas d'absence pour ce cours</p>
-  <% else %>
-    <% @absences_lesson.each do |absence| %>
-      <p><%= absence.user.first_name %> <%= absence.user.last_name %></p>
-    <% end %>
+  </div>
+
+  <%= link_to :back , class: "btn-red-back btn-left" do %>
+    <div><i class="fa-solid fa-circle-chevron-left"></i> Retour</div>
   <% end %>
 
-    <% @rattrapages_lesson = [] %>
-  <% @rattrapages.each do |rattrapage| %>
-    <% if rattrapage.lesson_id == lesson.id %>
-      <% @rattrapages_lesson << rattrapage %>
-    <% end %>
-  <% end %>
-  <% if @rattrapages_lesson == [] %>
-    <p>Pas de rattrapage pour ce cours</p>
-  <% else %>
-    <% @rattrapages_lesson.each do |rattrapage| %>
-      <p><%= rattrapage.user.first_name %> <%= rattrapage.user.last_name %></p>
-    <% end %>
-  <% end %>
-
-<% end %>
+</div>
