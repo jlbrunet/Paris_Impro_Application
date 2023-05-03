@@ -2,11 +2,15 @@
 <h2>Quel jour seras-tu absent.e ?</h2>
 
 <%= simple_form_for @absence do |f| %>
-  <%= f.input :lesson_id %>
-  <% raise %>
-  <%# , collection: Lesson.where(course_id: current_user.course_id).map {|lesson| lesson.occurs_on} %>
+  <%= f.input :lesson_id, collection: Lesson.where(course_id: current_user.course_id).map {|lesson| "#{lesson.occurs_on} - #{lesson.id}"} %>
   <%= f.submit %>
 <% end %>
+
+
+<%# <%= simple_form_for @absence do |f| %>
+  <%# <%= f.input :lesson_id, collection: Lesson.where(course_id: current_user.course_id).map {|lesson| lesson.occurs_on} %>
+  <%# <%= f.submit %>
+<%# <% end %>
 
 <%# <%= simple_form_for [@lesson, @absence] do |f| %>
   <%# <%= f.association :lesson do |c| %>
