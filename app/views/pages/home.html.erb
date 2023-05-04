@@ -1,4 +1,4 @@
-<div class="container background-home">
+<div class="container background-absence">
   <div class="hello">
     <div class="hello-img">
       <%= image_tag("logo_paris_impro2.jpeg", class: "logo-img-home") %>
@@ -6,7 +6,7 @@
     <div class="hello-texte">
       <h1>Hello <%= @user.first_name %></h1>
       <div class="course">
-        <h2>Cours actuel: <%= @course.day %></h2>
+        <h2>Ton cours: <%= @course.day %></h2>
         <h2><%= @course.level %></h2>
       </div>
     </div>
