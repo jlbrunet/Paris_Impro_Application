@@ -1,17 +1,17 @@
 <div class="container background-absence">
 
-  <div class="hellos">
+  <div class="hello">
     <div class="hello-img">
       <%= image_tag("logo_paris_impro2.jpeg", class: "logo-img-home") %>
     </div>
-    <div class="hello-texte">
+    <div class="hello-texte hello-admin">
       <h1>Hello <%= @user.first_name %></h1>
     </div>
   </div>
 
   <div class="courses-index">
-    <h2>Absences</h2>
-    <h2><%= @course.day %> | <%= @course.level %></h2>
+    <h2 class="font-headers">Absences</h2>
+    <h2 class="font-headers"><%= @course.day %> | <%= @course.level %></h2>
   </div>
 
   <div class="border-tableau"></div>
