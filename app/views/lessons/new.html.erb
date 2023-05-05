@@ -1,0 +1,20 @@
+<h1>Déclarer une absence</h1>
+<h2>Quel jour seras-tu absent.e ?</h2>
+
+<div data-controller="confirmation">
+
+  <%= simple_form_for @lesson, html: {data: {controller: 'flatpickr', confirmation_target: 'form'}} do |f| %>
+    <%= f.input :occurs_on, as: :string, label: false, input_html: { class: 'd-none', data: { flatpickr_target: 'arraydata', flatpickr_available_dates_string: @available_dates_string, confirmation_target: 'input' } } %>
+    <%= f.button :button, 'Valider', data: { action: 'click->confirmation#confirm' } %>
+    <%= f.button :submit, 'Valider', class: 'd-none' %>
+  <% end %>
+
+  <!-- Modale de confirmation -->
+  <div data-confirmation-target="modal" class="d-none">
+    <p data-confirmation-target="sentence"></p>
+    <p>Après avoir confirmé ton absence, celle-ci sera définitive.</p>
+    <button data-action="click->confirmation#submit">Oui</button>
+    <button data-action="click->confirmation#cancel">Non</button>
+  </div>
+
+</div>

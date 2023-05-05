@@ -1,15 +1,20 @@
 import { Controller } from "@hotwired/stimulus"
 import flatpickr from "flatpickr"
-import rangePlugin from "flatpickr/dist/plugins/rangePlugin"
 
 // Connects to data-controller="flatpickr"
 export default class extends Controller {
-  static targets = [ 'startDateInput', 'endDateInput' ]
+  static targets = ['arraydata']
 
   connect() {
-    flatpickr(this.startDateInputTarget, {
-      mode: 'range',
-      "plugins": [new rangePlugin({ input: this.endDateInputTarget})]
+    let array_string = this.arraydataTarget.dataset.flatpickrAvailableDatesString
+    let array = JSON.parse(array_string)
+    let new_array = []
+    array.forEach(element => new_array.push(element.slice(0,16)));
+
+    flatpickr(this.arraydataTarget, {
+      enable: new_array,
+      dateFormat: "Y-m-d H:i",
+      inline: true,
     })
   }
 }
