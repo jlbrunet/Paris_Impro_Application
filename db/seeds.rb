@@ -151,6 +151,12 @@ lesson3_course3 = Lesson.new(
 )
 lesson3_course3.save!
 
+lesson4_course3 = Lesson.new(
+  occurs_on: Time.new(2023, 9, 8, 23, 0, 0),
+  course_id: course3.id
+)
+lesson4_course3.save!
+
 lesson1_course4 = Lesson.new(
   occurs_on: Time.new(2023, 9, 6, 22, 0, 0),
   course_id: course4.id

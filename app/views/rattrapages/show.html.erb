@@ -1,0 +1,20 @@
+<h1>Choisir un rattrapage</h1>
+<h2>Les places dispos sont en vert</h2>
+
+<div data-controller="rattrapage">
+
+  <%= simple_form_for(@lesson, url: rattrapages_path, html: {data: {controller: 'flatpickr', rattrapage_target: 'form'}}) do |f| %>
+    <%= f.input :occurs_on, as: :string, label: false, input_html: { class: 'd-none', data: { flatpickr_target: 'arraydata', flatpickr_available_dates_string: @available_dates_string, rattrapage_target: 'input' } } %>
+    <%= f.button :button, 'Voir les cours', data: { action: 'click->rattrapage#confirm' } %>
+    <%= f.button :submit, 'Valider', class: 'd-none' %>
+  <% end %>
+
+  <!-- Modale de rattrapage -->
+  <div data-rattrapage-target="modal" class="d-none">
+    <p data-rattrapage-target="sentence"></p>
+    <p>Après avoir confirmé ton absence, celle-ci sera définitive.</p>
+    <button data-action="click->rattrapage#submit">Oui</button>
+    <button data-action="click->rattrapage#cancel">Non</button>
+  </div>
+
+</div>
