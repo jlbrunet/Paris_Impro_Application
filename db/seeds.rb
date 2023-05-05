@@ -133,20 +133,6 @@ lesson3_course2 = Lesson.new(
 )
 lesson3_course2.save!
 
-lesson4_course2 = Lesson.new(
-  occurs_on: Time.new(2023,5,6,1,0,0),
-  course_id: course2.id
-)
-
-lesson4_course2.save!
-
-lesson5_course2 = Lesson.new(
-  occurs_on: Time.new(2023,5,8,1,0,0),
-  course_id: course2.id
-)
-
-lesson5_course2.save!
-
 lesson1_course3 = Lesson.new(
   occurs_on: Time.new(2023, 9, 8, 22, 0, 0),
   course_id: course3.id
