@@ -3,7 +3,7 @@
 
 <div data-controller="confirmation">
 
-  <%= simple_form_for @lesson, html: {data: {controller: 'flatpickr', confirmation_target: 'form'}} do |f| %>
+  <%= simple_form_for(@lesson, url: absences_path, html: {data: {controller: 'flatpickr', confirmation_target: 'form'}}) do |f| %>
     <%= f.input :occurs_on, as: :string, label: false, input_html: { class: 'd-none', data: { flatpickr_target: 'arraydata', flatpickr_available_dates_string: @available_dates_string, confirmation_target: 'input' } } %>
     <%= f.button :button, 'Valider', data: { action: 'click->confirmation#confirm' } %>
     <%= f.button :submit, 'Valider', class: 'd-none' %>
