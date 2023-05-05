@@ -1,4 +1,7 @@
+<h1>Déclarer une absence</h1>
+<h2>Quel jour seras-tu absent.e ?</h2>
+
 <%= simple_form_for @lesson, html: {data: {controller: 'flatpickr'}} do |f| %>
-  <%= f.input :occurs_on, as: :string, input_html: { data: { flatpickr_target: 'arraydata', flatpickr_available_dates_string: @available_dates_string } } %>
+  <%= f.input :occurs_on, as: :string, label: false, input_html: { class: 'd-none', data: { flatpickr_target: 'arraydata', flatpickr_available_dates_string: @available_dates_string } } %>
   <%= f.button :submit, 'Valider' %>
 <% end %>

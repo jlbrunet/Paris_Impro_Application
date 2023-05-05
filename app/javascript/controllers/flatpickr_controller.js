@@ -13,8 +13,8 @@ export default class extends Controller {
 
     flatpickr(this.arraydataTarget, {
       enable: new_array,
-      enableTime: true,
       dateFormat: "Y-m-d H:i",
+      inline: true,
     })
   }
 }
