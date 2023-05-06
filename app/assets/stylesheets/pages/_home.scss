@@ -73,10 +73,18 @@ body {
   color: $dark-red;
   padding: 5px;
   display: flex;
-  border-radius: 10px
+  justify-content: space-between;
+  border-radius: 10px;
+  gap: 5px;
+  align-items: center;
+}
+
+.text-alerte-rattrapage {
+  padding-top: 10px;
+  width: 190px;
 }
 
 .alerte-icone {
   font-size: 35px;
-  padding: 10px;
+  padding: 20px;
 }

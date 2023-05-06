@@ -53,7 +53,7 @@
           <% elsif @absences_lessons.count > @rattrapages_lessons.count %>
             <div class="alerte-rattrapages">
               <i class="fa-solid fa-triangle-exclamation alerte-icone"></i>
-              <p>Tu as <%= @absences_lessons.count - @rattrapages_lessons.count %> absences pour lesquelles tu n'as pas de rattrapage programmé. </p>
+              <p class="text-alerte-rattrapage">Tu as <%= @absences_lessons.count - @rattrapages_lessons.count %> absences pour lesquelles tu n'as pas de rattrapage programmé. </p>
             </div>
           <% end %>
         </div>
