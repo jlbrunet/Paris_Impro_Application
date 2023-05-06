@@ -24,7 +24,7 @@
         <%= f.input :password_confirmation,
                     required: true,
                     input_html: { autocomplete: "new-password" } %>
-        <%= f.collection_select(:course_id, Course.all, :id, lambda {|course| "#{course.day} | #{course.hour.hour}h"}, include_blank: "Sélectionne un cours") %>
+        <%= f.collection_select(:course_id, Course.all, :id, lambda {|course| "#{course.day} #{course.hour.hour}h - #{course.level}"}, include_blank: "Sélectionne un cours") %>
       </div>
       <div class="form-actions-2">
         <%= f.button :submit, "Créer un compte", class: "btn-red-signin btn-new-registration" %>
