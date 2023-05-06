@@ -4,6 +4,7 @@
 
   <% @rattrapage_lessons.each do |lesson| %>
     <p><%= lesson.occurs_on.strftime('%A %d %B') %> | <%= lesson.occurs_on.hour %>h</p>
+    <p><%= Course.find(lesson.course_id).location %></p>
     <%= simple_form_for(@lesson, url: rattrapages_path, html: {data: {rattrapage_target: 'form'}}) do |f| %>
       <%= f.input :occurs_on, as: :string, label: false, input_html: { class: 'd-none', value: lesson.occurs_on, data: { rattrapage_target: 'input'}} %>
       <%= f.button :button, 'Choisir ce rattrapage', data: { action: 'click->rattrapage#confirm' }  %>
