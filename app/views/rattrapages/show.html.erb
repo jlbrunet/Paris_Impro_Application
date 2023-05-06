@@ -1,0 +1,6 @@
+<h1>Informations</h1>
+<h2>Voici les informations pour te rendre à ton cours de rattrapage.</h2>
+
+<p><%= @lesson.occurs_on.strftime('%A %d %B') %> | <%= @lesson.occurs_on.hour %>h</p>
+
+<%= link_to "Retour", root_path %>

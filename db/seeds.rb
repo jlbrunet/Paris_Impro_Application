@@ -6,6 +6,7 @@
 #   movies = Movie.create([{ name: "Star Wars" }, { name: "Lord of the Rings" }])
 #   Character.create(name: "Luke", movie: movies.first)
 
+Rattrapage.destroy_all
 Absence.destroy_all
 User.destroy_all
 Lesson.destroy_all
@@ -94,7 +95,6 @@ user4 = User.new(
 )
 user4.save!
 
-
 # Lessons
 
 lesson1_course1 = Lesson.new(
@@ -150,6 +150,12 @@ lesson3_course3 = Lesson.new(
   course_id: course3.id
 )
 lesson3_course3.save!
+
+lesson4_course3 = Lesson.new(
+  occurs_on: Time.new(2023, 9, 8, 23, 0, 0),
+  course_id: course3.id
+)
+lesson4_course3.save!
 
 lesson1_course4 = Lesson.new(
   occurs_on: Time.new(2023, 9, 6, 22, 0, 0),

@@ -59,7 +59,10 @@
         </div>
       </div>
 
-      <%= link_to "Choisir un rattrapage", "/rattrapages/new", class: "btn-red-small btn-left" %>
+      <% if @absences.length > @rattrapages.length %>
+        <%= link_to "Choisir un rattrapage", "/lessons/new", class: "btn-red-small btn-left" %>
+      <% end %>
+
     </div>
   </div>
 </div>
