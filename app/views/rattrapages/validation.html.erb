@@ -1,6 +1,0 @@
-<h1>Informations</h1>
-<p>Voici les informations pour te rendre à ton cours de rattrapage.</p>
-
-<% @rattrapage_lessons.each do |lesson| %>
-  <p><%= lesson.occurs_on.strftime('%A %d %B') %> | <%= lesson.occurs_on.hour %>h</p>
-<% end %>

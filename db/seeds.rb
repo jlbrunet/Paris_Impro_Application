@@ -6,6 +6,7 @@
 #   movies = Movie.create([{ name: "Star Wars" }, { name: "Lord of the Rings" }])
 #   Character.create(name: "Luke", movie: movies.first)
 
+Rattrapage.destroy_all
 Absence.destroy_all
 User.destroy_all
 Lesson.destroy_all
@@ -93,7 +94,6 @@ user4 = User.new(
   course_id: course3.id
 )
 user4.save!
-
 
 # Lessons
 

@@ -3,10 +3,10 @@ Rails.application.routes.draw do
   root to: "pages#home"
   get "absences/new", to: "absences#new"
   post "absences", to: "absences#create"
+  get "lessons/new", to: "lessons#new"
+  post "lessons", to: "lessons#create"
   get "rattrapages/new", to: "rattrapages#new"
   post "rattrapages", to: "rattrapages#create"
-  get "rattrapages/validation", to: "rattrapages#validation", as: :rattrapage_validation
-  post "rattrapages", to: "rattrapages#creation", as: :rattrapage_creation
   get "rattrapages/:id", to: "rattrapages#show", as: :rattrapage_show
   get "pages/myaccount", to: "pages#myaccount"
   resources :courses, only: [:index] do

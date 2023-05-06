@@ -1,29 +1,19 @@
 class RattrapagesController < ApplicationController
   def new
-    @available_dates = []
-    @lessons = Lesson.where.not(course_id: current_user.course_id)
-    @lessons.each do |lesson|
-      if (Rattrapage.where(lesson_id: lesson.id) == []) && (Absence.where(lesson_id: lesson.id) != [])
-        @available_dates << lesson.occurs_on
-      end
-    end
-    @available_dates_string = @available_dates.map { |d| d.strftime("%Y-%m-%d %H:%M:%S %z") }
+    @rattrapage_lessons = Lesson.where(id: session[:current_lessons_ids])
     @lesson = Lesson.new
   end
 
   def create
     @occurs_on = params[:lesson][:occurs_on]
-    @current_lessons = Lesson.where("DATE_TRUNC('day', occurs_on) = ?", @occurs_on.to_date)
-    redirect_to rattrapage_validation_path(current_lessons: @current_lessons.to_json)
-  end
-
-  def validation
-    @rattrapage_lessons = JSON.parse(params[:current_lessons])
-  end
-
-  def creation
+    @current_lesson = Lesson.where("DATE_TRUNC('day', occurs_on) = ?", @occurs_on.to_date)[0]
+    @rattrapage = Rattrapage.new(user_id: current_user.id, lesson_id: @current_lesson.id)
+    @rattrapage.save
+    redirect_to rattrapage_show_path(@rattrapage)
   end
 
   def show
+    @rattrapage = Rattrapage.find(params[:id])
+    @lesson = Lesson.find(@rattrapage.lesson_id)
   end
 end
