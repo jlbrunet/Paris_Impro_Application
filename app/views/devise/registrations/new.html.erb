@@ -10,19 +10,28 @@
     <div class="background-form background-new-signin background-padding-new-registration">
       <div class="form-inputs-signin">
         <%= f.input :first_name,
+                    label: "Prénom",
+                    error: "Prénom requis",
                     input_html: { autocomplete: "Prénom" } %>
         <%= f.input :last_name,
+                    label: "Nom",
+                    error: "Nom requis",
                     input_html: { autocomplete: "Nom" } %>
         <%= f.input :email,
                     required: true,
                     autofocus: true,
+                    label: "Email",
+                    error: "Email requis",
                     input_html: { autocomplete: "Mail" }%>
         <%= f.input :password,
                     required: true,
-                    hint: ("#{@minimum_password_length} characters minimum" if @minimum_password_length),
+                    label: "Mot de passe",
+                    error: "Mot de passe requis",
+                    hint: ("#{@minimum_password_length} caractères minimum" if @minimum_password_length),
                     input_html: { autocomplete: "new-password" } %>
         <%= f.input :password_confirmation,
                     required: true,
+                    label: "Confirmation du mot de passe",
                     input_html: { autocomplete: "new-password" } %>
         <%= f.collection_select(:course_id, Course.all, :id, lambda {|course| "#{course.day} - #{course.hour}"}) %>
       </div>
