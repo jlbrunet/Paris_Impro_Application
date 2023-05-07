@@ -1,0 +1,69 @@
+.absence-jour {
+  background-color: $background-grey;
+  border-radius: 10px;
+  padding: 5px 35px;
+  margin-top: 13px;
+  text-align: center;
+  h2 {
+    font-family: $body;
+    font-size: 15px;
+    color: $font-grey;
+    margin-top: 8px;
+  }
+}
+
+.absence-decla-texte {
+  text-align: center;
+  h1 {
+    font-family: $headers;
+    font-size: 26px;
+  }
+}
+
+.calendar-abs{
+  margin: 0 auto;
+  padding-top:20px;
+}
+
+
+.flatpickr-calendar{
+  border-radius: 20px;
+  border: solid 1px $light-red;
+  font-size: 14px;
+  width:100%
+}
+
+.flatpickr-rContainer{
+  width: 100%;
+}
+
+.flatpickr-months{
+  border-bottom: solid 1px $light-red;
+  padding: 10px 0 15px 0;
+}
+
+.flatpickr-weekdays{
+  width: 100% !important;
+  height: 55px !important;
+}
+
+span.flatpickr-weekday{
+  color:#252525;
+}
+
+.flatpickr-days{
+  width: 100%;
+  display:block;
+}
+
+.dayContainer{
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  grid-gap: 0 34px;
+  margin-left:30px;
+  padding-bottom: 50px;
+}
+
+.flatpickr-prev-month, .flatpickr-next-month {
+    padding-top: 18px !important;
+}
