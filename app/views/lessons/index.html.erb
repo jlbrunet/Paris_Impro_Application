@@ -20,7 +20,7 @@
     <div class="tableau">
       <div class="absences rectangles">
         <div class="title-rectangle">
-          <h3 class="title-red" style="font-size:16px"><%= lesson.occurs_on.strftime('%A %d %B') %></h3>
+          <h3 class="title-red" style="font-size:16px"><%= I18n.l(lesson.occurs_on, format: "%A %-d %B %kh", locale: :fr) %></h3>
         </div>
 
         <div class="absences-contents">
