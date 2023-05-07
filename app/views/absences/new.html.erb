@@ -1,20 +1,34 @@
-<h1>Déclarer une absence</h1>
-<h2>Quel jour seras-tu absent.e ?</h2>
+<div class="container background-absence-decla">
 
-<div data-controller="validation">
+  <div class="hello">
+      <div class="hello-img">
+        <%= image_tag("logo_paris_impro2.jpeg", class: "logo-img-home") %>
+      </div>
+      <div class="absence-decla-texte">
+        <h1>Déclarer une absence</h1>
+      </div>
+  </div>
 
-  <%= simple_form_for(@lesson, url: absences_path, html: {data: {controller: 'flatpickr', confirmation_target: 'form'}}) do |f| %>
-    <%= f.input :occurs_on, as: :string, label: false, input_html: { class: 'd-none', data: { flatpickr_target: 'arraydata', flatpickr_available_dates_string: @available_dates_string, confirmation_target: 'input' } } %>
-    <%= f.button :button, 'Valider', data: { action: 'click->confirmation#confirm' } %>
-    <%= f.button :submit, 'Valider', class: 'd-none' %>
-  <% end %>
+  <div class="absence-jour">
+    <h2>Quel jour seras-tu absent.e ?</h2>
+  </div>
 
-  <!-- Modale de confirmation -->
-  <div data-confirmation-target="modal" class="d-none">
-    <p data-confirmation-target="sentence"></p>
-    <p>Après avoir confirmé ton absence, celle-ci sera définitive.</p>
-    <button data-action="click->confirmation#submit">Oui</button>
-    <button data-action="click->confirmation#cancel">Non</button>
+  <div data-controller="validation">
+
+    <%= simple_form_for(@lesson, url: absences_path, class: "flatpiker", html: {data: {controller: 'flatpickr', confirmation_target: 'form'}}) do |f| %>
+      <%= f.input :occurs_on, as: :string, label: false, input_html: { class: 'd-none', data: { flatpickr_target: 'arraydata', flatpickr_available_dates_string: @available_dates_string, confirmation_target: 'input' } } %>
+      <%= f.button :button, 'Valider', data: { action: 'click->confirmation#confirm' } %>
+      <%= f.button :submit, 'Valider', class: 'd-none' %>
+    <% end %>
+
+    <!-- Modale de confirmation -->
+    <div data-confirmation-target="modal" class="d-none">
+      <p data-confirmation-target="sentence"></p>
+      <p>Après avoir confirmé ton absence, celle-ci sera définitive.</p>
+      <button data-action="click->confirmation#submit">Oui</button>
+      <button data-action="click->confirmation#cancel">Non</button>
+    </div>
+
   </div>
 
 </div>
