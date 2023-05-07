@@ -20,8 +20,10 @@
     </div>
   <% end %>
 
-  <%= link_to new_user_session_path do %>
-    <i class="fa-solid fa-circle-chevron-left btn-back"></i>
-  <% end %>
+  <div class="btn-back-forgot">
+    <%= link_to :back , class: "btn-red-back-forgot btn-left" do %>
+      <div><i class="fa-solid fa-circle-chevron-left"></i> Retour</div>
+    <% end %>
+  </div>
 
 </div>
