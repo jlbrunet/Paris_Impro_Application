@@ -33,7 +33,7 @@
                     required: true,
                     label: "Confirmation du mot de passe",
                     input_html: { autocomplete: "new-password" } %>
-        <%= f.label :course_id, label: "Sélectionner un cours*" %>
+        <%= f.label :course_id, label: "Sélectionner votre cours *" %>
         <%= f.collection_select(:course_id, Course.all, :id, lambda {|course| "#{course.day} - #{course.hour}"})%>
       </div>
       <div class="form-actions-2">
