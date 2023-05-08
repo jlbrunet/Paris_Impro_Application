@@ -22,8 +22,6 @@
 
 .modale-conf-abs{
   position:absolute;
-  -webkit-backdrop-filter: blur(10px);
-  backdrop-filter: blur(10px);
   z-index: 1000;
   top: 250px;
   border-radius: 20px;
@@ -36,6 +34,8 @@
   margin-right: auto;
   background: $light-red;
   text-align: center;
+  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
   .sentence{
     color: #C02828;
     font-size: 20px;
