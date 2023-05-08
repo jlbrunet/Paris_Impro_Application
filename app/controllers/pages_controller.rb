@@ -8,7 +8,7 @@ class PagesController < ApplicationController
     else
       @course = Course.find(current_user.course_id)
 
-      @absences = Absence.where(user_id: current_user.id)
+      @absences = Absence.where(user_id: current_user.id).sort_by { |absence| absence.lesson_id }
       @absences_lessons = []
       @absences.each do |absence|
         @absences_lessons.push(Lesson.find(absence.lesson_id))

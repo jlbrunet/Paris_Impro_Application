@@ -2,7 +2,7 @@ class AbsencesController < ApplicationController
   def new
     @available_dates = []
     Lesson.where(course_id: current_user.course_id).each do |lesson|
-      if (Absence.where(lesson_id: lesson.id) == []) && ((lesson.occurs_on.day - Time.now.day) > 1)
+      if (Absence.where(lesson_id: lesson.id) == []) && (((lesson.occurs_on - DateTime.now) / 3600) > 24)
         @available_dates << lesson.occurs_on
       end
     end
