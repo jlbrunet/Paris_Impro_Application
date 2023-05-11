@@ -12,7 +12,7 @@ class LessonsController < ApplicationController
     @available_dates = []
     @lessons = Lesson.where.not(course_id: current_user.course_id)
     @lessons.each do |lesson|
-      if (Rattrapage.where(lesson_id: lesson.id) == []) && (Absence.where(lesson_id: lesson.id) != [])
+      if (Rattrapage.where(lesson_id: lesson.id) == []) && (Absence.where(lesson_id: lesson.id) != []) && (Course.find(lesson.course_id).level == Course.find(current_user.course_id).level)
         @available_dates << lesson.occurs_on
       end
     end
