@@ -7,4 +7,5 @@ class User < ApplicationRecord
   has_many :rattrapages
   validates :first_name, presence: true
   validates :last_name, presence: true
+  validates :course_id, presence: true
 end
