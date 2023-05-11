@@ -212,3 +212,10 @@ absence3 = Absence.new(
   lesson_id: lesson2_course2.id
 )
 absence3.save!
+
+absence4 = Absence.new(
+  user_id: user2.id,
+  lesson_id: lesson1_course1.id
+)
+
+absence4.save!
