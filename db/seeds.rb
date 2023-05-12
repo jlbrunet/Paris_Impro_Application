@@ -61,7 +61,8 @@ user1 = User.new(
   last_name: "Nataf",
   status: "teacher",
   email: "admin@rattrape.fr",
-  password: "123456"
+  password: "123456",
+  course_id: course1.id
 )
 user1.save!
 
