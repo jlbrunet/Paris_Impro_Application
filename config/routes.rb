@@ -12,4 +12,5 @@ Rails.application.routes.draw do
   resources :courses, only: [:index] do
     resources :lessons, only: [:index]
   end
+  get '/users', to: redirect('/users/sign_up')
 end
