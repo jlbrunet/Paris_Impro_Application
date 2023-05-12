@@ -221,3 +221,18 @@
   top: -55px;
   margin: 13px !important;
 }
+
+.btn:disabled {
+  background-color: $medium-red;
+  opacity: 1;
+  border-radius: 30px;
+  width: 340px;
+  height: 60px;
+  padding: 10px 15px;
+  margin: 10px;
+  display: inline-block;
+  font-family: $headers;
+  font-size: 25px;
+  color: white;
+  text-decoration: none;
+}
