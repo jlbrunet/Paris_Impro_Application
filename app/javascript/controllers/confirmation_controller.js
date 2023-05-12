@@ -4,9 +4,16 @@ import 'moment/locale/fr';
 
 // Connects to data-controller="confirmation"
 export default class extends Controller {
-  static targets = ["modal", "form", "input", "sentence"]
+  static targets = ["modal", "form", "input", "sentence", "button"]
 
   connect() {
+    this.buttonTarget.disabled = true;
+  }
+
+  validate(event) {
+    if (event.target.value !== '') {
+      this.buttonTarget.disabled = false;
+    }
   }
 
   confirm(event) {
