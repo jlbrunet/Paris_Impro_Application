@@ -2,7 +2,7 @@
   background-color: $background-grey;
   border-radius: 10px;
   padding: 5px 35px;
-  margin-top: 13px;
+  margin: 13px 20px 10px 20px;
   text-align: center;
   h2 {
     font-family: $body;
@@ -47,9 +47,9 @@
   }
   .sentence-text{
     background-color: white;
-    border-radius: 20px;
+    border-radius: 10px;
     padding: 13px;
     color: red;
-    margin: 0 5px 0 5px;
+    margin: 10px 10px 0 10px;
   }
 }
