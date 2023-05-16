@@ -1,4 +1,9 @@
-.calendar-abs{
+.calendar-abs {
+  margin: 0 auto;
+  padding-top:20px;
+}
+
+.calendar-rattrapage {
   margin: 0 auto;
   padding-top:20px;
 }
@@ -30,12 +35,13 @@ span.flatpickr-weekday{
 }
 
 .flatpickr-day {
-  color: black;
+  color: $light-red;
+  font-weight: bold;
 }
 
 .flatpickr-day.selected {
-  color: #f4bbb9;
-  font-size: 16px;
+  color: $light-red;
+  font-size: 18px;
   border-color: transparent !important;
   font-weight: bold !important;
   background-color: transparent;
