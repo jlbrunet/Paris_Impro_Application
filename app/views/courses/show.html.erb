@@ -1,0 +1,37 @@
+<h1>Hello <%= @user.first_name %></h1>
+<h1>Elèves</h1>
+<h1><%= @course.day %> | <%= @course.level %></h1>
+<h1>Liste des élèves</h1>
+
+<% @students.each do |student| %>
+  <div data-controller="account">
+    <p><%= student.first_name %></p>
+
+    <button data-action="click->account#change">petites flèches</button>
+    <button data-action="click->account#delete">poubelle</button>
+
+    <%# modale de change %>
+    <div data-account-target="c_modal" class="d-none modale-conf-abs">
+      <div class="sentence">Changer le cours de <%= student.first_name %></div>
+      <% student.course_id = nil %>
+      <%= simple_form_for(student, url: profile_update_path(student)) do |f| %>
+        <%= f.collection_select(:course_id, Course.all, :id, lambda {|course| "#{course.day} #{course.hour.hour}h - #{course.level}"}, {include_blank: ""})%>
+        <%= f.button :submit, 'Valider', class: 'btn btn-red btn-valid-abs' %>
+      <% end %>
+    </div>
+    <%# %>
+
+    <%# modale de delete %>
+    <div data-account-target="d_modal" class="d-none modale-conf-abs">
+      <div class="sentence">Supprimer définitivement le compte élève de <%= student.first_name %></div>
+      <button data-action="click->account#d_submit" class="btn btn-red-modal">Oui</button>
+      <button data-action="click->account#d_cancel" class="btn btn-red-modal">Non</button>
+    </div>
+    <%# %>
+
+  </div>
+<% end %>
+
+<%= link_to courses_path, class: "btn-red-back btn-left" do %>
+  <div><i class="fa-solid fa-circle-chevron-left"></i> Retour</div>
+<% end %>
