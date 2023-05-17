@@ -13,7 +13,7 @@
     <%# modale de change %>
     <div data-account-target="c_modal" class="d-none modale-conf-abs">
       <div class="sentence">Changer le cours de <%= student.first_name %></div>
-      <%= simple_form_for(student, url: course_path(@course) do |f| %>
+      <%= simple_form_for(student, url: profile_update_path(student)) do |f| %>
         <%= f.collection_select(:course_id, Course.all, :id, lambda {|course| "#{course.day} #{course.hour.hour}h - #{course.level}"}, {include_blank: ""})%>
         <%= f.button :submit, 'Valider', class: 'btn btn-red btn-valid-abs' %>
       <% end %>
@@ -31,6 +31,6 @@
   </div>
 <% end %>
 
-<%= link_to :back , class: "btn-red-back btn-left" do %>
+<%= link_to courses_path, class: "btn-red-back btn-left" do %>
   <div><i class="fa-solid fa-circle-chevron-left"></i> Retour</div>
 <% end %>
