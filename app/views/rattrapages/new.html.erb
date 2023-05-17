@@ -1,23 +1,39 @@
-<h1>Informations</h1>
+<div class="container background-rattrapage-index">
 
-<div data-controller="rattrapage">
-
-  <% @rattrapage_lessons.each do |lesson| %>
-    <p><%= I18n.l(lesson.occurs_on, format: "%A %-d %B %kh", locale: :fr) %></p>
-    <p><%= Course.find(lesson.course_id).location %></p>
-    <%= simple_form_for(@lesson, url: rattrapages_path, html: {data: {rattrapage_target: 'form'}}) do |f| %>
-      <%= f.input :occurs_on, as: :string, label: false, input_html: { class: 'd-none', value: lesson.occurs_on, data: { rattrapage_target: 'input'}} %>
-      <%= f.button :button, 'Choisir ce rattrapage', data: { action: 'click->rattrapage#confirm' }  %>
-      <%= f.button :submit, 'Choisir ce rattrapage', class: 'd-none' %>
-    <% end %>
-  <% end %>
-
-  <!-- Modale de confirmation -->
-  <div data-rattrapage-target="modal" class="d-none">
-    <p data-rattrapage-target="sentence"></p>
-    <p>Après avoir confirmé ton rattrapage, celle-ci sera définitive.</p>
-    <button data-action="click->rattrapage#submit">Oui</button>
-    <button data-action="click->rattrapage#cancel">Non</button>
+  <div class="hello">
+      <div class="hello-img">
+        <%= image_tag("logo_paris_impro2.jpeg", class: "logo-img-home") %>
+      </div>
+      <div class="rattrapage-index-texte">
+        <h1>Informations</h1>
+      </div>
   </div>
 
+  <div class="text-index-rattrapage">
+    <h2>Sélectionne ton rattrapage sur les disponibilités ci-dessous</h2>
+  </div>
+
+
+  <div data-controller="rattrapage">
+
+    <% @rattrapage_lessons.each do |lesson| %>
+    <div class="tab-show-rattrapage">
+      <div class="title-show-rattrapage"><%= I18n.l(lesson.occurs_on, format: "%A %-d %B %kh", locale: :fr) %></div>
+      <div class="content-show-rattrapage"><%= Course.find(lesson.course_id).location %></div>
+      <%= simple_form_for(@lesson, url: rattrapages_path, html: {class: 'btn-red-small btn-left', data: {rattrapage_target: 'form'}}) do |f| %>
+        <%= f.input :occurs_on, as: :string, label: false, input_html: { class: 'd-none', value: lesson.occurs_on, data: { rattrapage_target: 'input'}} %>
+        <%= f.button :button, 'Choisir ce rattrapage', data: { action: 'click->rattrapage#confirm' } %>
+        <%= f.button :submit, 'Choisir ce rattrapage', class: 'd-none btn-red-small btn-left' %>
+      <% end %>
+    <% end %>
+    </div>
+    <!-- Modale de confirmation -->
+    <div data-rattrapage-target="modal" class="d-none modale-conf-rattrapage">
+      <p data-rattrapage-target="sentence"></p>
+        <div class="sentence-text"><i class="fa-solid fa-triangle-exclamation" style="color: #ff0000;"></i> Après avoir confirmé ton rattrapage, celui-ci sera définitif</div>
+      <button data-action="click->rattrapage#submit" class="btn btn-red-modal">Oui</button>
+      <button data-action="click->rattrapage#cancel" class="btn btn-red-modal">Non</button>
+    </div>
+
+  </div>
 </div>

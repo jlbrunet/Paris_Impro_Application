@@ -1,0 +1,40 @@
+.rattrapage-index-texte {
+  text-align: center;
+  h1 {
+    font-family: $headers;
+    font-size: 26px;
+  }
+}
+
+.text-index-rattrapage {
+  background-color: $background-grey;
+  border-radius: 10px;
+  padding: 5px 35px;
+  margin-top: 13px;
+  text-align: center;
+  h2 {
+    font-family: $body;
+    font-size: 15px;
+    color: $font-grey;
+    margin-top: 8px;
+  }
+}
+
+.tab-show-rattrapage{
+  position: relative;
+  padding: 20px;
+  border: solid 2px $light-red;
+  border-radius: 20px;
+  width: 90%;
+}
+
+.title-show-rattrapage{
+  margin: 0 auto;
+  border-bottom: solid 2px #f4bbb9;
+  width: 80%;
+  padding-top: 10px;
+}
+
+.content-show-rattrapage{
+
+}
