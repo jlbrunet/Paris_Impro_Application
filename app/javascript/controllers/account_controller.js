@@ -2,21 +2,25 @@ import { Controller } from "@hotwired/stimulus"
 
 // Connects to data-controller="account"
 export default class extends Controller {
-  static targets = ["modal"]
+  static targets = ["d_modal", "c_modal", "sentence"]
 
   connect() {
   }
 
-  delete() {
-    this.modalTarget.classList.remove("d-none")
+  change(event) {
+     this.c_modalTarget.classList.remove("d-none")
   }
 
-  submit() {
-    this.modalTarget.classList.add("d-none")
-    // action liée à suppression du compte à ajouter
+  delete(event) {
+    this.d_modalTarget.classList.remove("d-none")
   }
 
-  cancel() {
-    this.modalTarget.classList.add("d-none")
+  d_submit() {
+    this.d_modalTarget.classList.add("d-none")
+    // action liée à suppression du compte à ajouter en utilisant le dataset student.id
+  }
+
+  d_cancel() {
+    this.d_modalTarget.classList.add("d-none")
   }
 }
