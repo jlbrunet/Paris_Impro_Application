@@ -54,6 +54,14 @@ course5 = Course.new(
 )
 course5.save!
 
+course6 = Course.new(
+  location: "a",
+  level: "a",
+  day: "a",
+  hour: Time.new(2001, 1, 1, 21, 0, 0)
+)
+course6.save!
+
 # Users
 
 user1 = User.new(
@@ -62,7 +70,7 @@ user1 = User.new(
   status: "teacher",
   email: "admin@rattrape.fr",
   password: "123456",
-  course_id: course1.id
+  course_id: course6.id
 )
 user1.save!
 

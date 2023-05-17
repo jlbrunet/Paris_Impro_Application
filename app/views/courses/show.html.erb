@@ -1,0 +1,25 @@
+<h1>Hello <%= @user.first_name %></h1>
+<h1>Elèves</h1>
+<h1><%= @course.day %> | <%= @course.level %></h1>
+<h1>Liste des élèves</h1>
+
+<div data-controller="account">
+  <% @students.each do |student| %>
+    <p><%= student.first_name %></p>
+    <button data-action="click->account#change">petites flèches</button>
+    <button data-action="click->account#delete">poubelle</button>
+
+    <%# modale de delete %>
+      <div data-account-target="modal" class="d-none modale-conf-abs">
+        <div class="sentence">Supprimer définitivement le compte élève de <%= student.first_name %></div>
+        <button data-action="click->account#submit" class="btn btn-red-modal">Oui</button>
+        <button data-action="click->account#cancel" class="btn btn-red-modal">Non</button>
+      </div>
+    <%# %>
+
+  <% end %>
+</div>
+
+<%= link_to :back , class: "btn-red-back btn-left" do %>
+  <div><i class="fa-solid fa-circle-chevron-left"></i> Retour</div>
+<% end %>

@@ -3,4 +3,10 @@ class CoursesController < ApplicationController
     @user = current_user
     @courses = Course.all
   end
+
+  def show
+    @user = current_user
+    @course = Course.find(params[:id])
+    @students = User.where(course_id: @course.id)
+  end
 end
