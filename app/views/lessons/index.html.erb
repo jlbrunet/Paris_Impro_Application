@@ -37,6 +37,7 @@
             <p>Absent.e.s :</p>
             <% @absences_lesson.each do |absence| %>
             <div class="student">
+              <button>poubelle</button>
               <i class="fa-solid fa-circle"></i> <%= absence.user.first_name %> <%= absence.user.last_name %>
             </div>
             <% end %>
@@ -56,6 +57,7 @@
           <p>En rattrapage :</p>
             <% @rattrapages_lesson.each do |rattrapage| %>
             <div class="students">
+              <button>poubelle</button>
               <i class="fa-solid fa-circle"></i> <%= rattrapage.user.first_name %> <%= rattrapage.user.last_name %>
            </div>
             <% end %>
