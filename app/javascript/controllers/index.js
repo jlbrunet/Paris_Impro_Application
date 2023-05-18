@@ -10,8 +10,8 @@ application.register("account", AccountController)
 import ConfirmationController from "./confirmation_controller"
 application.register("confirmation", ConfirmationController)
 
-import DeleteAbsRatController from "./delete_abs_rat_controller"
-application.register("delete-abs-rat", DeleteAbsRatController)
+import DeleteAbsController from "./delete_abs_controller"
+application.register("delete-abs", DeleteAbsController)
 
 import FlatpickrController from "./flatpickr_controller"
 application.register("flatpickr", FlatpickrController)

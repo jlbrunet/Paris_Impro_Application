@@ -36,9 +36,16 @@
           <% else %>
             <p>Absent.e.s :</p>
             <% @absences_lesson.each do |absence| %>
-            <div class="student">
-              <button>poubelle</button>
+            <div class="student" data-controller="delete-abs">
+              <button data-action="click->delete-abs#modal">poubelle</button>
               <i class="fa-solid fa-circle"></i> <%= absence.user.first_name %> <%= absence.user.last_name %>
+              <%# modale%>
+              <div data-delete-abs-target="modale" class="d-none modale-conf-abs">
+                <div class="sentence">Êtes-tu sûr.e de vouloir supprimer cette absence ?</div>
+                <%= link_to "oui", absence_destroy_path(absence) %>
+                <button data-action="click->delete-abs#cancel" class="btn btn-red-modal">Non</button>
+              </div>
+              <%# %>
             </div>
             <% end %>
           <% end %>
