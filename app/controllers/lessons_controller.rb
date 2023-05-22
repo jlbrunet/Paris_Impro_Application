@@ -37,5 +37,7 @@ class LessonsController < ApplicationController
                              lesson_id: @place_lesson)
       @absence.save!
     end
+    @course = Course.find(params[:course_id])
+    redirect_to course_lessons_path(@course)
   end
 end
