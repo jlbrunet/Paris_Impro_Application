@@ -27,7 +27,7 @@
             <div data-add-places-target="modale" class="d-none modale-conf-abs">
               <div class="sentence">Ajouter des places</div>
               <%= simple_form_for(@place, url: course_create_place_path(@course)) do |f| %>
-                <%= f.input :number %>
+                <%= f.input :number, label: false, as: :integer, input_html: { min: 1, max: 5 } %>
                 <%= f.input :lesson_id, as: :hidden, input_html: {value: lesson.id}%>
                 <%= f.button :submit, 'Valider', class: 'btn btn-red btn-valid-abs' %>
               <% end %>
