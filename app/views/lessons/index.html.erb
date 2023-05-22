@@ -21,7 +21,19 @@
       <div class="absences rectangles">
         <div class="title-rectangle">
           <h3 class="title-red" style="font-size:16px"><%= I18n.l(lesson.occurs_on, format: "%A %-d %B %kh", locale: :fr) %></h3>
-          <button>Ouvrir une place</button>
+          <div data-controller="add-places">
+            <button data-action="click->add-places#add">Ouvrir une place</button>
+            <%# modale%>
+            <div data-add-places-target="modale" class="d-none modale-conf-abs">
+              <div class="sentence">Ajouter des places</div>
+              <%= simple_form_for(@place, url: course_create_place_path(@course)) do |f| %>
+                <%= f.input :number %>
+                <%= f.input :lesson_id, as: :hidden, input_html: {value: lesson.id}%>
+                <%= f.button :submit, 'Valider', class: 'btn btn-red btn-valid-abs' %>
+              <% end %>
+              <button data-action="click->add-places#cancel" class="btn btn-red-modal">Annuler</button>
+            </div>
+          </div>
         </div>
 
         <div class="absences-contents">

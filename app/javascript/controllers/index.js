@@ -7,6 +7,9 @@ import { application } from "./application"
 import AccountController from "./account_controller"
 application.register("account", AccountController)
 
+import AddPlacesController from "./add_places_controller"
+application.register("add-places", AddPlacesController)
+
 import ConfirmationController from "./confirmation_controller"
 application.register("confirmation", ConfirmationController)
 
