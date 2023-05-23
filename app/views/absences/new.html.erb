@@ -22,8 +22,8 @@
     <% end %>
 
     <!-- Modale de confirmation -->
-
-      <div data-confirmation-target="modal" class="d-none modale-conf-abs">
+    <div class="d-none blur-modal" data-confirmation-target="modal">
+      <div class="modale-conf-abs">
         <div class="sentence" data-confirmation-target="sentence"></div>
           <div class="alerte-rattrapages-select">
             <i class="fa-solid fa-triangle-exclamation alerte-icone"></i>
@@ -32,6 +32,7 @@
         <button data-action="click->confirmation#submit" class="btn btn-red-modal">Oui</button>
         <button data-action="click->confirmation#cancel" class="btn btn-red-modal">Non</button>
       </div>
+    </div>
 
-  </div>
+    </div>
 </div>
