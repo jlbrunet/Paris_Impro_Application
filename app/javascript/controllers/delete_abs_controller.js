@@ -19,7 +19,7 @@ export default class extends Controller {
     this.modale2Target.classList.remove("d-none")
   }
 
-  cancel() {
+  cancel2() {
     this.modale2Target.classList.add("d-none")
   }
 }

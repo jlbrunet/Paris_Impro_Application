@@ -64,9 +64,11 @@
           <% else %>
           <p>En rattrapage :</p>
             <% @rattrapages_lesson.each do |rattrapage| %>
-            <div class="students" data-controller="delete-abs">
-              <button data-action="click->delete-abs#modal2">poubelle</button>
-              <i class="fa-solid fa-circle"></i> <%= rattrapage.user.first_name %> <%= rattrapage.user.last_name %>
+            <div class="student" data-controller="delete-abs">
+              <div class="btn-delete-eleve margin-btn-delete" data-action="click->delete-abs#modal2">
+                <i class="icone-btn-eleve fa-solid fa-trash"></i>
+              </div>
+              <%= rattrapage.user.first_name %> <%= rattrapage.user.last_name %>
               <%# modale%>
               <div data-delete-abs-target="modale2" class="d-none modale-conf-abs">
                 <div class="sentence">Êtes-tu sûr.e de vouloir supprimer cette absence ?</div>
