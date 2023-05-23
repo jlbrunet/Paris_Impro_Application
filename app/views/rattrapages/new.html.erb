@@ -17,19 +17,32 @@
   <div data-controller="rattrapage">
 
     <% @rattrapage_lessons.each do |lesson| %>
-    <div class="tab-show-rattrapage">
-      <div class="title-show-rattrapage"><%= I18n.l(lesson.occurs_on, format: "%A %-d %B %kh", locale: :fr) %></div>
-      <div class="content-show-rattrapage"><%= Course.find(lesson.course_id).location %></div>
-      <%= simple_form_for(@lesson, url: rattrapages_path, html: {class: 'btn-red-small btn-left', data: {rattrapage_target: 'form'}}) do |f| %>
-        <%= f.input :occurs_on, as: :string, label: false, input_html: { class: 'd-none', value: lesson.occurs_on, data: { rattrapage_target: 'input'}} %>
-        <%= f.button :button, 'Choisir ce rattrapage', data: { action: 'click->rattrapage#confirm' } %>
-        <%= f.button :submit, 'Choisir ce rattrapage', class: 'd-none btn-red-small btn-left' %>
-      <% end %>
+
+      <div class="tab-show-rattrapage">
+
+        <div class="title-rectangle title-red">
+          <h3 class="title-red">
+            <%= I18n.l(lesson.occurs_on, format: "%A %-d %B %kh", locale: :fr) %>
+          </h3>
+        </div>
+
+        <div class="content-show-rattrapage">
+          <p>
+            <%= Course.find(lesson.course_id).location %>
+          </p>
+        </div>
+
+        <%= simple_form_for(@lesson, url: rattrapages_path, html: {class: 'btn-red-small btn-left', data: {rattrapage_target: 'form'}}) do |f| %>
+          <%= f.input :occurs_on, as: :string, label: false, input_html: { class: 'd-none', value: lesson.occurs_on, data: { rattrapage_target: 'input'}} %>
+          <%= f.button :button, 'Choisir ce rattrapage', class: 'btn-red-small btn-left-rattrapage', data: { action: 'click->rattrapage#confirm' } %>
+          <%= f.button :submit, 'Choisir ce rattrapage', class: 'd-none' %>
+        <% end %>
+
+      </div>
     <% end %>
-    </div>
     <!-- Modale de confirmation -->
     <div data-rattrapage-target="modal" class="d-none modale-conf-rattrapage">
-      <p data-rattrapage-target="sentence"></p>
+      <div class="sentence" data-rattrapage-target="sentence"></div>
         <div class="sentence-text"><i class="fa-solid fa-triangle-exclamation" style="color: #ff0000;"></i> Après avoir confirmé ton rattrapage, celui-ci sera définitif</div>
       <button data-action="click->rattrapage#submit" class="btn btn-red-modal">Oui</button>
       <button data-action="click->rattrapage#cancel" class="btn btn-red-modal">Non</button>
