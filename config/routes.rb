@@ -9,8 +9,9 @@ Rails.application.routes.draw do
   post "rattrapages", to: "rattrapages#create"
   get "rattrapages/:id", to: "rattrapages#show", as: :rattrapage_show
   get "pages/myaccount", to: "pages#myaccount"
-  resources :courses, only: [:index] do
+  resources :courses, only: %i[index show] do
     resources :lessons, only: [:index]
   end
   get '/users', to: redirect('/users/sign_up')
+  patch "profiles/:id", to: "profiles#update", as: :profile_update
 end

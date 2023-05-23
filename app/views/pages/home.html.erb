@@ -27,7 +27,9 @@
         <% end %>
       </div>
 
-      <%= link_to "Déclarer une absence", "/absences/new", class: "btn-red-small btn-left" %>
+      <% if @absences.length < 9 %>
+        <%= link_to "Déclarer une absence", "/absences/new", class: "btn-red-small btn-left" %>
+      <% end %>
     </div>
 
     <div class="rattrapages rectangle margin-rectangle-dashboard">
@@ -65,7 +67,6 @@
       <% if @absences.length > @rattrapages.length %>
         <%= link_to "Choisir un rattrapage", "/lessons/new", class: "btn-red-small btn-left" %>
       <% end %>
-
     </div>
   </div>
 </div>
