@@ -7,8 +7,14 @@ import { application } from "./application"
 import AccountController from "./account_controller"
 application.register("account", AccountController)
 
+import AddPlacesController from "./add_places_controller"
+application.register("add-places", AddPlacesController)
+
 import ConfirmationController from "./confirmation_controller"
 application.register("confirmation", ConfirmationController)
+
+import DeleteAbsController from "./delete_abs_controller"
+application.register("delete-abs", DeleteAbsController)
 
 import FlatpickrController from "./flatpickr_controller"
 application.register("flatpickr", FlatpickrController)

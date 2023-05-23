@@ -17,4 +17,12 @@ class AbsencesController < ApplicationController
     @absence.save
     redirect_to root_path
   end
+
+  def destroy
+    @absence = Absence.find(params[:absence_id])
+    @lesson = Lesson.find(@absence.lesson_id)
+    @course = Course.find(@lesson.course_id)
+    @absence.destroy
+    redirect_to course_lessons(@course)
+  end
 end

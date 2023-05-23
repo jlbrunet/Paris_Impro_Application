@@ -6,6 +6,8 @@ class LessonsController < ApplicationController
 
     @absences = Absence.all
     @rattrapages = Rattrapage.all
+
+    @place = Place.new
   end
 
   def new
@@ -25,5 +27,17 @@ class LessonsController < ApplicationController
     @current_lessons = Lesson.where("DATE_TRUNC('day', occurs_on) = ?", @occurs_on.to_date)
     session[:current_lessons_ids] = @current_lessons.pluck(:id)
     redirect_to rattrapages_new_path
+  end
+
+  def create_place
+    @place_number = params[:place][:number].to_i
+    @place_lesson = params[:place][:lesson_id].to_i
+    @place_number.times do
+      @absence = Absence.new(user_id: User.where(status: "teacher")[0].id,
+                             lesson_id: @place_lesson)
+      @absence.save!
+    end
+    @course = Course.find(params[:course_id])
+    redirect_to course_lessons_path(@course)
   end
 end
