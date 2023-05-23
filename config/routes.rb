@@ -9,12 +9,16 @@ Rails.application.routes.draw do
   post "rattrapages", to: "rattrapages#create"
   get "rattrapages/:id", to: "rattrapages#show", as: :rattrapage_show
   get "pages/myaccount", to: "pages#myaccount"
+
   resources :courses, only: %i[index show] do
     resources :lessons, only: [:index]
     post "lessons", to: "lessons#create_place", as: :create_place
   end
+
   get '/users', to: redirect('/users/sign_up')
   patch "profiles/:id", to: "profiles#update", as: :profile_update
+  delete "profiles/:id", to: "profiles#destroy", as: :profile_destroy
+
   delete "absences/:id", to: "absences#destroy", as: :absence_destroy
   delete "rattrapages/:id", to: "rattrapages#destroy", as: :rattrapage_destroy
 end

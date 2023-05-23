@@ -17,10 +17,13 @@ export default class extends Controller {
 
   d_submit() {
     this.d_modalTarget.classList.add("d-none")
-    // action liée à suppression du compte à ajouter en utilisant le dataset student.id
   }
 
   d_cancel() {
     this.d_modalTarget.classList.add("d-none")
+  }
+
+  cancel() {
+    this.c_modalTarget.classList.add("d-none")
   }
 }
