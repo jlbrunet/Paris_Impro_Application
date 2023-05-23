@@ -96,6 +96,16 @@ user4 = User.new(
 )
 user4.save!
 
+user5 = User.new(
+  first_name: "Maxime2",
+  last_name: "Coquerelle2",
+  status: "student",
+  email: "maxime2@rattrape.fr",
+  password: "123456",
+  course_id: course3.id
+)
+user5.save!
+
 # Lessons
 
 lesson1_course1 = Lesson.new(

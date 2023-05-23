@@ -6,6 +6,13 @@ class ProfilesController < ApplicationController
     redirect_to course_path(@course)
   end
 
+  def destroy
+    @user = User.find(params[:id])
+    @course = Course.find(@user.course_id)
+    @user.destroy
+    redirect_to course_path(@course)
+  end
+
   private
 
   def user_params
