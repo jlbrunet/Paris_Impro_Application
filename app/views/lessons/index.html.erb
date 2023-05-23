@@ -21,21 +21,6 @@
       <div class="absences rectangles">
         <div class="title-rectangle">
           <h3 class="title-red" style="font-size:18px"><%= I18n.l(lesson.occurs_on, format: "%A %-d %B %kh", locale: :fr) %></h3>
-          <div data-controller="add-places">
-            <button data-action="click->add-places#add">Ouvrir une place</button>
-            <%# modale%>
-            <div data-add-places-target="modale" class="d-none modale-conf-abs">
-              <div class="sentence">Ajouter des places</div>
-              <%= simple_form_for(@place, url: course_create_place_path(@course)) do |f| %>
-                <%= f.input :number, label: false, input_html: { value: 0, readonly: true, data: { add_places_target: "number"} } %>
-                <div data-action="click->add-places#minus">-</div>
-                <div data-action="click->add-places#plus">+</div>
-                <%= f.input :lesson_id, as: :hidden, input_html: {value: lesson.id}%>
-                <%= f.button :submit, 'Valider' %>
-              <% end %>
-              <button data-action="click->add-places#cancel" class="btn btn-red-modal">Annuler</button>
-            </div>
-          </div>
         </div>
 
         <div class="absences-contents">
@@ -51,8 +36,10 @@
             <p>Absent.e.s :</p>
             <% @absences_lesson.each do |absence| %>
             <div class="student" data-controller="delete-abs">
-              <button data-action="click->delete-abs#modal">poubelle</button>
-              <i class="fa-solid fa-circle"></i> <%= absence.user.first_name %> <%= absence.user.last_name %>
+              <div class="btn-delete-eleve margin-btn-delete" data-action="click->delete-abs#modal">
+                <i class="icone-btn-eleve fa-solid fa-trash"></i>
+              </div>
+              <%= absence.user.first_name %> <%= absence.user.last_name %>
               <%# modale%>
               <div data-delete-abs-target="modale" class="d-none modale-conf-abs">
                 <div class="sentence">Êtes-tu sûr.e de vouloir supprimer cette absence ?</div>
@@ -79,14 +66,26 @@
             <% @rattrapages_lesson.each do |rattrapage| %>
             <div class="students">
               <button>poubelle</button>
-              <i class="fa-solid fa-circle"></i> <%= rattrapage.user.first_name %> <%= rattrapage.user.last_name %>
+              <%= rattrapage.user.first_name %> <%= rattrapage.user.last_name %>
             </div>
             <% end %>
           <% end %>
         </div>
-        <div class="btn-red-small btn-left">
-          <p class="text-btn-lesson">Ouvrir une place</p>
-        </div>
+        <div class="btn-red-small btn-left" data-controller="add-places">
+            <p class="text-btn-lesson" data-action="click->add-places#add">Ouvrir une place</p>
+            <%# modale%>
+            <div data-add-places-target="modale" class="d-none modale-conf-abs">
+              <div class="sentence">Ajouter des places</div>
+              <%= simple_form_for(@place, url: course_create_place_path(@course)) do |f| %>
+                <%= f.input :number, label: false, input_html: { value: 0, readonly: true, data: { add_places_target: "number"} } %>
+                <div data-action="click->add-places#minus">-</div>
+                <div data-action="click->add-places#plus">+</div>
+                <%= f.input :lesson_id, as: :hidden, input_html: {value: lesson.id}%>
+                <%= f.button :submit, 'Valider' %>
+              <% end %>
+              <button data-action="click->add-places#cancel" class="btn btn-red-modal">Annuler</button>
+            </div>
+          </div>
       </div>
     </div>
   <% end %>
