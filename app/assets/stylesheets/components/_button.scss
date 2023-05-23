@@ -175,7 +175,7 @@
 
 .btn-red-back {
   margin: 0 auto;
-  background-color: #ee736f;
+  background-color: $dark-red;
   position: sticky;
   border-radius: 30px;
   width: 130px;
@@ -191,7 +191,7 @@
 }
 
 .btn-red-back:hover {
-  background-color: $medium-red;
+  background-color: $dark-red;
   color: white;
 }
 
@@ -266,5 +266,46 @@
   font-family: $headers;
   font-size: 25px;
   color: white;
+  text-decoration: none;
+}
+
+
+.btn-admin {
+  background-color: #ee736f;
+  border-radius: 30px;
+  width: 140px;
+  height: 45px;
+  padding: 8px 10px;
+  font-family: "Outfit", sans-serif;
+  font-size: 18px;
+  text-align: center;
+  text-decoration: none;
+  margin: 10px 0;
+}
+
+.btn-admin:hover {
+  text-decoration: none;
+}
+
+.btn-admin a {
+  text-decoration: none;
+}
+
+.btn-delete-eleve {
+  width: 40px;
+  height: 40px;
+  border-radius: 50px;
+  text-align: center;
+  background-color: $light-red;
+  color: $dark-red;
+  font-size: 18px;
+  margin: 0 7px;
+}
+
+.btn-delete-eleve:hover {
+  text-decoration: none;
+}
+
+.btn-delete-eleve a {
   text-decoration: none;
 }

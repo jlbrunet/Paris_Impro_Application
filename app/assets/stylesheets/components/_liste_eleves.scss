@@ -1,0 +1,33 @@
+.list-eleve {
+  color: black;
+  font-size: 17px;
+}
+
+.eleves-contents {
+  padding-top: 20px;
+  margin-bottom: 15px;
+}
+
+.icone-circle {
+  font-size: 10px;
+  color: black;
+  text-align: center;
+}
+
+.icone-btn-eleve {
+  font-size: 15px;
+  color: $dark-red;
+  text-align: center;
+  margin-top: 11px;
+}
+
+.button-eleve-right {
+  display: flex;
+  margin-left: 130px;
+}
+
+.one-eleve {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}

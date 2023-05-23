@@ -17,11 +17,21 @@
 }
 
 .emoji {
-  text-decoration: none;
-  margin: 9% 14%;
-  font-size: 28px;
+  a {
+    text-decoration: none;
+  }
+}
+.color-emoji {
+  color: $medium-red;
+  font-family: $headers;
+  font-size: 22px;
+  margin: 51px 33px 0 33px;
 }
 
-.color-emoji {
-  color: $dark-red;
+.vertical-bar {
+  position: absolute;
+  width: 3px;
+  height: 87px;
+  top: 13px;
+  background-color: $light-red;
 }
