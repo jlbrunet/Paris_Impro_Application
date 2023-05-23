@@ -1,0 +1,27 @@
+.text-index-rattrapage-detail{
+  background-color: $background-grey;
+  border-radius: 10px;
+  padding: 5px 35px;
+  margin-top: 13px;
+  text-align: center;
+  h2 {
+    font-family: $body;
+    font-size: 15px;
+    color: $font-grey;
+    margin-top: 8px;
+  }
+}
+
+.tab-show-rattrapage-detail{
+  position: relative;
+  padding: 20px;
+  border: solid 2px $light-red;
+  border-radius: 20px;
+  width: 90%;
+  margin: 50px 20px;
+}
+
+.content-show-rattrapage-detail{
+  padding-top: 20px;
+  margin-bottom: 15px;
+}

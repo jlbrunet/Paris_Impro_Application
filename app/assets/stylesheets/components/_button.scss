@@ -97,6 +97,13 @@
   right: 0px;
 }
 
+.btn-left-rattrapage-detail {
+  z-index: 1;
+  position: relative;
+  bottom: 70px;
+  margin: 0 auto;
+}
+
 .btn-left-rattrapage {
   z-index: 1;
   position: absolute;
@@ -123,6 +130,25 @@
 }
 
 .btn-red-small:hover {
+  background-color: $medium-red;
+  color: white;
+}
+
+.btn-red-small-rattrapage-detail {
+  background-color: #ee736f;
+  border-radius: 30px;
+  width: 250px;
+  height: 45px;
+  display: grid;
+  font-family: "Outfit", sans-serif;
+  font-size: 18px;
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  align-items: center;
+}
+
+.btn-red-small-rattrapage-detail:hover {
   background-color: $medium-red;
   color: white;
 }

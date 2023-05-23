@@ -22,7 +22,7 @@
           <p>Pas d'absence</p>
         <% else %>
           <% @absences_lessons.each do |lesson| %>
-            <p><%= I18n.l(lesson.occurs_on, format: "%A %-d %B %kh", locale: :fr) %></p>
+            <p><i class="fa-solid fa-circle"></i><%= I18n.l(lesson.occurs_on, format: "%A %-d %B %kh", locale: :fr) %></p>
           <% end %>
         <% end %>
       </div>

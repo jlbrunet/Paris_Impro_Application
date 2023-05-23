@@ -4,7 +4,7 @@
       <div class="hello-img">
         <%= image_tag("logo_paris_impro2.jpeg", class: "logo-img-home") %>
       </div>
-      <div class="rattrapage-index-texte">
+      <div class="hello-texte hello-admin">
         <h1>Informations</h1>
       </div>
   </div>
@@ -28,7 +28,7 @@
 
         <div class="content-show-rattrapage">
           <p>
-            <%= Course.find(lesson.course_id).location %>
+            <i class="fa-solid fa-circle"></i><%= Course.find(lesson.course_id).location %>
           </p>
         </div>
 
