@@ -20,9 +20,6 @@ class AbsencesController < ApplicationController
 
   def destroy
     @absence = Absence.find(params[:absence_id])
-    @lesson = Lesson.find(@absence.lesson_id)
-    @course = Course.find(@lesson.course_id)
-    @absence.destroy
-    redirect_to course_lessons(@course)
+    raise
   end
 end

@@ -56,7 +56,7 @@
               <%# modale%>
               <div data-delete-abs-target="modale" class="d-none modale-conf-abs">
                 <div class="sentence">Êtes-tu sûr.e de vouloir supprimer cette absence ?</div>
-                <%= link_to "oui", absence_destroy_path(absence) %>
+                <%= link_to "oui", absence_destroy_path(absence), data: {turbo_method: :delete} %>
                 <button data-action="click->delete-abs#cancel" class="btn btn-red-modal">Non</button>
               </div>
               <%# %>
