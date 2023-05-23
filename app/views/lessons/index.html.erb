@@ -77,9 +77,16 @@
           <% else %>
           <p>En rattrapage :</p>
             <% @rattrapages_lesson.each do |rattrapage| %>
-            <div class="students">
-              <button>poubelle</button>
+            <div class="students" data-controller="delete-abs">
+              <button data-action="click->delete-abs#modal2">poubelle</button>
               <i class="fa-solid fa-circle"></i> <%= rattrapage.user.first_name %> <%= rattrapage.user.last_name %>
+              <%# modale%>
+              <div data-delete-abs-target="modale2" class="d-none modale-conf-abs">
+                <div class="sentence">Êtes-tu sûr.e de vouloir supprimer cette absence ?</div>
+                <%= link_to "oui", rattrapage_destroy_path(rattrapage), data: {turbo_method: :delete, action:"click->delete-abs#cancel2"} %>
+                <button data-action="click->delete-abs#cancel2" class="btn btn-red-modal">Non</button>
+              </div>
+              <%# %>
            </div>
             <% end %>
           <% end %>

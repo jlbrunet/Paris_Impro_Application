@@ -16,4 +16,5 @@ Rails.application.routes.draw do
   get '/users', to: redirect('/users/sign_up')
   patch "profiles/:id", to: "profiles#update", as: :profile_update
   delete "absences/:id", to: "absences#destroy", as: :absence_destroy
+  delete "rattrapages/:id", to: "rattrapages#destroy", as: :rattrapage_destroy
 end
