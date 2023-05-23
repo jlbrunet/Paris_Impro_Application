@@ -62,6 +62,10 @@
   gap: 10px;
 }
 
+.separation-button {
+  display: inline-block;
+}
+
 .tab-courses {
   display: grid;
   //grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* ou ajustez la largeur selon vos besoins */

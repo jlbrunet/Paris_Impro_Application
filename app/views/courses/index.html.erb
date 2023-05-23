@@ -25,20 +25,19 @@
                 <p class="text-lieu"><%=  course.location %></p>
               </div>
 
-              <div class="btn-absence">
-                <%= link_to course_lessons_path(course) do %>
-                  <p class="no-text-deco">Absences<i class="fa-solid fa-circle-chevron-right space-chevron"></i></p>
-                <% end %>
+              <div class="separation-button">
+                <div class="btn-admin">
+                  <%= link_to course_lessons_path(course) do %>
+                    <p class="no-text-deco">Absences<i class="fa-solid fa-circle-chevron-right space-chevron"></i></p>
+                  <% end %>
+                </div>
+                <div class="btn-admin">
+                  <%= link_to course_path(course) do %>
+                    <p class="no-text-deco">Élèves<i class="fa-solid fa-circle-chevron-right space-chevron"></i></p>
+                  <% end %>
+                </div>
               </div>
-
-              <%# back: ajout du bouton Elèves %>
-              <%= link_to course_path(course) do %>
-                <p>Elèves</p>
-              <% end %>
-              <%# %>
-              
             </div>
-
             <% if index != @courses.size - 1 %>
               <div class="tiret"></div>
             <% end %>
