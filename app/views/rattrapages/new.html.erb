@@ -43,7 +43,10 @@
     <!-- Modale de confirmation -->
     <div data-rattrapage-target="modal" class="d-none modale-conf-rattrapage">
       <div class="sentence" data-rattrapage-target="sentence"></div>
-        <div class="sentence-text"><i class="fa-solid fa-triangle-exclamation" style="color: #ff0000;"></i> Après avoir confirmé ton rattrapage, celui-ci sera définitif</div>
+        <div class="alerte-rattrapages-select">
+          <i class="fa-solid fa-triangle-exclamation alerte-icone"></i>
+          <p class="text-alerte-rattrapage">Après avoir confirmé ton rattrapage, celui-ci sera définitif</p>
+        </div>
       <button data-action="click->rattrapage#submit" class="btn btn-red-modal">Oui</button>
       <button data-action="click->rattrapage#cancel" class="btn btn-red-modal">Non</button>
     </div>
