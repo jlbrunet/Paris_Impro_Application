@@ -25,7 +25,10 @@
 
       <div data-confirmation-target="modal" class="d-none modale-conf-abs">
         <div class="sentence" data-confirmation-target="sentence"></div>
-        <div class="sentence-text"><i class="fa-solid fa-triangle-exclamation" style="color: #ff0000;"></i> Après avoir confirmé ton absence, celle-ci sera définitive</div>
+          <div class="alerte-rattrapages-select">
+            <i class="fa-solid fa-triangle-exclamation alerte-icone"></i>
+            <p class="text-alerte-rattrapage">Après avoir confirmé ton absence, celle-ci sera définitive</p>
+          </div>
         <button data-action="click->confirmation#submit" class="btn btn-red-modal">Oui</button>
         <button data-action="click->confirmation#cancel" class="btn btn-red-modal">Non</button>
       </div>

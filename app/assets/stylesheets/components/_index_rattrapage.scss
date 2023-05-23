@@ -1,8 +1,16 @@
-.absence-jour {
+.rattrapage-index-texte {
+  text-align: center;
+  h1 {
+    font-family: $headers;
+    font-size: 26px;
+  }
+}
+
+.text-index-rattrapage {
   background-color: $background-grey;
   border-radius: 10px;
   padding: 5px 35px;
-  margin: 13px 20px 10px 20px;
+  margin-top: 13px;
   text-align: center;
   h2 {
     font-family: $body;
@@ -12,15 +20,28 @@
   }
 }
 
-.absence-decla-texte {
-  text-align: center;
-  h1 {
-    font-family: $headers;
-    font-size: 26px;
-  }
+.tab-show-rattrapage{
+  position: relative;
+  padding: 20px;
+  border: solid 2px $light-red;
+  border-radius: 20px;
+  width: 90%;
+  margin: 50px 20px;
 }
 
-.modale-conf-abs{
+.title-show-rattrapage{
+  margin: 0 auto;
+  border-bottom: solid 2px #f4bbb9;
+  width: 80%;
+  padding-top: 10px;
+}
+
+.content-show-rattrapage{
+  padding-top: 20px;
+  margin-bottom: 15px;
+}
+
+.modale-conf-rattrapage{
   position:absolute;
   z-index: 1000;
   top: 250px;

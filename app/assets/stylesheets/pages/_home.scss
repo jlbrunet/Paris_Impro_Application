@@ -82,6 +82,23 @@ body {
 .text-alerte-rattrapage {
   padding-top: 10px;
   width: 190px;
+  text-align: left;
+}
+
+.alerte-rattrapages-select {
+  background-color: $super-light-red;
+  font-size: 13px;
+  color: $dark-red;
+  padding: 5px;
+  display: flex;
+  border-radius: 10px;
+  align-items: center;
+  margin: 10px;
+}
+
+.text-alerte-rattrapage {
+  padding-top: 10px;
+  width: 190px;
 }
 
 .alerte-icone {
