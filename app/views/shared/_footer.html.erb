@@ -2,17 +2,13 @@
   <div class="link">
     <div class="emoji">
       <%= link_to pages_myaccount_path do %>
-        <i class="fa-solid fa-user color-emoji"></i>
+        <h1 class="color-emoji">Dashboard</h1>
       <% end %>
     </div>
-    <div class="emoji">
-      <%= link_to root_path do %>
-        <i class="fa-solid fa-masks-theater color-emoji"></i>
-      <% end %>
-    </div>
+    <div class="vertical-bar"></div>
     <div class="emoji">
       <%= link_to destroy_user_session_path, data: {turbo_method: :delete} do %>
-        <i class="fa-solid fa-right-from-bracket color-emoji"></i>
+        <h1 class="color-emoji">Déconnection</h1>
       <% end %>
     </div>
   </div>

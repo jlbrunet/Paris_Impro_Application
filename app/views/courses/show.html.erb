@@ -1,36 +1,66 @@
-<h1>Hello <%= @user.first_name %></h1>
-<h1>Elèves</h1>
-<h1><%= @course.day %> | <%= @course.level %></h1>
-<h1>Liste des élèves</h1>
-
-<% @students.each do |student| %>
-  <div data-controller="account">
-    <p><%= student.first_name %></p>
-
-    <button data-action="click->account#change">petites flèches</button>
-    <button data-action="click->account#delete">poubelle</button>
-
-    <%# modale de change %>
-    <div data-account-target="c_modal" class="d-none modale-conf-abs">
-      <div class="sentence">Changer le cours de <%= student.first_name %></div>
-      <% student.course_id = nil %>
-      <%= simple_form_for(student, url: profile_update_path(student)) do |f| %>
-        <%= f.collection_select(:course_id, Course.all, :id, lambda {|course| "#{course.day} #{course.hour.hour}h - #{course.level}"}, {include_blank: ""})%>
-        <%= f.button :submit, 'Valider', class: 'btn btn-red btn-valid-abs' %>
-      <% end %>
+<div class="container background-absence">
+  <div class="hello">
+    <div class="hello-img">
+      <%= image_tag("logo_paris_impro2.jpeg", class: "logo-img-home") %>
     </div>
-    <%# %>
-
-    <%# modale de delete %>
-    <div data-account-target="d_modal" class="d-none modale-conf-abs">
-      <div class="sentence">Supprimer définitivement le compte élève de <%= student.first_name %></div>
-      <button data-action="click->account#d_submit" class="btn btn-red-modal">Oui</button>
-      <button data-action="click->account#d_cancel" class="btn btn-red-modal">Non</button>
+    <div class="hello-texte hello-admin">
+      <h1>Hello <%= @user.first_name %></h1>
     </div>
-    <%# %>
-
   </div>
-<% end %>
+
+  <div class="courses-index">
+    <h2 class="font-headers">Élèves</h2>
+    <h2 class="font-headers"><%= @course.day %> | <%= @course.level %></h2>
+  </div>
+
+  <div class="border-tableau"></div>
+
+  <div class="tableau">
+    <div class="absences rectangles">
+      <div class="title-rectangle">
+        <h3 class="title-red" style="font-size:20px">Liste des élèves</h3>
+      </div>
+
+      <div class="eleves-contents">
+        <% @students.each do |student, index| %>
+          <div class="one-eleve" data-controller="account">
+            <p class="list-eleve"><i class="fa-solid fa-circle icone-circle"></i><%= student.first_name %></p>
+            <div class="button-eleve-right">
+              <div class="btn-delete-eleve" data-action="click->account#change">
+                <i class="fa-solid fa-arrow-right-arrow-left icone-btn-eleve"></i>
+              </div>
+              <div class="btn-delete-eleve" data-action="click->account#delete">
+                <i class="icone-btn-eleve fa-solid fa-trash"></i>
+              </div>
+            </div>
+            <% if index != @students.size - 1 %>
+              <div class="tiret"></div>
+            <% end %>
+
+            <%# modale de change %>
+            <div data-account-target="c_modal" class="d-none modale-conf-abs">
+              <div class="sentence">Changer le cours de <%= student.first_name %></div>
+              <% student.course_id = nil %>
+              <%= simple_form_for(student, url: profile_update_path(student)) do |f| %>
+                <%= f.collection_select(:course_id, Course.all, :id, lambda {|course| "#{course.day} #{course.hour.hour}h - #{course.level}"}, {include_blank: ""})%>
+                <%= f.button :submit, 'Valider', class: 'btn btn-red btn-valid-abs' %>
+              <% end %>
+            </div>
+            <%# %>
+
+            <%# modale de delete %>
+            <div data-account-target="d_modal" class="d-none modale-conf-abs">
+              <div class="sentence">Supprimer définitivement le compte élève de <%= student.first_name %></div>
+              <button data-action="click->account#d_submit" class="btn btn-red-modal">Oui</button>
+              <button data-action="click->account#d_cancel" class="btn btn-red-modal">Non</button>
+            </div>
+            <%# %>
+          </div>
+        <% end %>
+      </div>
+    </div>
+  </div>
+
 
 <%= link_to courses_path, class: "btn-red-back btn-left" do %>
   <div><i class="fa-solid fa-circle-chevron-left"></i> Retour</div>
