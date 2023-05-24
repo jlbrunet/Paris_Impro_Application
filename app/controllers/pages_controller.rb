@@ -21,10 +21,4 @@ class PagesController < ApplicationController
       end
     end
   end
-
-  def myaccount
-    @user = current_user
-    @courses = Course.all
-    @course = Course.find(current_user.course_id)
-  end
 end
