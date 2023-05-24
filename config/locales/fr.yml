@@ -13,7 +13,7 @@ fr:
       long: "%-d %B %Y"
       short: "%-d %b"
     month_names:
-    - Décembre
+    -
     - Janvier
     - Février
     - Mars
@@ -25,6 +25,7 @@ fr:
     - Septembre
     - Octobre
     - Novembre
+    - Décembre
     order:
     - :day
     - :month
