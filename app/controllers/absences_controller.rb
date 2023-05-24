@@ -12,7 +12,12 @@ class AbsencesController < ApplicationController
 
   def create
     @occurs_on = params[:lesson][:occurs_on]
-    @current_lesson = Lesson.where("DATE_TRUNC('day', occurs_on) = ?", @occurs_on.to_date)[0]
+    @current_lessons = Lesson.where("DATE_TRUNC('day', occurs_on) = ?", @occurs_on.to_date)
+    @course_id = current_user.course_id
+    raise
+    @current_lessons.each do |lesson|
+      @current_lesson = lesson if lesson.course_id == @course_id
+    end
     @absence = Absence.new(user_id: current_user.id, lesson_id: @current_lesson.id)
     @absence.save
     redirect_to root_path
