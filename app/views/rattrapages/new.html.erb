@@ -14,11 +14,11 @@
   </div>
 
 
-  <div data-controller="rattrapage">
+  <div>
 
     <% @rattrapage_lessons.each do |lesson| %>
 
-      <div class="tab-show-rattrapage">
+      <div class="tab-show-rattrapage" data-controller="rattrapage">
 
         <div class="title-rectangle title-red">
           <h3 class="title-red">
@@ -34,24 +34,25 @@
 
         <%= simple_form_for(@lesson, url: rattrapages_path, html: {class: 'btn-red-small btn-left', data: {rattrapage_target: 'form'}}) do |f| %>
           <%= f.input :occurs_on, as: :string, label: false, input_html: { class: 'd-none', value: lesson.occurs_on, data: { rattrapage_target: 'input'}} %>
+          <%= f.input :course_id, as: :hidden, input_html: {value: lesson.course_id}%>
           <%= f.button :button, 'Choisir ce rattrapage', class: 'btn-red-small btn-left-rattrapage', data: { action: 'click->rattrapage#confirm' } %>
           <%= f.button :submit, 'Choisir ce rattrapage', class: 'd-none' %>
         <% end %>
 
+        <!-- Modale de confirmation -->
+        <div class="d-none blur-modal" data-rattrapage-target="modal">
+          <div class="modale-conf-rattrapage">
+            <div class="sentence" data-rattrapage-target="sentence"></div>
+              <div class="alerte-rattrapages-select">
+                <i class="fa-solid fa-triangle-exclamation alerte-icone"></i>
+                <p class="text-alerte-rattrapage">Après avoir confirmé ton rattrapage, celui-ci sera définitif</p>
+              </div>
+            <button data-action="click->rattrapage#submit" class="btn btn-red-modal">Oui</button>
+            <button data-action="click->rattrapage#cancel" class="btn btn-red-modal">Non</button>
+          </div>
+        </div>
       </div>
     <% end %>
-    <!-- Modale de confirmation -->
-    <div class="d-none blur-modal" data-rattrapage-target="modal">
-      <div class="modale-conf-rattrapage">
-        <div class="sentence" data-rattrapage-target="sentence"></div>
-          <div class="alerte-rattrapages-select">
-            <i class="fa-solid fa-triangle-exclamation alerte-icone"></i>
-            <p class="text-alerte-rattrapage">Après avoir confirmé ton rattrapage, celui-ci sera définitif</p>
-          </div>
-        <button data-action="click->rattrapage#submit" class="btn btn-red-modal">Oui</button>
-        <button data-action="click->rattrapage#cancel" class="btn btn-red-modal">Non</button>
-      </div>
-    </div>
 
   </div>
 </div>

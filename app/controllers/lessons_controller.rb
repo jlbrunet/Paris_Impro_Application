@@ -24,7 +24,11 @@ class LessonsController < ApplicationController
 
   def create
     @occurs_on = params[:lesson][:occurs_on]
-    @current_lessons = Lesson.where("DATE_TRUNC('day', occurs_on) = ?", @occurs_on.to_date)
+    @current_lessons_all = Lesson.where("DATE_TRUNC('day', occurs_on) = ?", @occurs_on.to_date)
+    @current_lessons = []
+    @current_lessons_all.each do |lesson|
+      @current_lessons << lesson unless Absence.where(lesson_id: lesson.id)[0].nil?
+    end
     session[:current_lessons_ids] = @current_lessons.pluck(:id)
     redirect_to rattrapages_new_path
   end

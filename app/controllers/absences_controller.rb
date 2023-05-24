@@ -14,7 +14,6 @@ class AbsencesController < ApplicationController
     @occurs_on = params[:lesson][:occurs_on]
     @current_lessons = Lesson.where("DATE_TRUNC('day', occurs_on) = ?", @occurs_on.to_date)
     @course_id = current_user.course_id
-    raise
     @current_lessons.each do |lesson|
       @current_lesson = lesson if lesson.course_id == @course_id
     end
