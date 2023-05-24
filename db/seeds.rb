@@ -6,12 +6,6 @@
 #   movies = Movie.create([{ name: "Star Wars" }, { name: "Lord of the Rings" }])
 #   Character.create(name: "Luke", movie: movies.first)
 
-Rattrapage.destroy_all
-Absence.destroy_all
-User.destroy_all
-Lesson.destroy_all
-Course.destroy_all
-
 require "csv"
 
 courses_csv_file = File.join("app/assets/data/courses.csv")
