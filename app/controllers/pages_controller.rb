@@ -3,7 +3,7 @@ class PagesController < ApplicationController
 
   def home
     @user = current_user
-    if @user.status == "teacher"
+    if @user.status == "teacher" || @user.status == "admin"
       redirect_to courses_path
     else
       @course = Course.find(current_user.course_id)

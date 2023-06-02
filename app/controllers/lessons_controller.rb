@@ -37,7 +37,7 @@ class LessonsController < ApplicationController
     @place_number = params[:place][:number].to_i
     @place_lesson = params[:place][:lesson_id].to_i
     @place_number.times do
-      @absence = Absence.new(user_id: User.where(status: "teacher")[0].id,
+      @absence = Absence.new(user_id: User.where(status: "admin")[0].id,
                              lesson_id: @place_lesson)
       @absence.save!
     end
