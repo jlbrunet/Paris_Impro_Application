@@ -23,13 +23,34 @@
           <h3 class="title-red" style="font-size:18px"><%= I18n.l(lesson.occurs_on, format: "%A %-d %B %Y - %kh", locale: :fr) %></h3>
         </div>
 
-        <div class="absences-contents">
-          <% @absences_lesson = [] %>
-          <% @absences_students.each do |absence| %>
-            <% if absence.lesson_id == lesson.id %>
-              <% @absences_lesson << absence %>
+        <% @absences_lesson = [] %>
+        <% @absences_students.each do |absence| %>
+          <% if absence.lesson_id == lesson.id %>
+            <% @absences_lesson << absence %>
+          <% end %>
+        <% end %>
+
+        <% @rattrapages_lesson = [] %>
+        <% @rattrapages_lesson_students = [] %>
+        <% @rattrapages.each do |rattrapage| %>
+          <% if rattrapage.lesson_id == lesson.id %>
+            <% @rattrapages_lesson << rattrapage %>
+              <% if rattrapage.user.status == "student" %>
+                <% @rattrapages_lesson_students << rattrapage %>
+              <% end %>
+          <% end %>
+        <% end %>
+
+        <% if @rattrapages_lesson_students != [] %>
+          <% if @rattrapages_lesson_students.length > @absences_lesson.length %>
+            <% @diff = @rattrapages_lesson_students.length - @absences_lesson.length %>
+            <% @diff.times do %>
+              <% @rattrapages_lesson.pop %>
             <% end %>
           <% end %>
+        <% end %>
+
+        <div class="absences-contents">
           <% if @absences_lesson == [] %>
             <p>Pas d'absence pour ce cours</p>
           <% else %>
@@ -53,12 +74,6 @@
         </div>
 
         <div class="rattrapages-content">
-            <% @rattrapages_lesson = [] %>
-          <% @rattrapages.each do |rattrapage| %>
-            <% if rattrapage.lesson_id == lesson.id %>
-              <% @rattrapages_lesson << rattrapage %>
-            <% end %>
-          <% end %>
           <% if @rattrapages_lesson == [] %>
             <p>Pas de rattrapage pour ce cours</p>
           <% else %>

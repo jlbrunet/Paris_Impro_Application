@@ -32,8 +32,9 @@ class LessonsController < ApplicationController
   def new
     @available_dates = []
     @lessons = Lesson.where.not(course_id: current_user.course_id)
+    @user_id = current_user.id
     @lessons.each do |lesson|
-      if (Rattrapage.where(lesson_id: lesson.id) == []) && (Absence.where(lesson_id: lesson.id) != []) && (Course.find(lesson.course_id).level == Course.find(current_user.course_id).level)
+      if (Rattrapage.where(lesson_id: lesson.id).length < Absence.where(lesson_id: lesson.id).length) && (Course.find(lesson.course_id).level == Course.find(current_user.course_id).level)
         @available_dates << lesson.occurs_on
       end
     end
