@@ -27,9 +27,9 @@
         </div>
 
         <div class="content-show-rattrapage">
-          <p>
-            <i class="fa-solid fa-circle"></i><%= Course.find(lesson.course_id).location %>
-          </p>
+          <p><i class="fa-solid fa-circle"></i><%= Course.find(lesson.course_id).level %></p>
+          <p><i class="fa-solid fa-circle"></i><%= Course.find(lesson.course_id).location %></p>
+          <p><i class="fa-solid fa-circle"></i><%= Course.find(lesson.course_id).info %></p>
         </div>
 
         <%= simple_form_for(@lesson, url: rattrapages_path, html: {class: 'btn-red-small btn-left', data: {rattrapage_target: 'form'}}) do |f| %>

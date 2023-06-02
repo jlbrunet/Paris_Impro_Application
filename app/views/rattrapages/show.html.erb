@@ -23,9 +23,9 @@
     </div>
 
     <div class="content-show-rattrapage-detail">
-      <p>
-        <i class="fa-solid fa-circle"></i><%= Course.find(@lesson.course_id).location %>
-      </p>
+      <p><i class="fa-solid fa-circle"></i><%= Course.find(@lesson.course_id).level %></p>
+      <p><i class="fa-solid fa-circle"></i><%= Course.find(@lesson.course_id).location %></p>
+      <p><i class="fa-solid fa-circle"></i><%= Course.find(@lesson.course_id).info %></p>
     </div>
 
   </div>
