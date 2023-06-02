@@ -26,14 +26,24 @@ CSV.foreach(lessons_csv_file, headers: :first_row, header_converters: :symbol) d
 end
 
 user1 = User.new(
-  first_name: "Noemie",
-  last_name: "Nataf",
-  status: "teacher",
-  email: "admin@rattrape.fr",
+  first_name: "Admin",
+  last_name: "Admin",
+  status: "admin",
+  email: "admin@rattrape.fr", # Contact@paris-impro.com
   password: "123456",
   course_id: 1
 )
 user1.save!
+
+user2 = User.new(
+  first_name: "Professeur",
+  last_name: "Professeur",
+  status: "teacher",
+  email: "teacher@rattrape.fr", # Ateliers@paris-impro.com
+  password: "123456",
+  course_id: 1
+)
+user2.save!
 
 # Seed_test
 

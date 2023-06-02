@@ -17,6 +17,9 @@
                     label: "Nom",
                     error: "Nom requis",
                     input_html: { autocomplete: "Nom" } %>
+        <%= f.input :status,
+                    as: :hidden,
+                    input_html: { value: "student" } %>
         <%= f.input :email,
                     required: true,
                     autofocus: true,
