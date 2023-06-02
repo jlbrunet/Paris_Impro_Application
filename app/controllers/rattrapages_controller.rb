@@ -6,7 +6,11 @@ class RattrapagesController < ApplicationController
 
   def create
     @occurs_on = params[:lesson][:occurs_on]
-    @current_lesson = Lesson.where("DATE_TRUNC('day', occurs_on) = ?", @occurs_on.to_date)[0]
+    @course_id = params[:lesson][:course_id].to_i
+    @current_lessons = Lesson.where("DATE_TRUNC('day', occurs_on) = ?", @occurs_on.to_date)
+    @current_lessons.each do |lesson|
+      @current_lesson = lesson if lesson.course_id == @course_id
+    end
     @rattrapage = Rattrapage.new(user_id: current_user.id, lesson_id: @current_lesson.id)
     @rattrapage.save
     redirect_to rattrapage_show_path(@rattrapage)

@@ -34,7 +34,7 @@
                     label: "Confirmation du mot de passe",
                     input_html: { autocomplete: "new-password" } %>
         <%= f.label :course_id, label: "Sélectionner votre cours" %>
-        <%= f.collection_select(:course_id, Course.all, :id, lambda {|course| "#{course.day} #{course.hour.hour}h - #{course.level}"}, {include_blank: ""}, {class: resource.errors.has_key?(:course_id) ? "req" : "" })%>
+        <%= f.collection_select(:course_id, Course.all, :id, lambda {|course| "#{course.level} - #{course.day} #{course.hour.hour}h - #{course.location}"}, {include_blank: ""}, {class: resource.errors.has_key?(:course_id) ? "req" : "" })%>
         <% if resource.errors.has_key?(:course_id) %>
           <div class="text-danger required-course"><%= resource.errors[:course_id].first %></div>
         <% end %>
