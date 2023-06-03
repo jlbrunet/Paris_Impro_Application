@@ -5,7 +5,26 @@ class LessonsController < ApplicationController
     @lessons = Lesson.where(course_id: @course.id)
 
     @absences = Absence.all
-    @rattrapages = Rattrapage.all
+    @absences_students = []
+    @absences_admin = []
+
+    @absences.each do |absence|
+      if absence.user.status == "student"
+        @absences_students << absence
+      else
+        @absences_admin << absence
+      end
+    end
+
+    @rattrapages_students = Rattrapage.all
+    @rattrapages = []
+
+    @rattrapages_students.each do |rattrapage|
+      @rattrapages << rattrapage
+    end
+    @absences_admin.each do |absence|
+      @rattrapages << absence
+    end
 
     @place = Place.new
   end
@@ -13,8 +32,9 @@ class LessonsController < ApplicationController
   def new
     @available_dates = []
     @lessons = Lesson.where.not(course_id: current_user.course_id)
+    @user_id = current_user.id
     @lessons.each do |lesson|
-      if (Rattrapage.where(lesson_id: lesson.id) == []) && (Absence.where(lesson_id: lesson.id) != []) && (Course.find(lesson.course_id).level == Course.find(current_user.course_id).level)
+      if (Rattrapage.where(lesson_id: lesson.id).length < Absence.where(lesson_id: lesson.id).length) && (Course.find(lesson.course_id).level == Course.find(current_user.course_id).level)
         @available_dates << lesson.occurs_on
       end
     end
