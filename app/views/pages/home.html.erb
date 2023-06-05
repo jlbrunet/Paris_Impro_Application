@@ -44,7 +44,7 @@
           <% @rattrapages_lessons.each do |lesson| %>
             <% rattrapage = Rattrapage.where(lesson_id: lesson.id).first %>
             <%= link_to rattrapage_show_path(rattrapage) do %>
-              <p><i class="fa-solid fa-circle"></i><%= I18n.l(lesson.occurs_on, format: "%A %-d %B %kh", locale: :fr) %></p>
+              <p class="link-rattrapage"><i class="fa-solid fa-circle"></i><%= I18n.l(lesson.occurs_on, format: "%A %-d %B %kh", locale: :fr) %></p>
             <% end %>
           <% end %>
         <% end %>
