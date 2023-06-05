@@ -31,7 +31,7 @@ user1 = User.new(
   status: "admin",
   email: "admin@rattrape.fr", # Contact@paris-impro.com
   password: "123456",
-  course_id: 1
+  course_id: Course.where(location: "Hauteville")[0]
 )
 user1.save!
 
@@ -41,7 +41,7 @@ user2 = User.new(
   status: "teacher",
   email: "teacher@rattrape.fr", # Ateliers@paris-impro.com
   password: "123456",
-  course_id: 1
+  course_id: Course.where(location: "Hauteville")[0]
 )
 user2.save!
 
