@@ -1,6 +1,8 @@
 .list-eleve {
   color: black;
   font-size: 17px;
+  display: flex;
+  width: 200px;
 }
 
 .eleves-contents {
@@ -12,6 +14,8 @@
   font-size: 10px;
   color: black;
   text-align: center;
+  display: flex;
+  align-items: center;
 }
 
 .icone-btn-eleve {
@@ -23,7 +27,6 @@
 
 .button-eleve-right {
   display: flex;
-  margin-left: 130px;
 }
 
 .one-eleve {
