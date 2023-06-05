@@ -90,8 +90,12 @@
               <% end %>
               <%# modale%>
               <div data-delete-abs-target="modale2" class="d-none modale-conf-abs">
-                <div class="sentence">Êtes-tu sûr.e de vouloir supprimer cette absence ?</div>
-                <%= link_to "oui", rattrapage_destroy_path(rattrapage), data: {turbo_method: :delete, action:"click->delete-abs#cancel2"} %>
+                <div class="sentence">Êtes-tu sûr.e de vouloir supprimer ce rattrapage ?</div>
+                <% if rattrapage == Rattrapage %>
+                  <%= link_to "oui", rattrapage_destroy_path(rattrapage), data: {turbo_method: :delete, action:"click->delete-abs#cancel2"} %>
+                <% else %>
+                  <%= link_to "oui", absence_destroy_path(rattrapage), data: {turbo_method: :delete, action:"click->delete-abs#cancel2"} %>
+                <% end %>
                 <button data-action="click->delete-abs#cancel2" class="btn btn-red-modal">Non</button>
               </div>
               <%# %>
