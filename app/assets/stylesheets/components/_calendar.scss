@@ -35,12 +35,17 @@ span.flatpickr-weekday{
 }
 
 .flatpickr-day {
-  color: $light-red;
+  color: $medium-red;
+  font-weight: bold;
+}
+
+.flatpickr-day:hover {
+  color: $medium-red;
   font-weight: bold;
 }
 
 .flatpickr-day.selected {
-  color: $light-red;
+  color: $dark-red;
   font-size: 18px;
   border-color: transparent !important;
   font-weight: bold !important;
