@@ -35,6 +35,7 @@
         <%= f.input :password_confirmation,
                     required: true,
                     label: "Confirmation du mot de passe",
+                    error: "Le mot de passe ne correspond pas",
                     input_html: { autocomplete: "new-password" } %>
         <%= f.label :course_id, label: "Sélectionner votre cours" %>
         <%= f.collection_select(:course_id, Course.all, :id, lambda {|course| "#{course.level} - #{course.day} #{course.hour.hour}h - #{course.location}"}, {include_blank: ""}, {class: resource.errors.has_key?(:course_id) ? "req" : "" })%>

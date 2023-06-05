@@ -49,7 +49,14 @@
 .background-absence {
   background-color: white;
   background-size: cover;
-  min-height: 125vh;
+  height: 525vh;
+  width: 100vw;
+}
+
+.background-absence-admin {
+  background-color: white;
+  background-size: cover;
+  height: 1000vh;
   width: 100vw;
 }
 
