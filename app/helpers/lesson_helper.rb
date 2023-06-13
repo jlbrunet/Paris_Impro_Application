@@ -8,9 +8,9 @@ module LessonHelper
   def rattrapages_lesson(rattrapages, absences, lesson)
     rattrapages_lesson = rattrapages.map do |rattrapage|
       rattrapage if rattrapage.lesson_id == lesson.id
-    end
+    end.compact
 
-    
+
     rattrapages_lesson_students = rattrapages_lesson.map do |rattrapage|
       rattrapage if rattrapage.user.status == "student"
     end
