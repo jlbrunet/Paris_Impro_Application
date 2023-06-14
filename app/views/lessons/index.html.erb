@@ -83,11 +83,9 @@
         <% if @user.status == "admin" %>
           <div class="btn-red-small btn-left">
             <p class="text-btn-lesson" data-action="click->add-places#add">Ouvrir une place</p>
-            <%# modale%>
           </div>
         <% end %>
       </div>
-
       <% if @user.status == "admin" %>
         <div data-add-places-target="modale" class="d-none modale-conf-abs">
           <div class="sentence">Ajouter des places</div>
