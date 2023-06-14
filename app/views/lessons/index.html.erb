@@ -24,7 +24,7 @@
         </div>
 
         <div class="absences-contents">
-          <% if absences_lesson(@absences_students, lesson) == [nil] %>
+          <% if absences_lesson(@absences_students, lesson) == [] %>
             <p>Pas d'absence pour ce cours</p>
           <% else %>
             <p>Absent.e.s :</p>
