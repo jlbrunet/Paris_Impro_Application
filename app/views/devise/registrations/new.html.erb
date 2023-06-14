@@ -24,7 +24,7 @@
                     required: true,
                     autofocus: true,
                     label: "Email",
-                    error: "Email requis",
+                    error: User.exists?(email: f.object.email) ? "Email déjà existant" : "Email requis",
                     input_html: { autocomplete: "Mail" }%>
         <%= f.input :password,
                     required: true,
