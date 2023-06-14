@@ -1,7 +1,12 @@
 class RattrapagesController < ApplicationController
   def new
-    @rattrapage_lessons = Lesson.where(id: session[:current_lessons_ids])
-    @lesson = Lesson.new
+    @user_c = current_user
+    if @user_c.status == "teacher" || @user_c.status == "admin"
+      redirect_to courses_path
+    else
+      @rattrapage_lessons = Lesson.where(id: session[:current_lessons_ids])
+      @lesson = Lesson.new
+    end
   end
 
   def create
@@ -17,8 +22,13 @@ class RattrapagesController < ApplicationController
   end
 
   def show
-    @rattrapage = Rattrapage.find(params[:id])
-    @lesson = Lesson.find(@rattrapage.lesson_id)
+    @user_c = current_user
+    if @user_c.status == "teacher" || @user_c.status == "admin"
+      redirect_to courses_path
+    else
+      @rattrapage = Rattrapage.find(params[:id])
+      @lesson = Lesson.find(@rattrapage.lesson_id)
+    end
   end
 
   def destroy
