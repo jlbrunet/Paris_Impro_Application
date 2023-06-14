@@ -2,7 +2,7 @@ module LessonHelper
   def absences_lesson(absences, lesson)
     absences.map do |absence|
       absence if absence.lesson_id == lesson.id
-    end
+    end.compact
   end
 
   def rattrapages_lesson(rattrapages, absences, lesson)
@@ -13,7 +13,7 @@ module LessonHelper
 
     rattrapages_lesson_students = rattrapages_lesson.map do |rattrapage|
       rattrapage if rattrapage.user.status == "student"
-    end
+    end.compact
 
     return rattrapages_lesson unless rattrapages_lesson_students.empty?
 
