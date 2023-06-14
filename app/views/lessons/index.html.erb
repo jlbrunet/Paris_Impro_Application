@@ -39,10 +39,12 @@
               <% end %>
               <%= absence.user.first_name %> <%= absence.user.last_name %>
               <%# modale%>
-              <div data-delete-abs-target="modale" class="d-none modale-conf-abs">
-                <div class="sentence">Êtes-tu sûr.e de vouloir supprimer cette absence ?</div>
-                <%= link_to "oui", absence_destroy_path(absence), data: {turbo_method: :delete} %>
-                <button data-action="click->delete-abs#cancel" class="btn btn-red-modal">Non</button>
+              <div class="d-none blur-modale" data-delete-abs-target="modale" >
+                <div class="modale-delete-absence">
+                  <div class="sentence">Êtes-tu sûr.e de vouloir supprimer cette absence ?</div>
+                  <button class="btn btn-red-modal"><%= link_to "Oui", absence_destroy_path(absence), data: {turbo_method: :delete} %></button>
+                  <button data-action="click->delete-abs#cancel" class="btn btn-red-modal">Non</button>
+                </div>
               </div>
               <%# %>
             </div>
@@ -70,10 +72,12 @@
                 <%= rattrapage.user.first_name %> <%= rattrapage.user.last_name %>
               <% end %>
               <%# modale%>
-              <div data-delete-abs-target="modale2" class="d-none modale-conf-abs">
-                <div class="sentence">Êtes-tu sûr.e de vouloir supprimer cette absence ?</div>
-                <%= link_to "oui", absence_destroy_path(rattrapage), data: {turbo_method: :delete, action:"click->delete-abs#cancel2"} %>
-                <button data-action="click->delete-abs#cancel2" class="btn btn-red-modal">Non</button>
+              <div class="d-none blur-modale" data-delete-abs-target="modale2">
+                <div class="modale-delete-rattrapage">
+                  <div class="sentence">Êtes-tu sûr.e de vouloir supprimer ce rattrapage ?</div>
+                  <button class="btn btn-red-modal"><%= link_to "oui", absence_destroy_path(rattrapage), data: {turbo_method: :delete, action:"click->delete-abs#cancel2"} %></button>
+                  <button data-action="click->delete-abs#cancel2" class="btn btn-red-modal">Non</button>
+                </div>
               </div>
               <%# %>
            </div>
