@@ -38,7 +38,7 @@
   top: 250px;
   border-radius: 20px;
   padding: 5px;
-  height: 280px;
+  height: 125px;
   width: 300px;
   left: 0;
   right: 0;
@@ -48,6 +48,13 @@
   text-align: center;
   -webkit-backdrop-filter: blur(5px);
   backdrop-filter: blur(5px);
+  .delete-account-btn{
+    display:flex;
+  }
+  a{
+    text-decoration: none;
+    color:white;
+  }
   .sentence{
     color: #C02828;
     font-size: 20px;
@@ -70,6 +77,7 @@
   position:absolute;
   z-index: 1000;
   top: 250px;
+  height: 140px;
   border-radius: 20px;
   padding: 5px;
   width: 300px;
@@ -107,6 +115,7 @@
   position:absolute;
   z-index: 1000;
   top: 250px;
+  height: 150px;
   border-radius: 20px;
   padding: 5px;
   width: 300px;
@@ -137,5 +146,57 @@
     padding: 13px;
     color: red;
     margin: 10px 10px 0 10px;
+  }
+}
+
+.modale-add-place{
+  position:absolute;
+  height: 175px;
+  z-index: 1000;
+  top: 250px;
+  border-radius: 20px;
+  padding: 5px;
+  width: 300px;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  background: $light-red;
+  text-align: center;
+  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
+  input{
+    border-radius: 20px;
+    text-align: center;
+    margin-bottom: none !important;
+    }
+  a{
+    text-decoration: none;
+    color:white;
+  }
+  .sentence{
+    color: #C02828;
+    font-size: 20px;
+    font-family: Outfit;
+    font-weight: 700;
+    line-height: 25px;
+    letter-spacing: 0em;
+    padding: 20px;
+  }
+  .sentence-text{
+    background-color: white;
+    border-radius: 10px;
+    padding: 13px;
+    color: red;
+    margin: 10px 10px 0 10px;
+  }
+  .add-place{
+    display: flex;
+    align-items: center;
+  }
+  .validate-place{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
   }
 }
