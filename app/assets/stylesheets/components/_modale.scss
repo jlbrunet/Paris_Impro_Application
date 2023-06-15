@@ -38,7 +38,7 @@
   top: 250px;
   border-radius: 20px;
   padding: 5px;
-  height: 280px;
+  height: 125px;
   width: 300px;
   left: 0;
   right: 0;
@@ -48,6 +48,13 @@
   text-align: center;
   -webkit-backdrop-filter: blur(5px);
   backdrop-filter: blur(5px);
+  .delete-account-btn{
+    display:flex;
+  }
+  a{
+    text-decoration: none;
+    color:white;
+  }
   .sentence{
     color: #C02828;
     font-size: 20px;
