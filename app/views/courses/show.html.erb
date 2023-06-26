@@ -24,7 +24,7 @@
       <div class="eleves-contents">
         <% @students.each do |student, index| %>
           <div class="one-eleve" data-controller="account">
-            <p class="list-eleve"><i class="fa-solid fa-circle icone-circle"></i><%= student.first_name %></p>
+            <p class="list-eleve"><i class="fa-solid fa-circle icone-circle"></i><%= student.first_name %> <%= student.last_name %></p>
             <div class="button-eleve-right">
               <div class="btn-delete-eleve" data-action="click->account#change">
                 <i class="fa-solid fa-arrow-right-arrow-left icone-btn-eleve"></i>
