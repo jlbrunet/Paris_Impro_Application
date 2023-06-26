@@ -12,7 +12,6 @@ courses_csv_file = File.join("app/assets/data/courses.csv")
 lessons_csv_file = File.join("app/assets/data/lessons.csv")
 
 CSV.foreach(courses_csv_file, headers: :first_row, header_converters: :symbol) do |row|
-  row[:id] = row[:id].to_i
   row[:hour] = Time.new(2001, 1, 1, row[:hour], 0, 0)
   course = Course.new(row)
   course.save!
@@ -20,30 +19,38 @@ end
 
 CSV.foreach(lessons_csv_file, headers: :first_row, header_converters: :symbol) do |row|
   occurs_on_created = Time.new(row[:occurs_on_year], row[:occurs_on_month], row[:occurs_on_day], row[:occurs_on_hour], row[:occurs_on_minutes], row[:occurs_on_seconds])
-  row[:course_id] = row[:course_id].to_i
-  lesson = Lesson.new(occurs_on: occurs_on_created, course_id: row[:course_id])
+  row[:course_id] = Course.where(location: row[:location])[0].id.to_i
+  lesson = Lesson.new(occurs_on: occurs_on_created, course_id: row[:course_id], location: row[:location])
   lesson.save!
 end
 
-user1 = User.new(
-  first_name: "Admin",
-  last_name: "Admin",
-  status: "admin",
-  email: "admin@rattrape.fr", # Contact@paris-impro.com
-  password: "123456",
-  course_id: Course.where(location: "Hauteville")[0].id
-)
-user1.save!
+if User.exists?(status: "admin")
+  User.where(status: "admin")[0].course_id = Course.where(location: "Hauteville")[0].id
+else
+  user1 = User.new(
+    first_name: "Admin",
+    last_name: "Admin",
+    status: "admin",
+    email: "admin@rattrape.fr", # Contact@paris-impro.com
+    password: "123456",
+    course_id: Course.where(location: "Hauteville")[0].id
+  )
+  user1.save!
+end
 
-user2 = User.new(
-  first_name: "Professeur",
-  last_name: "Professeur",
-  status: "teacher",
-  email: "teacher@rattrape.fr", # Ateliers@paris-impro.com
-  password: "123456",
-  course_id: Course.where(location: "Hauteville")[0].id
-)
-user2.save!
+if User.exists?(status: "teacher")
+  User.where(status: "teacher")[0].course_id = Course.where(location: "Hauteville")[0].id
+else
+  user2 = User.new(
+    first_name: "Professeur",
+    last_name: "Professeur",
+    status: "teacher",
+    email: "teacher@rattrape.fr", # Ateliers@paris-impro.com
+    password: "123456",
+    course_id: Course.where(location: "Hauteville")[0].id
+  )
+  user2.save!
+end
 
 # Seed_test
 
