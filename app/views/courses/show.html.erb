@@ -43,7 +43,7 @@
                 <div class="sentence">Changer le cours de <%= student.first_name %></div>
                 <% student.course_id = nil %>
                 <%= simple_form_for(student, url: profile_update_path(student)) do |f| %>
-                  <%= f.collection_select(:course_id, Course.all, :id, lambda {|course| "#{course.day} #{course.hour.hour}h - #{course.level}"}, {include_blank: ""})%>
+                  <%= f.collection_select(:course_id, Course.all, :id, lambda {|course| "#{course.day} #{course.hour.hour}h - #{course.location} - #{course.level}"}, {include_blank: ""})%>
                   <%= f.button :submit, 'Valider', class: 'btn btn-red btn-valid-abs' %>
                 <% end %>
                 <button data-action="click->account#cancel" class="btn btn-red-modal">Annuler</button>
