@@ -44,9 +44,9 @@
                 <% student.course_id = nil %>
                 <%= simple_form_for(student, url: profile_update_path(student)) do |f| %>
                   <%= f.collection_select(:course_id, Course.all, :id, lambda {|course| "#{course.day} #{course.hour.hour}h - #{course.level}"}, {include_blank: ""})%>
-                  <%= f.button :submit, 'Valider', class: 'btn btn-red btn-valid-abs' %>
+                  <%= f.button :submit, 'Valider', class: 'btn btn-red-modal-course' %>
                 <% end %>
-                <button data-action="click->account#cancel" class="btn btn-red-modal">Annuler</button>
+                <button data-action="click->account#cancel" class="btn btn-red-modal-delete-course">Annuler</button>
               </div>
             </div>
             <%# %>
