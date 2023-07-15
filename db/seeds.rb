@@ -31,7 +31,7 @@ else
     first_name: "Admin",
     last_name: "Admin",
     status: "admin",
-    email: "admin@rattrape.fr", # Contact@paris-impro.com
+    email: "contact@paris-impro.com",
     password: "123456",
     course_id: Course.where(location: "Hauteville")[0].id
   )
@@ -45,7 +45,7 @@ else
     first_name: "Professeur",
     last_name: "Professeur",
     status: "teacher",
-    email: "teacher@rattrape.fr", # Ateliers@paris-impro.com
+    email: "ateliers@paris-impro.com",
     password: "123456",
     course_id: Course.where(location: "Hauteville")[0].id
   )
