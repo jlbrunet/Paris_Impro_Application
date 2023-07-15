@@ -31,13 +31,11 @@
                     <p class="no-text-deco">Absences<i class="fa-solid fa-circle-chevron-right space-chevron"></i></p>
                   <% end %>
                 </div>
-                <% if @user.status == "admin" %>
-                  <div class="btn-admin">
-                    <%= link_to course_path(course) do %>
-                      <p class="no-text-deco">Élèves<i class="fa-solid fa-circle-chevron-right space-chevron"></i></p>
-                    <% end %>
-                  </div>
-                <% end %>
+                <div class="btn-admin">
+                  <%= link_to course_path(course) do %>
+                    <p class="no-text-deco">Élèves<i class="fa-solid fa-circle-chevron-right space-chevron"></i></p>
+                  <% end %>
+                </div>
               </div>
             </div>
             <% if index != @courses.size - 1 %>
