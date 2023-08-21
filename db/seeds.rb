@@ -11,8 +11,15 @@ require "csv"
 courses_csv_file = File.join("app/assets/data/courses.csv")
 lessons_csv_file = File.join("app/assets/data/lessons.csv")
 
+Place.destroy_all
+Absence.destroy_all
+Rattrapage.destroy_all
+User.destroy_all
+Lesson.destroy_all
+Course.destroy_all
+
 CSV.foreach(courses_csv_file, headers: :first_row, header_converters: :symbol) do |row|
-  row[:hour] = Time.new(2001, 1, 1, row[:hour], 0, 0)
+  row[:hour] = Time.new(2001, 1, 1, row[:hour], row[:minute], 0)
   course = Course.new(row)
   course.save!
 end
