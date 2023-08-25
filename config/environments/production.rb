@@ -69,11 +69,11 @@ Rails.application.configure do
   config.action_mailer.default_url_options = { host: host }
   config.action_mailer.delivery_method = :smtp
   config.action_mailer.smtp_settings = {
-    address: "smtp.gmail.com",
+    address: "smtp-relay.brevo.com",
     port: 587,
-    domain: host,
-    authentication: 'plain',
-    enable_starttls_auto: true,
+    # domain: host,
+    # authentication: 'plain',
+    # enable_starttls_auto: true,
     user_name: ENV["MY_USERNAME"],
     password: ENV["MY_PASSWORD"]
   }
