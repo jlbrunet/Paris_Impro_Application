@@ -71,20 +71,14 @@ Rails.application.configure do
   config.action_mailer.default_url_options = { host: host }
   config.action_mailer.delivery_method = :smtp
   config.action_mailer.smtp_settings = {
-    address: "smtp.office365.com",
+    address: "smtp.gmail.com",
     port: 587,
     domain: host,
-    authentication: :login,
+    authentication: :plain,
     enable_starttls_auto: true,
     user_name: ENV["MY_USERNAME"],
     password: ENV["MY_PASSWORD"]
   }
-
-  # config.action_mailer.default_url_options = { host: "https://rattrapage.paris-impro.com/" }
-  # config.action_mailer.delivery_method = :sendmail
-  # config.action_mailer.perform_deliveries = true
-  # config.action_mailer.raise_delivery_errors = true
-  # config.action_mailer.default_options = {from: 'rattrapage@paris-impro.com'}
 
   # Ignore bad email addresses and do not raise email delivery errors.
   # Set this to true and configure the email server for immediate delivery to raise delivery errors.
