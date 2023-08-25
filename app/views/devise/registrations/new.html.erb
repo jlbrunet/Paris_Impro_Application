@@ -43,16 +43,12 @@
           <div class="text-danger required-course"><%= resource.errors[:course_id].first %></div>
         <% end %>
       </div>
-      <div class="form-actions-2">
-        <%= f.button :submit, "Créer un compte", class: "btn-red-signin btn-new-registration" %>
-      </div>
+    </div>
+    <div class="form-action-2">
+      <%= f.button :submit, "Créer un compte", class: "btn-red-signin" %>
+      <%= link_to user_session_path , class: "btn-red-back-signin btn-left" do %>
+        <div><i class="fa-solid fa-circle-chevron-left"></i> Retour</div>
+      <% end %>
     </div>
   <% end %>
-
-  <div class="btn-back-signin">
-    <%= link_to user_session_path , class: "btn-red-back-signin btn-left" do %>
-      <div><i class="fa-solid fa-circle-chevron-left"></i> Retour</div>
-    <% end %>
-  </div>
-
 </div>

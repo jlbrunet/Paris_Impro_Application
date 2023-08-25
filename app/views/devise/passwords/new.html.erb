@@ -15,16 +15,16 @@
                     input_html: { autocomplete: "email" } %>
       </div>
 
-      <div class="form-actions">
-        <%= f.button :submit, "Modifier mon mot de passe", class: "btn-red btn-new-mdp" %>
+    </div>
+    <div class="form-action-2">
+      <%= f.button :submit, "Modifier mon mot de passe", class: "btn-red btn-new-mdp" %>
+      <div class="btn-back-forgot">
+        <%= link_to user_session_path , class: "btn-red-back-forgot" do %>
+          <div><i class="fa-solid fa-circle-chevron-left"></i> Retour</div>
+        <% end %>
       </div>
     </div>
   <% end %>
 
-  <div class="btn-back-forgot">
-    <%= link_to user_session_path , class: "btn-red-back-forgot btn-left" do %>
-      <div><i class="fa-solid fa-circle-chevron-left"></i> Retour</div>
-    <% end %>
-  </div>
 
 </div>
