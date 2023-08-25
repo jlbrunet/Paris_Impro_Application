@@ -66,7 +66,7 @@ Rails.application.configure do
 
   # where we should have the config to send emails (like => forgot my password)
 
-  host = 'https://rattrapage.paris-impro.com/' #replace with your own url
+  host = 'https://rattrapage.paris-impro.com/'
   config.action_mailer.perform_caching = false
   config.action_mailer.default_url_options = { host: host }
   config.action_mailer.delivery_method = :smtp
