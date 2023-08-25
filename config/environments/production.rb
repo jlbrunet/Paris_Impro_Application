@@ -62,8 +62,6 @@ Rails.application.configure do
   # config.active_job.queue_adapter     = :resque
   # config.active_job.queue_name_prefix = "Paris_Impro_Application_production"
 
-  config.action_mailer.perform_caching = false
-
   # where we should have the config to send emails (like => forgot my password)
 
   host = 'https://rattrapage.paris-impro.com/'
