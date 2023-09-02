@@ -18,7 +18,7 @@
 
     <% @rattrapage_lessons.each do |lesson| %>
 
-      <div class="tab-show-rattrapage" data-controller="rattrapage">
+      <div class="tab-show-rattrapage" data-controller="rattrapage" data-rattrapage-date-value="<%= I18n.l(lesson.occurs_on, format: "%A %-d %B %kh", locale: :fr) %>">
 
         <div class="title-rectangle title-red">
           <h3 class="title-red">
@@ -42,7 +42,8 @@
         <!-- Modale de confirmation -->
         <div class="d-none blur-modale" data-rattrapage-target="modal">
           <div class="modale-conf-rattrapage">
-            <div class="sentence" data-rattrapage-target="sentence"></div>
+            <div class="sentence" data-rattrapage-target="sentence">
+            </div>
               <div class="alerte-rattrapages-select">
                 <i class="fa-solid fa-triangle-exclamation alerte-icone"></i>
                 <p class="text-alerte-rattrapage">Après avoir confirmé ton rattrapage, celui-ci sera définitif</p>
