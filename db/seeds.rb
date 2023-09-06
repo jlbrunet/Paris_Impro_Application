@@ -11,13 +11,6 @@ require "csv"
 courses_csv_file = File.join("app/assets/data/courses.csv")
 lessons_csv_file = File.join("app/assets/data/lessons.csv")
 
-Place.destroy_all
-Absence.destroy_all
-Rattrapage.destroy_all
-User.destroy_all
-Lesson.destroy_all
-Course.destroy_all
-
 CSV.foreach(courses_csv_file, headers: :first_row, header_converters: :symbol) do |row|
   row[:hour] = Time.new(2001, 1, 1, row[:hour], row[:minute], 0)
   course = Course.new(row)
@@ -31,9 +24,9 @@ CSV.foreach(lessons_csv_file, headers: :first_row, header_converters: :symbol) d
   lesson.save!
 end
 
-if User.exists?(status: "admin")
-  User.where(status: "admin")[0].course_id = Course.where(location: "Hauteville")[0].id
-else
+# if User.exists?(status: "admin")
+#   User.where(status: "admin")[0].course_id = Course.where(location: "Hauteville")[0].id
+# else
   user1 = User.new(
     first_name: "Admin",
     last_name: "Admin",
@@ -43,11 +36,11 @@ else
     course_id: Course.where(location: "Hauteville")[0].id
   )
   user1.save!
-end
+# end
 
-if User.exists?(status: "teacher")
-  User.where(status: "teacher")[0].course_id = Course.where(location: "Hauteville")[0].id
-else
+# if User.exists?(status: "teacher")
+#   User.where(status: "teacher")[0].course_id = Course.where(location: "Hauteville")[0].id
+# else
   user2 = User.new(
     first_name: "Professeur",
     last_name: "Professeur",
@@ -57,7 +50,29 @@ else
     course_id: Course.where(location: "Hauteville")[0].id
   )
   user2.save!
-end
+# end
+
+  user3 = User.new(
+    first_name: "Admin-Support",
+    last_name: "Admin-Support",
+    status: "admin",
+    email: "Admin-Support@paris-impro.com",
+    password: "123456",
+    course_id: Course.where(location: "Hauteville")[0].id
+  )
+  user3.save!
+
+  user4 = User.new(
+    first_name: "Professeur-Support",
+    last_name: "Professeur-Support",
+    status: "teacher",
+    email: "Professeur-Support@paris-impro.com",
+    password: "123456",
+    course_id: Course.where(location: "Hauteville")[0].id
+  )
+  user4.save!
+
+
 
 # Seed_test
 
