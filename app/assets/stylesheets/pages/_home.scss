@@ -3,6 +3,7 @@
   display: flex;
   padding: 20px;
   align-items: center;
+  justify-content: space-between;
 }
 
 .hello-texte {
@@ -15,17 +16,60 @@
     margin-top: 8px;
   }
 
+  h3 {
+    font-family: $body;
+    font-size: 12px;
+    color: $font-grey;
+  }
+
   h1 {
     font-family: $headers;
     font-size: 26px;
   }
 }
 
+.hello-actions {
+  position: absolute;
+  top: 5px;
+  right: 0;
+  #dropdownMenuButton1 {
+    background-color: transparent;
+    border: none;
+    color: black;
+  }
+  .dropdown-toggle::after {
+    display: none;
+  }
+  .fa-solid.fa-bars {
+    font-size: 20px;
+    color: $medium-red;
+  }
+}
+
+#collapseTeachers {
+  position: absolute;
+  width: 170px;
+  left: 0px;
+  padding: 10px;
+  background-color: rgb(236, 236, 236);
+  border-radius: 0px 0px 20px 20px;
+  margin-top: -10px;
+}
+// overriding .collapsing class
+.collapsing {
+  height: 0;
+  overflow: hidden;
+  transition: all 0.25s ease-in;
+}
+
 .course {
   background-color: $background-grey;
   border-radius: 20px;
-  padding: 5px 35px;
+  padding: 5px 20px;
   margin-top: 13px;
+  width: 170px;
+  position: relative;
+  z-index: 1;
 }
 
 .border-tableau{
@@ -40,11 +84,11 @@
   padding: 20px;
   border: solid 2px $light-red;
   border-radius: 20px;
-  width: 90%;
+  // width: 90%;
 }
 
 .margin-rectangle-dashboard {
-  margin: 50px 20px;
+  margin: 30px 20px 50px;
 }
 
 .absences-content {
