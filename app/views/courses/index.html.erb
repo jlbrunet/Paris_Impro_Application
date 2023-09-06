@@ -21,7 +21,7 @@
           <% @courses.each_with_index do |course, index| %>
             <div class="separation">
               <div class="bloc-courses">
-                <p class="text-gras"><%= course.day %> | <%= course.level %></p>
+                <p class="text-gras"><%= course.day %> <%= course.hour.strftime("%H") %>h | <%= course.level %> | <%= course.teacher %></p>
                 <p class="text-lieu"><%=  course.location %></p>
               </div>
 
