@@ -1,27 +1,27 @@
 level,location,day,hour,minute,info,teacher
 Niveau 1,Hauteville,Lundi,20,0,"Studios 27 Bis, 27 Bis rue de Chabrol 75010",Houdia Ponty
 Niveau 1,Lafayette,Mardi,20,0,"Studios 27 Bis, 27 Bis rue de Chabrol 75010",Julien Bertrand
-Niveau 1,La Villette,Mardi,20,0,"83 rue du Faubourg Saint-Denis 75010, code porte1 B8962, code porte2 24B90, au fond à droite",Maud Kambiri
+Niveau 1,La Villette,Mardi,20,0,"83 rue du Faubourg Saint-Denis 75010, code porte1 B8962, code porte2 24B90, au fond à droite",Florine Gillet
 Niveau 1,Cambronne,Mardi,20,0,"Théâtre La Croisée des Chemin, 43 rue Mathurin Régnier 75015","Rémi Waeles, Cathy Nouchi"
 Niveau 1,Hôtel de Ville,Mercredi,20,0,"Cité des Arts Studio 5, 18 rue de l'hôtel de ville 75004",Julie Cabanel
 Niveau 1,Provence,Jeudi ,20,0,"Studios 27 Bis, 27 Bis rue de Chabrol 75010","Romain Nardelli, Romain Nolag, Marie-Eve Carlier"
 Niveau 1,Delta ,Dimanche,18,0,"Studios 27 Bis, 27 Bis rue de Chabrol 75010",Antoine Alberola
-Niveau 2,Monday Morning,Lundi,10,30,"Studios 27 Bis, 27 Bis rue de Chabrol 75010","Pablo Reva, Chenny, Batiste de Oliveira"
+Niveau 2,Monday Morning,Lundi,10,30,"Studios 27 Bis, 27 Bis rue de Chabrol 75010","Pablo Reva, Chenny, Batiste De Oliveira"
 Niveau 2,Saint-Denis,Lundi,20,0,"83 rue du Faubourg Saint-Denis 75010, code porte1 B8962, code porte2 24B90, au fond à droite","Corentin Mas, Alicia Ligi, Romain Nolag"
 Niveau 2,Pont Marie,Mardi,20,0,"Cité des Arts Studio 5, 18 rue de l'hôtel de ville 75004","Pablo Reva, Bastien Carpentier, Florine Gillet"
 Niveau 2,Le Peletier,Mercredi,20,0,"Studios 27 Bis, 27 Bis rue de Chabrol 75010","Marie Manu Ait-Said, Houdia Ponty, Léandre Philippon"
 Niveau 2,Vaugirard,Mercredi,20,0,"Théâtre La Croisée des Chemin, 43 rue Mathurin Régnier 75015","Bertrand Rakotoasitera, Marie-Eve Carlier, Romain Sidobre"
 Niveau 2,La Chapelle,Jeudi ,20,0,"Studios 27, 27 rue de Chabrol 75010","Antoine Berrier, Simon Coulm, Eve Béguin"
 Niveau 2,Petits Carreaux,Jeudi ,20,0,"Studio Bleu, 20 rue de l'échiquier 75010, code porte 1 B4289, code porte2 1649","Gabriel Chardon, Antoine Berrier, Rémi Scaramuzzino"
-Niveau 3,Laumière,Mardi,20,0,"ALS, 25 rue Chaudron 75010","Fanny Pascaud, Léandre Philippon, Gabriel chardon"
-Niveau 3,Rivoli,Mercredi,20,0,"Cité des Arts Studio 2, 18 rue de l'hôtel de ville 75004","Léandre Philippon, Romain nardelli, Florine Gillet"
+Niveau 3,Laumière,Mardi,20,0,"ALS, 25 rue Chaudron 75010","Fanny Pascaud, Léandre Philippon, Gabriel Chardon"
+Niveau 3,Rivoli,Mercredi,20,0,"Cité des Arts Studio 2, 18 rue de l'hôtel de ville 75004","Léandre Philippon, Romain Nardelli, Florine Gillet"
 Niveau 3,Saint-Martin,Mercredi,20,0,"57 rue des vinaigriers 75010, code porte bleue 8342, interphone 20","Antoine Gaudin , Mathilde Mir, Bertrand Rakotoasitera"
 Niveau 3,Saint-Paul,Mercredi,20,0,"Cité des Arts Studio 1, 18 rue de l'hôtel de ville 75004,","Julie Douine, Bertrand Rakotoasitera, Ingrid Dupont"
-Niveau 3,Volontaires,Jeudi ,20,0,"Théâtre La Croisée des Chemin, 43 rue Mathurin Régnier 75015","Juan Espin Alonso, Romain sidobre, Florine Gillet"
+Niveau 3,Volontaires,Jeudi ,20,0,"Théâtre La Croisée des Chemin, 43 rue Mathurin Régnier 75015","Juan Espin Alonso, Romain Sidobre, Florine Gillet"
 Niveau 3,Valmy,Jeudi ,20,0,"57 rue des vinaigriers 75010, code porte bleue 8342, interphone 20","Ingrid Dupont, Juan Espin Alonso, Julien Bertrand"
-Niveau 3,Notre-Dame,Samedi ,13,0,"57 rue des vinaigriers 75010, code porte bleue 8342, interphone 20","Julien Bertrand, Kevin bagot, Marie Manu Ait-Said"
-Niveau 4,Gare de l'Est,Lundi,20,0,"Studios 27, 27 rue de Chabrol 75010","Lisa Gervasoni, Julien bertrand, Vincent Ronsac"
-Niveau 4,Château d'eau,Mardi,20,0,"Maison de Mai, 23 rue de Chabrol 75010","Eve beguin, Lisa Gervasoni, Simon Coulm"
+Niveau 3,Notre-Dame,Samedi ,13,0,"57 rue des vinaigriers 75010, code porte bleue 8342, interphone 20","Julien Bertrand, Kevin Bagot, Marie Manu Ait-Said"
+Niveau 4,Gare de l'Est,Lundi,20,0,"Studios 27, 27 rue de Chabrol 75010","Lisa Gervasoni, Julien Bertrand, Vincent Ronsac"
+Niveau 4,Château d'eau,Mardi,20,0,"Maison de Mai, 23 rue de Chabrol 75010","Eve Beguin, Lisa Gervasoni, Simon Coulm"
 Niveau 4,Sébastopol,Jeudi ,20,0,"83 rue du Faubourg Saint-Denis 75010, code porte1 B8962, code porte2 24B90, au fond à droite","Simon Coulm, Corentin Mas, Antoine Gaudin"
 Niveau 5,Chabrol,Lundi,20,0,"Maison de Mai, 23 rue de Chabrol 75010,","Leandre Philippon, Gabriel Chardon, Corentin Mas"
 Niveau 5,Cité,Jeudi ,20,0,"Cité des Arts Studio 2, 18 rue de l'hôtel de ville 75004","Julien Bertrand, Gabriel Chardon"
