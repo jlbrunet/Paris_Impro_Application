@@ -20,7 +20,11 @@
     <div class="tableau" data-controller="add-places">
       <div class="absences rectangles">
         <div class="title-rectangle">
-          <h3 class="title-red" style="font-size:18px"><%= I18n.l(lesson.occurs_on, format: "%A %-d %B %Y - %kh", locale: :fr) %></h3>
+          <% if lesson.occurs_on.strftime("%M").to_i > 0 %>
+            <h3 class="title-red" style="font-size:18px"><%= I18n.l(lesson.occurs_on, format: "%A %-d %B %Y - %kh%M", locale: :fr) %></h3>
+          <% else %>
+            <h3 class="title-red" style="font-size:18px"><%= I18n.l(lesson.occurs_on, format: "%A %-d %B %Y - %kh", locale: :fr) %></h3>
+          <% end %>
         </div>
 
         <div class="absences-contents">
