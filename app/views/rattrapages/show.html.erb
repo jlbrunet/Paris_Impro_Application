@@ -18,7 +18,11 @@
 
     <div class="title-rectangle title-red">
       <h3 class="title-red">
-        <%= I18n.l(@lesson.occurs_on, format: "%A %-d %B %kh", locale: :fr) %>
+        <% if @lesson.occurs_on.strftime("%M").to_i > 0 %>
+          <%= I18n.l(@lesson.occurs_on, format: "%A %-d %B %kh%M", locale: :fr) %>
+        <% else %>
+          <%= I18n.l(@lesson.occurs_on, format: "%A %-d %B %kh", locale: :fr) %>
+        <% end %>
       </h3>
     </div>
 
