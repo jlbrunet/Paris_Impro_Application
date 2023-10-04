@@ -81,6 +81,6 @@ test:
 #
 production:
   <<: *default
-  database: parisimpro
-  username: parisimpro
+  database: Paris_Impro_Application_production
+  username: Paris_Impro_Application
   password: <%= ENV["PARIS_IMPRO_APPLICATION_DATABASE_PASSWORD"] %>
