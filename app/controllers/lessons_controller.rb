@@ -43,7 +43,7 @@ class LessonsController < ApplicationController
       @lessons = Lesson.where.not(course_id: current_user.course_id)
       @user_id = current_user.id
       @lessons.each do |lesson|
-        if (Rattrapage.where(lesson_id: lesson.id).length < Absence.where(lesson_id: lesson.id).length) && (Course.find(lesson.course_id).level == Course.find(current_user.course_id).level)
+        if (Rattrapage.where(lesson_id: lesson.id).length < Absence.where(lesson_id: lesson.id).length) && (Course.find(lesson.course_id).level == Course.find(current_user.course_id).level) && Course.where(id: lesson.course_id)[0].day != Course.where(id: current_user.course_id)[0].day
           @available_dates << lesson.occurs_on
         end
       end
@@ -54,7 +54,13 @@ class LessonsController < ApplicationController
 
   def create
     @occurs_on = params[:lesson][:occurs_on]
-    @current_lessons_all = Lesson.where("DATE_TRUNC('day', occurs_on) = ?", @occurs_on.to_date)
+    @current_lessons_all_levels = Lesson.where("DATE_TRUNC('day', occurs_on) = ?", @occurs_on.to_date)
+    @current_lessons_all = []
+    @current_lessons_all_levels.each do |lesson|
+      if Course.where(id: lesson.course_id)[0].level == Course.where(id: current_user.course_id)[0].level
+        @current_lessons_all << lesson
+      end
+    end
     @current_lessons = []
     @current_lessons_all.each do |lesson|
       @current_lessons << lesson unless Absence.where(lesson_id: lesson.id)[0].nil?
