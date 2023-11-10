@@ -19,7 +19,7 @@
 
   <body>
     <%= render "shared/flashes" %>
-    <% if !current_page?('/users/sign_in') %>
+    <% if !current_page?('/users/sign_in') && !current_page?('/users/sign_up') && !current_page?('/users/password/new') %>
       <div class="hello-actions dropdown">
         <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
           <i class="fa-solid fa-bars"></i>
