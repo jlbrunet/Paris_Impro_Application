@@ -43,7 +43,7 @@ class LessonsController < ApplicationController
       @lessons = Lesson.where.not(course_id: current_user.course_id)
       @user_id = current_user.id
       @lessons.each do |lesson|
-        if (Rattrapage.where(lesson_id: lesson.id).length < Absence.where(lesson_id: lesson.id).length) && (Course.find(lesson.course_id).level == Course.find(current_user.course_id).level) && Course.where(id: lesson.course_id)[0].day != Course.where(id: current_user.course_id)[0].day
+        if (Rattrapage.where(lesson_id: lesson.id).length < Absence.where(lesson_id: lesson.id).length) && (Course.find(lesson.course_id).level == Course.find(current_user.course_id).level) && Course.where(id: lesson.course_id)[0].day != Course.where(id: current_user.course_id)[0].day && lesson.occurs_on > DateTime.now()
           @available_dates << lesson.occurs_on
         end
       end
