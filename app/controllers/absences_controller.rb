@@ -31,6 +31,12 @@ class AbsencesController < ApplicationController
   def destroy
     @absence = Absence.find(params[:id])
     @user = User.find(@absence.user_id)
+    if @user.status == "admin"
+      @course = Lesson.find(@absence.lesson_id)
+    else
+      @course = Course.find(@user.course_id)
+    end
     @absence.destroy
+    redirect_to course_lessons_path(@course)
   end
 end
