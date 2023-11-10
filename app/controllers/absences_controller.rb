@@ -31,8 +31,6 @@ class AbsencesController < ApplicationController
   def destroy
     @absence = Absence.find(params[:id])
     @user = User.find(@absence.user_id)
-    @course = Course.find(@user.course_id)
     @absence.destroy
-    redirect_to course_lessons_path(@course)
   end
 end

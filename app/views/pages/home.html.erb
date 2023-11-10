@@ -1,7 +1,9 @@
 <div class="container background-absence pb-100px">
   <div class="hello">
     <div class="hello-img">
-      <%= image_tag("logo_paris_impro2.jpeg", class: "logo-img-home") %>
+      <%= link_to root_path do %>
+        <%= image_tag("logo_paris_impro2.jpeg", class: "logo-img-home") %>
+      <% end %>
     </div>
     <div class="hello-texte">
       <h1>Hello <%= @user.first_name %></h1>

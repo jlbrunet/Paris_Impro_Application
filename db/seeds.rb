@@ -1,11 +1,3 @@
-# This file should contain all the record creation needed to seed the database with its default values.
-# The data can then be loaded with the bin/rails db:seed command (or created alongside the database with db:setup).
-#
-# Examples:
-#
-#   movies = Movie.create([{ name: "Star Wars" }, { name: "Lord of the Rings" }])
-#   Character.create(name: "Luke", movie: movies.first)
-
 require "csv"
 
 courses_csv_file = File.join("app/assets/data/courses.csv")
@@ -24,55 +16,53 @@ CSV.foreach(lessons_csv_file, headers: :first_row, header_converters: :symbol) d
   lesson.save!
 end
 
-# if User.exists?(status: "admin")
-#   User.where(status: "admin")[0].course_id = Course.where(location: "Hauteville")[0].id
-# else
-  user1 = User.new(
-    first_name: "Admin",
-    last_name: "Admin",
-    status: "admin",
-    email: "contact@paris-impro.com",
-    password: "123456",
-    course_id: Course.where(location: "Hauteville")[0].id
-  )
-  user1.save!
-# end
+# # if User.exists?(status: "admin")
+# #   User.where(status: "admin")[0].course_id = Course.where(location: "Hauteville")[0].id
+# # else
+#   user1 = User.new(
+#     first_name: "Admin",
+#     last_name: "Admin",
+#     status: "admin",
+#     email: "contact@paris-impro.com",
+#     password: "123456",
+#     course_id: Course.where(location: "Hauteville")[0].id
+#   )
+#   user1.save!
+# # end
 
-# if User.exists?(status: "teacher")
-#   User.where(status: "teacher")[0].course_id = Course.where(location: "Hauteville")[0].id
-# else
-  user2 = User.new(
-    first_name: "Professeur",
-    last_name: "Professeur",
-    status: "teacher",
-    email: "ateliers@paris-impro.com",
-    password: "123456",
-    course_id: Course.where(location: "Hauteville")[0].id
-  )
-  user2.save!
-# end
+# # if User.exists?(status: "teacher")
+# #   User.where(status: "teacher")[0].course_id = Course.where(location: "Hauteville")[0].id
+# # else
+#   user2 = User.new(
+#     first_name: "Professeur",
+#     last_name: "Professeur",
+#     status: "teacher",
+#     email: "ateliers@paris-impro.com",
+#     password: "123456",
+#     course_id: Course.where(location: "Hauteville")[0].id
+#   )
+#   user2.save!
+# # end
 
-  user3 = User.new(
-    first_name: "Admin-Support",
-    last_name: "Admin-Support",
-    status: "admin",
-    email: "Admin-Support@paris-impro.com",
-    password: "123456",
-    course_id: Course.where(location: "Hauteville")[0].id
-  )
-  user3.save!
+#   user3 = User.new(
+#     first_name: "Admin-Support",
+#     last_name: "Admin-Support",
+#     status: "admin",
+#     email: "Admin-Support@paris-impro.com",
+#     password: "123456",
+#     course_id: Course.where(location: "Hauteville")[0].id
+#   )
+#   user3.save!
 
-  user4 = User.new(
-    first_name: "Professeur-Support",
-    last_name: "Professeur-Support",
-    status: "teacher",
-    email: "Professeur-Support@paris-impro.com",
-    password: "123456",
-    course_id: Course.where(location: "Hauteville")[0].id
-  )
-  user4.save!
-
-
+#   user4 = User.new(
+#     first_name: "Professeur-Support",
+#     last_name: "Professeur-Support",
+#     status: "teacher",
+#     email: "Professeur-Support@paris-impro.com",
+#     password: "123456",
+#     course_id: Course.where(location: "Hauteville")[0].id
+#   )
+#   user4.save!
 
 # Seed_test
 
