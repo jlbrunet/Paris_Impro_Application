@@ -1,20 +1,32 @@
-require "csv"
+course_rivoli = Course.where(location: "Rivoli")[0]
+course_rivoli.level = "Niveau 4"
+course_rivoli.save!
 
-courses_csv_file = File.join("app/assets/data/courses.csv")
-lessons_csv_file = File.join("app/assets/data/lessons.csv")
+course_notre_dame = Course.where(location: "Notre-Dame")[0]
+course_notre_dame.info = "Studios 27, 27 rue de Chabrol 75010"
+course_notre_dame.save!
 
-CSV.foreach(courses_csv_file, headers: :first_row, header_converters: :symbol) do |row|
-  row[:hour] = Time.new(2001, 1, 1, row[:hour], row[:minute], 0)
-  course = Course.new(row)
-  course.save!
+Lesson.where(occurs_on: (Date.parse('2023-12-18')..Date.parse('2023-12-24'))).each do |lesson|
+  lesson.destroy!
 end
 
-CSV.foreach(lessons_csv_file, headers: :first_row, header_converters: :symbol) do |row|
-  occurs_on_created = Time.new(row[:occurs_on_year], row[:occurs_on_month], row[:occurs_on_day], row[:occurs_on_hour], row[:occurs_on_minutes], row[:occurs_on_seconds])
-  row[:course_id] = Course.where(location: row[:location])[0].id.to_i
-  lesson = Lesson.new(occurs_on: occurs_on_created, course_id: row[:course_id], location: row[:location])
-  lesson.save!
-end
+# require "csv"
+
+# courses_csv_file = File.join("app/assets/data/courses.csv")
+# lessons_csv_file = File.join("app/assets/data/lessons.csv")
+
+# CSV.foreach(courses_csv_file, headers: :first_row, header_converters: :symbol) do |row|
+#   row[:hour] = Time.new(2001, 1, 1, row[:hour], row[:minute], 0)
+#   course = Course.new(row)
+#   course.save!
+# end
+
+# CSV.foreach(lessons_csv_file, headers: :first_row, header_converters: :symbol) do |row|
+#   occurs_on_created = Time.new(row[:occurs_on_year], row[:occurs_on_month], row[:occurs_on_day], row[:occurs_on_hour], row[:occurs_on_minutes], row[:occurs_on_seconds])
+#   row[:course_id] = Course.where(location: row[:location])[0].id.to_i
+#   lesson = Lesson.new(occurs_on: occurs_on_created, course_id: row[:course_id], location: row[:location])
+#   lesson.save!
+# end
 
 # # if User.exists?(status: "admin")
 # #   User.where(status: "admin")[0].course_id = Course.where(location: "Hauteville")[0].id

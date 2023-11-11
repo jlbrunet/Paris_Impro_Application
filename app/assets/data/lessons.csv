@@ -11,7 +11,6 @@ occurs_on_year,occurs_on_month,occurs_on_day,occurs_on_hour,occurs_on_minutes,oc
 2023,11,28,20,0,0,1,Cambronne
 2023,12,5,20,0,0,1,Cambronne
 2023,12,12,20,0,0,1,Cambronne
-2023,12,19,20,0,0,1,Cambronne
 2024,1,9,20,0,0,1,Cambronne
 2024,1,16,20,0,0,1,Cambronne
 2024,1,23,20,0,0,1,Cambronne
@@ -42,7 +41,6 @@ occurs_on_year,occurs_on_month,occurs_on_day,occurs_on_hour,occurs_on_minutes,oc
 2023,11,27,20,0,0,1,Chabrol
 2023,12,4,20,0,0,1,Chabrol
 2023,12,11,20,0,0,1,Chabrol
-2023,12,18,20,0,0,1,Chabrol
 2024,1,8,20,0,0,1,Chabrol
 2024,1,15,20,0,0,1,Chabrol
 2024,1,22,20,0,0,1,Chabrol
@@ -73,7 +71,6 @@ occurs_on_year,occurs_on_month,occurs_on_day,occurs_on_hour,occurs_on_minutes,oc
 2023,11,28,20,0,0,1,Château d'eau
 2023,12,5,20,0,0,1,Château d'eau
 2023,12,12,20,0,0,1,Château d'eau
-2023,12,19,20,0,0,1,Château d'eau
 2024,1,9,20,0,0,1,Château d'eau
 2024,1,16,20,0,0,1,Château d'eau
 2024,1,23,20,0,0,1,Château d'eau
@@ -104,7 +101,6 @@ occurs_on_year,occurs_on_month,occurs_on_day,occurs_on_hour,occurs_on_minutes,oc
 2023,11,30,20,0,0,1,Cité
 2023,12,7,20,0,0,1,Cité
 2023,12,14,20,0,0,1,Cité
-2023,12,21,20,0,0,1,Cité
 2024,1,11,20,0,0,1,Cité
 2024,1,18,20,0,0,1,Cité
 2024,1,25,20,0,0,1,Cité
@@ -123,36 +119,36 @@ occurs_on_year,occurs_on_month,occurs_on_day,occurs_on_hour,occurs_on_minutes,oc
 2024,5,30,20,0,0,1,Cité
 2024,6,6,20,0,0,1,Cité
 2024,6,13,20,0,0,1,Cité
-2023,9,17,18,0,0,1,Delta 
-2023,9,24,18,0,0,1,Delta 
-2023,10,1,18,0,0,1,Delta 
-2023,10,8,18,0,0,1,Delta 
-2023,10,15,18,0,0,1,Delta 
-2023,10,22,18,0,0,1,Delta 
-2023,11,19,18,0,0,1,Delta 
-2023,11,26,18,0,0,1,Delta 
-2023,12,3,18,0,0,1,Delta 
-2023,12,10,18,0,0,1,Delta 
-2023,12,17,18,0,0,1,Delta 
-2024,1,7,18,0,0,1,Delta 
-2024,1,14,18,0,0,1,Delta 
-2024,1,21,18,0,0,1,Delta 
-2024,1,28,18,0,0,1,Delta 
-2024,2,4,18,0,0,1,Delta 
-2024,2,11,18,0,0,1,Delta 
-2024,3,3,18,0,0,1,Delta 
-2024,3,10,18,0,0,1,Delta 
-2024,3,17,18,0,0,1,Delta 
-2024,3,24,18,0,0,1,Delta 
-2024,4,7,18,0,0,1,Delta 
-2024,4,28,18,0,0,1,Delta 
-2024,5,5,18,0,0,1,Delta 
-2024,5,12,18,0,0,1,Delta 
-2024,5,26,18,0,0,1,Delta 
-2024,6,2,18,0,0,1,Delta 
-2024,6,9,18,0,0,1,Delta 
-2024,6,16,18,0,0,1,Delta 
-2024,6,23,18,0,0,1,Delta 
+2023,9,17,18,0,0,1,Delta
+2023,9,24,18,0,0,1,Delta
+2023,10,1,18,0,0,1,Delta
+2023,10,8,18,0,0,1,Delta
+2023,10,15,18,0,0,1,Delta
+2023,10,22,18,0,0,1,Delta
+2023,11,19,18,0,0,1,Delta
+2023,11,26,18,0,0,1,Delta
+2023,12,3,18,0,0,1,Delta
+2023,12,10,18,0,0,1,Delta
+2023,12,17,18,0,0,1,Delta
+2024,1,7,18,0,0,1,Delta
+2024,1,14,18,0,0,1,Delta
+2024,1,21,18,0,0,1,Delta
+2024,1,28,18,0,0,1,Delta
+2024,2,4,18,0,0,1,Delta
+2024,2,11,18,0,0,1,Delta
+2024,3,3,18,0,0,1,Delta
+2024,3,10,18,0,0,1,Delta
+2024,3,17,18,0,0,1,Delta
+2024,3,24,18,0,0,1,Delta
+2024,4,7,18,0,0,1,Delta
+2024,4,28,18,0,0,1,Delta
+2024,5,5,18,0,0,1,Delta
+2024,5,12,18,0,0,1,Delta
+2024,5,26,18,0,0,1,Delta
+2024,6,2,18,0,0,1,Delta
+2024,6,9,18,0,0,1,Delta
+2024,6,16,18,0,0,1,Delta
+2024,6,23,18,0,0,1,Delta
 2023,9,11,20,0,0,1,Gare de l'Est
 2023,9,18,20,0,0,1,Gare de l'Est
 2023,9,25,20,0,0,1,Gare de l'Est
@@ -165,7 +161,6 @@ occurs_on_year,occurs_on_month,occurs_on_day,occurs_on_hour,occurs_on_minutes,oc
 2023,11,27,20,0,0,1,Gare de l'Est
 2023,12,4,20,0,0,1,Gare de l'Est
 2023,12,11,20,0,0,1,Gare de l'Est
-2023,12,18,20,0,0,1,Gare de l'Est
 2024,1,8,20,0,0,1,Gare de l'Est
 2024,1,15,20,0,0,1,Gare de l'Est
 2024,1,22,20,0,0,1,Gare de l'Est
@@ -196,7 +191,6 @@ occurs_on_year,occurs_on_month,occurs_on_day,occurs_on_hour,occurs_on_minutes,oc
 2023,11,27,20,0,0,1,Hauteville
 2023,12,4,20,0,0,1,Hauteville
 2023,12,11,20,0,0,1,Hauteville
-2023,12,18,20,0,0,1,Hauteville
 2024,1,8,20,0,0,1,Hauteville
 2024,1,15,20,0,0,1,Hauteville
 2024,1,22,20,0,0,1,Hauteville
@@ -227,7 +221,6 @@ occurs_on_year,occurs_on_month,occurs_on_day,occurs_on_hour,occurs_on_minutes,oc
 2023,11,29,20,0,0,1,Hôtel de Ville
 2023,12,6,20,0,0,1,Hôtel de Ville
 2023,12,13,20,0,0,1,Hôtel de Ville
-2023,12,20,20,0,0,1,Hôtel de Ville
 2024,1,10,20,0,0,1,Hôtel de Ville
 2024,1,17,20,0,0,1,Hôtel de Ville
 2024,1,24,20,0,0,1,Hôtel de Ville
@@ -258,7 +251,6 @@ occurs_on_year,occurs_on_month,occurs_on_day,occurs_on_hour,occurs_on_minutes,oc
 2023,11,30,20,0,0,1,La Chapelle
 2023,12,7,20,0,0,1,La Chapelle
 2023,12,14,20,0,0,1,La Chapelle
-2023,12,21,20,0,0,1,La Chapelle
 2024,1,11,20,0,0,1,La Chapelle
 2024,1,18,20,0,0,1,La Chapelle
 2024,1,25,20,0,0,1,La Chapelle
@@ -289,7 +281,6 @@ occurs_on_year,occurs_on_month,occurs_on_day,occurs_on_hour,occurs_on_minutes,oc
 2023,11,28,20,0,0,1,La Villette
 2023,12,5,20,0,0,1,La Villette
 2023,12,12,20,0,0,1,La Villette
-2023,12,19,20,0,0,1,La Villette
 2024,1,9,20,0,0,1,La Villette
 2024,1,16,20,0,0,1,La Villette
 2024,1,23,20,0,0,1,La Villette
@@ -320,7 +311,6 @@ occurs_on_year,occurs_on_month,occurs_on_day,occurs_on_hour,occurs_on_minutes,oc
 2023,11,28,20,0,0,1,Lafayette
 2023,12,5,20,0,0,1,Lafayette
 2023,12,12,20,0,0,1,Lafayette
-2023,12,19,20,0,0,1,Lafayette
 2024,1,9,20,0,0,1,Lafayette
 2024,1,16,20,0,0,1,Lafayette
 2024,1,23,20,0,0,1,Lafayette
@@ -351,7 +341,6 @@ occurs_on_year,occurs_on_month,occurs_on_day,occurs_on_hour,occurs_on_minutes,oc
 2023,11,28,20,0,0,1,Laumière
 2023,12,5,20,0,0,1,Laumière
 2023,12,12,20,0,0,1,Laumière
-2023,12,19,20,0,0,1,Laumière
 2024,1,9,20,0,0,1,Laumière
 2024,1,16,20,0,0,1,Laumière
 2024,1,23,20,0,0,1,Laumière
@@ -382,7 +371,6 @@ occurs_on_year,occurs_on_month,occurs_on_day,occurs_on_hour,occurs_on_minutes,oc
 2023,11,29,20,0,0,1,Le Peletier
 2023,12,6,20,0,0,1,Le Peletier
 2023,12,13,20,0,0,1,Le Peletier
-2023,12,20,20,0,0,1,Le Peletier
 2024,1,10,20,0,0,1,Le Peletier
 2024,1,17,20,0,0,1,Le Peletier
 2024,1,24,20,0,0,1,Le Peletier
@@ -413,7 +401,6 @@ occurs_on_year,occurs_on_month,occurs_on_day,occurs_on_hour,occurs_on_minutes,oc
 2023,11,27,10,30,0,1,Monday Morning
 2023,12,4,10,30,0,1,Monday Morning
 2023,12,11,10,30,0,1,Monday Morning
-2023,12,18,10,30,0,1,Monday Morning
 2024,1,8,10,30,0,1,Monday Morning
 2024,1,15,10,30,0,1,Monday Morning
 2024,1,22,10,30,0,1,Monday Morning
@@ -442,7 +429,6 @@ occurs_on_year,occurs_on_month,occurs_on_day,occurs_on_hour,occurs_on_minutes,oc
 2023,12,2,13,0,0,1,Notre-Dame
 2023,12,9,13,0,0,1,Notre-Dame
 2023,12,16,13,0,0,1,Notre-Dame
-2023,12,23,13,0,0,1,Notre-Dame
 2024,1,13,13,0,0,1,Notre-Dame
 2024,1,20,13,0,0,1,Notre-Dame
 2024,1,27,13,0,0,1,Notre-Dame
@@ -474,7 +460,6 @@ occurs_on_year,occurs_on_month,occurs_on_day,occurs_on_hour,occurs_on_minutes,oc
 2023,11,30,20,0,0,1,Petits Carreaux
 2023,12,7,20,0,0,1,Petits Carreaux
 2023,12,14,20,0,0,1,Petits Carreaux
-2023,12,21,20,0,0,1,Petits Carreaux
 2024,1,11,20,0,0,1,Petits Carreaux
 2024,1,18,20,0,0,1,Petits Carreaux
 2024,1,25,20,0,0,1,Petits Carreaux
@@ -505,7 +490,6 @@ occurs_on_year,occurs_on_month,occurs_on_day,occurs_on_hour,occurs_on_minutes,oc
 2023,11,28,20,0,0,1,Pont Marie
 2023,12,5,20,0,0,1,Pont Marie
 2023,12,12,20,0,0,1,Pont Marie
-2023,12,19,20,0,0,1,Pont Marie
 2024,1,9,20,0,0,1,Pont Marie
 2024,1,16,20,0,0,1,Pont Marie
 2024,1,23,20,0,0,1,Pont Marie
@@ -536,7 +520,6 @@ occurs_on_year,occurs_on_month,occurs_on_day,occurs_on_hour,occurs_on_minutes,oc
 2023,11,30,20,0,0,1,Provence
 2023,12,7,20,0,0,1,Provence
 2023,12,14,20,0,0,1,Provence
-2023,12,21,20,0,0,1,Provence
 2024,1,11,20,0,0,1,Provence
 2024,1,18,20,0,0,1,Provence
 2024,1,25,20,0,0,1,Provence
@@ -567,7 +550,6 @@ occurs_on_year,occurs_on_month,occurs_on_day,occurs_on_hour,occurs_on_minutes,oc
 2023,11,29,20,0,0,1,Rivoli
 2023,12,6,20,0,0,1,Rivoli
 2023,12,13,20,0,0,1,Rivoli
-2023,12,20,20,0,0,1,Rivoli
 2024,1,10,20,0,0,1,Rivoli
 2024,1,17,20,0,0,1,Rivoli
 2024,1,24,20,0,0,1,Rivoli
@@ -598,7 +580,6 @@ occurs_on_year,occurs_on_month,occurs_on_day,occurs_on_hour,occurs_on_minutes,oc
 2023,11,27,20,0,0,1,Saint-Denis
 2023,12,4,20,0,0,1,Saint-Denis
 2023,12,11,20,0,0,1,Saint-Denis
-2023,12,18,20,0,0,1,Saint-Denis
 2024,1,8,20,0,0,1,Saint-Denis
 2024,1,15,20,0,0,1,Saint-Denis
 2024,1,22,20,0,0,1,Saint-Denis
@@ -629,7 +610,6 @@ occurs_on_year,occurs_on_month,occurs_on_day,occurs_on_hour,occurs_on_minutes,oc
 2023,11,29,20,0,0,1,Saint-Martin
 2023,12,6,20,0,0,1,Saint-Martin
 2023,12,13,20,0,0,1,Saint-Martin
-2023,12,20,20,0,0,1,Saint-Martin
 2024,1,10,20,0,0,1,Saint-Martin
 2024,1,17,20,0,0,1,Saint-Martin
 2024,1,24,20,0,0,1,Saint-Martin
@@ -660,7 +640,6 @@ occurs_on_year,occurs_on_month,occurs_on_day,occurs_on_hour,occurs_on_minutes,oc
 2023,11,29,20,0,0,1,Saint-Paul
 2023,12,6,20,0,0,1,Saint-Paul
 2023,12,13,20,0,0,1,Saint-Paul
-2023,12,20,20,0,0,1,Saint-Paul
 2024,1,10,20,0,0,1,Saint-Paul
 2024,1,17,20,0,0,1,Saint-Paul
 2024,1,24,20,0,0,1,Saint-Paul
@@ -691,7 +670,6 @@ occurs_on_year,occurs_on_month,occurs_on_day,occurs_on_hour,occurs_on_minutes,oc
 2023,11,30,20,0,0,1,Sébastopol
 2023,12,7,20,0,0,1,Sébastopol
 2023,12,14,20,0,0,1,Sébastopol
-2023,12,21,20,0,0,1,Sébastopol
 2024,1,11,20,0,0,1,Sébastopol
 2024,1,18,20,0,0,1,Sébastopol
 2024,1,25,20,0,0,1,Sébastopol
@@ -722,7 +700,6 @@ occurs_on_year,occurs_on_month,occurs_on_day,occurs_on_hour,occurs_on_minutes,oc
 2023,11,30,20,0,0,1,Valmy
 2023,12,7,20,0,0,1,Valmy
 2023,12,14,20,0,0,1,Valmy
-2023,12,21,20,0,0,1,Valmy
 2024,1,11,20,0,0,1,Valmy
 2024,1,18,20,0,0,1,Valmy
 2024,1,25,20,0,0,1,Valmy
@@ -753,7 +730,6 @@ occurs_on_year,occurs_on_month,occurs_on_day,occurs_on_hour,occurs_on_minutes,oc
 2023,11,29,20,0,0,1,Vaugirard
 2023,12,6,20,0,0,1,Vaugirard
 2023,12,13,20,0,0,1,Vaugirard
-2023,12,20,20,0,0,1,Vaugirard
 2024,1,10,20,0,0,1,Vaugirard
 2024,1,17,20,0,0,1,Vaugirard
 2024,1,24,20,0,0,1,Vaugirard
@@ -784,7 +760,6 @@ occurs_on_year,occurs_on_month,occurs_on_day,occurs_on_hour,occurs_on_minutes,oc
 2023,11,30,20,0,0,1,Volontaires
 2023,12,7,20,0,0,1,Volontaires
 2023,12,14,20,0,0,1,Volontaires
-2023,12,21,20,0,0,1,Volontaires
 2024,1,11,20,0,0,1,Volontaires
 2024,1,18,20,0,0,1,Volontaires
 2024,1,25,20,0,0,1,Volontaires
