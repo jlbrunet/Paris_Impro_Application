@@ -4,9 +4,7 @@
 
   <div class="tableau">
     <div class="absences rectangle margin-rectangle-dashboard">
-      <div class="title-rectangle">
-        <h3 class="title-red">Tes absences</h3>
-      </div>
+      <div class="title-rectangle"><h3 class="title-red">Tes absences</h3></div>
       <div class="absences-content">
         <% if @absences_lessons == [] %>
           <p>Pas d'absence</p>
@@ -16,7 +14,6 @@
           <% end %>
         <% end %>
       </div>
-
       <% if @absences_lessons.length < 9 %>
         <%= link_to "Déclarer une absence", "/absences/new", class: "btn-red-small btn-left" %>
       <% end %>
@@ -32,8 +29,7 @@
           <p>Pas de rattrapage</p>
         <% else %>
           <% @rattrapages_lessons.each do |lesson| %>
-            <% rattrapage = Rattrapage.where(lesson_id: lesson.id).first %>
-            <%= link_to rattrapage_show_path(rattrapage) do %>
+            <%= link_to rattrapage_show_path(Rattrapage.find_by(lesson: lesson)) do %>
               <p class="link-rattrapage"><i class="fa-solid fa-circle"></i><%= I18n.l(lesson.occurs_on, format: "%A %-d %B %kh", locale: :fr) %></p>
             <% end %>
           <% end %>
