@@ -1,23 +1,6 @@
 <div class="container background-absence pb-100px">
-  <div class="hello">
-    <div class="hello-img">
-      <%= link_to root_path do %>
-        <%= image_tag("logo_paris_impro2.jpeg", class: "logo-img-home") %>
-      <% end %>
-    </div>
-    <div class="hello-texte">
-      <h1>Hello <%= @user.first_name %></h1>
-      <div class="course">
-        <a class="text-decoration-none" data-bs-toggle="collapse" href="#collapseTeachers" role="button" aria-expanded="false" aria-controls="collapseTeachers">
-          <h2><%= @course.day %> - <%= @course.hour.strftime("%H:%M") %></h2>
-        </a>
-        <div class="collapse" id="collapseTeachers">
-          <h3>Tes professeur.e.s: <%= @course.teacher %></h3>
-          <h3><%= @course.level %></h3>
-        </div>
-      </div>
-    </div>
-  </div>
+
+  <%= render partial:'/shared/navbar', locals: {title: "Hello #{@user.first_name}"} %>
 
   <div class="tableau">
     <div class="absences rectangle margin-rectangle-dashboard">

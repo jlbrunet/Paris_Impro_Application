@@ -1,5 +1,4 @@
 .title-c {
-  //border-bottom: solid 2px $light-red;
   color: $medium-red;
   font-size: 20px;
   font-family: $headers;
@@ -10,7 +9,6 @@
 
 .tiret {
   border-bottom: solid 2px $light-red;
-  //margin-bottom: 10px;
   margin-top: 5px;
 }
 
@@ -68,7 +66,6 @@
 
 .tab-courses {
   display: grid;
-  //grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* ou ajustez la largeur selon vos besoins */
   grid-gap: 20px;
   padding-left: 10px;
   padding-right: 10px;

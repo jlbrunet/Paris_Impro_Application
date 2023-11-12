@@ -1,15 +1,6 @@
 <div class="container background-rattrapage-select pb-100px">
 
-  <div class="hello">
-      <div class="hello-img">
-        <%= link_to root_path do %>
-          <%= image_tag("logo_paris_impro2.jpeg", class: "logo-img-home") %>
-        <% end %>
-      </div>
-      <div class="rattrapage-select-texte">
-        <h1>Choisir un rattrapage</h1>
-      </div>
-  </div>
+  <%= render partial:'/shared/navbar', locals: {title: "Choisir un rattrapage"} %>
 
   <div class="text-dispo-rattrapage">
     <h2>Sélectionne ton rattrapage sur les disponibilités ci-dessous</h2>
