@@ -8,11 +8,14 @@
 .hello-texte {
   text-align: center;
 
+  h1 {
+    margin: 10px 12px 0px 12px;
+  }
+
   h2 {
     font-family: $body;
     font-size: 15px;
     color: $font-grey;
-    margin-top: 8px;
   }
 
   h3 {

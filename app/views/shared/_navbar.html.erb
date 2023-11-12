@@ -1,10 +1,21 @@
 <div class="hello">
-    <div class="hello-img">
-      <%= link_to root_path do %>
-        <%= image_tag("logo_paris_impro2.jpeg", class: "logo-img-home") %>
-      <% end %>
-    </div>
-    <div class="absence-decla-texte">
-      <h1><%= text %></h1>
-    </div>
+  <div class="hello-img">
+    <%= link_to root_path do %>
+      <%= image_tag("logo_paris_impro2.jpeg", class: "logo-img-home") %>
+    <% end %>
+  </div>
+  <div class="hello-texte">
+    <h1><%= title %></h1>
+    <% if current_page?('/') %>
+      <div class="course hello-texte">
+        <a class="text-decoration-none" data-bs-toggle="collapse" href="#collapseTeachers" role="button">
+          <h2><%= @course.day %> - <%= @course.hour.strftime("%H:%M") %></h2>
+        </a>
+        <div class="collapse" id="collapseTeachers">
+          <h3>Tes professeur.e.s: <%= @course.teacher %></h3>
+          <h3><%= @course.level %></h3>
+        </div>
+      </div>
+    <% end %>
+  </div>
 </div>

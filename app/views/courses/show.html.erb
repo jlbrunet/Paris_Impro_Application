@@ -1,14 +1,5 @@
 <div class="container background-absence pb-100px">
-  <div class="hello">
-    <div class="hello-img">
-      <%= link_to root_path do %>
-        <%= image_tag("logo_paris_impro2.jpeg", class: "logo-img-home") %>
-      <% end %>
-    </div>
-    <div class="hello-texte hello-admin">
-      <h1>Hello</h1>
-    </div>
-  </div>
+  <%= render partial:'/shared/navbar', locals: {title: ""} %>
 
   <div class="courses-index">
     <h2 class="font-headers">Élèves</h2>

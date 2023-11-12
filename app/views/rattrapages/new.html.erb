@@ -1,20 +1,10 @@
 <div class="container background-rattrapage-index pb-100px">
 
-  <div class="hello">
-      <div class="hello-img">
-        <%= link_to root_path do %>
-          <%= image_tag("logo_paris_impro2.jpeg", class: "logo-img-home") %>
-        <% end %>
-      </div>
-      <div class="hello-texte hello-admin">
-        <h1>Informations</h1>
-      </div>
-  </div>
+  <%= render partial:'/shared/navbar', locals: {title: "Informations"} %>
 
   <div class="text-index-rattrapage">
     <h2>Sélectionne ton rattrapage sur les disponibilités ci-dessous</h2>
   </div>
-
 
   <div>
 
