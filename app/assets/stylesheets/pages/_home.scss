@@ -1,4 +1,3 @@
-// Specific CSS for your home-page
 .hello {
   display: flex;
   padding: 20px;
@@ -55,7 +54,7 @@
   border-radius: 0px 0px 20px 20px;
   margin-top: -10px;
 }
-// overriding .collapsing class
+
 .collapsing {
   height: 0;
   overflow: hidden;
@@ -84,7 +83,6 @@
   padding: 20px;
   border: solid 2px $light-red;
   border-radius: 20px;
-  // width: 90%;
 }
 
 .margin-rectangle-dashboard {

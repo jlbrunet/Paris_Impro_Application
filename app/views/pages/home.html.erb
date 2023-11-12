@@ -8,7 +8,7 @@
     <div class="hello-texte">
       <h1>Hello <%= @user.first_name %></h1>
       <div class="course">
-        <a class="text-decoration-none" data-bs-toggle="collapse" href="#collapseTeachers" role="button" aria-expanded="false" aria-controls="collapseTeachers">
+        <a class="text-decoration-none" data-bs-toggle="collapse" href="#collapseTeachers" role="button">
           <h2><%= @course.day %> - <%= @course.hour.strftime("%H:%M") %></h2>
         </a>
         <div class="collapse" id="collapseTeachers">

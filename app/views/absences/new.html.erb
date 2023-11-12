@@ -1,15 +1,6 @@
 <div class="container background-absence-decla pb-100px">
 
-  <div class="hello">
-      <div class="hello-img">
-        <%= link_to root_path do %>
-          <%= image_tag("logo_paris_impro2.jpeg", class: "logo-img-home") %>
-        <% end %>
-      </div>
-      <div class="absence-decla-texte">
-        <h1>Déclarer une absence</h1>
-      </div>
-  </div>
+  <%= render partial:'/shared/navbar', locals: {text: "Déclarer une absence"} %>
 
   <div class="absence-jour">
     <h2>Quel jour seras-tu absent.e ?</h2>
