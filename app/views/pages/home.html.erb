@@ -1,6 +1,6 @@
 <div class="container background-absence pb-100px">
 
-  <%= render partial:'/shared/navbar', locals: {title: "Hello #{@user.first_name}"} %>
+  <%= render partial:'/shared/navbar', locals: {title: "Hello #{current_user.first_name}"} %>
 
   <div class="tableau">
     <div class="absences rectangle margin-rectangle-dashboard">
@@ -17,7 +17,7 @@
         <% end %>
       </div>
 
-      <% if @absences.length < 9 %>
+      <% if @absences_lessons.length < 9 %>
         <%= link_to "Déclarer une absence", "/absences/new", class: "btn-red-small btn-left" %>
       <% end %>
     </div>
@@ -54,7 +54,7 @@
         </div>
       </div>
 
-      <% if @absences.length > @rattrapages.length %>
+      <% if @absences_lessons.length > @rattrapages_lessons.length %>
         <%= link_to "Choisir un rattrapage", "/lessons/new", class: "btn-red-small btn-left" %>
       <% end %>
     </div>
