@@ -29,19 +29,8 @@
           <%= f.button :submit, 'Choisir ce rattrapage', class: 'd-none' %>
         <% end %>
 
-        <!-- Modale de confirmation -->
-        <div class="d-none blur-modale" data-confirmation-target="modal">
-          <div class="modale-conf-rattrapage">
-            <div class="sentence" data-confirmation-target="sentence">
-            </div>
-              <div class="alerte-rattrapages-select">
-                <i class="fa-solid fa-triangle-exclamation alerte-icone"></i>
-                <p class="text-alerte-rattrapage">Après avoir confirmé ton rattrapage, celui-ci sera définitif</p>
-              </div>
-            <button data-action="click->confirmation#submit" class="btn btn-red-modal">Oui</button>
-            <button data-action="click->confirmation#cancel" class="btn btn-red-modal">Non</button>
-          </div>
-        </div>
+        <%= render partial:'/shared/modale', locals: {sentence: "Après avoir confirmé ton rattrapage, celui-ci sera définitif"} %>
+
       </div>
     <% end %>
 
