@@ -5,6 +5,7 @@ class AbsencesController < ApplicationController
     else
       lessons_user = Lesson.where(course_id: current_user.course_id)
       available_lessons = lessons_user.select { |lesson| absence_available?(lesson) && more_than_24h?(lesson) }
+      redirect_to courses_path if Absence.where(user: current_user).count >= 9
       @available_dates = available_lessons.map { |d| d.occurs_on.strftime("%Y-%m-%d %H:%M:%S %z") }
       @lesson = Lesson.new
     end
@@ -12,13 +13,10 @@ class AbsencesController < ApplicationController
 
   def create
     occurs_on = params[:lesson][:occurs_on]
-    @current_lessons = Lesson.where("DATE_TRUNC('day', occurs_on) = ?", occurs_on.to_date)
-    @course_id = current_user.course_id
-    @current_lessons.each do |lesson|
-      @current_lesson = lesson if lesson.course_id == @course_id
-    end
-    @absence = Absence.new(user_id: current_user.id, lesson_id: @current_lesson.id)
-    @absence.save
+    user_course_id = current_user.course_id
+    lesson = Lesson.find_by("DATE_TRUNC('day', occurs_on) = ? AND course_id = ?", occurs_on.to_date, user_course_id)
+    absence = Absence.new(user_id: current_user.id, lesson_id: lesson.id)
+    absence.save
     redirect_to root_path
   end
 
@@ -37,5 +35,4 @@ class AbsencesController < ApplicationController
   def more_than_24h?(lesson)
     ((lesson.occurs_on - DateTime.now) / 3600) > 24
   end
-
 end
