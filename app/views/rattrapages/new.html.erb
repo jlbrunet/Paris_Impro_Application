@@ -2,25 +2,18 @@
 
   <%= render partial:'/shared/navbar', locals: {title: "Informations"} %>
 
-  <div class="text-index-rattrapage">
-    <h2>Sélectionne ton rattrapage sur les disponibilités ci-dessous</h2>
-  </div>
+  <div class="text-index-rattrapage"><h2>Sélectionne ton rattrapage sur les disponibilités ci-dessous</h2></div>
 
   <div>
-
     <% @rattrapage_lessons.each do |lesson| %>
 
-      <div class="tab-show-rattrapage" data-controller="rattrapage" data-rattrapage-date-value="<%= lesson.occurs_on.strftime("%M").to_i > 0 ? I18n.l(lesson.occurs_on, format: "%A %-d %B %kh%M", locale: :fr) : I18n.l(lesson.occurs_on, format: "%A %-d %B %kh", locale: :fr) %>">
+      <% lesson_occurs_on_minutes = I18n.l(lesson.occurs_on, format: "%A %-d %B %kh%M", locale: :fr) %>
+      <% lesson_occurs_on_hour = I18n.l(lesson.occurs_on, format: "%A %-d %B %kh", locale: :fr) %>
+      <% lesson_occurs_on = lesson.occurs_on.strftime("%M").to_i > 0 ? lesson_occurs_on_minutes : lesson_occurs_on_hour %>
 
-        <div class="title-rectangle title-red">
-          <h3 class="title-red">
-            <% if lesson.occurs_on.strftime("%M").to_i > 0 %>
-              <%= I18n.l(lesson.occurs_on, format: "%A %-d %B %kh%M", locale: :fr) %>
-            <% else %>
-              <%= I18n.l(lesson.occurs_on, format: "%A %-d %B %kh", locale: :fr) %>
-            <% end %>
-          </h3>
-        </div>
+      <div class="tab-show-rattrapage" data-controller="rattrapage" data-rattrapage-date="<%= lesson_occurs_on %>">
+
+        <div class="title-rectangle title-red"><h3 class="title-red"><%= lesson_occurs_on %></h3></div>
 
         <div class="content-show-rattrapage">
           <p><i class="fa-solid fa-circle"></i><%= Course.find(lesson.course_id).level %></p>

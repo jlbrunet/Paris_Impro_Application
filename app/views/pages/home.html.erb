@@ -35,16 +35,18 @@
           <% end %>
         <% end %>
 
-        <div>
-          <div class="alerte-rattrapages">
-            <i class="fa-solid fa-triangle-exclamation alerte-icone"></i>
-            <% if (@absences_lessons.count - @rattrapages_lessons.count) == 1 %>
-              <p class="text-alerte-rattrapage">Tu as 1 absence pour laquelle tu n'as pas de rattrapage programmé.</p>
-            <% elsif @absences_lessons.count > @rattrapages_lessons.count %>
-              <p class="text-alerte-rattrapage">Tu as <%= @absences_lessons.count - @rattrapages_lessons.count %> absences pour lesquelles tu n'as pas de rattrapage programmé.</p>
-            <% end %>
+        <% if @rattrapages_lessons.count < 9 && @absences_lessons.count != @rattrapages_lessons.count %>
+          <div>
+            <div class="alerte-rattrapages">
+              <i class="fa-solid fa-triangle-exclamation alerte-icone"></i>
+              <% if (@absences_lessons.count - @rattrapages_lessons.count) == 1 %>
+                <p class="text-alerte-rattrapage">Tu as 1 absence pour laquelle tu n'as pas de rattrapage programmé.</p>
+              <% elsif @absences_lessons.count > @rattrapages_lessons.count %>
+                <p class="text-alerte-rattrapage">Tu as <%= @absences_lessons.count - @rattrapages_lessons.count %> absences pour lesquelles tu n'as pas de rattrapage programmé.</p>
+              <% end %>
+            </div>
           </div>
-        </div>
+        <% end %>
       </div>
 
       <% if @absences_lessons.length > @rattrapages_lessons.length %>
