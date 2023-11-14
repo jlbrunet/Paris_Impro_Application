@@ -8,10 +8,10 @@
         <div class="btn btn-red-modale" data-action="click->add-places#minus">-</div>
       </div>
       <div class="validate-place">
-      <button class="btn btn-red-modales"><%= f.button :submit, 'Valider' %></button>
-      <%= f.input :lesson_id, as: :hidden, input_html: {value: lesson.id} %>
+        <button class="btn btn-red-modales" name="commit" type="submit" value="Valider">Valider</button>
+        <%= f.input :lesson_id, as: :hidden, input_html: {value: lesson.id} %>
+        <button data-action="click->add-places#change" class="btn btn-red-modales">Annuler</button>
+      </div>
     <% end %>
-    <button data-action="click->add-places#change" class="btn btn-red-modales">Annuler</button>
-    </div>
   </div>
 </div>
