@@ -19,9 +19,7 @@ export default class extends Controller {
 
   confirm(event) {
     event.preventDefault()
-    const inputTarget = document.querySelector('[data-rattrapage-target="input"]')
-    // const formatted_date = moment(inputTarget.value).locale('fr').format('dddd D MMMM')
-    this.sentenceTarget.innerText = `Confirmes-tu ton rattrapage au cours du ${this.date} ?`
+    this.sentenceTarget.innerText = `Confirmes-tu ton rattrapage au cours du ${this.dateValue} ?`
     this.modalTarget.classList.remove("d-none")
   }
 
