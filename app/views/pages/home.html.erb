@@ -35,7 +35,7 @@
           <% end %>
         <% end %>
 
-        <% if @rattrapages_lessons.count < 9 %>
+        <% if @rattrapages_lessons.count < 9 && @absences_lessons.count != @rattrapages_lessons.count %>
           <div>
             <div class="alerte-rattrapages">
               <i class="fa-solid fa-triangle-exclamation alerte-icone"></i>

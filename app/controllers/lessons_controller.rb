@@ -47,19 +47,10 @@ class LessonsController < ApplicationController
   end
 
   def create
-    @occurs_on = params[:lesson][:occurs_on]
-    @current_lessons_all_levels = Lesson.where("DATE_TRUNC('day', occurs_on) = ?", @occurs_on.to_date)
-    @current_lessons_all = []
-    @current_lessons_all_levels.each do |lesson|
-      if Course.where(id: lesson.course_id)[0].level == Course.where(id: current_user.course_id)[0].level
-        @current_lessons_all << lesson
-      end
-    end
-    @current_lessons = []
-    @current_lessons_all.each do |lesson|
-      @current_lessons << lesson unless Absence.where(lesson_id: lesson.id)[0].nil?
-    end
-    session[:current_lessons_ids] = @current_lessons.pluck(:id)
+    occurs_on = params[:lesson][:occurs_on]
+    lessons = Lesson.where("DATE_TRUNC('day', occurs_on) = ?", occurs_on.to_date)
+    available_lessons = lessons.select { |lesson| same_level?(lesson) && available_absence?(lesson) }
+    session[:available_lessons_ids] = available_lessons.map(&:id)
     redirect_to rattrapages_new_path
   end
 
