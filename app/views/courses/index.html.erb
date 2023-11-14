@@ -2,12 +2,8 @@
   <%= render partial:'/shared/navbar', locals: {title: ""} %>
 
   <div class="courses">
-    <div class="title-c">
-      <h2 class="font-headers">Liste des cours</h2>
-    </div>
-
+    <div class="title-c"><h2 class="font-headers">Liste des cours</h2></div>
     <div class="border-tableau"></div>
-
     <div class="tableau">
       <div class="absences margin-rectangle-admin rectangle">
         <div class="tab-courses">
@@ -17,7 +13,6 @@
                 <p class="text-gras"><%= course.day %> <%= course.hour.strftime("%H") %>h<%= course.hour.strftime("%M") if course.hour.strftime("%M").to_i > 0 %> | <%= course.level %> | <%= course.teacher %></p>
                 <p class="text-lieu"><%=  course.location %></p>
               </div>
-
               <div class="separation-button">
                 <div class="btn-admin">
                   <%= link_to course_lessons_path(course) do %>
@@ -39,5 +34,4 @@
       </div>
     </div>
   </div>
-
 </div>
