@@ -5,6 +5,9 @@ import 'moment/locale/fr';
 // Connects to data-controller="confirmation"
 export default class extends Controller {
   static targets = ["modal", "form", "input", "sentence", "button"]
+  static values  = {
+    date: String
+  }
 
   connect() {
     this.buttonTarget.disabled = true
@@ -14,10 +17,16 @@ export default class extends Controller {
     this.buttonTarget.disabled = false
   }
 
-  confirm(event) {
+  confirm_absence(event) {
     event.preventDefault()
     const formatted_date = moment(this.inputTarget.value).locale('fr').format('dddd D MMMM')
     this.sentenceTarget.innerText = `Confirmes-tu ton absence au cours du ${formatted_date} ?`
+    this.modalTarget.classList.remove("d-none")
+  }
+
+  confirm_rattrapage(event) {
+    event.preventDefault()
+    this.sentenceTarget.innerText = `Confirmes-tu ton rattrapage au cours du ${this.dateValue} ?`
     this.modalTarget.classList.remove("d-none")
   }
 
