@@ -13,10 +13,8 @@ export default class extends Controller {
     this.buttonTarget.disabled = true;
   }
 
-  validate(event) {
-    if (event.target.value !== '') {
-      this.buttonTarget.disabled = false;
-    }
+  validate() {
+    this.buttonTarget.disabled = false;
   }
 
   confirm(event) {
