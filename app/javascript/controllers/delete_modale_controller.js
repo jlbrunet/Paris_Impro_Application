@@ -1,6 +1,5 @@
 import { Controller } from "@hotwired/stimulus"
 
-// Connects to data-controller="delete-abs"
 export default class extends Controller {
   static targets = ["a_modale", "r_modale"]
 

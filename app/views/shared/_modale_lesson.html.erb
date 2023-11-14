@@ -1,7 +1,7 @@
-<div class="d-none blur-modale" data-delete-abs-target=<%= target %>>
+<div class="d-none blur-modale" data-delete-modale-target=<%= target %>>
   <div class="modale-delete-ar">
     <div class="sentence">Êtes-tu sûr.e de vouloir supprimer <%= sentence %> ?</div>
     <button class="btn btn-red-modal"><%= link_to "Oui", destroy_path, data: {turbo_method: :delete} %></button>
-    <button data-action="click->delete-abs#<%= method %>" class="btn btn-red-modal">Non</button>
+    <button data-action="click->delete-modale#<%= method %>" class="btn btn-red-modal">Non</button>
   </div>
 </div>

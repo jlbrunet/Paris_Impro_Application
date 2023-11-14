@@ -6,22 +6,21 @@ class LessonsController < ApplicationController
       @course = Course.find(params[:course_id])
       @lessons = Lesson.where(course_id: @course.id).select { |lesson| lesson.occurs_on > DateTime.now }
       @absences = Absence.joins(:user).where(users: { status: "student" })
-      @places_ouvertes = Absence.joins(:user).where(users: { status: "admin" })
-      @rattrapages_and_places_ouvertes = Rattrapage.all + @places_ouvertes
+      places_ouvertes = Absence.joins(:user).where(users: { status: "admin" })
+      @rattrapages_and_places_ouvertes = Rattrapage.all + places_ouvertes
       @place = Place.new
     end
   end
 
   def create_place
-    @place_number = params[:place][:number].to_i
-    @place_lesson = params[:place][:lesson_id].to_i
-    @place_number.times do
-      @absence = Absence.new(user_id: User.where(status: "admin")[0].id,
-                             lesson_id: @place_lesson)
-      @absence.save!
+    place_number = params[:place][:number].to_i
+    place_lesson = params[:place][:lesson_id].to_i
+    place_number.times do
+      absence = Absence.new(user_id: User.find_by(status: "admin").id, lesson_id: place_lesson)
+      absence.save
     end
-    @course = Course.find(params[:course_id])
-    redirect_to course_lessons_path(@course)
+    course = Course.find(params[:course_id])
+    redirect_to course_lessons_path(course)
   end
 
   def new
