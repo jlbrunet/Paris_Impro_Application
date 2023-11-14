@@ -1,12 +1,10 @@
 <div class="container background-absence pb-100px">
 
-  <%= render partial:'/shared/navbar', locals: {title: "Hello #{@user.first_name}"} %>
+  <%= render partial:'/shared/navbar', locals: {title: "Hello #{current_user.first_name}"} %>
 
   <div class="tableau">
     <div class="absences rectangle margin-rectangle-dashboard">
-      <div class="title-rectangle">
-        <h3 class="title-red">Tes absences</h3>
-      </div>
+      <div class="title-rectangle"><h3 class="title-red">Tes absences</h3></div>
       <div class="absences-content">
         <% if @absences_lessons == [] %>
           <p>Pas d'absence</p>
@@ -16,8 +14,7 @@
           <% end %>
         <% end %>
       </div>
-
-      <% if @absences.length < 9 %>
+      <% if @absences_lessons.length < 9 %>
         <%= link_to "Déclarer une absence", "/absences/new", class: "btn-red-small btn-left" %>
       <% end %>
     </div>
@@ -32,29 +29,25 @@
           <p>Pas de rattrapage</p>
         <% else %>
           <% @rattrapages_lessons.each do |lesson| %>
-            <% rattrapage = Rattrapage.where(lesson_id: lesson.id).first %>
-            <%= link_to rattrapage_show_path(rattrapage) do %>
+            <%= link_to rattrapage_show_path(Rattrapage.find_by(lesson: lesson)) do %>
               <p class="link-rattrapage"><i class="fa-solid fa-circle"></i><%= I18n.l(lesson.occurs_on, format: "%A %-d %B %kh", locale: :fr) %></p>
             <% end %>
           <% end %>
         <% end %>
 
         <div>
-          <% if (@absences_lessons.count - @rattrapages_lessons.count) == 1 %>
-            <div class="alerte-rattrapages">
-              <i class="fa-solid fa-triangle-exclamation alerte-icone"></i>
-              <p>Tu as 1 absence pour laquelle tu n'as pas de rattrapage programmé.</p>
-            </div>
-          <% elsif @absences_lessons.count > @rattrapages_lessons.count %>
-            <div class="alerte-rattrapages">
-              <i class="fa-solid fa-triangle-exclamation alerte-icone"></i>
-              <p class="text-alerte-rattrapage">Tu as <%= @absences_lessons.count - @rattrapages_lessons.count %> absences pour lesquelles tu n'as pas de rattrapage programmé. </p>
-            </div>
-          <% end %>
+          <div class="alerte-rattrapages">
+            <i class="fa-solid fa-triangle-exclamation alerte-icone"></i>
+            <% if (@absences_lessons.count - @rattrapages_lessons.count) == 1 %>
+              <p class="text-alerte-rattrapage">Tu as 1 absence pour laquelle tu n'as pas de rattrapage programmé.</p>
+            <% elsif @absences_lessons.count > @rattrapages_lessons.count %>
+              <p class="text-alerte-rattrapage">Tu as <%= @absences_lessons.count - @rattrapages_lessons.count %> absences pour lesquelles tu n'as pas de rattrapage programmé.</p>
+            <% end %>
+          </div>
         </div>
       </div>
 
-      <% if @absences.length > @rattrapages.length %>
+      <% if @absences_lessons.length > @rattrapages_lessons.length %>
         <%= link_to "Choisir un rattrapage", "/lessons/new", class: "btn-red-small btn-left" %>
       <% end %>
     </div>

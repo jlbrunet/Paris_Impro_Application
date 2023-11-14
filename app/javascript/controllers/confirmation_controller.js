@@ -7,19 +7,16 @@ export default class extends Controller {
   static targets = ["modal", "form", "input", "sentence", "button"]
 
   connect() {
-    this.buttonTarget.disabled = true;
+    this.buttonTarget.disabled = true
   }
 
-  validate(event) {
-    if (event.target.value !== '') {
-      this.buttonTarget.disabled = false;
-    }
+  validate() {
+    this.buttonTarget.disabled = false
   }
 
   confirm(event) {
     event.preventDefault()
-    const inputTarget = document.querySelector('[data-confirmation-target="input"]')
-    const formatted_date = moment(inputTarget.value).locale('fr').format('dddd D MMMM')
+    const formatted_date = moment(this.inputTarget.value).locale('fr').format('dddd D MMMM')
     this.sentenceTarget.innerText = `Confirmes-tu ton absence au cours du ${formatted_date} ?`
     this.modalTarget.classList.remove("d-none")
   }
