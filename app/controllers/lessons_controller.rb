@@ -35,19 +35,13 @@ class LessonsController < ApplicationController
   end
 
   def new
-    @user_c = current_user
-    if @user_c.status == "teacher" || @user_c.status == "admin"
+    if current_user.status == "teacher" || current_user.status == "admin"
       redirect_to courses_path
     else
-      @available_dates = []
-      @lessons = Lesson.where.not(course_id: current_user.course_id)
-      @user_id = current_user.id
-      @lessons.each do |lesson|
-        if (Rattrapage.where(lesson_id: lesson.id).length < Absence.where(lesson_id: lesson.id).length) && (Course.find(lesson.course_id).level == Course.find(current_user.course_id).level) && Course.where(id: lesson.course_id)[0].day != Course.where(id: current_user.course_id)[0].day && lesson.occurs_on > DateTime.now()
-          @available_dates << lesson.occurs_on
-        end
-      end
-      @available_dates_string = @available_dates.map { |d| d.strftime("%Y-%m-%d %H:%M:%S %z") }
+      lessons = Lesson.where.not(course_id: current_user.course_id)
+      available_lessons = lessons.select { |lesson| available_lesson?(lesson) }
+      redirect_to root_path if Rattrapage.where(user: current_user).count >= 9
+      @available_dates = available_lessons.map { |d| d.occurs_on.strftime("%Y-%m-%d %H:%M:%S %z") }
       @lesson = Lesson.new
     end
   end
@@ -79,5 +73,27 @@ class LessonsController < ApplicationController
     end
     @course = Course.find(params[:course_id])
     redirect_to course_lessons_path(@course)
+  end
+
+  private
+
+  def available_lesson?(lesson)
+    same_level?(lesson) && other_day?(lesson) && future_date?(lesson) && available_absence?(lesson)
+  end
+
+  def same_level?(lesson)
+    Course.find(lesson.course_id).level == Course.find(current_user.course_id).level
+  end
+
+  def other_day?(lesson)
+    Course.where(id: lesson.course_id)[0].day != Course.where(id: current_user.course_id)[0].day
+  end
+
+  def future_date?(lesson)
+    lesson.occurs_on > DateTime.now
+  end
+
+  def available_absence?(lesson)
+    Rattrapage.where(lesson_id: lesson.id).length < Absence.where(lesson_id: lesson.id).length
   end
 end
