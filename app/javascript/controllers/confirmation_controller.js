@@ -14,7 +14,8 @@ export default class extends Controller {
     this.buttonTarget.disabled = false
   }
 
-  confirm() {
+  confirm(event) {
+    event.preventDefault()
     const formatted_date = moment(this.inputTarget.value).locale('fr').format('dddd D MMMM')
     this.sentenceTarget.innerText = `Confirmes-tu ton absence au cours du ${formatted_date} ?`
     this.modalTarget.classList.remove("d-none")

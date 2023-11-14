@@ -11,8 +11,8 @@ class AbsencesController < ApplicationController
   end
 
   def create
-    @occurs_on = params[:lesson][:occurs_on]
-    @current_lessons = Lesson.where("DATE_TRUNC('day', occurs_on) = ?", @occurs_on.to_date)
+    occurs_on = params[:lesson][:occurs_on]
+    @current_lessons = Lesson.where("DATE_TRUNC('day', occurs_on) = ?", occurs_on.to_date)
     @course_id = current_user.course_id
     @current_lessons.each do |lesson|
       @current_lesson = lesson if lesson.course_id == @course_id
@@ -37,4 +37,5 @@ class AbsencesController < ApplicationController
   def more_than_24h?(lesson)
     ((lesson.occurs_on - DateTime.now) / 3600) > 24
   end
+
 end
