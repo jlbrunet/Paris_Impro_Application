@@ -55,7 +55,7 @@
         </div>
 
         <% if current_user.status == "admin" %>
-          <div class="btn-red-small btn-left"><p class="text-btn-lesson" data-action="click->add-places#change">Ouvrir une place</p></div>
+          <div class="btn-red-small btn-left btn-place"><p class="text-btn-lesson" data-action="click->add-places#change">Ouvrir une place</p></div>
           <%= render partial:'/shared/create_place', locals:{lesson: lesson} %>
         <% end %>
 
