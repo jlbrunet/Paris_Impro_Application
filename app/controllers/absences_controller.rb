@@ -21,9 +21,10 @@ class AbsencesController < ApplicationController
   end
 
   def destroy
-    @absence = Absence.find(params[:id])
-    @user = User.find(@absence.user_id)
-    @absence.destroy
+    absence = Absence.find(params[:id])
+    absence.destroy
+    course = Course.find(Lesson.find(absence.lesson_id).course_id)
+    redirect_to course_lessons_path(course)
   end
 
   private

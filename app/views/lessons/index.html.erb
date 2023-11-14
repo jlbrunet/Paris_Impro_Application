@@ -2,7 +2,6 @@
 
   <%= render partial:'/shared/navbar', locals: {title: ""} %>
 
-
   <div class="courses-index">
     <h2 class="font-headers">Absences</h2>
     <h2 class="font-headers"><%= @course.day %> | <%= @course.level %></h2>
@@ -13,96 +12,63 @@
   <% @lessons.each do |lesson| %>
     <div class="tableau" data-controller="add-places">
       <div class="absences rectangles">
-        <div class="title-rectangle">
-          <% if lesson.occurs_on.strftime("%M").to_i > 0 %>
-            <h3 class="title-red" style="font-size:18px"><%= I18n.l(lesson.occurs_on, format: "%A %-d %B %Y - %kh%M", locale: :fr) %></h3>
-          <% else %>
-            <h3 class="title-red" style="font-size:18px"><%= I18n.l(lesson.occurs_on, format: "%A %-d %B %Y - %kh", locale: :fr) %></h3>
-          <% end %>
-        </div>
+        <div class="title-rectangle"><h3 class="title-red" style="font-size:18px"><%= lesson_occurs_on(lesson) %></h3></div>
 
         <div class="absences-contents">
-          <% if absences_lesson(@absences_students, lesson) == [] %>
+          <% if @absences.select { |absence| absence.lesson_id == lesson.id }.empty? %>
             <p>Pas d'absence pour ce cours</p>
           <% else %>
             <p>Absent.e.s :</p>
-            <% absences_lesson(@absences_students, lesson).each do |absence| %>
-            <div class="student" data-controller="delete-abs">
-              <% if @user.status == "admin" && lesson.occurs_on > DateTime.now() %>
-                <div class="btn-delete-eleve margin-btn-delete" data-action="click->delete-abs#modal">
-                  <i class="icone-btn-eleve fa-solid fa-trash"></i>
-                </div>
-              <% else %>
-                  <i class="fa-solid fa-circle"></i>
-              <% end %>
-              <%= absence.user.first_name %> <%= absence.user.last_name %>
-              <%# modale%>
-              <div class="d-none blur-modale" data-delete-abs-target="modale" >
-                <div class="modale-delete-absence">
-                  <div class="sentence">Êtes-tu sûr.e de vouloir supprimer cette absence ?</div>
-                  <button class="btn btn-red-modal"><%= link_to "Oui", absence_destroy_path(absence), data: {turbo_method: :delete} %></button>
-                  <button data-action="click->delete-abs#cancel" class="btn btn-red-modal">Non</button>
-                </div>
+            <% @absences.select { |absence| absence.lesson_id == lesson.id }.each do |absence| %>
+              <div class="student" data-controller="delete-abs">
+                <% if current_user.status == "admin" %>
+                  <div class="btn-delete-eleve margin-btn-delete" data-action="click->delete-abs#a_change">
+                    <i class="icone-btn-eleve fa-solid fa-trash"></i>
+                  </div>
+                <% end %>
+                <%= absence.user.first_name %> <%= absence.user.last_name %>
+                <%= render partial:'/shared/modale_lesson', locals: {destroy_path: absence_destroy_path(absence), target: "a_modale", method: "a_change", sentence: "cette absence" } %>
               </div>
-              <%# %>
-            </div>
             <% end %>
           <% end %>
         </div>
 
         <div class="rattrapages-content">
-          <% if rattrapages_lesson(@rattrapages, @absences, lesson).empty? %>
+          <% if new_rattrapage_takes_place_ouverte(@rattrapages_and_places_ouvertes, @absences, lesson).empty? %>
             <p>Pas de rattrapage pour ce cours</p>
           <% else %>
           <p>En rattrapage :</p>
-            <% rattrapages_lesson(@rattrapages, @absences, lesson).each do |rattrapage| %>
+            <% new_rattrapage_takes_place_ouverte(@rattrapages_and_places_ouvertes, @absences, lesson).each do |item| %>
             <div class="student" data-controller="delete-abs">
-              <% if @user.status == "admin" && lesson.occurs_on > DateTime.now() %>
-                <div class="btn-delete-eleve margin-btn-delete" data-action="click->delete-abs#modal2">
+              <% if current_user.status == "admin"%>
+                <div class="btn-delete-eleve margin-btn-delete" data-action="click->delete-abs#r_change">
                   <i class="icone-btn-eleve fa-solid fa-trash"></i>
                 </div>
               <% else %>
                 <i class="fa-solid fa-circle"></i>
               <% end %>
-              <% if rattrapage.user.status == "admin"%>
+              <% if item.user.status == "admin"%>
                 <span>Place ouverte</span>
               <% else %>
-                <%= rattrapage.user.first_name %> <%= rattrapage.user.last_name %>
+                <%= item.user.first_name %> <%= item.user.last_name %>
               <% end %>
-              <%# modale%>
-              <div class="d-none blur-modale" data-delete-abs-target="modale2">
-                <div class="modale-delete-rattrapage">
-                  <% if rattrapage.class == Absence  %>
 
-                    <div class="sentence">Êtes-tu sûr.e de vouloir supprimer cette place ouverte ?</div>
-                      <div class="btn-conf-delete-rattrapage">
-                        <button class="btn btn-red-modal"><%= link_to "Oui", absence_destroy_path(rattrapage), data: {turbo_method: :delete, action:"click->delete-abs#cancel2"} %></button>
-                        <button data-action="click->delete-abs#cancel2" class="btn btn-red-modal">Non</button>
-                      </div>
-
-                  <% else %>
-
-                    <div class="sentence">Êtes-tu sûr.e de vouloir supprimer ce rattrapage ?</div>
-                      <div class="btn-conf-delete-rattrapage">
-                        <button class="btn btn-red-modal"><%= link_to "Oui", rattrapage_destroy_path(rattrapage), data: {turbo_method: :delete, action:"click->delete-abs#cancel2"} %></button>
-                        <button data-action="click->delete-abs#cancel2" class="btn btn-red-modal">Non</button>
-                      </div>
-
-                  <% end %>
-                </div>
-              </div>
-              <%# %>
+              <% if item.class == Absence  %>
+                <%= render partial:'/shared/modale_lesson', locals: {destroy_path: absence_destroy_path(item), target: "r_modale", method: "r_change", sentence: "cette place ouverte" } %>
+              <% else %>
+                <%= render partial:'/shared/modale_lesson', locals: {destroy_path: rattrapage_destroy_path(item), target: "r_modale", method: "r_change", sentence: "ce rattrapage" } %>
+              <% end %>
            </div>
             <% end %>
           <% end %>
         </div>
-        <% if @user.status == "admin" && (lesson.occurs_on > DateTime.now()) %>
+        <% if current_user.status == "admin" %>
           <div class="btn-red-small btn-left">
             <p class="text-btn-lesson" data-action="click->add-places#add">Ouvrir une place</p>
           </div>
         <% end %>
       </div>
-      <% if @user.status == "admin" %>
+      <% if current_user.status == "admin" %>
         <div class="d-none blur-modale" data-add-places-target="modale">
           <div class="modale-add-place">
             <div class="sentence">Ajouter des places</div>
@@ -120,14 +86,11 @@
             <% end %>
             <button data-action="click->add-places#cancel" class="btn btn-red-modales">Annuler</button>
             </div>
-
           </div>
         </div>
-
       <% end %>
     </div>
   <% end %>
-
 
   <%= link_to courses_path , class: "btn-red-back btn-left" do %>
     <div><i class="fa-solid fa-circle-chevron-left"></i> Retour</div>

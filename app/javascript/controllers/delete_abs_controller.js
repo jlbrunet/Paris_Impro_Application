@@ -2,24 +2,13 @@ import { Controller } from "@hotwired/stimulus"
 
 // Connects to data-controller="delete-abs"
 export default class extends Controller {
-  static targets = ["modale", "modale2"]
+  static targets = ["a_modale", "r_modale"]
 
-  connect() {
+  a_change() {
+    this.a_modaleTarget.classList.toggle("d-none")
   }
 
-  modal() {
-    this.modaleTarget.classList.remove("d-none")
-  }
-
-  cancel() {
-    this.modaleTarget.classList.add("d-none")
-  }
-
-  modal2() {
-    this.modale2Target.classList.remove("d-none")
-  }
-
-  cancel2() {
-    this.modale2Target.classList.add("d-none")
+  r_change() {
+    this.r_modaleTarget.classList.toggle("d-none")
   }
 }

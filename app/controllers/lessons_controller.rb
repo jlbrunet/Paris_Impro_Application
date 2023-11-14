@@ -1,37 +1,27 @@
 class LessonsController < ApplicationController
   def index
-    @user_c = current_user
-    if @user_c.status == "student"
+    if current_user.status == "student"
       redirect_to root_path
     else
-      @user = current_user
       @course = Course.find(params[:course_id])
-      @lessons = Lesson.where(course_id: @course.id)
-
-      @absences = Absence.all
-      @absences_students = []
-      @absences_admin = []
-
-      @absences.each do |absence|
-        if absence.user.status == "student"
-          @absences_students << absence
-        else
-          @absences_admin << absence
-        end
-      end
-
-      @rattrapages_students = Rattrapage.all
-      @rattrapages = []
-
-      @rattrapages_students.each do |rattrapage|
-        @rattrapages << rattrapage
-      end
-      @absences_admin.each do |absence|
-        @rattrapages << absence
-      end
-
+      @lessons = Lesson.where(course_id: @course.id).select { |lesson| lesson.occurs_on > DateTime.now }
+      @absences = Absence.joins(:user).where(users: { status: "student" })
+      @places_ouvertes = Absence.joins(:user).where(users: { status: "admin" })
+      @rattrapages_and_places_ouvertes = Rattrapage.all + @places_ouvertes
       @place = Place.new
     end
+  end
+
+  def create_place
+    @place_number = params[:place][:number].to_i
+    @place_lesson = params[:place][:lesson_id].to_i
+    @place_number.times do
+      @absence = Absence.new(user_id: User.where(status: "admin")[0].id,
+                             lesson_id: @place_lesson)
+      @absence.save!
+    end
+    @course = Course.find(params[:course_id])
+    redirect_to course_lessons_path(@course)
   end
 
   def new
@@ -52,18 +42,6 @@ class LessonsController < ApplicationController
     available_lessons = lessons.select { |lesson| same_level?(lesson) && available_absence?(lesson) }
     session[:available_lessons_ids] = available_lessons.map(&:id)
     redirect_to rattrapages_new_path
-  end
-
-  def create_place
-    @place_number = params[:place][:number].to_i
-    @place_lesson = params[:place][:lesson_id].to_i
-    @place_number.times do
-      @absence = Absence.new(user_id: User.where(status: "admin")[0].id,
-                             lesson_id: @place_lesson)
-      @absence.save!
-    end
-    @course = Course.find(params[:course_id])
-    redirect_to course_lessons_path(@course)
   end
 
   private
