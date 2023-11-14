@@ -7,31 +7,19 @@
   <div>
     <% @rattrapage_lessons.each do |lesson| %>
 
-      <% lesson_occurs_on_minutes = I18n.l(lesson.occurs_on, format: "%A %-d %B %kh%M", locale: :fr) %>
-      <% lesson_occurs_on_hour = I18n.l(lesson.occurs_on, format: "%A %-d %B %kh", locale: :fr) %>
-      <% lesson_occurs_on = lesson.occurs_on.strftime("%M").to_i > 0 ? lesson_occurs_on_minutes : lesson_occurs_on_hour %>
+      <%= render partial:'/shared/details', locals: {lesson: lesson} %>
 
-      <div class="tab-show-rattrapage" data-controller="confirmation" data-confirmation-date-value="<%= lesson_occurs_on %>">
+      <%= simple_form_for(@lesson, url: rattrapages_path, html: {class: 'btn-red-small btn-left', data: {confirmation_target: 'form'}}) do |f| %>
+        <%= f.input :occurs_on, as: :string, label: false, input_html: { class: 'd-none', value: lesson.occurs_on, data: { confirmation_target: 'input'}} %>
+        <%= f.input :course_id, as: :hidden, input_html: {value: lesson.course_id}%>
+        <%= f.button :button, 'Choisir ce rattrapage', class: 'btn-red-small btn-left-rattrapage', data: { action: 'click->confirmation#confirmRattrapage' } %>
+        <%= f.button :submit, 'Choisir ce rattrapage', class: 'd-none' %>
+      <% end %>
 
-        <div class="title-rectangle title-red"><h3 class="title-red"><%= lesson_occurs_on %></h3></div>
-
-        <div class="content-show-rattrapage">
-          <p><i class="fa-solid fa-circle"></i><%= Course.find(lesson.course_id).level %></p>
-          <p><i class="fa-solid fa-circle"></i><%= Course.find(lesson.course_id).location %></p>
-          <p><i class="fa-solid fa-circle"></i><%= Course.find(lesson.course_id).info %></p>
-          <p><i class="fa-solid fa-circle"></i><%= Course.find(lesson.course_id).teacher %></p>
-        </div>
-
-        <%= simple_form_for(@lesson, url: rattrapages_path, html: {class: 'btn-red-small btn-left', data: {confirmation_target: 'form'}}) do |f| %>
-          <%= f.input :occurs_on, as: :string, label: false, input_html: { class: 'd-none', value: lesson.occurs_on, data: { confirmation_target: 'input'}} %>
-          <%= f.input :course_id, as: :hidden, input_html: {value: lesson.course_id}%>
-          <%= f.button :button, 'Choisir ce rattrapage', class: 'btn-red-small btn-left-rattrapage', data: { action: 'click->confirmation#confirmRattrapage' } %>
-          <%= f.button :submit, 'Choisir ce rattrapage', class: 'd-none' %>
-        <% end %>
-
-        <%= render partial:'/shared/modale', locals: {sentence: "Après avoir confirmé ton rattrapage, celui-ci sera définitif"} %>
+      <%= render partial:'/shared/modale', locals: {sentence: "Après avoir confirmé ton rattrapage, celui-ci sera définitif"} %>
 
       </div>
+      
     <% end %>
 
   </div>
