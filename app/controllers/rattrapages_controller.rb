@@ -13,6 +13,11 @@ class RattrapagesController < ApplicationController
     occurs_on = params[:lesson][:occurs_on]
     course_id = params[:lesson][:course_id].to_i
     lesson = Lesson.where("DATE_TRUNC('day', occurs_on) = ?", occurs_on.to_date).find_by(course_id: course_id)
+
+    places_ouvertes = Absence.where(lesson_id: lesson.id).joins(:user).where(users: { status: "admin" })
+    absences = Absence.where(lesson_id: lesson.id).joins(:user).where(users: { status: "student" })
+    places_ouvertes.last.destroy if absences.length == Rattrapage.where(lesson_id: lesson.id).length
+
     rattrapage = Rattrapage.new(user_id: current_user.id, lesson_id: lesson.id)
     rattrapage.save
     redirect_to rattrapage_show_path(rattrapage)

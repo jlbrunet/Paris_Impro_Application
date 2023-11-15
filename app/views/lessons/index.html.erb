@@ -31,11 +31,11 @@
         </div>
 
         <div class="rattrapages-content">
-          <% if new_rattrapage_takes_place_ouverte(@rattrapages_and_places_ouvertes, @absences, lesson).empty? %>
+          <% if @rattrapages_and_places_ouvertes.select { |rattrapage| rattrapage.lesson_id == lesson.id }.empty? %>
             <p>Pas de rattrapage pour ce cours</p>
           <% else %>
           <p>En rattrapage :</p>
-            <% new_rattrapage_takes_place_ouverte(@rattrapages_and_places_ouvertes, @absences, lesson).each do |item| %>
+            <% @rattrapages_and_places_ouvertes.select { |rattrapage| rattrapage.lesson_id == lesson.id }.each do |item| %>
               <div class="student" data-controller="delete-modale">
                 <% if current_user.status == "admin"%>
                   <div class="btn-delete-eleve margin-btn-delete" data-action="click->delete-modale#r_change"><i class="icone-btn-eleve fa-solid fa-trash"></i></div>
