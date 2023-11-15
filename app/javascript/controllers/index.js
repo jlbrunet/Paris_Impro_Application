@@ -13,8 +13,8 @@ application.register("add-places", AddPlacesController)
 import ConfirmationController from "./confirmation_controller"
 application.register("confirmation", ConfirmationController)
 
-import DeleteAbsController from "./delete_abs_controller"
-application.register("delete-abs", DeleteAbsController)
+import DeleteModaleController from "./delete_modale_controller"
+application.register("delete-modale", DeleteModaleController)
 
 import FlatpickrController from "./flatpickr_controller"
 application.register("flatpickr", FlatpickrController)

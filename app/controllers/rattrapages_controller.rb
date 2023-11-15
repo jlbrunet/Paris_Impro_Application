@@ -28,10 +28,9 @@ class RattrapagesController < ApplicationController
   end
 
   def destroy
-    @rattrapage = Rattrapage.find(params[:id])
-    @lesson = Lesson.find(@rattrapage.lesson_id)
-    @course = Course.find(@lesson.course_id)
-    @rattrapage.destroy
-    redirect_to course_lessons_path(@course)
+    rattrapage = Rattrapage.find(params[:id])
+    rattrapage.destroy
+    course = Course.find(Lesson.find(rattrapage.lesson_id).course_id)
+    redirect_to course_lessons_path(course)
   end
 end

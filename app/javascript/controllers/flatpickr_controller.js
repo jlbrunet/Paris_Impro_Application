@@ -2,7 +2,6 @@ import { Controller } from "@hotwired/stimulus"
 import flatpickr from "flatpickr"
 import { French } from "flatpickr/dist/l10n/fr.js"
 
-// Connects to data-controller="flatpickr"
 export default class extends Controller {
   static targets = ['input']
 
