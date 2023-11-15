@@ -74,6 +74,19 @@
   text-decoration: none;
 }
 
+.btn-red-modal-delete-course:hover {
+  background-color: #ee736f;
+  border-radius: 30px;
+  width: 150px;
+  height: 60px;
+  margin: 10px 10px 10px 10px;
+  display: inline-block;
+  font-family: "Outfit", sans-serif;
+  font-size: 20px;
+  color: white;
+  text-decoration: none;
+}
+
 .btn-red-modal:hover {
   background-color: $medium-red;
   color: white
@@ -383,4 +396,8 @@
 
 .btn-place {
   cursor: pointer;
+}
+
+.btn-delete-student {
+  margin-top: -10px;
 }
