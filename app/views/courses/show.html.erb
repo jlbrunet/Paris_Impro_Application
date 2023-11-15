@@ -46,8 +46,8 @@
               <div class="modale-delete-account">
                 <div class="sentence">Supprimer définitivement le compte élève de <%= student.first_name %></div>
                   <div class="delete-account-btn">
-                    <button class="btn btn-red-modales"><%= link_to "Oui", profile_destroy_path(student), data: {turbo_method: :delete, action:"click->account#submit"} %></button>
-                    <button data-action="click->account#delete" class="btn btn-red-modales">Non</button>
+                    <button class="btn btn-red-modales btn-delete-student"><%= link_to "Oui", profile_destroy_path(student), data: {turbo_method: :delete, action:"click->account#submit"} %></button>
+                    <button data-action="click->account#delete" class="btn btn-red-modales btn-delete-student">Non</button>
                   </div>
               </div>
             </div>
