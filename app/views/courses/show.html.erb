@@ -7,18 +7,16 @@
   </div>
 
   <div class="border-tableau"></div>
-
   <div class="tableau">
     <div class="absences rectangles">
       <div class="title-rectangle">
         <h3 class="title-red" style="font-size:20px">Liste des élèves</h3>
       </div>
-
       <div class="eleves-contents">
         <% @students.each do |student, index| %>
           <div class="one-eleve" data-controller="account">
             <p class="list-eleve"><i class="fa-solid fa-circle icone-circle"></i><%= student.first_name %> <%= student.last_name %></p>
-            <% if @user_c.status == "admin" %>
+            <% if current_user.status == "admin" %>
               <div class="button-eleve-right">
                 <div class="btn-delete-eleve" data-action="click->account#change">
                   <i class="fa-solid fa-arrow-right-arrow-left icone-btn-eleve"></i>
@@ -32,7 +30,6 @@
               <div class="tiret"></div>
             <% end %>
 
-            <%# modale de change %>
             <div class="d-none blur-modale" data-account-target="c_modal">
               <div class="modale-change-student">
                 <div class="sentence">Changer le cours de <%= student.first_name %></div>
@@ -41,31 +38,27 @@
                   <%= f.collection_select(:course_id, Course.all, :id, lambda {|course| "#{course.day} #{course.hour.hour}h - #{course.location} - #{course.level}"}, {include_blank: ""})%>
                   <%= f.button :submit, 'Valider', class: 'btn btn-red btn-valid-change-course' %>
                 <% end %>
-                <button data-action="click->account#cancel" class="btn btn-red-modal-delete-course">Annuler</button>
+                <button data-action="click->account#change" class="btn btn-red-modal-delete-course">Annuler</button>
               </div>
             </div>
-            <%# %>
-
-            <%# modale de delete %>
 
             <div class="d-none blur-modale" div class data-account-target="d_modal">
               <div class="modale-delete-account">
                 <div class="sentence">Supprimer définitivement le compte élève de <%= student.first_name %></div>
                   <div class="delete-account-btn">
-                    <button class="btn btn-red-modales"><%= link_to "Oui", profile_destroy_path(student), data: {turbo_method: :delete, action:"click->account#d_submit"} %></button>
-                    <button data-action="click->account#d_cancel" class="btn btn-red-modales">Non</button>
+                    <button class="btn btn-red-modales"><%= link_to "Oui", profile_destroy_path(student), data: {turbo_method: :delete, action:"click->account#submit"} %></button>
+                    <button data-action="click->account#delete" class="btn btn-red-modales">Non</button>
                   </div>
               </div>
             </div>
-            <%# %>
+
           </div>
         <% end %>
       </div>
     </div>
   </div>
 
-
-<%= link_to courses_path, class: "btn-red-back btn-left" do %>
-  <div><i class="fa-solid fa-circle-chevron-left"></i> Retour</div>
-<% end %>
+  <%= link_to courses_path, class: "btn-red-back btn-left" do %>
+    <div><i class="fa-solid fa-circle-chevron-left"></i> Retour</div>
+  <% end %>
 </div>
