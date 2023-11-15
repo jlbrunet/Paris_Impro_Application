@@ -1,0 +1,22 @@
+<% lesson_occurs_on_minutes = I18n.l(lesson.occurs_on, format: "%A %-d %B %kh%M", locale: :fr) %>
+<% lesson_occurs_on_hour = I18n.l(lesson.occurs_on, format: "%A %-d %B %kh", locale: :fr) %>
+<% lesson_occurs_on = lesson.occurs_on.strftime("%M").to_i > 0 ? lesson_occurs_on_minutes : lesson_occurs_on_hour %>
+
+<% if current_page?('/rattrapages/new') %>
+  <div class="tab-show-rattrapage" data-controller="confirmation" data-confirmation-date-value="<%= lesson_occurs_on %>">
+<% else %>
+  <div class="tab-show-rattrapage">
+<% end %>
+
+<div class="title-rectangle title-red"><h3 class="title-red"><%= lesson_occurs_on %></h3></div>
+
+<div class="content-show-rattrapage">
+  <p><i class="fa-solid fa-circle"></i><%= Course.find(lesson.course_id).level %></p>
+  <p><i class="fa-solid fa-circle"></i><%= Course.find(lesson.course_id).location %></p>
+  <p><i class="fa-solid fa-circle"></i><%= Course.find(lesson.course_id).info %></p>
+  <p><i class="fa-solid fa-circle"></i><%= Course.find(lesson.course_id).teacher %></p>
+</div>
+
+<% if !current_page?('/rattrapages/new') %>
+  </div>
+<% end %>
