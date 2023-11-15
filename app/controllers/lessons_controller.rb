@@ -50,11 +50,11 @@ class LessonsController < ApplicationController
   end
 
   def same_level?(lesson)
-    Course.find(lesson.course_id).level == Course.find(current_user.course_id).level
+    lesson.course.level == current_user.course.level
   end
 
   def other_day?(lesson)
-    Course.where(id: lesson.course_id)[0].day != Course.where(id: current_user.course_id)[0].day
+    lesson.course.day != current_user.course.day
   end
 
   def future_date?(lesson)

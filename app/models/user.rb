@@ -5,6 +5,7 @@ class User < ApplicationRecord
          :recoverable, :rememberable, :validatable
   has_many :absences, dependent: :destroy
   has_many :rattrapages, dependent: :destroy
+  belongs_to :course
   validates :first_name, presence: true
   validates :last_name, presence: true
   validates :course_id, presence: { message: "Cours requis" }
