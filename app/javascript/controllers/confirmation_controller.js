@@ -26,7 +26,6 @@ export default class extends Controller {
   }
 
   submit() {
-    this.modalTarget.classList.add("d-none")
     this.formTarget.submit()
   }
 
