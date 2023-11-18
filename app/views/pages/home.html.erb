@@ -15,7 +15,7 @@
         <% end %>
       </div>
       <% if @absences_lessons.length < 9 %>
-        <%= link_to "Déclarer une absence", "/absences/new", class: "btn-red-small btn-left" %>
+        <%= link_to "Déclarer une absence", "/absences/new", class: "btn-red-small btn-left", data: {turbo: :false} %>
       <% end %>
     </div>
 
