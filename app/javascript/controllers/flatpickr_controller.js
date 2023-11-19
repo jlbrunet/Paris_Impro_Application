@@ -10,7 +10,6 @@ export default class extends Controller {
     const dates = JSON.parse(this.inputTarget.dataset.flatpickrAvailableDates)
     const formatted_dates = dates.map( date => date.slice(0,16) );
     if (!this.calendar) {
-      console.log("ho")
       this.calendar = flatpickr(this.inputTarget, {
         "locale": French,
         enable: formatted_dates,
