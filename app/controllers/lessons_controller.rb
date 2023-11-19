@@ -30,7 +30,7 @@ class LessonsController < ApplicationController
       redirect_to root_path if Rattrapage.where(user: current_user).count >= 9
       lessons = Lesson.where.not(course_id: current_user.course_id)
       available_lessons = lessons.select { |lesson| available_lesson?(lesson) }
-      @available_dates = available_lessons.map { |d| d.occurs_on.strftime("%Y-%m-%d %H:%M:%S %z") }
+      @available_dates = available_lessons.map { |d| d.occurs_on.strftime("%Y-%m-%d %H:%M:%S") }
       @lesson = Lesson.new
     end
   end

@@ -8,14 +8,11 @@ export default class extends Controller {
 
   connect() {
     const dates = JSON.parse(this.inputTarget.dataset.flatpickrAvailableDates)
-    const formatted_dates = dates.map( date => date.slice(0,16) );
-    if (!this.calendar) {
-      this.calendar = flatpickr(this.inputTarget, {
-        "locale": French,
-        enable: formatted_dates,
-        dateFormat: "Y-m-d H:i",
-        inline: true,
-      })
-    }
+    this.calendar = flatpickr(this.inputTarget, {
+      "locale": French,
+      enable: dates,
+      dateFormat: "Y-m-d H:i",
+      inline: true,
+    })
   }
 }

@@ -6,7 +6,7 @@ class AbsencesController < ApplicationController
       redirect_to root_path if Absence.where(user: current_user).count >= 9
       lessons_user = Lesson.where(course_id: current_user.course_id)
       available_lessons = lessons_user.select { |lesson| absence_available?(lesson) && more_than_24h?(lesson) }
-      @available_dates = available_lessons.map { |d| d.occurs_on.strftime("%Y-%m-%d %H:%M:%S %z") }
+      @available_dates = available_lessons.map { |d| d.occurs_on.strftime("%Y-%m-%d %H:%M:%S") }
       @lesson = Lesson.new
     end
   end
