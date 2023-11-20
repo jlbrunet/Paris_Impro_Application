@@ -13,7 +13,6 @@
         <%= f.input :occurs_on, as: :string, label: false, input_html: { class: 'd-none', value: lesson.occurs_on, data: { confirmation_target: 'input'}} %>
         <%= f.input :course_id, as: :hidden, input_html: {value: lesson.course_id}%>
         <%= f.button :button, 'Choisir ce rattrapage', class: 'btn-red-small btn-left-rattrapage', data: { action: 'click->confirmation#confirmRattrapage' } %>
-        <%= f.button :submit, 'Choisir ce rattrapage', class: 'd-none' %>
       <% end %>
 
       <%= render partial:'/shared/modale_absence_rattrapage', locals: {sentence: "Après avoir confirmé ton rattrapage, celui-ci sera définitif"} %>
