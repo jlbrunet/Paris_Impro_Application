@@ -1,12 +1,11 @@
-<div class="container background-signin">
+<div class="bg-light vh-100">
 
   <div class="d-flex justify-content-center p-4">
     <%= image_tag("logo_paris_impro2.jpeg", class: "rounded-circle border border-2 border-primary", style:"width: 140px;") %>
   </div>
 
   <%= simple_form_for(resource, as: resource_name, url: registration_path(resource_name), data: { turbo: :false }) do |f| %>
-    <%= f.error_notification %>
-    <div class="bg-white m-3 background-new-signin background-padding-new-registration" style="border-radius: 30px">
+    <div class="bg-white mx-4" style="border-radius: 30px; padding: 40px 20px; margin-top: -90px">
       <div class="form-inputs-signin">
         <%= f.input :first_name,
                     label: "Prénom",
@@ -21,7 +20,6 @@
                     input_html: { value: "student" } %>
         <%= f.input :email,
                     required: true,
-                    autofocus: true,
                     label: "Email",
                     error: User.exists?(email: f.object.email) ? "Email déjà existant" : "Email requis",
                     input_html: { autocomplete: "Mail" }%>
@@ -39,13 +37,13 @@
         <%= f.label :course_id, label: "Sélectionner votre cours" %>
         <%= f.collection_select(:course_id, Course.all, :id, lambda {|course| "#{course.level} - #{course.day} #{course.hour.hour}h#{course.minute if course.minute > 0} - #{course.location}"}, {include_blank: ""}, {class: resource.errors.has_key?(:course_id) ? "req" : "" })%>
         <% if resource.errors.has_key?(:course_id) %>
-          <div class="text-danger required-course"><%= resource.errors[:course_id].first %></div>
+          <div class="text-danger" style="font-size: 14px"><%= resource.errors[:course_id].first %></div>
         <% end %>
       </div>
     </div>
-    <div class="text-center" style="margin-top: -40px">
-      <%= f.button :submit, "Créer un compte", class: "btn-red-signin" %>
-      <%= link_to user_session_path , class: "btn-red-back-signin btn-left" do %>
+    <div style="margin-top: -40px">
+      <%= f.button :submit, "Créer un compte", class: "btn-red" %>
+      <%= link_to user_session_path , class: "btn-red" do %>
         <div><i class="fa-solid fa-circle-chevron-left"></i> Retour</div>
       <% end %>
     </div>

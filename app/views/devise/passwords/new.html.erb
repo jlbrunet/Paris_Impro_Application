@@ -1,4 +1,4 @@
-<div class="container background-forgot">
+<div class="bg-light vh-100">
 
   <div class="d-flex justify-content-center p-4">
     <%= image_tag("logo_paris_impro2.jpeg", class: "rounded-circle border border-2 border-primary", style:"width: 140px;") %>
@@ -6,7 +6,7 @@
 
   <%= simple_form_for(resource, as: resource_name, url: password_path(resource_name), html: { method: :post }) do |f| %>
     <%= f.error_notification %>
-    <div class="bg-white m-3 background-padding-new-registration" style="border-radius: 30px">
+    <div class="bg-white mx-4" style="border-radius: 30px; padding: 40px 20px">
       <div class="form-inputs">
         <%= f.input :email,
                     required: true,
@@ -17,12 +17,10 @@
 
     </div>
     <div class="text-center" style="margin-top: -40px">
-      <%= f.button :submit, "Modifier mon mot de passe", class: "btn-red btn-new-mdp" %>
-      <div class="btn-back-forgot">
-        <%= link_to user_session_path , class: "btn-red-back-forgot" do %>
-          <div><i class="fa-solid fa-circle-chevron-left"></i> Retour</div>
-        <% end %>
-      </div>
+      <%= f.button :submit, "Modifier mon mot de passe", class: "btn-red" %>
+      <%= link_to user_session_path , class: "btn-red" do %>
+        <div><i class="fa-solid fa-circle-chevron-left"></i> Retour</div>
+      <% end %>
     </div>
   <% end %>
 

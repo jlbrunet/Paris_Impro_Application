@@ -3,7 +3,7 @@
   height: max-content !important;
 }
 
-.background, .background-signin {
+.background {
   background-color: $light-red;
   background-size: cover;
   min-height: 120vh;
@@ -17,20 +17,11 @@
   width: 100vw;
 }
 
-.background-padding-new-registration {
-  padding: 40px 20px;
-}
-
 .background-new {
   position: absolute;
   width: 360px;
   top: 135px;
   left: 5%;
-}
-
-.background-new-signin {
-  position: relative;
-  margin-top: -95px;
 }
 
 .background-home {

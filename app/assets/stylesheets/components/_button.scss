@@ -8,32 +8,6 @@
   top: 600px;
 }
 
-.btn-new-mdp {
-  font-size: 22px !important;
-}
-
-.btn-red {
-  background-color: $medium-red;
-  border-radius: 30px;
-  font-family: $headers;
-  color: white;
-  width: 240px;
-  height: 50px;
-  font-size: 20px;
-  margin: 10px 0;
-  padding: 8px;
-}
-
-@media(min-width: 390px) {
-  .btn-red {
-    width: 340px;
-    height: 60px;
-    font-size: 25px;
-    margin: 20px 0;
-    padding: 10px;
-  }
-}
-
 .btn-red:hover {
   background-color: $medium-red;
   color: white
@@ -136,23 +110,29 @@
   color: white
 }
 
-.btn-red-signin {
+.btn-red {
   background-color: $medium-red;
   border-radius: 30px;
-  width: 100%;
-  height: 60px;
-  // margin-left: -16px;
-  margin-top: 20px;
-  display: inline-block;
   font-family: $headers;
-  font-size: 25px;
   color: white;
+  width: 240px;
+  height: 50px;
+  font-size: 20px;
+  margin: 10px auto;
+  padding: 8px;
+  text-align: center;
   text-decoration: none;
+  display: block;
 }
 
-.btn-red-signin:hover {
-  background-color: $medium-red;
-  color: white;
+@media(min-width: 390px) {
+  .btn-red {
+    width: 340px;
+    height: 60px;
+    font-size: 25px;
+    margin: 20px auto;
+    padding: 10px;
+  }
 }
 
 .text {
@@ -304,26 +284,6 @@
   display:flex;
   align-items: center;
   justify-content: center;
-}
-
-.btn-red-back-forgot {
-  background-color: #ee736f;
-  position: relative;
-  border-radius: 30px;
-  width: 340px;
-  height: 60px;
-  display: grid;
-  font-family: "Outfit", sans-serif;
-  font-size: 22px;
-  color: white;
-  text-decoration: none;
-  text-align: center;
-  align-items: center;
-}
-
-.btn-red-back-forgot:hover {
-  background-color: $medium-red;
-  color: white;
 }
 
 .btn-valid-abs{

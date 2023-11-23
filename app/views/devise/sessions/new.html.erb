@@ -18,16 +18,16 @@
         <%= f.input :remember_me, label: "Se souvenir de moi", as: :boolean if devise_mapping.rememberable? %>
     </div>
 
-  <div class="text-center" style="margin-top: -40px">
-    <%= f.button :submit, "Se connecter", class: "btn-red d-block mx-auto" %>
+  <div style="margin-top: -40px">
+    <%= f.button :submit, "Se connecter", class: "btn-red mx-auto", style:"outline: none; box-shadow: none" %>
   <% end %>
 
     <%- if devise_mapping.registerable? && controller_name != 'registrations' %>
-      <%= link_to "Créer un compte", new_registration_path(resource_name), class: "btn btn-red d-block mx-auto" %>
+      <%= link_to "Créer un compte", new_registration_path(resource_name), class: "btn-red mx-auto" %>
     <% end %>
 
     <%- if devise_mapping.recoverable? && controller_name != 'passwords' && controller_name != 'registrations' %>
-      <%= link_to "Mot de passe oublié ?", new_password_path(resource_name), class: "btn btn-red d-block mx-auto" %>
+      <%= link_to "Mot de passe oublié ?", new_password_path(resource_name), class: "btn-red mx-auto" %>
     <% end %>
   </div>
 </div>
