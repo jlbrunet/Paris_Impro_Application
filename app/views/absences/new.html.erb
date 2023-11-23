@@ -9,7 +9,7 @@
 
     <%= simple_form_for(@lesson, url: absences_path, html: {data: {controller: 'flatpickr', confirmation_target: 'form'}}) do |f| %>
       <%= f.input :occurs_on, as: :string, label: false, input_html: { class: 'd-none', data: { flatpickr_target: 'input', flatpickr_available_dates: @available_dates, confirmation_target: 'input', action: 'change->confirmation#validate' } } %>
-      <%= f.button :button, 'Valider', class: 'btn btn-red btn-valid-abs', data: { action: 'click->confirmation#confirmAbsence', confirmation_target: "button" }, disabled: true %>
+      <%= f.button :button, 'Valider', class: 'btn-red', data: { action: 'click->confirmation#confirmAbsence', confirmation_target: "button" }, disabled: true %>
     <% end %>
 
     <%= render partial:'/shared/modale_absence_rattrapage', locals: {sentence: "Après avoir confirmé ton absence, celle-ci sera définitive"} %>
