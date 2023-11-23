@@ -2,7 +2,7 @@
   <%= link_to "Log in", new_session_path(resource_name) %><br />
 <% end %>
 
-<div class="form-action-2">
+<div class="text-center" style="margin-top: -40px">
   <%- if devise_mapping.registerable? && controller_name != 'registrations' %>
     <%= link_to "Créer un compte", new_registration_path(resource_name), class: "btn-red text text-center" %><br />
   <% end %>

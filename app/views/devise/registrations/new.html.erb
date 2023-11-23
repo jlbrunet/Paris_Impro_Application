@@ -1,12 +1,12 @@
 <div class="container background-signin">
 
-  <div class="logo">
-    <%= image_tag("logo_paris_impro2.jpeg", class: "logo-img") %>
+  <div class="d-flex justify-content-center p-4">
+    <%= image_tag("logo_paris_impro2.jpeg", class: "rounded-circle border border-2 border-primary", style:"width: 140px;") %>
   </div>
 
   <%= simple_form_for(resource, as: resource_name, url: registration_path(resource_name), data: { turbo: :false }) do |f| %>
     <%= f.error_notification %>
-    <div class="background-form background-new-signin background-padding-new-registration">
+    <div class="bg-white m-3 background-new-signin background-padding-new-registration" style="border-radius: 30px">
       <div class="form-inputs-signin">
         <%= f.input :first_name,
                     label: "Prénom",
@@ -43,7 +43,7 @@
         <% end %>
       </div>
     </div>
-    <div class="form-action-2">
+    <div class="text-center" style="margin-top: -40px">
       <%= f.button :submit, "Créer un compte", class: "btn-red-signin" %>
       <%= link_to user_session_path , class: "btn-red-back-signin btn-left" do %>
         <div><i class="fa-solid fa-circle-chevron-left"></i> Retour</div>

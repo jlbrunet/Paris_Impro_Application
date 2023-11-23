@@ -6,8 +6,11 @@ $font-size-base:         1rem;
 
 // Colors
 $body-color: $gray;
-$primary:    $blue;
-$success:    $green;
+
+$light:      $light-red;
+$primary:    $medium-red;
+
+$success:    $light-red;
 $info:       $yellow;
 $danger:     $red;
 $warning:    $orange;
