@@ -40,16 +40,23 @@
 ## About The Project
 
 <br />
-<div align="center"><img src="src/assets/projectsImage.png" alt="presentation of portfolio" width="600" height="350"></div>
+<div align="center"><img src="app/assets/images/parisImproImage.png" alt="presentation of portfolio" width="600" height="350"></div>
 <br />
 
-<p>This portfolio serves as a window into my world, where you can explore not only who I am but also the projects that define my skills and passions.</p>
+<div>This project has two interface :
+  <ul>
+    <li><b>A student interface:</b> the student can choose a date on a calendar to declare an absence on its slot times and then see the available catch-ups on another calendar to take a class another day.</li>
+    <li><b>An administrator interface:</b> the director of the theater company can see all the absences and catch-ups by class and level.</li>
+  </ul>
+</div>
 
 
 ### Built With
 
-* [![React][React.js]][React-url]
-* [![Tailwind][Tailwind.com]][Tailwind-url]
+* [![Ruby.com][Ruby.com]][Ruby-url]
+* [![RoR.com][RoR.com]][RoR-url]
+* [![PostgreSql.com][PostgreSql.com]][PostgreSql-url]
+* [![Bootstrap.com][Bootstrap.com]][Bootstrap-url]
 <br />
 
 ## Getting Started
@@ -107,8 +114,12 @@ juliebrunet.pro@outlook.fr
 [https://github.com/jlbrunet/portfolio](https://github.com/jlbrunet/portfolio)
 
 <!-- MARKDOWN LINKS & IMAGES -->
-[React.js]: https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB
-[React-url]: https://reactjs.org/
-[Tailwind.com]: https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white
-[Tailwind-url]: https://tailwindcss.com/
+[Ruby.com]: https://img.shields.io/badge/Ruby-CC342D?style=for-the-badge&logo=ruby&logoColor=white
+[Ruby-url]: https://www.ruby-lang.org/fr/
+[RoR.com]: https://img.shields.io/badge/Ruby_on_Rails-CC0000?style=for-the-badge&logo=ruby-on-rails&logoColor=white
+[RoR-url]: https://rubyonrails.org/
+[PostgreSql.com]: https://img.shields.io/badge/PostgreSQL-316192?style=for-the-badge&logo=postgresql&logoColor=white
+[PostgreSql-url]: https://www.postgresql.org/
+[Bootstrap.com]: https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white
+[Bootstrap-url]: https://getbootstrap.com
 
