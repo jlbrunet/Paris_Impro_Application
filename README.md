@@ -43,7 +43,7 @@
 <div align="center"><img src="app/assets/images/parisImproImage.png" alt="presentation of portfolio" width="600" height="350"></div>
 <br />
 
-<div>This project has two interface :
+<div>This project has two interfaces :
   <ul>
     <li><b>A student interface:</b> the student can choose a date on a calendar to declare an absence on its slot times and then see the available catch-ups on another calendar to take a class another day.</li>
     <li><b>An administrator interface:</b> the director of the theater company can see all the absences and catch-ups by class and level.</li>
