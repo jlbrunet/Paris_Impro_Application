@@ -63,36 +63,43 @@
 
 ### Prerequisites
 
-* npm
-  ```sh
-  npm install npm@latest -g
-  ```
+Make sure you have the following installed on your system:
 
+* [Ruby](https://www.ruby-lang.org/en/documentation/installation/)
+* [Rails](https://guides.rubyonrails.org/getting_started.html#installing-rails)
+* [Node.js](https://nodejs.org/)
+* [npm](https://www.npmjs.com/)
+* [PostgreSQL](https://www.postgresql.org/download/)
 
 ### Installation
 
 1. Clone the repo
    ```sh
-   git clone https://github.com/github_username/repo_name.git
+   git clone git@github.com:jlbrunet/Paris_Impro_Application.git
    ```
-2. Install NPM packages
+2. Install dependencies
    ```sh
    npm install
    ```
+   ```sh
+   bundle install
+   ```
+3. Set up the database
+   ```sh
+   rails db:create
+   ```
+   ```sh
+   rails db:migrate
+   ```
 
-   
+  
 ### Available Scripts
 
 Runs the app in the development mode :
 ```sh
-npm run start
+dev
 ```
-The page will reload when you make changes. You may also see any lint errors in the console.
 
-Launches the test runner in the interactive watch mode :
-```sh
-npm run test
-```
 <br />
 
 ## Roadmap
