@@ -104,15 +104,15 @@ dev
 
 ## Roadmap
 
-- [x] Implement the Home, About, Projects, and Footer components in the React App.
-    - [x] Implement a ScrollButton in the Home Component to smoothly navigate to the About section.
-          A ScrollButton has been added to the Home component, allowing users to smoothly scroll to the About section for a better user experience.
-- [x] Enhance the About Component with dynamic content, styling, and interactive elements.
-    - [x] Implement a ScrollButton in the About Component to smoothly navigate to the Projects section.
-          A ScrollButton has been added to the About component, allowing users to smoothly scroll to the Projects section for a better user experience.
-- [x] Develop the Projects Component to showcase project cards, modals of the projects videos, and interactive features.
+- [x] Implement student interface
+    - [x] Implement a dashboard for the student to see the informations of the class (level and teachers) and all the absences and catch-ups declared
+    - [x] Implement a flatpickr calendar that allows the student to declare an absence on the days he/she usually has class
+    - [x] Implement a flatpickr calendar that allows the student to declare catch-ups for all the absences he/she declared, on the slots available
+- [x] Impletement administrator interface
+    - [x] Implement a dashboard to see all the classes by day and level
+    - [x] Implement a page with all the absences and catch-ups for each class with the possibility to delete one and to add more available slots to catch-up a class
+    - [x] Implement a page with all the students for each class with the possibility to delete a student or change his/her class
 <br />
-
 
 ## Contact
 
