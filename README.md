@@ -79,7 +79,7 @@ Make sure you have the following installed on your system:
    ```
 2. Install dependencies
    ```sh
-   npm install
+   yarn install
    ```
    ```sh
    bundle install
