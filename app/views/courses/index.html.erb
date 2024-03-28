@@ -7,7 +7,7 @@
     <div class="tableau">
       <div class="absences margin-rectangle-admin rectangle">
         <div class="tab-courses">
-          <% @courses.each_with_index do |course, index| %>
+          <% @courses.sort_by { |course| @day_order[course[:day].strip.to_sym] }.each_with_index do |course, index| %>
             <div class="separation">
               <div class="bloc-courses">
                 <p class="text-gras"><%= course.day %> <%= course.hour.strftime("%H") %>h<%= course.hour.strftime("%M") if course.hour.strftime("%M").to_i > 0 %> | <%= course.level %> | <%= course.teacher %></p>
