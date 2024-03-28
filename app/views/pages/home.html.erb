@@ -12,7 +12,10 @@
           <p>Pas d'absence</p>
         <% else %>
           <% @absences_lessons.each do |lesson| %>
-            <p><i class="fa-solid fa-circle"></i><%= I18n.l(lesson.occurs_on, format: "%A %-d %B %kh", locale: :fr) %></p>
+            <% lesson_occurs_on_minutes = I18n.l(lesson.occurs_on, format: "%A %-d %B %kh%M", locale: :fr) %>
+            <% lesson_occurs_on_hour = I18n.l(lesson.occurs_on, format: "%A %-d %B %kh", locale: :fr) %>
+            <% lesson_occurs_on = lesson.occurs_on.strftime("%M").to_i > 0 ? lesson_occurs_on_minutes : lesson_occurs_on_hour %>
+            <p><i class="fa-solid fa-circle"></i><%= lesson_occurs_on %></p>
           <% end %>
         <% end %>
       </div>
@@ -32,7 +35,10 @@
         <% else %>
           <% @rattrapages_lessons.each do |lesson| %>
             <%= link_to rattrapage_show_path(Rattrapage.find_by(lesson: lesson)) do %>
-              <p class="link-rattrapage"><i class="fa-solid fa-circle"></i><%= I18n.l(lesson.occurs_on, format: "%A %-d %B %kh", locale: :fr) %></p>
+              <% lesson_occurs_on_minutes = I18n.l(lesson.occurs_on, format: "%A %-d %B %kh%M", locale: :fr) %>
+              <% lesson_occurs_on_hour = I18n.l(lesson.occurs_on, format: "%A %-d %B %kh", locale: :fr) %>
+              <% lesson_occurs_on = lesson.occurs_on.strftime("%M").to_i > 0 ? lesson_occurs_on_minutes : lesson_occurs_on_hour %>
+              <p class="link-rattrapage"><i class="fa-solid fa-circle"></i><%= lesson_occurs_on %></p>
             <% end %>
           <% end %>
         <% end %>
