@@ -29,7 +29,9 @@ class LessonsController < ApplicationController
     else
       redirect_to root_path if Rattrapage.where(user: current_user).count >= 9
       lessons = Lesson.where.not(course_id: current_user.course_id)
-      available_lessons = lessons.select { |lesson| available_lesson?(lesson) }
+      available_lessons = lessons.select do |lesson|
+        available_lesson?(lesson)
+      end
       @available_dates = available_lessons.map { |d| d.occurs_on.strftime("%Y-%m-%d %H:%M:%S") }
       @lesson = Lesson.new
     end
@@ -50,7 +52,17 @@ class LessonsController < ApplicationController
   end
 
   def same_level?(lesson)
-    lesson.course.level == current_user.course.level
+    if current_user.course.level == "Niveau 1" || current_user.course.level == "Niveau pro"
+      lesson.course.level == current_user.course.level
+    elsif current_user.course.level == "Niveau 2" || current_user.course.level == "Niveau 3" || current_user.course.level == "Niveau 4"
+      next_level = current_user.course.level.chars.last.to_i + 1
+      lesson.course.level == current_user.course.level || "Niveau #{next_level}" == lesson.course.level
+    elsif current_user.course.level == "Niveau 5"
+      precedent_level = current_user.course.level.chars.last.to_i - 1
+      lesson.course.level == current_user.course.level || "Niveau #{precedent_level}" == lesson.course.level
+    else
+      false
+    end
   end
 
   def other_day?(lesson)
