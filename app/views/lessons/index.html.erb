@@ -37,15 +37,17 @@
           <p>En rattrapage :</p>
             <% @rattrapages_and_places_ouvertes.select { |rattrapage| rattrapage.lesson_id == lesson.id }.each do |item| %>
               <div class="student" data-controller="delete-modale">
-                <% if current_user.status == "admin"%>
-                  <div class="btn-delete-eleve margin-btn-delete" data-action="click->delete-modale#r_change"><i class="icone-btn-eleve fa-solid fa-trash"></i></div>
-                <% else %>
+                <% if current_user.status == "admin" %>
+                  <% if item.class == Rattrapage || (item.class == Absence && item.is_taken == false) %>
+                    <div class="btn-delete-eleve margin-btn-delete" data-action="click->delete-modale#r_change"><i class="icone-btn-eleve fa-solid fa-trash"></i></div>
+                  <% end %>
+                <% elsif item.class != Absence %>
                   <i class="fa-solid fa-circle"></i>
                 <% end %>
-                <% if item.class == Absence %>
+                <% if item.class == Absence && item.is_taken == false %>
                   <span>Place ouverte</span>
                   <%= render partial:'/shared/modale_lesson', locals: {destroy_path: absence_destroy_path(item), target: "r_modale", method: "r_change", sentence: "cette place ouverte" } %>
-                <% else %>
+                <% elsif item.class != Absence %>
                   <%= item.user.first_name %> <%= item.user.last_name %>
                   <%= render partial:'/shared/modale_lesson', locals: {destroy_path: rattrapage_destroy_path(item), target: "r_modale", method: "r_change", sentence: "ce rattrapage" } %>
                 <% end %>

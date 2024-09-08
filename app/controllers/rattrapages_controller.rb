@@ -14,9 +14,15 @@ class RattrapagesController < ApplicationController
     course_id = params[:lesson][:course_id].to_i
     lesson = Lesson.where("DATE_TRUNC('day', occurs_on) = ?", occurs_on.to_date).find_by(course_id: course_id)
 
-    places_ouvertes = Absence.where(lesson_id: lesson.id).joins(:user).where(users: { status: "admin" })
+    places_ouvertes = Absence.where(lesson_id: lesson.id, is_taken: false).joins(:user).where(users: { status: "admin" })
     absences = Absence.where(lesson_id: lesson.id).joins(:user).where(users: { status: "student" })
-    places_ouvertes.last.destroy if absences.length == Rattrapage.where(lesson_id: lesson.id).length
+    if absences.length <= Rattrapage.where(lesson_id: lesson.id).length
+      last_absence = places_ouvertes.last
+      if last_absence
+        last_absence.is_taken = true
+        last_absence.save!
+      end
+    end
 
     rattrapage = Rattrapage.new(user_id: current_user.id, lesson_id: lesson.id)
     rattrapage.save
