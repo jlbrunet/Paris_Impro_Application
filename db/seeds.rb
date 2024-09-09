@@ -1,3 +1,9 @@
+course = Course.find_by(teacher: "Juan E, Simon C, Julien B")
+puts course
+course.teacher = "Juan E, Erwan S, Julien B"
+course.save!
+puts course
+
 # require "csv"
 
 # courses_csv_file = File.join("app/assets/data/courses.csv")
