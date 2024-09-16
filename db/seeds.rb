@@ -1,3 +1,44 @@
+course = Course.find_by(location: "Saint-Denis")
+course.day = "Lundi"
+course.save!
+
+course1 = Course.find_by(location: "Provence")
+course1.teacher = "Romain Nardelli"
+course1.save!
+
+course2 = Course.find_by(location: "Gare de l'Est")
+course2.teacher = "Victoire P, Eve B, Romain Nolag"
+course2.save!
+
+course3 = Course.find_by(location: "Cité")
+course3.teacher = "Poloche, Romain Guyot, Antoine G"
+course3.save!
+
+course4 = Course.find_by(location: "Chabrol")
+course4.teacher = "Lisa G, Étienne J, Romain Nolag"
+course4.save!
+
+lessons = Lesson.where(course_id: course.id)
+lessons.each do |lesson|
+  lesson.occurs_on = lesson.occurs_on - 1.day
+  lesson.save!
+end
+
+lessons.each do |lesson|
+  if lesson.occurs_on.day == 11 && lesson.occurs_on.month == 11
+    lesson.destroy
+  end
+  if lesson.occurs_on.day == 9 && lesson.occurs_on.month == 6
+    lesson.destroy
+  end
+end
+
+Lesson.create({
+  occurs_on: Time.new(2025, 6, 23, 20, 0, 0),
+  course_id: course.id,
+  location: course.location,
+})
+
 # require "csv"
 
 # courses_csv_file = File.join("app/assets/data/courses.csv")
