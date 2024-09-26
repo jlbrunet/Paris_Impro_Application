@@ -1,3 +1,11 @@
+course = Course.find_by(location: "Faubourg")
+puts course.info
+
+course.info = "83 faubourg st denis, Porte cochère: 1754B (elle est souvent déjà ouverte), 2 eme Porte : 8360B (la blanche derrière le palmier)"
+course.save!
+
+puts course.info
+
 # require "csv"
 
 # courses_csv_file = File.join("app/assets/data/courses.csv")
