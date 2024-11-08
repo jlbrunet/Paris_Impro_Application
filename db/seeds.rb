@@ -1,31 +1,12 @@
-saint_denis_course = Course.find_by(location: "Saint-Denis");
-saint_denis_course.teacher = "Etienne J, Ingrid D"
-saint_denis_course.save!
-p saint_denis_course
-
 saint_paul_course = Course.find_by(location: "Saint-Paul");
-saint_paul_course.hour = saint_paul_course.hour - 15.minute
+saint_paul_course.minute = 0
 saint_paul_course.save!
 p saint_paul_course
 
 peletier_course = Course.find_by(location: "Lepeltier");
-peletier_course.hour = peletier_course.hour - 15.minute
+peletier_course.minute = 0
 peletier_course.save!
 p peletier_course
-
-saint_paul_lessons = Lesson.where(course_id: saint_paul_course.id)
-saint_paul_lessons.each do |lesson|
-  lesson.occurs_on = lesson.occurs_on - 15.minute
-  lesson.save!
-end
-p saint_paul_lessons.last
-
-peletier_lessons = Lesson.where(course_id: peletier_course.id)
-peletier_lessons.each do |lesson|
-  lesson.occurs_on = lesson.occurs_on - 15.minute
-  lesson.save!
-end
-p peletier_lessons.last
 
 # require "csv"
 
