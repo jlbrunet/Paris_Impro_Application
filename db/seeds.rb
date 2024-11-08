@@ -1,13 +1,3 @@
-saint_paul_course = Course.find_by(location: "Saint-Paul");
-saint_paul_course.minute = 0
-saint_paul_course.save!
-p saint_paul_course
-
-peletier_course = Course.find_by(location: "Lepeltier");
-peletier_course.minute = 0
-peletier_course.save!
-p peletier_course
-
 # require "csv"
 
 # courses_csv_file = File.join("app/assets/data/courses.csv")
