@@ -1,807 +1,835 @@
 occurs_on_year,occurs_on_month,occurs_on_day,occurs_on_hour,occurs_on_minutes,occurs_on_seconds,course_id,location
-2024,9,16,20,15,0,1,Hauteville
-2024,9,23,20,15,0,1,Hauteville
-2024,9,30,20,15,0,1,Hauteville
-2024,10,7,20,15,0,1,Hauteville
-2024,10,14,20,15,0,1,Hauteville
-2024,11,4,20,15,0,1,Hauteville
-2024,11,18,20,15,0,1,Hauteville
-2024,11,25,20,15,0,1,Hauteville
-2024,12,2,20,15,0,1,Hauteville
-2024,12,9,20,15,0,1,Hauteville
-2024,12,16,20,15,0,1,Hauteville
-2025,1,6,20,15,0,1,Hauteville
-2025,1,13,20,15,0,1,Hauteville
-2025,1,20,20,15,0,1,Hauteville
-2025,1,27,20,15,0,1,Hauteville
-2025,2,3,20,15,0,1,Hauteville
-2025,2,10,20,15,0,1,Hauteville
-2025,3,3,20,15,0,1,Hauteville
-2025,3,10,20,15,0,1,Hauteville
-2025,3,17,20,15,0,1,Hauteville
-2025,3,24,20,15,0,1,Hauteville
-2025,3,31,20,15,0,1,Hauteville
-2025,4,7,20,15,0,1,Hauteville
-2025,4,28,20,15,0,1,Hauteville
-2025,5,5,20,15,0,1,Hauteville
-2025,5,12,20,15,0,1,Hauteville
-2025,5,19,20,15,0,1,Hauteville
-2025,5,26,20,15,0,1,Hauteville
-2025,6,2,20,15,0,1,Hauteville
-2025,6,16,20,15,0,1,Hauteville
-2025,6,23,20,15,0,1,Hauteville
-2024,9,16,20,0,0,1,Gare de l'Est
-2024,9,23,20,0,0,1,Gare de l'Est
-2024,9,30,20,0,0,1,Gare de l'Est
-2024,10,7,20,0,0,1,Gare de l'Est
-2024,10,14,20,0,0,1,Gare de l'Est
-2024,11,4,20,0,0,1,Gare de l'Est
-2024,11,18,20,0,0,1,Gare de l'Est
-2024,11,25,20,0,0,1,Gare de l'Est
-2024,12,2,20,0,0,1,Gare de l'Est
-2024,12,9,20,0,0,1,Gare de l'Est
-2024,12,16,20,0,0,1,Gare de l'Est
-2025,1,6,20,0,0,1,Gare de l'Est
-2025,1,13,20,0,0,1,Gare de l'Est
-2025,1,20,20,0,0,1,Gare de l'Est
-2025,1,27,20,0,0,1,Gare de l'Est
-2025,2,3,20,0,0,1,Gare de l'Est
-2025,2,10,20,0,0,1,Gare de l'Est
-2025,3,3,20,0,0,1,Gare de l'Est
-2025,3,10,20,0,0,1,Gare de l'Est
-2025,3,17,20,0,0,1,Gare de l'Est
-2025,3,24,20,0,0,1,Gare de l'Est
-2025,3,31,20,0,0,1,Gare de l'Est
-2025,4,7,20,0,0,1,Gare de l'Est
-2025,4,28,20,0,0,1,Gare de l'Est
-2025,5,5,20,0,0,1,Gare de l'Est
-2025,5,12,20,0,0,1,Gare de l'Est
-2025,5,19,20,0,0,1,Gare de l'Est
-2025,5,26,20,0,0,1,Gare de l'Est
-2025,6,2,20,0,0,1,Gare de l'Est
-2025,6,16,20,0,0,1,Gare de l'Est
-2025,6,23,20,0,0,1,Gare de l'Est
-2024,9,16,20,0,0,1,Chabrol
-2024,9,23,20,0,0,1,Chabrol
-2024,9,30,20,0,0,1,Chabrol
-2024,10,7,20,0,0,1,Chabrol
-2024,10,14,20,0,0,1,Chabrol
-2024,11,4,20,0,0,1,Chabrol
-2024,11,18,20,0,0,1,Chabrol
-2024,11,25,20,0,0,1,Chabrol
-2024,12,2,20,0,0,1,Chabrol
-2024,12,9,20,0,0,1,Chabrol
-2024,12,16,20,0,0,1,Chabrol
-2025,1,6,20,0,0,1,Chabrol
-2025,1,13,20,0,0,1,Chabrol
-2025,1,20,20,0,0,1,Chabrol
-2025,1,27,20,0,0,1,Chabrol
-2025,2,3,20,0,0,1,Chabrol
-2025,2,10,20,0,0,1,Chabrol
-2025,3,3,20,0,0,1,Chabrol
-2025,3,10,20,0,0,1,Chabrol
-2025,3,17,20,0,0,1,Chabrol
-2025,3,24,20,0,0,1,Chabrol
-2025,3,31,20,0,0,1,Chabrol
-2025,4,7,20,0,0,1,Chabrol
-2025,4,28,20,0,0,1,Chabrol
-2025,5,5,20,0,0,1,Chabrol
-2025,5,12,20,0,0,1,Chabrol
-2025,5,19,20,0,0,1,Chabrol
-2025,5,26,20,0,0,1,Chabrol
-2025,6,2,20,0,0,1,Chabrol
-2025,6,16,20,0,0,1,Chabrol
-2025,6,23,20,0,0,1,Chabrol
-2024,9,16,10,30,0,1,Monday morning
-2024,9,23,10,30,0,1,Monday morning
-2024,9,30,10,30,0,1,Monday morning
-2024,10,7,10,30,0,1,Monday morning
-2024,10,14,10,30,0,1,Monday morning
-2024,11,4,10,30,0,1,Monday morning
-2024,11,18,10,30,0,1,Monday morning
-2024,11,25,10,30,0,1,Monday morning
-2024,12,2,10,30,0,1,Monday morning
-2024,12,9,10,30,0,1,Monday morning
-2024,12,16,10,30,0,1,Monday morning
-2025,1,6,10,30,0,1,Monday morning
-2025,1,13,10,30,0,1,Monday morning
-2025,1,20,10,30,0,1,Monday morning
-2025,1,27,10,30,0,1,Monday morning
-2025,2,3,10,30,0,1,Monday morning
-2025,2,10,10,30,0,1,Monday morning
-2025,3,3,10,30,0,1,Monday morning
-2025,3,10,10,30,0,1,Monday morning
-2025,3,17,10,30,0,1,Monday morning
-2025,3,24,10,30,0,1,Monday morning
-2025,3,31,10,30,0,1,Monday morning
-2025,4,7,10,30,0,1,Monday morning
-2025,4,28,10,30,0,1,Monday morning
-2025,5,5,10,30,0,1,Monday morning
-2025,5,12,10,30,0,1,Monday morning
-2025,5,19,10,30,0,1,Monday morning
-2025,5,26,10,30,0,1,Monday morning
-2025,6,2,10,30,0,1,Monday morning
-2025,6,16,10,30,0,1,Monday morning
-2025,6,23,10,30,0,1,Monday morning
-2024,9,24,20,15,0,1,Lafayette
-2024,10,1,20,15,0,1,Lafayette
-2024,10,8,20,15,0,1,Lafayette
-2024,10,15,20,15,0,1,Lafayette
-2024,11,5,20,15,0,1,Lafayette
-2024,11,12,20,15,0,1,Lafayette
-2024,11,19,20,15,0,1,Lafayette
-2024,11,26,20,15,0,1,Lafayette
-2024,12,3,20,15,0,1,Lafayette
-2024,12,10,20,15,0,1,Lafayette
-2024,12,17,20,15,0,1,Lafayette
-2025,1,7,20,15,0,1,Lafayette
-2025,1,14,20,15,0,1,Lafayette
-2025,1,21,20,15,0,1,Lafayette
-2025,1,28,20,15,0,1,Lafayette
-2025,2,4,20,15,0,1,Lafayette
-2025,2,11,20,15,0,1,Lafayette
-2025,3,4,20,15,0,1,Lafayette
-2025,3,11,20,15,0,1,Lafayette
-2025,3,18,20,15,0,1,Lafayette
-2025,3,25,20,15,0,1,Lafayette
-2025,4,1,20,15,0,1,Lafayette
-2025,4,8,20,15,0,1,Lafayette
-2025,4,29,20,15,0,1,Lafayette
-2025,5,6,20,15,0,1,Lafayette
-2025,5,13,20,15,0,1,Lafayette
-2025,5,20,20,15,0,1,Lafayette
-2025,5,27,20,15,0,1,Lafayette
-2025,6,3,20,15,0,1,Lafayette
-2025,6,10,20,15,0,1,Lafayette
-2025,6,17,20,15,0,1,Lafayette
-2024,9,24,20,0,0,1,Cambronne
-2024,10,1,20,0,0,1,Cambronne
-2024,10,8,20,0,0,1,Cambronne
-2024,10,15,20,0,0,1,Cambronne
-2024,11,5,20,0,0,1,Cambronne
-2024,11,12,20,0,0,1,Cambronne
-2024,11,19,20,0,0,1,Cambronne
-2024,11,26,20,0,0,1,Cambronne
-2024,12,3,20,0,0,1,Cambronne
-2024,12,10,20,0,0,1,Cambronne
-2024,12,17,20,0,0,1,Cambronne
-2025,1,7,20,0,0,1,Cambronne
-2025,1,14,20,0,0,1,Cambronne
-2025,1,21,20,0,0,1,Cambronne
-2025,1,28,20,0,0,1,Cambronne
-2025,2,4,20,0,0,1,Cambronne
-2025,2,11,20,0,0,1,Cambronne
-2025,3,4,20,0,0,1,Cambronne
-2025,3,11,20,0,0,1,Cambronne
-2025,3,18,20,0,0,1,Cambronne
-2025,3,25,20,0,0,1,Cambronne
-2025,4,1,20,0,0,1,Cambronne
-2025,4,8,20,0,0,1,Cambronne
-2025,4,29,20,0,0,1,Cambronne
-2025,5,6,20,0,0,1,Cambronne
-2025,5,13,20,0,0,1,Cambronne
-2025,5,20,20,0,0,1,Cambronne
-2025,5,27,20,0,0,1,Cambronne
-2025,6,3,20,0,0,1,Cambronne
-2025,6,10,20,0,0,1,Cambronne
-2025,6,17,20,0,0,1,Cambronne
-2024,9,24,20,0,0,1,Gégettes paillettes
-2024,10,1,20,0,0,1,Gégettes paillettes
-2024,10,8,20,0,0,1,Gégettes paillettes
-2024,10,15,20,0,0,1,Gégettes paillettes
-2024,11,5,20,0,0,1,Gégettes paillettes
-2024,11,12,20,0,0,1,Gégettes paillettes
-2024,11,19,20,0,0,1,Gégettes paillettes
-2024,11,26,20,0,0,1,Gégettes paillettes
-2024,12,3,20,0,0,1,Gégettes paillettes
-2024,12,10,20,0,0,1,Gégettes paillettes
-2024,12,17,20,0,0,1,Gégettes paillettes
-2025,1,7,20,0,0,1,Gégettes paillettes
-2025,1,14,20,0,0,1,Gégettes paillettes
-2025,1,21,20,0,0,1,Gégettes paillettes
-2025,1,28,20,0,0,1,Gégettes paillettes
-2025,2,4,20,0,0,1,Gégettes paillettes
-2025,2,11,20,0,0,1,Gégettes paillettes
-2025,3,4,20,0,0,1,Gégettes paillettes
-2025,3,11,20,0,0,1,Gégettes paillettes
-2025,3,18,20,0,0,1,Gégettes paillettes
-2025,3,25,20,0,0,1,Gégettes paillettes
-2025,4,1,20,0,0,1,Gégettes paillettes
-2025,4,8,20,0,0,1,Gégettes paillettes
-2025,4,29,20,0,0,1,Gégettes paillettes
-2025,5,6,20,0,0,1,Gégettes paillettes
-2025,5,13,20,0,0,1,Gégettes paillettes
-2025,5,20,20,0,0,1,Gégettes paillettes
-2025,5,27,20,0,0,1,Gégettes paillettes
-2025,6,3,20,0,0,1,Gégettes paillettes
-2025,6,10,20,0,0,1,Gégettes paillettes
-2025,6,17,20,0,0,1,Gégettes paillettes
-2024,9,24,20,15,0,1,La Vilette
-2024,10,1,20,15,0,1,La Vilette
-2024,10,8,20,15,0,1,La Vilette
-2024,10,15,20,15,0,1,La Vilette
-2024,11,5,20,15,0,1,La Vilette
-2024,11,12,20,15,0,1,La Vilette
-2024,11,19,20,15,0,1,La Vilette
-2024,11,26,20,15,0,1,La Vilette
-2024,12,3,20,15,0,1,La Vilette
-2024,12,10,20,15,0,1,La Vilette
-2024,12,17,20,15,0,1,La Vilette
-2025,1,7,20,15,0,1,La Vilette
-2025,1,14,20,15,0,1,La Vilette
-2025,1,21,20,15,0,1,La Vilette
-2025,1,28,20,15,0,1,La Vilette
-2025,2,4,20,15,0,1,La Vilette
-2025,2,11,20,15,0,1,La Vilette
-2025,3,4,20,15,0,1,La Vilette
-2025,3,11,20,15,0,1,La Vilette
-2025,3,18,20,15,0,1,La Vilette
-2025,3,25,20,15,0,1,La Vilette
-2025,4,1,20,15,0,1,La Vilette
-2025,4,8,20,15,0,1,La Vilette
-2025,4,29,20,15,0,1,La Vilette
-2025,5,6,20,15,0,1,La Vilette
-2025,5,13,20,15,0,1,La Vilette
-2025,5,20,20,15,0,1,La Vilette
-2025,5,27,20,15,0,1,La Vilette
-2025,6,3,20,15,0,1,La Vilette
-2025,6,10,20,15,0,1,La Vilette
-2025,6,17,20,15,0,1,La Vilette
-2024,9,24,20,0,0,1,Saint-Denis
-2024,10,1,20,0,0,1,Saint-Denis
-2024,10,8,20,0,0,1,Saint-Denis
-2024,10,15,20,0,0,1,Saint-Denis
-2024,11,5,20,0,0,1,Saint-Denis
-2024,11,12,20,0,0,1,Saint-Denis
-2024,11,19,20,0,0,1,Saint-Denis
-2024,11,26,20,0,0,1,Saint-Denis
-2024,12,3,20,0,0,1,Saint-Denis
-2024,12,10,20,0,0,1,Saint-Denis
-2024,12,17,20,0,0,1,Saint-Denis
-2025,1,7,20,0,0,1,Saint-Denis
-2025,1,14,20,0,0,1,Saint-Denis
-2025,1,21,20,0,0,1,Saint-Denis
-2025,1,28,20,0,0,1,Saint-Denis
-2025,2,4,20,0,0,1,Saint-Denis
-2025,2,11,20,0,0,1,Saint-Denis
-2025,3,4,20,0,0,1,Saint-Denis
-2025,3,11,20,0,0,1,Saint-Denis
-2025,3,18,20,0,0,1,Saint-Denis
-2025,3,25,20,0,0,1,Saint-Denis
-2025,4,1,20,0,0,1,Saint-Denis
-2025,4,8,20,0,0,1,Saint-Denis
-2025,4,29,20,0,0,1,Saint-Denis
-2025,5,6,20,0,0,1,Saint-Denis
-2025,5,13,20,0,0,1,Saint-Denis
-2025,5,20,20,0,0,1,Saint-Denis
-2025,5,27,20,0,0,1,Saint-Denis
-2025,6,3,20,0,0,1,Saint-Denis
-2025,6,10,20,0,0,1,Saint-Denis
-2025,6,17,20,0,0,1,Saint-Denis
-2024,9,24,20,0,0,1,Pont-Marie
-2024,10,1,20,0,0,1,Pont-Marie
-2024,10,8,20,0,0,1,Pont-Marie
-2024,10,15,20,0,0,1,Pont-Marie
-2024,11,5,20,0,0,1,Pont-Marie
-2024,11,12,20,0,0,1,Pont-Marie
-2024,11,19,20,0,0,1,Pont-Marie
-2024,11,26,20,0,0,1,Pont-Marie
-2024,12,3,20,0,0,1,Pont-Marie
-2024,12,10,20,0,0,1,Pont-Marie
-2024,12,17,20,0,0,1,Pont-Marie
-2025,1,7,20,0,0,1,Pont-Marie
-2025,1,14,20,0,0,1,Pont-Marie
-2025,1,21,20,0,0,1,Pont-Marie
-2025,1,28,20,0,0,1,Pont-Marie
-2025,2,4,20,0,0,1,Pont-Marie
-2025,2,11,20,0,0,1,Pont-Marie
-2025,3,4,20,0,0,1,Pont-Marie
-2025,3,11,20,0,0,1,Pont-Marie
-2025,3,18,20,0,0,1,Pont-Marie
-2025,3,25,20,0,0,1,Pont-Marie
-2025,4,1,20,0,0,1,Pont-Marie
-2025,4,8,20,0,0,1,Pont-Marie
-2025,4,29,20,0,0,1,Pont-Marie
-2025,5,6,20,0,0,1,Pont-Marie
-2025,5,13,20,0,0,1,Pont-Marie
-2025,5,20,20,0,0,1,Pont-Marie
-2025,5,27,20,0,0,1,Pont-Marie
-2025,6,3,20,0,0,1,Pont-Marie
-2025,6,10,20,0,0,1,Pont-Marie
-2025,6,17,20,0,0,1,Pont-Marie
-2024,9,24,20,0,0,1,Château d'eau
-2024,10,1,20,0,0,1,Château d'eau
-2024,10,8,20,0,0,1,Château d'eau
-2024,10,15,20,0,0,1,Château d'eau
-2024,11,5,20,0,0,1,Château d'eau
-2024,11,12,20,0,0,1,Château d'eau
-2024,11,19,20,0,0,1,Château d'eau
-2024,11,26,20,0,0,1,Château d'eau
-2024,12,3,20,0,0,1,Château d'eau
-2024,12,10,20,0,0,1,Château d'eau
-2024,12,17,20,0,0,1,Château d'eau
-2025,1,7,20,0,0,1,Château d'eau
-2025,1,14,20,0,0,1,Château d'eau
-2025,1,21,20,0,0,1,Château d'eau
-2025,1,28,20,0,0,1,Château d'eau
-2025,2,4,20,0,0,1,Château d'eau
-2025,2,11,20,0,0,1,Château d'eau
-2025,3,4,20,0,0,1,Château d'eau
-2025,3,11,20,0,0,1,Château d'eau
-2025,3,18,20,0,0,1,Château d'eau
-2025,3,25,20,0,0,1,Château d'eau
-2025,4,1,20,0,0,1,Château d'eau
-2025,4,8,20,0,0,1,Château d'eau
-2025,4,29,20,0,0,1,Château d'eau
-2025,5,6,20,0,0,1,Château d'eau
-2025,5,13,20,0,0,1,Château d'eau
-2025,5,20,20,0,0,1,Château d'eau
-2025,5,27,20,0,0,1,Château d'eau
-2025,6,3,20,0,0,1,Château d'eau
-2025,6,10,20,0,0,1,Château d'eau
-2025,6,17,20,0,0,1,Château d'eau
-2024,9,24,10,30,0,1,Tuesday morning
-2024,10,1,10,30,0,1,Tuesday morning
-2024,10,8,10,30,0,1,Tuesday morning
-2024,10,15,10,30,0,1,Tuesday morning
-2024,11,5,10,30,0,1,Tuesday morning
-2024,11,12,10,30,0,1,Tuesday morning
-2024,11,19,10,30,0,1,Tuesday morning
-2024,11,26,10,30,0,1,Tuesday morning
-2024,12,3,10,30,0,1,Tuesday morning
-2024,12,10,10,30,0,1,Tuesday morning
-2024,12,17,10,30,0,1,Tuesday morning
-2025,1,7,10,30,0,1,Tuesday morning
-2025,1,14,10,30,0,1,Tuesday morning
-2025,1,21,10,30,0,1,Tuesday morning
-2025,1,28,10,30,0,1,Tuesday morning
-2025,2,4,10,30,0,1,Tuesday morning
-2025,2,11,10,30,0,1,Tuesday morning
-2025,3,4,10,30,0,1,Tuesday morning
-2025,3,11,10,30,0,1,Tuesday morning
-2025,3,18,10,30,0,1,Tuesday morning
-2025,3,25,10,30,0,1,Tuesday morning
-2025,4,1,10,30,0,1,Tuesday morning
-2025,4,8,10,30,0,1,Tuesday morning
-2025,4,29,10,30,0,1,Tuesday morning
-2025,5,6,10,30,0,1,Tuesday morning
-2025,5,13,10,30,0,1,Tuesday morning
-2025,5,20,10,30,0,1,Tuesday morning
-2025,5,27,10,30,0,1,Tuesday morning
-2025,6,3,10,30,0,1,Tuesday morning
-2025,6,10,10,30,0,1,Tuesday morning
-2025,6,17,10,30,0,1,Tuesday morning
-2024,9,25,20,0,0,1,Hôtel de Ville
-2024,10,2,20,0,0,1,Hôtel de Ville
-2024,10,9,20,0,0,1,Hôtel de Ville
-2024,10,16,20,0,0,1,Hôtel de Ville
-2024,11,6,20,0,0,1,Hôtel de Ville
-2024,11,13,20,0,0,1,Hôtel de Ville
-2024,11,20,20,0,0,1,Hôtel de Ville
-2024,11,27,20,0,0,1,Hôtel de Ville
-2024,12,4,20,0,0,1,Hôtel de Ville
-2024,12,11,20,0,0,1,Hôtel de Ville
-2024,12,18,20,0,0,1,Hôtel de Ville
-2025,1,8,20,0,0,1,Hôtel de Ville
-2025,1,15,20,0,0,1,Hôtel de Ville
-2025,1,22,20,0,0,1,Hôtel de Ville
-2025,1,29,20,0,0,1,Hôtel de Ville
-2025,2,5,20,0,0,1,Hôtel de Ville
-2025,2,12,20,0,0,1,Hôtel de Ville
-2025,3,5,20,0,0,1,Hôtel de Ville
-2025,3,12,20,0,0,1,Hôtel de Ville
-2025,3,19,20,0,0,1,Hôtel de Ville
-2025,3,26,20,0,0,1,Hôtel de Ville
-2025,4,2,20,0,0,1,Hôtel de Ville
-2025,4,9,20,0,0,1,Hôtel de Ville
-2025,4,30,20,0,0,1,Hôtel de Ville
-2025,5,7,20,0,0,1,Hôtel de Ville
-2025,5,14,20,0,0,1,Hôtel de Ville
-2025,5,21,20,0,0,1,Hôtel de Ville
-2025,5,28,20,0,0,1,Hôtel de Ville
-2025,6,4,20,0,0,1,Hôtel de Ville
-2025,6,11,20,0,0,1,Hôtel de Ville
-2025,6,18,20,0,0,1,Hôtel de Ville
-2024,9,25,20,15,0,1,Lepeltier
-2024,10,2,20,15,0,1,Lepeltier
-2024,10,9,20,15,0,1,Lepeltier
-2024,10,16,20,15,0,1,Lepeltier
-2024,11,6,20,15,0,1,Lepeltier
-2024,11,13,20,15,0,1,Lepeltier
-2024,11,20,20,15,0,1,Lepeltier
-2024,11,27,20,15,0,1,Lepeltier
-2024,12,4,20,15,0,1,Lepeltier
-2024,12,11,20,15,0,1,Lepeltier
-2024,12,18,20,15,0,1,Lepeltier
-2025,1,8,20,15,0,1,Lepeltier
-2025,1,15,20,15,0,1,Lepeltier
-2025,1,22,20,15,0,1,Lepeltier
-2025,1,29,20,15,0,1,Lepeltier
-2025,2,5,20,15,0,1,Lepeltier
-2025,2,12,20,15,0,1,Lepeltier
-2025,3,5,20,15,0,1,Lepeltier
-2025,3,12,20,15,0,1,Lepeltier
-2025,3,19,20,15,0,1,Lepeltier
-2025,3,26,20,15,0,1,Lepeltier
-2025,4,2,20,15,0,1,Lepeltier
-2025,4,9,20,15,0,1,Lepeltier
-2025,4,30,20,15,0,1,Lepeltier
-2025,5,7,20,15,0,1,Lepeltier
-2025,5,14,20,15,0,1,Lepeltier
-2025,5,21,20,15,0,1,Lepeltier
-2025,5,28,20,15,0,1,Lepeltier
-2025,6,4,20,15,0,1,Lepeltier
-2025,6,11,20,15,0,1,Lepeltier
-2025,6,18,20,15,0,1,Lepeltier
-2024,9,25,20,0,0,1,Faubourg
-2024,10,2,20,0,0,1,Faubourg
-2024,10,9,20,0,0,1,Faubourg
-2024,10,16,20,0,0,1,Faubourg
-2024,11,6,20,0,0,1,Faubourg
-2024,11,13,20,0,0,1,Faubourg
-2024,11,20,20,0,0,1,Faubourg
-2024,11,27,20,0,0,1,Faubourg
-2024,12,4,20,0,0,1,Faubourg
-2024,12,11,20,0,0,1,Faubourg
-2024,12,18,20,0,0,1,Faubourg
-2025,1,8,20,0,0,1,Faubourg
-2025,1,15,20,0,0,1,Faubourg
-2025,1,22,20,0,0,1,Faubourg
-2025,1,29,20,0,0,1,Faubourg
-2025,2,5,20,0,0,1,Faubourg
-2025,2,12,20,0,0,1,Faubourg
-2025,3,5,20,0,0,1,Faubourg
-2025,3,12,20,0,0,1,Faubourg
-2025,3,19,20,0,0,1,Faubourg
-2025,3,26,20,0,0,1,Faubourg
-2025,4,2,20,0,0,1,Faubourg
-2025,4,9,20,0,0,1,Faubourg
-2025,4,30,20,0,0,1,Faubourg
-2025,5,7,20,0,0,1,Faubourg
-2025,5,14,20,0,0,1,Faubourg
-2025,5,21,20,0,0,1,Faubourg
-2025,5,28,20,0,0,1,Faubourg
-2025,6,4,20,0,0,1,Faubourg
-2025,6,11,20,0,0,1,Faubourg
-2025,6,18,20,0,0,1,Faubourg
-2024,9,25,20,15,0,1,Saint-Paul
-2024,10,2,20,15,0,1,Saint-Paul
-2024,10,9,20,15,0,1,Saint-Paul
-2024,10,16,20,15,0,1,Saint-Paul
-2024,11,6,20,15,0,1,Saint-Paul
-2024,11,13,20,15,0,1,Saint-Paul
-2024,11,20,20,15,0,1,Saint-Paul
-2024,11,27,20,15,0,1,Saint-Paul
-2024,12,4,20,15,0,1,Saint-Paul
-2024,12,11,20,15,0,1,Saint-Paul
-2024,12,18,20,15,0,1,Saint-Paul
-2025,1,8,20,15,0,1,Saint-Paul
-2025,1,15,20,15,0,1,Saint-Paul
-2025,1,22,20,15,0,1,Saint-Paul
-2025,1,29,20,15,0,1,Saint-Paul
-2025,2,5,20,15,0,1,Saint-Paul
-2025,2,12,20,15,0,1,Saint-Paul
-2025,3,5,20,15,0,1,Saint-Paul
-2025,3,12,20,15,0,1,Saint-Paul
-2025,3,19,20,15,0,1,Saint-Paul
-2025,3,26,20,15,0,1,Saint-Paul
-2025,4,2,20,15,0,1,Saint-Paul
-2025,4,9,20,15,0,1,Saint-Paul
-2025,4,30,20,15,0,1,Saint-Paul
-2025,5,7,20,15,0,1,Saint-Paul
-2025,5,14,20,15,0,1,Saint-Paul
-2025,5,21,20,15,0,1,Saint-Paul
-2025,5,28,20,15,0,1,Saint-Paul
-2025,6,4,20,15,0,1,Saint-Paul
-2025,6,11,20,15,0,1,Saint-Paul
-2025,6,18,20,15,0,1,Saint-Paul
-2024,9,25,20,0,0,1,Rivoli
-2024,10,2,20,0,0,1,Rivoli
-2024,10,9,20,0,0,1,Rivoli
-2024,10,16,20,0,0,1,Rivoli
-2024,11,6,20,0,0,1,Rivoli
-2024,11,13,20,0,0,1,Rivoli
-2024,11,20,20,0,0,1,Rivoli
-2024,11,27,20,0,0,1,Rivoli
-2024,12,4,20,0,0,1,Rivoli
-2024,12,11,20,0,0,1,Rivoli
-2024,12,18,20,0,0,1,Rivoli
-2025,1,8,20,0,0,1,Rivoli
-2025,1,15,20,0,0,1,Rivoli
-2025,1,22,20,0,0,1,Rivoli
-2025,1,29,20,0,0,1,Rivoli
-2025,2,5,20,0,0,1,Rivoli
-2025,2,12,20,0,0,1,Rivoli
-2025,3,5,20,0,0,1,Rivoli
-2025,3,12,20,0,0,1,Rivoli
-2025,3,19,20,0,0,1,Rivoli
-2025,3,26,20,0,0,1,Rivoli
-2025,4,2,20,0,0,1,Rivoli
-2025,4,9,20,0,0,1,Rivoli
-2025,4,30,20,0,0,1,Rivoli
-2025,5,7,20,0,0,1,Rivoli
-2025,5,14,20,0,0,1,Rivoli
-2025,5,21,20,0,0,1,Rivoli
-2025,5,28,20,0,0,1,Rivoli
-2025,6,4,20,0,0,1,Rivoli
-2025,6,11,20,0,0,1,Rivoli
-2025,6,18,20,0,0,1,Rivoli
-2024,9,19,20,0,0,1,Provence
-2024,9,26,20,0,0,1,Provence
-2024,10,3,20,0,0,1,Provence
-2024,10,10,20,0,0,1,Provence
-2024,10,17,20,0,0,1,Provence
-2024,11,7,20,0,0,1,Provence
-2024,11,14,20,0,0,1,Provence
-2024,11,21,20,0,0,1,Provence
-2024,11,28,20,0,0,1,Provence
-2024,12,5,20,0,0,1,Provence
-2024,12,12,20,0,0,1,Provence
-2024,12,19,20,0,0,1,Provence
-2025,1,9,20,0,0,1,Provence
-2025,1,16,20,0,0,1,Provence
-2025,1,23,20,0,0,1,Provence
-2025,1,30,20,0,0,1,Provence
-2025,2,6,20,0,0,1,Provence
-2025,2,13,20,0,0,1,Provence
-2025,3,6,20,0,0,1,Provence
-2025,3,13,20,0,0,1,Provence
-2025,3,20,20,0,0,1,Provence
-2025,3,27,20,0,0,1,Provence
-2025,4,3,20,0,0,1,Provence
-2025,4,10,20,0,0,1,Provence
-2025,4,17,20,0,0,1,Provence
-2025,5,15,20,0,0,1,Provence
-2025,5,22,20,0,0,1,Provence
-2025,6,5,20,0,0,1,Provence
-2025,6,12,20,0,0,1,Provence
-2025,6,19,20,0,0,1,Provence
-2025,6,26,20,0,0,1,Provence
-2024,9,19,20,0,0,1,Châtelet 
-2024,9,26,20,0,0,1,Châtelet 
-2024,10,3,20,0,0,1,Châtelet 
-2024,10,10,20,0,0,1,Châtelet 
-2024,10,17,20,0,0,1,Châtelet 
-2024,11,7,20,0,0,1,Châtelet 
-2024,11,14,20,0,0,1,Châtelet 
-2024,11,21,20,0,0,1,Châtelet 
-2024,11,28,20,0,0,1,Châtelet 
-2024,12,5,20,0,0,1,Châtelet 
-2024,12,12,20,0,0,1,Châtelet 
-2024,12,19,20,0,0,1,Châtelet 
-2025,1,9,20,0,0,1,Châtelet 
-2025,1,16,20,0,0,1,Châtelet 
-2025,1,23,20,0,0,1,Châtelet 
-2025,1,30,20,0,0,1,Châtelet 
-2025,2,6,20,0,0,1,Châtelet 
-2025,2,13,20,0,0,1,Châtelet 
-2025,3,6,20,0,0,1,Châtelet 
-2025,3,13,20,0,0,1,Châtelet 
-2025,3,20,20,0,0,1,Châtelet 
-2025,3,27,20,0,0,1,Châtelet 
-2025,4,3,20,0,0,1,Châtelet 
-2025,4,10,20,0,0,1,Châtelet 
-2025,4,17,20,0,0,1,Châtelet 
-2025,5,15,20,0,0,1,Châtelet 
-2025,5,22,20,0,0,1,Châtelet 
-2025,6,5,20,0,0,1,Châtelet 
-2025,6,12,20,0,0,1,Châtelet 
-2025,6,19,20,0,0,1,Châtelet 
-2025,6,26,20,0,0,1,Châtelet 
-2024,9,19,20,0,0,1,Petits carreaux
-2024,9,26,20,0,0,1,Petits carreaux
-2024,10,3,20,0,0,1,Petits carreaux
-2024,10,10,20,0,0,1,Petits carreaux
-2024,10,17,20,0,0,1,Petits carreaux
-2024,11,7,20,0,0,1,Petits carreaux
-2024,11,14,20,0,0,1,Petits carreaux
-2024,11,21,20,0,0,1,Petits carreaux
-2024,11,28,20,0,0,1,Petits carreaux
-2024,12,5,20,0,0,1,Petits carreaux
-2024,12,12,20,0,0,1,Petits carreaux
-2024,12,19,20,0,0,1,Petits carreaux
-2025,1,9,20,0,0,1,Petits carreaux
-2025,1,16,20,0,0,1,Petits carreaux
-2025,1,23,20,0,0,1,Petits carreaux
-2025,1,30,20,0,0,1,Petits carreaux
-2025,2,6,20,0,0,1,Petits carreaux
-2025,2,13,20,0,0,1,Petits carreaux
-2025,3,6,20,0,0,1,Petits carreaux
-2025,3,13,20,0,0,1,Petits carreaux
-2025,3,20,20,0,0,1,Petits carreaux
-2025,3,27,20,0,0,1,Petits carreaux
-2025,4,3,20,0,0,1,Petits carreaux
-2025,4,10,20,0,0,1,Petits carreaux
-2025,4,17,20,0,0,1,Petits carreaux
-2025,5,15,20,0,0,1,Petits carreaux
-2025,5,22,20,0,0,1,Petits carreaux
-2025,6,5,20,0,0,1,Petits carreaux
-2025,6,12,20,0,0,1,Petits carreaux
-2025,6,19,20,0,0,1,Petits carreaux
-2025,6,26,20,0,0,1,Petits carreaux
-2024,9,19,20,0,0,1,Volontaires
-2024,9,26,20,0,0,1,Volontaires
-2024,10,3,20,0,0,1,Volontaires
-2024,10,10,20,0,0,1,Volontaires
-2024,10,17,20,0,0,1,Volontaires
-2024,11,7,20,0,0,1,Volontaires
-2024,11,14,20,0,0,1,Volontaires
-2024,11,21,20,0,0,1,Volontaires
-2024,11,28,20,0,0,1,Volontaires
-2024,12,5,20,0,0,1,Volontaires
-2024,12,12,20,0,0,1,Volontaires
-2024,12,19,20,0,0,1,Volontaires
-2025,1,9,20,0,0,1,Volontaires
-2025,1,16,20,0,0,1,Volontaires
-2025,1,23,20,0,0,1,Volontaires
-2025,1,30,20,0,0,1,Volontaires
-2025,2,6,20,0,0,1,Volontaires
-2025,2,13,20,0,0,1,Volontaires
-2025,3,6,20,0,0,1,Volontaires
-2025,3,13,20,0,0,1,Volontaires
-2025,3,20,20,0,0,1,Volontaires
-2025,3,27,20,0,0,1,Volontaires
-2025,4,3,20,0,0,1,Volontaires
-2025,4,10,20,0,0,1,Volontaires
-2025,4,17,20,0,0,1,Volontaires
-2025,5,15,20,0,0,1,Volontaires
-2025,5,22,20,0,0,1,Volontaires
-2025,6,5,20,0,0,1,Volontaires
-2025,6,12,20,0,0,1,Volontaires
-2025,6,19,20,0,0,1,Volontaires
-2025,6,26,20,0,0,1,Volontaires
-2024,9,19,20,0,0,1,Valmy
-2024,9,26,20,0,0,1,Valmy
-2024,10,3,20,0,0,1,Valmy
-2024,10,10,20,0,0,1,Valmy
-2024,10,17,20,0,0,1,Valmy
-2024,11,7,20,0,0,1,Valmy
-2024,11,14,20,0,0,1,Valmy
-2024,11,21,20,0,0,1,Valmy
-2024,11,28,20,0,0,1,Valmy
-2024,12,5,20,0,0,1,Valmy
-2024,12,12,20,0,0,1,Valmy
-2024,12,19,20,0,0,1,Valmy
-2025,1,9,20,0,0,1,Valmy
-2025,1,16,20,0,0,1,Valmy
-2025,1,23,20,0,0,1,Valmy
-2025,1,30,20,0,0,1,Valmy
-2025,2,6,20,0,0,1,Valmy
-2025,2,13,20,0,0,1,Valmy
-2025,3,6,20,0,0,1,Valmy
-2025,3,13,20,0,0,1,Valmy
-2025,3,20,20,0,0,1,Valmy
-2025,3,27,20,0,0,1,Valmy
-2025,4,3,20,0,0,1,Valmy
-2025,4,10,20,0,0,1,Valmy
-2025,4,17,20,0,0,1,Valmy
-2025,5,15,20,0,0,1,Valmy
-2025,5,22,20,0,0,1,Valmy
-2025,6,5,20,0,0,1,Valmy
-2025,6,12,20,0,0,1,Valmy
-2025,6,19,20,0,0,1,Valmy
-2025,6,26,20,0,0,1,Valmy
-2024,9,19,20,0,0,1,Cité
-2024,9,26,20,0,0,1,Cité
-2024,10,3,20,0,0,1,Cité
-2024,10,10,20,0,0,1,Cité
-2024,10,17,20,0,0,1,Cité
-2024,11,7,20,0,0,1,Cité
-2024,11,14,20,0,0,1,Cité
-2024,11,21,20,0,0,1,Cité
-2024,11,28,20,0,0,1,Cité
-2024,12,5,20,0,0,1,Cité
-2024,12,12,20,0,0,1,Cité
-2024,12,19,20,0,0,1,Cité
-2025,1,9,20,0,0,1,Cité
-2025,1,16,20,0,0,1,Cité
-2025,1,23,20,0,0,1,Cité
-2025,1,30,20,0,0,1,Cité
-2025,2,6,20,0,0,1,Cité
-2025,2,13,20,0,0,1,Cité
-2025,3,6,20,0,0,1,Cité
-2025,3,13,20,0,0,1,Cité
-2025,3,20,20,0,0,1,Cité
-2025,3,27,20,0,0,1,Cité
-2025,4,3,20,0,0,1,Cité
-2025,4,10,20,0,0,1,Cité
-2025,4,17,20,0,0,1,Cité
-2025,5,15,20,0,0,1,Cité
-2025,5,22,20,0,0,1,Cité
-2025,6,5,20,0,0,1,Cité
-2025,6,12,20,0,0,1,Cité
-2025,6,19,20,0,0,1,Cité
-2025,6,26,20,0,0,1,Cité
-2024,9,19,20,0,0,1,Paradis
-2024,9,26,20,0,0,1,Paradis
-2024,10,3,20,0,0,1,Paradis
-2024,10,10,20,0,0,1,Paradis
-2024,10,17,20,0,0,1,Paradis
-2024,11,7,20,0,0,1,Paradis
-2024,11,14,20,0,0,1,Paradis
-2024,11,21,20,0,0,1,Paradis
-2024,11,28,20,0,0,1,Paradis
-2024,12,5,20,0,0,1,Paradis
-2024,12,12,20,0,0,1,Paradis
-2024,12,19,20,0,0,1,Paradis
-2025,1,9,20,0,0,1,Paradis
-2025,1,16,20,0,0,1,Paradis
-2025,1,23,20,0,0,1,Paradis
-2025,1,30,20,0,0,1,Paradis
-2025,2,6,20,0,0,1,Paradis
-2025,2,13,20,0,0,1,Paradis
-2025,3,6,20,0,0,1,Paradis
-2025,3,13,20,0,0,1,Paradis
-2025,3,20,20,0,0,1,Paradis
-2025,3,27,20,0,0,1,Paradis
-2025,4,3,20,0,0,1,Paradis
-2025,4,10,20,0,0,1,Paradis
-2025,4,17,20,0,0,1,Paradis
-2025,5,15,20,0,0,1,Paradis
-2025,5,22,20,0,0,1,Paradis
-2025,6,5,20,0,0,1,Paradis
-2025,6,12,20,0,0,1,Paradis
-2025,6,19,20,0,0,1,Paradis
-2025,6,26,20,0,0,1,Paradis
-2024,9,14,13,0,0,1,Notre-Dame
-2024,9,21,13,0,0,1,Notre-Dame
-2024,9,28,13,0,0,1,Notre-Dame
-2024,10,5,13,0,0,1,Notre-Dame
-2024,10,12,13,0,0,1,Notre-Dame
-2024,11,2,13,0,0,1,Notre-Dame
-2024,11,9,13,0,0,1,Notre-Dame
-2024,11,16,13,0,0,1,Notre-Dame
-2024,11,23,13,0,0,1,Notre-Dame
-2024,11,30,13,0,0,1,Notre-Dame
-2024,12,7,13,0,0,1,Notre-Dame
-2024,12,14,13,0,0,1,Notre-Dame
-2025,1,11,13,0,0,1,Notre-Dame
-2025,1,18,13,0,0,1,Notre-Dame
-2025,1,25,13,0,0,1,Notre-Dame
-2025,2,8,13,0,0,1,Notre-Dame
-2025,2,15,13,0,0,1,Notre-Dame
-2025,3,8,13,0,0,1,Notre-Dame
-2025,3,15,13,0,0,1,Notre-Dame
-2025,3,22,13,0,0,1,Notre-Dame
-2025,3,29,13,0,0,1,Notre-Dame
-2025,4,5,13,0,0,1,Notre-Dame
-2025,4,26,13,0,0,1,Notre-Dame
-2025,5,3,13,0,0,1,Notre-Dame
-2025,5,10,13,0,0,1,Notre-Dame
-2025,5,17,13,0,0,1,Notre-Dame
-2025,5,24,13,0,0,1,Notre-Dame
-2025,5,31,13,0,0,1,Notre-Dame
-2025,6,7,13,0,0,1,Notre-Dame
-2025,6,14,13,0,0,1,Notre-Dame
-2025,6,21,13,0,0,1,Notre-Dame
-2024,9,15,18,0,0,1,Delta
-2024,9,22,18,0,0,1,Delta
-2024,9,29,18,0,0,1,Delta
-2024,10,6,18,0,0,1,Delta
-2024,10,13,18,0,0,1,Delta
-2024,11,3,18,0,0,1,Delta
-2024,11,10,18,0,0,1,Delta
-2024,11,17,18,0,0,1,Delta
-2024,11,24,18,0,0,1,Delta
-2024,12,1,18,0,0,1,Delta
-2024,12,8,18,0,0,1,Delta
-2024,12,15,18,0,0,1,Delta
-2025,1,12,18,0,0,1,Delta
-2025,1,19,18,0,0,1,Delta
-2025,1,26,18,0,0,1,Delta
-2025,2,2,18,0,0,1,Delta
-2025,2,9,18,0,0,1,Delta
-2025,3,2,18,0,0,1,Delta
-2025,3,9,18,0,0,1,Delta
-2025,3,16,18,0,0,1,Delta
-2025,3,23,18,0,0,1,Delta
-2025,3,30,18,0,0,1,Delta
-2025,4,6,18,0,0,1,Delta
-2025,4,27,18,0,0,1,Delta
-2025,5,4,18,0,0,1,Delta
-2025,5,11,18,0,0,1,Delta
-2025,5,18,18,0,0,1,Delta
-2025,5,25,18,0,0,1,Delta
-2025,6,1,18,0,0,1,Delta
-2025,6,8,18,0,0,1,Delta
-2025,6,15,18,0,0,1,Delta
+2025,9,22,10,30,0,1,Monday Morning
+2025,9,29,10,30,0,1,Monday Morning
+2025,10,6,10,30,0,1,Monday Morning
+2025,10,13,10,30,0,1,Monday Morning
+2025,11,3,10,30,0,1,Monday Morning
+2025,11,10,10,30,0,1,Monday Morning
+2025,11,17,10,30,0,1,Monday Morning
+2025,11,24,10,30,0,1,Monday Morning
+2025,12,1,10,30,0,1,Monday Morning
+2025,12,8,10,30,0,1,Monday Morning
+2025,12,15,10,30,0,1,Monday Morning
+2026,1,5,10,30,0,1,Monday Morning
+2026,1,12,10,30,0,1,Monday Morning
+2026,1,19,10,30,0,1,Monday Morning
+2026,1,26,10,30,0,1,Monday Morning
+2026,2,2,10,30,0,1,Monday Morning
+2026,2,9,10,30,0,1,Monday Morning
+2026,2,16,10,30,0,1,Monday Morning
+2026,3,9,10,30,0,1,Monday Morning
+2026,3,16,10,30,0,1,Monday Morning
+2026,3,23,10,30,0,1,Monday Morning
+2026,3,30,10,30,0,1,Monday Morning
+2026,4,13,10,30,0,1,Monday Morning
+2026,5,4,10,30,0,1,Monday Morning
+2026,5,11,10,30,0,1,Monday Morning
+2026,5,18,10,30,0,1,Monday Morning
+2026,6,1,10,30,0,1,Monday Morning
+2026,6,8,10,30,0,1,Monday Morning
+2026,6,15,10,30,0,1,Monday Morning
+2026,6,22,10,30,0,1,Monday Morning
+2026,6,29,10,30,0,1,Monday Morning
+2025,9,22,20,0,0,1,Gare de l'est
+2025,9,29,20,0,0,1,Gare de l'est
+2025,10,6,20,0,0,1,Gare de l'est
+2025,10,13,20,0,0,1,Gare de l'est
+2025,11,3,20,0,0,1,Gare de l'est
+2025,11,10,20,0,0,1,Gare de l'est
+2025,11,17,20,0,0,1,Gare de l'est
+2025,11,24,20,0,0,1,Gare de l'est
+2025,12,1,20,0,0,1,Gare de l'est
+2025,12,8,20,0,0,1,Gare de l'est
+2025,12,15,20,0,0,1,Gare de l'est
+2026,1,5,20,0,0,1,Gare de l'est
+2026,1,12,20,0,0,1,Gare de l'est
+2026,1,19,20,0,0,1,Gare de l'est
+2026,1,26,20,0,0,1,Gare de l'est
+2026,2,2,20,0,0,1,Gare de l'est
+2026,2,9,20,0,0,1,Gare de l'est
+2026,2,16,20,0,0,1,Gare de l'est
+2026,3,9,20,0,0,1,Gare de l'est
+2026,3,16,20,0,0,1,Gare de l'est
+2026,3,23,20,0,0,1,Gare de l'est
+2026,3,30,20,0,0,1,Gare de l'est
+2026,4,13,20,0,0,1,Gare de l'est
+2026,5,4,20,0,0,1,Gare de l'est
+2026,5,11,20,0,0,1,Gare de l'est
+2026,5,18,20,0,0,1,Gare de l'est
+2026,6,1,20,0,0,1,Gare de l'est
+2026,6,8,20,0,0,1,Gare de l'est
+2026,6,15,20,0,0,1,Gare de l'est
+2026,6,22,20,0,0,1,Gare de l'est
+2026,6,29,20,0,0,1,Gare de l'est
+2025,9,22,20,0,0,1,Chabrol
+2025,9,29,20,0,0,1,Chabrol
+2025,10,6,20,0,0,1,Chabrol
+2025,10,13,20,0,0,1,Chabrol
+2025,11,3,20,0,0,1,Chabrol
+2025,11,10,20,0,0,1,Chabrol
+2025,11,17,20,0,0,1,Chabrol
+2025,11,24,20,0,0,1,Chabrol
+2025,12,1,20,0,0,1,Chabrol
+2025,12,8,20,0,0,1,Chabrol
+2025,12,15,20,0,0,1,Chabrol
+2026,1,5,20,0,0,1,Chabrol
+2026,1,12,20,0,0,1,Chabrol
+2026,1,19,20,0,0,1,Chabrol
+2026,1,26,20,0,0,1,Chabrol
+2026,2,2,20,0,0,1,Chabrol
+2026,2,9,20,0,0,1,Chabrol
+2026,2,16,20,0,0,1,Chabrol
+2026,3,9,20,0,0,1,Chabrol
+2026,3,16,20,0,0,1,Chabrol
+2026,3,23,20,0,0,1,Chabrol
+2026,3,30,20,0,0,1,Chabrol
+2026,4,13,20,0,0,1,Chabrol
+2026,5,4,20,0,0,1,Chabrol
+2026,5,11,20,0,0,1,Chabrol
+2026,5,18,20,0,0,1,Chabrol
+2026,6,1,20,0,0,1,Chabrol
+2026,6,8,20,0,0,1,Chabrol
+2026,6,15,20,0,0,1,Chabrol
+2026,6,22,20,0,0,1,Chabrol
+2026,6,29,20,0,0,1,Chabrol
+2025,9,22,20,15,0,1,Hauteville
+2025,9,29,20,15,0,1,Hauteville
+2025,10,6,20,15,0,1,Hauteville
+2025,10,13,20,15,0,1,Hauteville
+2025,11,3,20,15,0,1,Hauteville
+2025,11,10,20,15,0,1,Hauteville
+2025,11,17,20,15,0,1,Hauteville
+2025,11,24,20,15,0,1,Hauteville
+2025,12,1,20,15,0,1,Hauteville
+2025,12,8,20,15,0,1,Hauteville
+2025,12,15,20,15,0,1,Hauteville
+2026,1,5,20,15,0,1,Hauteville
+2026,1,12,20,15,0,1,Hauteville
+2026,1,19,20,15,0,1,Hauteville
+2026,1,26,20,15,0,1,Hauteville
+2026,2,2,20,15,0,1,Hauteville
+2026,2,9,20,15,0,1,Hauteville
+2026,2,16,20,15,0,1,Hauteville
+2026,3,9,20,15,0,1,Hauteville
+2026,3,16,20,15,0,1,Hauteville
+2026,3,23,20,15,0,1,Hauteville
+2026,3,30,20,15,0,1,Hauteville
+2026,4,13,20,15,0,1,Hauteville
+2026,5,4,20,15,0,1,Hauteville
+2026,5,11,20,15,0,1,Hauteville
+2026,5,18,20,15,0,1,Hauteville
+2026,6,1,20,15,0,1,Hauteville
+2026,6,8,20,15,0,1,Hauteville
+2026,6,15,20,15,0,1,Hauteville
+2026,6,22,20,15,0,1,Hauteville
+2026,6,29,20,15,0,1,Hauteville
+2025,9,22,20,0,0,1,St Denis
+2025,9,29,20,0,0,1,St Denis
+2025,10,6,20,0,0,1,St Denis
+2025,10,13,20,0,0,1,St Denis
+2025,11,3,20,0,0,1,St Denis
+2025,11,10,20,0,0,1,St Denis
+2025,11,17,20,0,0,1,St Denis
+2025,11,24,20,0,0,1,St Denis
+2025,12,1,20,0,0,1,St Denis
+2025,12,8,20,0,0,1,St Denis
+2025,12,15,20,0,0,1,St Denis
+2026,1,5,20,0,0,1,St Denis
+2026,1,12,20,0,0,1,St Denis
+2026,1,19,20,0,0,1,St Denis
+2026,1,26,20,0,0,1,St Denis
+2026,2,2,20,0,0,1,St Denis
+2026,2,9,20,0,0,1,St Denis
+2026,2,16,20,0,0,1,St Denis
+2026,3,9,20,0,0,1,St Denis
+2026,3,16,20,0,0,1,St Denis
+2026,3,23,20,0,0,1,St Denis
+2026,3,30,20,0,0,1,St Denis
+2026,4,13,20,0,0,1,St Denis
+2026,5,4,20,0,0,1,St Denis
+2026,5,11,20,0,0,1,St Denis
+2026,5,18,20,0,0,1,St Denis
+2026,6,1,20,0,0,1,St Denis
+2026,6,8,20,0,0,1,St Denis
+2026,6,15,20,0,0,1,St Denis
+2026,6,22,20,0,0,1,St Denis
+2026,6,29,20,0,0,1,St Denis
+2025,9,23,10,30,0,1,Tuesday morning
+2025,9,30,10,30,0,1,Tuesday morning
+2025,10,7,10,30,0,1,Tuesday morning
+2025,10,14,10,30,0,1,Tuesday morning
+2025,11,4,10,30,0,1,Tuesday morning
+2025,11,18,10,30,0,1,Tuesday morning
+2025,11,25,10,30,0,1,Tuesday morning
+2025,12,2,10,30,0,1,Tuesday morning
+2025,12,9,10,30,0,1,Tuesday morning
+2025,12,16,10,30,0,1,Tuesday morning
+2026,1,6,10,30,0,1,Tuesday morning
+2026,1,13,10,30,0,1,Tuesday morning
+2026,1,20,10,30,0,1,Tuesday morning
+2026,1,27,10,30,0,1,Tuesday morning
+2026,2,3,10,30,0,1,Tuesday morning
+2026,2,10,10,30,0,1,Tuesday morning
+2026,2,17,10,30,0,1,Tuesday morning
+2026,3,10,10,30,0,1,Tuesday morning
+2026,3,17,10,30,0,1,Tuesday morning
+2026,3,24,10,30,0,1,Tuesday morning
+2026,3,31,10,30,0,1,Tuesday morning
+2026,4,7,10,30,0,1,Tuesday morning
+2026,4,14,10,30,0,1,Tuesday morning
+2026,5,5,10,30,0,1,Tuesday morning
+2026,5,12,10,30,0,1,Tuesday morning
+2026,5,19,10,30,0,1,Tuesday morning
+2026,5,26,10,30,0,1,Tuesday morning
+2026,6,2,10,30,0,1,Tuesday morning
+2026,6,9,10,30,0,1,Tuesday morning
+2026,6,16,10,30,0,1,Tuesday morning
+2026,6,23,10,30,0,1,Tuesday morning
+2025,9,23,20,0,0,1,Improchaussettes
+2025,9,30,20,0,0,1,Improchaussettes
+2025,10,7,20,0,0,1,Improchaussettes
+2025,10,14,20,0,0,1,Improchaussettes
+2025,11,4,20,0,0,1,Improchaussettes
+2025,11,18,20,0,0,1,Improchaussettes
+2025,11,25,20,0,0,1,Improchaussettes
+2025,12,2,20,0,0,1,Improchaussettes
+2025,12,9,20,0,0,1,Improchaussettes
+2025,12,16,20,0,0,1,Improchaussettes
+2026,1,6,20,0,0,1,Improchaussettes
+2026,1,13,20,0,0,1,Improchaussettes
+2026,1,20,20,0,0,1,Improchaussettes
+2026,1,27,20,0,0,1,Improchaussettes
+2026,2,3,20,0,0,1,Improchaussettes
+2026,2,10,20,0,0,1,Improchaussettes
+2026,2,17,20,0,0,1,Improchaussettes
+2026,3,10,20,0,0,1,Improchaussettes
+2026,3,17,20,0,0,1,Improchaussettes
+2026,3,24,20,0,0,1,Improchaussettes
+2026,3,31,20,0,0,1,Improchaussettes
+2026,4,7,20,0,0,1,Improchaussettes
+2026,4,14,20,0,0,1,Improchaussettes
+2026,5,5,20,0,0,1,Improchaussettes
+2026,5,12,20,0,0,1,Improchaussettes
+2026,5,19,20,0,0,1,Improchaussettes
+2026,5,26,20,0,0,1,Improchaussettes
+2026,6,2,20,0,0,1,Improchaussettes
+2026,6,9,20,0,0,1,Improchaussettes
+2026,6,16,20,0,0,1,Improchaussettes
+2026,6,23,20,0,0,1,Improchaussettes
+2025,9,23,20,0,0,1,Château d'eau
+2025,9,30,20,0,0,1,Château d'eau
+2025,10,7,20,0,0,1,Château d'eau
+2025,10,14,20,0,0,1,Château d'eau
+2025,11,4,20,0,0,1,Château d'eau
+2025,11,18,20,0,0,1,Château d'eau
+2025,11,25,20,0,0,1,Château d'eau
+2025,12,2,20,0,0,1,Château d'eau
+2025,12,9,20,0,0,1,Château d'eau
+2025,12,16,20,0,0,1,Château d'eau
+2026,1,6,20,0,0,1,Château d'eau
+2026,1,13,20,0,0,1,Château d'eau
+2026,1,20,20,0,0,1,Château d'eau
+2026,1,27,20,0,0,1,Château d'eau
+2026,2,3,20,0,0,1,Château d'eau
+2026,2,10,20,0,0,1,Château d'eau
+2026,2,17,20,0,0,1,Château d'eau
+2026,3,10,20,0,0,1,Château d'eau
+2026,3,17,20,0,0,1,Château d'eau
+2026,3,24,20,0,0,1,Château d'eau
+2026,3,31,20,0,0,1,Château d'eau
+2026,4,7,20,0,0,1,Château d'eau
+2026,4,14,20,0,0,1,Château d'eau
+2026,5,5,20,0,0,1,Château d'eau
+2026,5,12,20,0,0,1,Château d'eau
+2026,5,19,20,0,0,1,Château d'eau
+2026,5,26,20,0,0,1,Château d'eau
+2026,6,2,20,0,0,1,Château d'eau
+2026,6,9,20,0,0,1,Château d'eau
+2026,6,16,20,0,0,1,Château d'eau
+2026,6,23,20,0,0,1,Château d'eau
+2025,9,23,20,15,0,1,Petits carreaux
+2025,9,30,20,15,0,1,Petits carreaux
+2025,10,7,20,15,0,1,Petits carreaux
+2025,10,14,20,15,0,1,Petits carreaux
+2025,11,4,20,15,0,1,Petits carreaux
+2025,11,18,20,15,0,1,Petits carreaux
+2025,11,25,20,15,0,1,Petits carreaux
+2025,12,2,20,15,0,1,Petits carreaux
+2025,12,9,20,15,0,1,Petits carreaux
+2025,12,16,20,15,0,1,Petits carreaux
+2026,1,6,20,15,0,1,Petits carreaux
+2026,1,13,20,15,0,1,Petits carreaux
+2026,1,20,20,15,0,1,Petits carreaux
+2026,1,27,20,15,0,1,Petits carreaux
+2026,2,3,20,15,0,1,Petits carreaux
+2026,2,10,20,15,0,1,Petits carreaux
+2026,2,17,20,15,0,1,Petits carreaux
+2026,3,10,20,15,0,1,Petits carreaux
+2026,3,17,20,15,0,1,Petits carreaux
+2026,3,24,20,15,0,1,Petits carreaux
+2026,3,31,20,15,0,1,Petits carreaux
+2026,4,7,20,15,0,1,Petits carreaux
+2026,4,14,20,15,0,1,Petits carreaux
+2026,5,5,20,15,0,1,Petits carreaux
+2026,5,12,20,15,0,1,Petits carreaux
+2026,5,19,20,15,0,1,Petits carreaux
+2026,5,26,20,15,0,1,Petits carreaux
+2026,6,2,20,15,0,1,Petits carreaux
+2026,6,9,20,15,0,1,Petits carreaux
+2026,6,16,20,15,0,1,Petits carreaux
+2026,6,23,20,15,0,1,Petits carreaux
+2025,9,23,20,0,0,1,Pont Marie
+2025,9,30,20,0,0,1,Pont Marie
+2025,10,7,20,0,0,1,Pont Marie
+2025,10,14,20,0,0,1,Pont Marie
+2025,11,4,20,0,0,1,Pont Marie
+2025,11,18,20,0,0,1,Pont Marie
+2025,11,25,20,0,0,1,Pont Marie
+2025,12,2,20,0,0,1,Pont Marie
+2025,12,9,20,0,0,1,Pont Marie
+2025,12,16,20,0,0,1,Pont Marie
+2026,1,6,20,0,0,1,Pont Marie
+2026,1,13,20,0,0,1,Pont Marie
+2026,1,20,20,0,0,1,Pont Marie
+2026,1,27,20,0,0,1,Pont Marie
+2026,2,3,20,0,0,1,Pont Marie
+2026,2,10,20,0,0,1,Pont Marie
+2026,2,17,20,0,0,1,Pont Marie
+2026,3,10,20,0,0,1,Pont Marie
+2026,3,17,20,0,0,1,Pont Marie
+2026,3,24,20,0,0,1,Pont Marie
+2026,3,31,20,0,0,1,Pont Marie
+2026,4,7,20,0,0,1,Pont Marie
+2026,4,14,20,0,0,1,Pont Marie
+2026,5,5,20,0,0,1,Pont Marie
+2026,5,12,20,0,0,1,Pont Marie
+2026,5,19,20,0,0,1,Pont Marie
+2026,5,26,20,0,0,1,Pont Marie
+2026,6,2,20,0,0,1,Pont Marie
+2026,6,9,20,0,0,1,Pont Marie
+2026,6,16,20,0,0,1,Pont Marie
+2026,6,23,20,0,0,1,Pont Marie
+2025,9,23,20,0,0,1,Les Gégettes Paillettes
+2025,9,30,20,0,0,1,Les Gégettes Paillettes
+2025,10,7,20,0,0,1,Les Gégettes Paillettes
+2025,10,14,20,0,0,1,Les Gégettes Paillettes
+2025,11,4,20,0,0,1,Les Gégettes Paillettes
+2025,11,18,20,0,0,1,Les Gégettes Paillettes
+2025,11,25,20,0,0,1,Les Gégettes Paillettes
+2025,12,2,20,0,0,1,Les Gégettes Paillettes
+2025,12,9,20,0,0,1,Les Gégettes Paillettes
+2025,12,16,20,0,0,1,Les Gégettes Paillettes
+2026,1,6,20,0,0,1,Les Gégettes Paillettes
+2026,1,13,20,0,0,1,Les Gégettes Paillettes
+2026,1,20,20,0,0,1,Les Gégettes Paillettes
+2026,1,27,20,0,0,1,Les Gégettes Paillettes
+2026,2,3,20,0,0,1,Les Gégettes Paillettes
+2026,2,10,20,0,0,1,Les Gégettes Paillettes
+2026,2,17,20,0,0,1,Les Gégettes Paillettes
+2026,3,10,20,0,0,1,Les Gégettes Paillettes
+2026,3,17,20,0,0,1,Les Gégettes Paillettes
+2026,3,24,20,0,0,1,Les Gégettes Paillettes
+2026,3,31,20,0,0,1,Les Gégettes Paillettes
+2026,4,7,20,0,0,1,Les Gégettes Paillettes
+2026,4,14,20,0,0,1,Les Gégettes Paillettes
+2026,5,5,20,0,0,1,Les Gégettes Paillettes
+2026,5,12,20,0,0,1,Les Gégettes Paillettes
+2026,5,19,20,0,0,1,Les Gégettes Paillettes
+2026,5,26,20,0,0,1,Les Gégettes Paillettes
+2026,6,2,20,0,0,1,Les Gégettes Paillettes
+2026,6,9,20,0,0,1,Les Gégettes Paillettes
+2026,6,16,20,0,0,1,Les Gégettes Paillettes
+2026,6,23,20,0,0,1,Les Gégettes Paillettes
+2025,9,23,20,15,0,1,Lafayette
+2025,9,30,20,15,0,1,Lafayette
+2025,10,7,20,15,0,1,Lafayette
+2025,10,14,20,15,0,1,Lafayette
+2025,11,4,20,15,0,1,Lafayette
+2025,11,18,20,15,0,1,Lafayette
+2025,11,25,20,15,0,1,Lafayette
+2025,12,2,20,15,0,1,Lafayette
+2025,12,9,20,15,0,1,Lafayette
+2025,12,16,20,15,0,1,Lafayette
+2026,1,6,20,15,0,1,Lafayette
+2026,1,13,20,15,0,1,Lafayette
+2026,1,20,20,15,0,1,Lafayette
+2026,1,27,20,15,0,1,Lafayette
+2026,2,3,20,15,0,1,Lafayette
+2026,2,10,20,15,0,1,Lafayette
+2026,2,17,20,15,0,1,Lafayette
+2026,3,10,20,15,0,1,Lafayette
+2026,3,17,20,15,0,1,Lafayette
+2026,3,24,20,15,0,1,Lafayette
+2026,3,31,20,15,0,1,Lafayette
+2026,4,7,20,15,0,1,Lafayette
+2026,4,14,20,15,0,1,Lafayette
+2026,5,5,20,15,0,1,Lafayette
+2026,5,12,20,15,0,1,Lafayette
+2026,5,19,20,15,0,1,Lafayette
+2026,5,26,20,15,0,1,Lafayette
+2026,6,2,20,15,0,1,Lafayette
+2026,6,9,20,15,0,1,Lafayette
+2026,6,16,20,15,0,1,Lafayette
+2026,6,23,20,15,0,1,Lafayette
+2025,9,23,19,30,0,1,Cambronne
+2025,9,30,19,30,0,1,Cambronne
+2025,10,7,19,30,0,1,Cambronne
+2025,10,14,19,30,0,1,Cambronne
+2025,11,4,19,30,0,1,Cambronne
+2025,11,18,19,30,0,1,Cambronne
+2025,11,25,19,30,0,1,Cambronne
+2025,12,2,19,30,0,1,Cambronne
+2025,12,9,19,30,0,1,Cambronne
+2025,12,16,19,30,0,1,Cambronne
+2026,1,6,19,30,0,1,Cambronne
+2026,1,13,19,30,0,1,Cambronne
+2026,1,20,19,30,0,1,Cambronne
+2026,1,27,19,30,0,1,Cambronne
+2026,2,3,19,30,0,1,Cambronne
+2026,2,10,19,30,0,1,Cambronne
+2026,2,17,19,30,0,1,Cambronne
+2026,3,10,19,30,0,1,Cambronne
+2026,3,17,19,30,0,1,Cambronne
+2026,3,24,19,30,0,1,Cambronne
+2026,3,31,19,30,0,1,Cambronne
+2026,4,7,19,30,0,1,Cambronne
+2026,4,14,19,30,0,1,Cambronne
+2026,5,5,19,30,0,1,Cambronne
+2026,5,12,19,30,0,1,Cambronne
+2026,5,19,19,30,0,1,Cambronne
+2026,5,26,19,30,0,1,Cambronne
+2026,6,2,19,30,0,1,Cambronne
+2026,6,9,19,30,0,1,Cambronne
+2026,6,16,19,30,0,1,Cambronne
+2026,6,23,19,30,0,1,Cambronne
+2025,9,24,20,0,0,1,Hôtel de ville
+2025,10,1,20,0,0,1,Hôtel de ville
+2025,10,8,20,0,0,1,Hôtel de ville
+2025,10,15,20,0,0,1,Hôtel de ville
+2025,11,5,20,0,0,1,Hôtel de ville
+2025,11,12,20,0,0,1,Hôtel de ville
+2025,11,19,20,0,0,1,Hôtel de ville
+2025,11,26,20,0,0,1,Hôtel de ville
+2025,12,3,20,0,0,1,Hôtel de ville
+2025,12,10,20,0,0,1,Hôtel de ville
+2025,12,17,20,0,0,1,Hôtel de ville
+2026,1,7,20,0,0,1,Hôtel de ville
+2026,1,14,20,0,0,1,Hôtel de ville
+2026,1,21,20,0,0,1,Hôtel de ville
+2026,1,28,20,0,0,1,Hôtel de ville
+2026,2,4,20,0,0,1,Hôtel de ville
+2026,2,11,20,0,0,1,Hôtel de ville
+2026,2,18,20,0,0,1,Hôtel de ville
+2026,3,11,20,0,0,1,Hôtel de ville
+2026,3,18,20,0,0,1,Hôtel de ville
+2026,3,25,20,0,0,1,Hôtel de ville
+2026,4,1,20,0,0,1,Hôtel de ville
+2026,4,8,20,0,0,1,Hôtel de ville
+2026,4,15,20,0,0,1,Hôtel de ville
+2026,5,6,20,0,0,1,Hôtel de ville
+2026,5,13,20,0,0,1,Hôtel de ville
+2026,5,20,20,0,0,1,Hôtel de ville
+2026,5,27,20,0,0,1,Hôtel de ville
+2026,6,3,20,0,0,1,Hôtel de ville
+2026,6,10,20,0,0,1,Hôtel de ville
+2026,6,17,20,0,0,1,Hôtel de ville
+2025,9,24,20,15,0,1,Lepeltier
+2025,10,1,20,15,0,1,Lepeltier
+2025,10,8,20,15,0,1,Lepeltier
+2025,10,15,20,15,0,1,Lepeltier
+2025,11,5,20,15,0,1,Lepeltier
+2025,11,12,20,15,0,1,Lepeltier
+2025,11,19,20,15,0,1,Lepeltier
+2025,11,26,20,15,0,1,Lepeltier
+2025,12,3,20,15,0,1,Lepeltier
+2025,12,10,20,15,0,1,Lepeltier
+2025,12,17,20,15,0,1,Lepeltier
+2026,1,7,20,15,0,1,Lepeltier
+2026,1,14,20,15,0,1,Lepeltier
+2026,1,21,20,15,0,1,Lepeltier
+2026,1,28,20,15,0,1,Lepeltier
+2026,2,4,20,15,0,1,Lepeltier
+2026,2,11,20,15,0,1,Lepeltier
+2026,2,18,20,15,0,1,Lepeltier
+2026,3,11,20,15,0,1,Lepeltier
+2026,3,18,20,15,0,1,Lepeltier
+2026,3,25,20,15,0,1,Lepeltier
+2026,4,1,20,15,0,1,Lepeltier
+2026,4,8,20,15,0,1,Lepeltier
+2026,4,15,20,15,0,1,Lepeltier
+2026,5,6,20,15,0,1,Lepeltier
+2026,5,13,20,15,0,1,Lepeltier
+2026,5,20,20,15,0,1,Lepeltier
+2026,5,27,20,15,0,1,Lepeltier
+2026,6,3,20,15,0,1,Lepeltier
+2026,6,10,20,15,0,1,Lepeltier
+2026,6,17,20,15,0,1,Lepeltier
+2025,9,24,20,0,0,1,Diderot
+2025,10,1,20,0,0,1,Diderot
+2025,10,8,20,0,0,1,Diderot
+2025,10,15,20,0,0,1,Diderot
+2025,11,5,20,0,0,1,Diderot
+2025,11,12,20,0,0,1,Diderot
+2025,11,19,20,0,0,1,Diderot
+2025,11,26,20,0,0,1,Diderot
+2025,12,3,20,0,0,1,Diderot
+2025,12,10,20,0,0,1,Diderot
+2025,12,17,20,0,0,1,Diderot
+2026,1,7,20,0,0,1,Diderot
+2026,1,14,20,0,0,1,Diderot
+2026,1,21,20,0,0,1,Diderot
+2026,1,28,20,0,0,1,Diderot
+2026,2,4,20,0,0,1,Diderot
+2026,2,11,20,0,0,1,Diderot
+2026,2,18,20,0,0,1,Diderot
+2026,3,11,20,0,0,1,Diderot
+2026,3,18,20,0,0,1,Diderot
+2026,3,25,20,0,0,1,Diderot
+2026,4,1,20,0,0,1,Diderot
+2026,4,8,20,0,0,1,Diderot
+2026,4,15,20,0,0,1,Diderot
+2026,5,6,20,0,0,1,Diderot
+2026,5,13,20,0,0,1,Diderot
+2026,5,20,20,0,0,1,Diderot
+2026,5,27,20,0,0,1,Diderot
+2026,6,3,20,0,0,1,Diderot
+2026,6,10,20,0,0,1,Diderot
+2026,6,17,20,0,0,1,Diderot
+2025,9,24,20,0,0,1,Faubourg
+2025,10,1,20,0,0,1,Faubourg
+2025,10,8,20,0,0,1,Faubourg
+2025,10,15,20,0,0,1,Faubourg
+2025,11,5,20,0,0,1,Faubourg
+2025,11,12,20,0,0,1,Faubourg
+2025,11,19,20,0,0,1,Faubourg
+2025,11,26,20,0,0,1,Faubourg
+2025,12,3,20,0,0,1,Faubourg
+2025,12,10,20,0,0,1,Faubourg
+2025,12,17,20,0,0,1,Faubourg
+2026,1,7,20,0,0,1,Faubourg
+2026,1,14,20,0,0,1,Faubourg
+2026,1,21,20,0,0,1,Faubourg
+2026,1,28,20,0,0,1,Faubourg
+2026,2,4,20,0,0,1,Faubourg
+2026,2,11,20,0,0,1,Faubourg
+2026,2,18,20,0,0,1,Faubourg
+2026,3,11,20,0,0,1,Faubourg
+2026,3,18,20,0,0,1,Faubourg
+2026,3,25,20,0,0,1,Faubourg
+2026,4,1,20,0,0,1,Faubourg
+2026,4,8,20,0,0,1,Faubourg
+2026,4,15,20,0,0,1,Faubourg
+2026,5,6,20,0,0,1,Faubourg
+2026,5,13,20,0,0,1,Faubourg
+2026,5,20,20,0,0,1,Faubourg
+2026,5,27,20,0,0,1,Faubourg
+2026,6,3,20,0,0,1,Faubourg
+2026,6,10,20,0,0,1,Faubourg
+2026,6,17,20,0,0,1,Faubourg
+2025,9,24,20,0,0,1,St Martin
+2025,10,1,20,0,0,1,St Martin
+2025,10,8,20,0,0,1,St Martin
+2025,10,15,20,0,0,1,St Martin
+2025,11,5,20,0,0,1,St Martin
+2025,11,12,20,0,0,1,St Martin
+2025,11,19,20,0,0,1,St Martin
+2025,11,26,20,0,0,1,St Martin
+2025,12,3,20,0,0,1,St Martin
+2025,12,10,20,0,0,1,St Martin
+2025,12,17,20,0,0,1,St Martin
+2026,1,7,20,0,0,1,St Martin
+2026,1,14,20,0,0,1,St Martin
+2026,1,21,20,0,0,1,St Martin
+2026,1,28,20,0,0,1,St Martin
+2026,2,4,20,0,0,1,St Martin
+2026,2,11,20,0,0,1,St Martin
+2026,2,18,20,0,0,1,St Martin
+2026,3,11,20,0,0,1,St Martin
+2026,3,18,20,0,0,1,St Martin
+2026,3,25,20,0,0,1,St Martin
+2026,4,1,20,0,0,1,St Martin
+2026,4,8,20,0,0,1,St Martin
+2026,4,15,20,0,0,1,St Martin
+2026,5,6,20,0,0,1,St Martin
+2026,5,13,20,0,0,1,St Martin
+2026,5,20,20,0,0,1,St Martin
+2026,5,27,20,0,0,1,St Martin
+2026,6,3,20,0,0,1,St Martin
+2026,6,10,20,0,0,1,St Martin
+2026,6,17,20,0,0,1,St Martin
+2025,9,24,20,0,0,1,St Paul
+2025,10,1,20,0,0,1,St Paul
+2025,10,8,20,0,0,1,St Paul
+2025,10,15,20,0,0,1,St Paul
+2025,11,5,20,0,0,1,St Paul
+2025,11,12,20,0,0,1,St Paul
+2025,11,19,20,0,0,1,St Paul
+2025,11,26,20,0,0,1,St Paul
+2025,12,3,20,0,0,1,St Paul
+2025,12,10,20,0,0,1,St Paul
+2025,12,17,20,0,0,1,St Paul
+2026,1,7,20,0,0,1,St Paul
+2026,1,14,20,0,0,1,St Paul
+2026,1,21,20,0,0,1,St Paul
+2026,1,28,20,0,0,1,St Paul
+2026,2,4,20,0,0,1,St Paul
+2026,2,11,20,0,0,1,St Paul
+2026,2,18,20,0,0,1,St Paul
+2026,3,11,20,0,0,1,St Paul
+2026,3,18,20,0,0,1,St Paul
+2026,3,25,20,0,0,1,St Paul
+2026,4,1,20,0,0,1,St Paul
+2026,4,8,20,0,0,1,St Paul
+2026,4,15,20,0,0,1,St Paul
+2026,5,6,20,0,0,1,St Paul
+2026,5,13,20,0,0,1,St Paul
+2026,5,20,20,0,0,1,St Paul
+2026,5,27,20,0,0,1,St Paul
+2026,6,3,20,0,0,1,St Paul
+2026,6,10,20,0,0,1,St Paul
+2026,6,17,20,0,0,1,St Paul
+2025,9,24,20,0,0,1,Rivoli
+2025,10,1,20,0,0,1,Rivoli
+2025,10,8,20,0,0,1,Rivoli
+2025,10,15,20,0,0,1,Rivoli
+2025,11,5,20,0,0,1,Rivoli
+2025,11,12,20,0,0,1,Rivoli
+2025,11,19,20,0,0,1,Rivoli
+2025,11,26,20,0,0,1,Rivoli
+2025,12,3,20,0,0,1,Rivoli
+2025,12,10,20,0,0,1,Rivoli
+2025,12,17,20,0,0,1,Rivoli
+2026,1,7,20,0,0,1,Rivoli
+2026,1,14,20,0,0,1,Rivoli
+2026,1,21,20,0,0,1,Rivoli
+2026,1,28,20,0,0,1,Rivoli
+2026,2,4,20,0,0,1,Rivoli
+2026,2,11,20,0,0,1,Rivoli
+2026,2,18,20,0,0,1,Rivoli
+2026,3,11,20,0,0,1,Rivoli
+2026,3,18,20,0,0,1,Rivoli
+2026,3,25,20,0,0,1,Rivoli
+2026,4,1,20,0,0,1,Rivoli
+2026,4,8,20,0,0,1,Rivoli
+2026,4,15,20,0,0,1,Rivoli
+2026,5,6,20,0,0,1,Rivoli
+2026,5,13,20,0,0,1,Rivoli
+2026,5,20,20,0,0,1,Rivoli
+2026,5,27,20,0,0,1,Rivoli
+2026,6,3,20,0,0,1,Rivoli
+2026,6,10,20,0,0,1,Rivoli
+2026,6,17,20,0,0,1,Rivoli
+2025,9,25,20,0,0,1,Cité
+2025,10,2,20,0,0,1,Cité
+2025,10,9,20,0,0,1,Cité
+2025,10,16,20,0,0,1,Cité
+2025,11,6,20,0,0,1,Cité
+2025,11,13,20,0,0,1,Cité
+2025,11,20,20,0,0,1,Cité
+2025,11,27,20,0,0,1,Cité
+2025,12,4,20,0,0,1,Cité
+2025,12,11,20,0,0,1,Cité
+2025,12,18,20,0,0,1,Cité
+2026,1,8,20,0,0,1,Cité
+2026,1,15,20,0,0,1,Cité
+2026,1,22,20,0,0,1,Cité
+2026,1,29,20,0,0,1,Cité
+2026,2,5,20,0,0,1,Cité
+2026,2,12,20,0,0,1,Cité
+2026,2,19,20,0,0,1,Cité
+2026,3,12,20,0,0,1,Cité
+2026,3,19,20,0,0,1,Cité
+2026,3,26,20,0,0,1,Cité
+2026,4,2,20,0,0,1,Cité
+2026,4,9,20,0,0,1,Cité
+2026,4,16,20,0,0,1,Cité
+2026,5,7,20,0,0,1,Cité
+2026,5,21,20,0,0,1,Cité
+2026,5,28,20,0,0,1,Cité
+2026,6,4,20,0,0,1,Cité
+2026,6,11,20,0,0,1,Cité
+2026,6,18,20,0,0,1,Cité
+2026,6,25,20,0,0,1,Cité
+2025,9,25,20,0,0,1,Châtelet
+2025,10,2,20,0,0,1,Châtelet
+2025,10,9,20,0,0,1,Châtelet
+2025,10,16,20,0,0,1,Châtelet
+2025,11,6,20,0,0,1,Châtelet
+2025,11,13,20,0,0,1,Châtelet
+2025,11,20,20,0,0,1,Châtelet
+2025,11,27,20,0,0,1,Châtelet
+2025,12,4,20,0,0,1,Châtelet
+2025,12,11,20,0,0,1,Châtelet
+2025,12,18,20,0,0,1,Châtelet
+2026,1,8,20,0,0,1,Châtelet
+2026,1,15,20,0,0,1,Châtelet
+2026,1,22,20,0,0,1,Châtelet
+2026,1,29,20,0,0,1,Châtelet
+2026,2,5,20,0,0,1,Châtelet
+2026,2,12,20,0,0,1,Châtelet
+2026,2,19,20,0,0,1,Châtelet
+2026,3,12,20,0,0,1,Châtelet
+2026,3,19,20,0,0,1,Châtelet
+2026,3,26,20,0,0,1,Châtelet
+2026,4,2,20,0,0,1,Châtelet
+2026,4,9,20,0,0,1,Châtelet
+2026,4,16,20,0,0,1,Châtelet
+2026,5,7,20,0,0,1,Châtelet
+2026,5,21,20,0,0,1,Châtelet
+2026,5,28,20,0,0,1,Châtelet
+2026,6,4,20,0,0,1,Châtelet
+2026,6,11,20,0,0,1,Châtelet
+2026,6,18,20,0,0,1,Châtelet
+2026,6,25,20,0,0,1,Châtelet
+2025,9,25,20,0,0,1,Provence
+2025,10,2,20,0,0,1,Provence
+2025,10,9,20,0,0,1,Provence
+2025,10,16,20,0,0,1,Provence
+2025,11,6,20,0,0,1,Provence
+2025,11,13,20,0,0,1,Provence
+2025,11,20,20,0,0,1,Provence
+2025,11,27,20,0,0,1,Provence
+2025,12,4,20,0,0,1,Provence
+2025,12,11,20,0,0,1,Provence
+2025,12,18,20,0,0,1,Provence
+2026,1,8,20,0,0,1,Provence
+2026,1,15,20,0,0,1,Provence
+2026,1,22,20,0,0,1,Provence
+2026,1,29,20,0,0,1,Provence
+2026,2,5,20,0,0,1,Provence
+2026,2,12,20,0,0,1,Provence
+2026,2,19,20,0,0,1,Provence
+2026,3,12,20,0,0,1,Provence
+2026,3,19,20,0,0,1,Provence
+2026,3,26,20,0,0,1,Provence
+2026,4,2,20,0,0,1,Provence
+2026,4,9,20,0,0,1,Provence
+2026,4,16,20,0,0,1,Provence
+2026,5,7,20,0,0,1,Provence
+2026,5,21,20,0,0,1,Provence
+2026,5,28,20,0,0,1,Provence
+2026,6,4,20,0,0,1,Provence
+2026,6,11,20,0,0,1,Provence
+2026,6,18,20,0,0,1,Provence
+2026,6,25,20,0,0,1,Provence
+2025,9,25,20,0,0,1,Les louves Astrales
+2025,10,2,20,0,0,1,Les louves Astrales
+2025,10,9,20,0,0,1,Les louves Astrales
+2025,10,16,20,0,0,1,Les louves Astrales
+2025,11,6,20,0,0,1,Les louves Astrales
+2025,11,13,20,0,0,1,Les louves Astrales
+2025,11,20,20,0,0,1,Les louves Astrales
+2025,11,27,20,0,0,1,Les louves Astrales
+2025,12,4,20,0,0,1,Les louves Astrales
+2025,12,11,20,0,0,1,Les louves Astrales
+2025,12,18,20,0,0,1,Les louves Astrales
+2026,1,8,20,0,0,1,Les louves Astrales
+2026,1,15,20,0,0,1,Les louves Astrales
+2026,1,22,20,0,0,1,Les louves Astrales
+2026,1,29,20,0,0,1,Les louves Astrales
+2026,2,5,20,0,0,1,Les louves Astrales
+2026,2,12,20,0,0,1,Les louves Astrales
+2026,2,19,20,0,0,1,Les louves Astrales
+2026,3,12,20,0,0,1,Les louves Astrales
+2026,3,19,20,0,0,1,Les louves Astrales
+2026,3,26,20,0,0,1,Les louves Astrales
+2026,4,2,20,0,0,1,Les louves Astrales
+2026,4,9,20,0,0,1,Les louves Astrales
+2026,4,16,20,0,0,1,Les louves Astrales
+2026,5,7,20,0,0,1,Les louves Astrales
+2026,5,21,20,0,0,1,Les louves Astrales
+2026,5,28,20,0,0,1,Les louves Astrales
+2026,6,4,20,0,0,1,Les louves Astrales
+2026,6,11,20,0,0,1,Les louves Astrales
+2026,6,18,20,0,0,1,Les louves Astrales
+2026,6,25,20,0,0,1,Les louves Astrales
+2025,9,25,20,0,0,1,Volontaires
+2025,10,2,20,0,0,1,Volontaires
+2025,10,9,20,0,0,1,Volontaires
+2025,10,16,20,0,0,1,Volontaires
+2025,11,6,20,0,0,1,Volontaires
+2025,11,13,20,0,0,1,Volontaires
+2025,11,20,20,0,0,1,Volontaires
+2025,11,27,20,0,0,1,Volontaires
+2025,12,4,20,0,0,1,Volontaires
+2025,12,11,20,0,0,1,Volontaires
+2025,12,18,20,0,0,1,Volontaires
+2026,1,8,20,0,0,1,Volontaires
+2026,1,15,20,0,0,1,Volontaires
+2026,1,22,20,0,0,1,Volontaires
+2026,1,29,20,0,0,1,Volontaires
+2026,2,5,20,0,0,1,Volontaires
+2026,2,12,20,0,0,1,Volontaires
+2026,2,19,20,0,0,1,Volontaires
+2026,3,12,20,0,0,1,Volontaires
+2026,3,19,20,0,0,1,Volontaires
+2026,3,26,20,0,0,1,Volontaires
+2026,4,2,20,0,0,1,Volontaires
+2026,4,9,20,0,0,1,Volontaires
+2026,4,16,20,0,0,1,Volontaires
+2026,5,7,20,0,0,1,Volontaires
+2026,5,21,20,0,0,1,Volontaires
+2026,5,28,20,0,0,1,Volontaires
+2026,6,4,20,0,0,1,Volontaires
+2026,6,11,20,0,0,1,Volontaires
+2026,6,18,20,0,0,1,Volontaires
+2026,6,25,20,0,0,1,Volontaires
+2025,9,27,13,0,0,1,Notre dame
+2025,10,4,13,0,0,1,Notre dame
+2025,10,11,13,0,0,1,Notre dame
+2025,10,18,13,0,0,1,Notre dame
+2025,11,8,13,0,0,1,Notre dame
+2025,11,15,13,0,0,1,Notre dame
+2025,11,22,13,0,0,1,Notre dame
+2025,11,29,13,0,0,1,Notre dame
+2025,12,6,13,0,0,1,Notre dame
+2025,12,13,13,0,0,1,Notre dame
+2026,1,10,13,0,0,1,Notre dame
+2026,1,17,13,0,0,1,Notre dame
+2026,1,24,13,0,0,1,Notre dame
+2026,1,31,13,0,0,1,Notre dame
+2026,2,7,13,0,0,1,Notre dame
+2026,2,14,13,0,0,1,Notre dame
+2026,2,21,13,0,0,1,Notre dame
+2026,3,14,13,0,0,1,Notre dame
+2026,3,21,13,0,0,1,Notre dame
+2026,3,28,13,0,0,1,Notre dame
+2026,4,4,13,0,0,1,Notre dame
+2026,4,11,13,0,0,1,Notre dame
+2026,4,18,13,0,0,1,Notre dame
+2026,5,9,13,0,0,1,Notre dame
+2026,5,16,13,0,0,1,Notre dame
+2026,5,23,13,0,0,1,Notre dame
+2026,5,30,13,0,0,1,Notre dame
+2026,6,6,13,0,0,1,Notre dame
+2026,6,13,13,0,0,1,Notre dame
+2026,6,20,13,0,0,1,Notre dame
+2025,9,28,18,0,0,1,Delta
+2025,10,5,18,0,0,1,Delta
+2025,10,12,18,0,0,1,Delta
+2025,10,19,18,0,0,1,Delta
+2025,11,9,18,0,0,1,Delta
+2025,11,16,18,0,0,1,Delta
+2025,11,23,18,0,0,1,Delta
+2025,11,30,18,0,0,1,Delta
+2025,12,7,18,0,0,1,Delta
+2025,12,14,18,0,0,1,Delta
+2026,1,11,18,0,0,1,Delta
+2026,1,18,18,0,0,1,Delta
+2026,1,25,18,0,0,1,Delta
+2026,2,1,18,0,0,1,Delta
+2026,2,8,18,0,0,1,Delta
+2026,2,15,18,0,0,1,Delta
+2026,2,22,18,0,0,1,Delta
+2026,3,1,18,0,0,1,Delta
+2026,3,15,18,0,0,1,Delta
+2026,3,22,18,0,0,1,Delta
+2026,3,29,18,0,0,1,Delta
+2026,4,12,18,0,0,1,Delta
+2026,4,19,18,0,0,1,Delta
+2026,5,10,18,0,0,1,Delta
+2026,5,17,18,0,0,1,Delta
+2026,5,31,18,0,0,1,Delta
+2026,6,7,18,0,0,1,Delta
+2026,6,14,18,0,0,1,Delta
+2026,6,21,18,0,0,1,Delta

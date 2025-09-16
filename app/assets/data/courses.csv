@@ -1,27 +1,28 @@
 level,location,day,hour,minute,info,teacher
-Niveau 1,Hauteville,Lundi,20,15,Studios 27 BIS (salle sur la rue) rue chabrol 75010 Paris,Julien B
-Niveau 1,Lafayette,Mardi,20,15,Studios 27 BIS (salle sur la rue) rue chabrol 75010 Paris,Rémi W
-Niveau 1,Hôtel de Ville,Mercredi,20,0,"Cité des arts, 18 rue de l’hôtel de ville (STUDIO 5) 75004 Paris","Julie C, Florine G"
-Niveau 1,Lepeltier,Mercredi,20,15,Studios 27 BIS (salle sur la rue) rue chabrol 75010 Paris,Houdia P
-Niveau 1,Provence,Jeudi,20,0,Studios 27 BIS (salle sur la rue) rue chabrol 75010 Paris,Rémi N
-Niveau 1,Delta,Dimanche,18,0,Studios 27 BIS (salle sur la rue) rue chabrol 75010 Paris,Antoine A
-Niveau 2,Gare de l'Est,Lundi,20,0,"Studios 27 (salle de spectacle en bas, entrée par la ruelle) 75010 Paris","Victoire P, Eve B, Romain N"
-Niveau 2,Cambronne,Mardi,20,0,"Théâtre de la petite Croisée, 43 rue Mathurin Régnier 75015 Paris","Bertrand R, Lowen M, Cathy N"
-Niveau 2,Gégettes paillettes,Mardi,20,0,"83 faubourg st denis, porte cochère: 1754B (elle est souvent déjà ouverte), 2ème Porte : 8360B (la blanche derrière le palmier)","Lowen M, Pierre L, Poloche"
-Niveau 2,La Vilette,Mardi,20,15,57 rue des vinaigriers 75010 paris porte bleu code porte bleue 8342 interphone 20,"Florine G, Eve B, Julien B"
-Niveau 2,Châtelet ,Jeudi,20,0,"Cité des arts, 18 rue de l’hôtel de ville (STUDIO 1) 75004 Paris","Juan E, Erwan S, Julien B"
-Niveau 3,Saint-Denis,Mardi,20,0,"83 faubourg st denis, porte cochère: 1754B (elle est souvent déjà ouverte), 2ème Porte : 8360B (la blanche derrière le palmier)","Etienne J, Alicia L, Ingrid D"
-Niveau 3,Pont-Marie,Mardi,20,0,"Cité des arts, 18 rue de l’hôtel de ville (STUDIO 5) 75004 Paris","Julie D, Florine G, Léandre P"
-Niveau 3,Faubourg,Mercredi,20,0,57 rue des vinaigriers 75010 paris porte bleu code porte bleue 8342 interphone 20,"Pierre L, Romain G,"
-Niveau 3,Petits carreaux,Jeudi,20,0,"Studios 27 (salle de spectacle en bas, entrée par la ruelle) 75010 Paris","L’ourson, Julien B, Lowen M"
-Niveau 4,Saint-Paul,Mercredi,20,15,"Cité des arts, 18 rue de l’hôtel de ville (STUDIO 1) 75004 Paris","Eve B, Julien B, Pierre L"
-Niveau 4,Volontaires,Jeudi,20,0,"Théâtre de la petite Croisée, 43 rue Mathurin Régnier 75015 Paris","Simon C, Juan E, Léandre P"
-Niveau 4,Valmy,Jeudi,20,0,57 rue des vinaigriers 75010 paris porte bleu code porte bleue 8342 interphone 20,"Léandre P, Poloche, L’ourson"
-Niveau 4,Notre-Dame,Samedi,13,0,Studios 27 BIS (salle sur la rue) rue chabrol 75010 Paris,"Lowen M, Marie-Manu A, Eve B"
-Niveau 5,Chabrol,Lundi,20,0,"Maison de Mai (salle kilia, entrée par la ruelle à gauche) 23 rue chabrol 75010 Paris","Lisa G, Étienne J, Romain N"
-Niveau 5,Château d'eau,Mardi,20,0,"Maison de Mai (salle kilia, entrée par la ruelle à gauche) 23 rue chabrol 75010 Paris","Claire H, Florine M, Florine G"
-Niveau 5,Rivoli,Mercredi,20,0,"Cité des arts, 18 rue de l’hôtel de ville (STUDIO 2) 75004 Paris","Thibaud D, Mathilde M, Julien B"
-Niveau 5,Cité,Jeudi,20,0,"Cité des arts, 18 rue de l’hôtel de ville (STUDIO 2) 75004 Paris","Poloche, Romain G, Antoine G"
-Niveau 5,Paradis,Jeudi,20,0,"Maison de Mai (salle kilia, entrée par la ruelle à gauche) 23 rue chabrol 75010 Paris","Antoine G, L’ourson, Simon C"
-Niveau pro,Monday morning,Lundi,10,30,Studios 27 BIS (salle sur la rue) rue chabrol 75010 Paris,"Léandre P, Chenny, Pierre H"
-Niveau pro,Tuesday morning,Mardi,10,30,Studios 27 BIS (salle sur la rue) rue chabrol 75010 Paris,"Batiste D.O, Léandre P, Chenny"
+Niveau 1,Hauteville,Lundi,20,15,Studios 27 SALLE ROUGE au 27 BIS rue chabrol ( entrée sur la rue) 75010 paris métro gare de l'est ou Poissonnières.,Julien Bertrand
+Niveau 1,Pont Marie,Mardi,20,0,"Cité des arts, 18 rue de l'hôtel de ville 75004 paris métro pont marie ou st paul. STUDIO 5",Pierre de Quelen
+Niveau 1,Lafayette,Mardi,20,15,Studios 27 BIS SALLE ROUGE au 27 BIS rue chabrol 75010 paris métro gare de l'est ou Poissonnières.,Julien Bertrand
+Niveau 1,Hôtel de ville,Mercredi,20,0,"Cité des arts, 18 rue de l'hôtel de ville 75004 paris métro pont marie ou st paul. STUDIO 5",En alternance Julie Cabanel et Florine Gillet
+Niveau 1,Lepeltier,Mercredi,20,15,Studios 27 SALLE ROUGE au 27 BIS rue chabrol ( entrée sur la rue) 75010 paris métro gare de l'est ou Poissonnières.,Houdia Ponty
+Niveau 1,Provence,Jeudi,20,0,Studios 27 SALLE ROUGE au 27 BIS rue chabrol ( entrée sur la rue) 75010 paris métro gare de l'est ou Poissonnières.,T1 Bertrand Cayla T2 Juan Espin Alonso T3 Bertrand Cayla
+Niveau 2,Chabrol,Lundi,20,0,"Local du Faubourg 83 faubourg st denis, 75010 paris métro réaumur sébastopol. 1 er code 1754B puis 8360B derrière le palmier, grande salle en bas.",T1 Lowen Moritz T2 Etienne Jeannot T3 Antoine Alberola
+Niveau 2,Tuesday morning,Mardi,10,30,Studios 27 BIS au 27 rue chabrol ( entrée sur la rue ) BIS 75010 paris métro gare de l'est ou Poissonnières.,T1 Léandre Philippon T2 Pablo Reva T3 Chenny
+Niveau 2,Petits carreaux,Mardi,20,15,Porte du soleil au 57 rue des vinaigriers 75010 paris métro gare de l'est. code 8342 puis interphone 20,T1 Florine Gillet T2 Ingrid Dupont T3 Erwan Sturel
+Niveau 2,Diderot,Mercredi,20,0,Studios bleus 10 rue ERARD ( studio 7 Marilyn Monroe) 75012 paris,"Baba, Romain Guyot et Julien Bertrand"
+Niveau 2,St Martin,Mercredi,20,0,Porte du soleil au 57 rue des vinaigriers 75010 paris métro gare de l'est. code 8342 puis interphone 20,T1 Evantias Chaudat T2 Nathan Lazaro T3 Arnaud Pierre
+Niveau 2,Les louves Astrales,Jeudi,20,0,Salle spectacle ( en bas ) des studios 27 au 27 rue chabrol 75010 paris métro gare de l'est ou Poissonnières.,T1 Erwan Sturel T2 Romain Nardelli T3 Emilie Lecomte
+Niveau 2,Delta,Dimanche,18,0,Studios 27 BIS SALLE ROUGE au 27 BIS rue chabrol ( entrée sur la rue) 75010 paris métro gare de l'est ou Poissonnières.,T1 Eve Beguin T2 Victoire Panouillet T3 David Salmon
+Niveau 3,Monday Morning,Lundi,10,30,Studios 27 SALLE ROUGE au 27 BIS rue chabrol ( entrée sur la rue) 75010 paris métro gare de l'est ou Poissonnières.,T1 Julien Bertrand T2 Batiste de Oliveira T3 Pierre Huntzinger
+Niveau 3,Gare de l'est,Lundi,20,0,Salle spectacle ( en bas ) des studios 27 au 27 rue chabrol 75010 paris métro gare de l'est ou Poissonnières.,T1 Nathan Lazaro T2 Lowen Moritz T3 Etienne Jeannot
+Niveau 3,Les Gégettes Paillettes,Mardi,20,0,"Local du Faubourg 83 faubourg st denis, 75010 paris métro réaumur sébastopol. 1 er code 1754B puis 8360B derrière le palmier, grande salle en bas.",T1 Antoine Gaudin T2 Florine Gillet T3 Lowen Moritz
+Niveau 3,Cambronne,Mardi,19,30,"Théâtre la croisée des chemins, 43 rue Mathurin Régnier 75015 paris métro volontaires",T1 Antoine Alberola T2 Cathy Nouchi T3 Arnaud Pierre
+Niveau 3,Châtelet,Jeudi,20,0,"Cité des arts, 18 rue de l'hôtel de ville 75004 paris métro pont marie ou st paul. STUDIO 1",T1 Gabriel Chardon T2 Erwan Sturel T3 Romain Nardelli
+Niveau 4,Château d'eau,Mardi,20,0,"Maison de mai, salle KILLA au 23 rue chabrol ( entrée dans l'impasse) 75010 paris métro gare de l'est ou Poissonnières.",T1 Florine Moreau T2 Poloche T3 Romain Guyot
+Niveau 4,Volontaires,Jeudi,20,0,"Théâtre la croisée des chemins, 43 rue Mathurin Régnier 75015 paris métro volontaires",T1 Arnaud Pierre T2 Claire Hinaut T3 Gabriel Chardon
+Niveau 5,St Denis,Lundi,20,0,"Maison de Mai, salle KILLA, au 23 rue chabrol ( entrée dans l'impasse) 75010 paris métro gare de l'est ou Poissonnières.",T1 Victoire Panouillet T2 Mathilde Mir T3 Eve Béguin
+Niveau 5,Improchaussettes,Mardi,20,0,Salle spectacle ( en bas ) des studios 27 au 27 rue chabrol 75010 paris métro gare de l'est ou Poissonnières.,T1 Thibaud Deygas T2 Arnaud Pierre T3 Florine Gillet
+Niveau 5,Faubourg,Mercredi,20,0,"Local du Faubourg 83 faubourg st denis, 75010 paris métro réaumur sébastopol",T1 Romain Nardelli T2 Arnaud pierre T3 Poloche
+Niveau 5,St Paul,Mercredi,20,0,"Cité des arts, 18 rue de l'hôtel de ville 75004 paris métro pont marie ou st paul. STUDIO 1",T1 Arnaud Pierre T2 Marie Manu Ait-Said T3 Poloche
+Niveau 5,Rivoli,Mercredi,20,0,"Cité des arts, 18 rue de l'hôtel de ville 75004 paris métro pont marie ou st paul. STUDIO 2",T1 Poloche T2 Eve Béguin T3 Léandre Philippon
+Niveau 5,Cité,Jeudi,20,0,"Cité des arts, 18 rue de l'hôtel de ville 75004 paris métro pont marie ou st paul. STUDIO 2",T1 Etienne Jeannot T2 Gabriel Chardon T3 Victoire Panouillet
+Niveau 5,Notre dame,Samedi,13,0,Studios 27 SALLE ROUGE au 27 BIS rue chabrol ( entrée sur la rue) 75010 paris métro gare de l'est ou Poissonnières.,T1 Pierre Huntzinger T2 Léandre Philippon T3 ?

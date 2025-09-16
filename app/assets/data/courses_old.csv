@@ -1,0 +1,27 @@
+level,location,day,hour,minute,info,teacher
+Niveau 1,Hauteville,Lundi,20,15,Studios 27 BIS (salle sur la rue) rue chabrol 75010 Paris,Julien B
+Niveau 1,Lafayette,Mardi,20,15,Studios 27 BIS (salle sur la rue) rue chabrol 75010 Paris,Rémi W
+Niveau 1,Hôtel de Ville,Mercredi,20,0,"Cité des arts, 18 rue de l’hôtel de ville (STUDIO 5) 75004 Paris","Julie C, Florine G"
+Niveau 1,Lepeltier,Mercredi,20,15,Studios 27 BIS (salle sur la rue) rue chabrol 75010 Paris,Houdia P
+Niveau 1,Provence,Jeudi,20,0,Studios 27 BIS (salle sur la rue) rue chabrol 75010 Paris,Rémi N
+Niveau 1,Delta,Dimanche,18,0,Studios 27 BIS (salle sur la rue) rue chabrol 75010 Paris,Antoine A
+Niveau 2,Gare de l'Est,Lundi,20,0,"Studios 27 (salle de spectacle en bas, entrée par la ruelle) 75010 Paris","Victoire P, Eve B, Romain N"
+Niveau 2,Cambronne,Mardi,20,0,"Théâtre de la petite Croisée, 43 rue Mathurin Régnier 75015 Paris","Bertrand R, Lowen M, Cathy N"
+Niveau 2,Gégettes paillettes,Mardi,20,0,"83 faubourg st denis, porte cochère: 1754B (elle est souvent déjà ouverte), 2ème Porte : 8360B (la blanche derrière le palmier)","Lowen M, Pierre L, Poloche"
+Niveau 2,La Vilette,Mardi,20,15,57 rue des vinaigriers 75010 paris porte bleu code porte bleue 8342 interphone 20,"Florine G, Eve B, Julien B"
+Niveau 2,Châtelet ,Jeudi,20,0,"Cité des arts, 18 rue de l’hôtel de ville (STUDIO 1) 75004 Paris","Juan E, Erwan S, Julien B"
+Niveau 3,Saint-Denis,Mardi,20,0,"83 faubourg st denis, porte cochère: 1754B (elle est souvent déjà ouverte), 2ème Porte : 8360B (la blanche derrière le palmier)","Etienne J, Alicia L, Ingrid D"
+Niveau 3,Pont-Marie,Mardi,20,0,"Cité des arts, 18 rue de l’hôtel de ville (STUDIO 5) 75004 Paris","Julie D, Florine G, Léandre P"
+Niveau 3,Faubourg,Mercredi,20,0,57 rue des vinaigriers 75010 paris porte bleu code porte bleue 8342 interphone 20,"Pierre L, Romain G,"
+Niveau 3,Petits carreaux,Jeudi,20,0,"Studios 27 (salle de spectacle en bas, entrée par la ruelle) 75010 Paris","L’ourson, Julien B, Lowen M"
+Niveau 4,Saint-Paul,Mercredi,20,15,"Cité des arts, 18 rue de l’hôtel de ville (STUDIO 1) 75004 Paris","Eve B, Julien B, Pierre L"
+Niveau 4,Volontaires,Jeudi,20,0,"Théâtre de la petite Croisée, 43 rue Mathurin Régnier 75015 Paris","Simon C, Juan E, Léandre P"
+Niveau 4,Valmy,Jeudi,20,0,57 rue des vinaigriers 75010 paris porte bleu code porte bleue 8342 interphone 20,"Léandre P, Poloche, L’ourson"
+Niveau 4,Notre-Dame,Samedi,13,0,Studios 27 BIS (salle sur la rue) rue chabrol 75010 Paris,"Lowen M, Marie-Manu A, Eve B"
+Niveau 5,Chabrol,Lundi,20,0,"Maison de Mai (salle kilia, entrée par la ruelle à gauche) 23 rue chabrol 75010 Paris","Lisa G, Étienne J, Romain N"
+Niveau 5,Château d'eau,Mardi,20,0,"Maison de Mai (salle kilia, entrée par la ruelle à gauche) 23 rue chabrol 75010 Paris","Claire H, Florine M, Florine G"
+Niveau 5,Rivoli,Mercredi,20,0,"Cité des arts, 18 rue de l’hôtel de ville (STUDIO 2) 75004 Paris","Thibaud D, Mathilde M, Julien B"
+Niveau 5,Cité,Jeudi,20,0,"Cité des arts, 18 rue de l’hôtel de ville (STUDIO 2) 75004 Paris","Poloche, Romain G, Antoine G"
+Niveau 5,Paradis,Jeudi,20,0,"Maison de Mai (salle kilia, entrée par la ruelle à gauche) 23 rue chabrol 75010 Paris","Antoine G, L’ourson, Simon C"
+Niveau pro,Monday morning,Lundi,10,30,Studios 27 BIS (salle sur la rue) rue chabrol 75010 Paris,"Léandre P, Chenny, Pierre H"
+Niveau pro,Tuesday morning,Mardi,10,30,Studios 27 BIS (salle sur la rue) rue chabrol 75010 Paris,"Batiste D.O, Léandre P, Chenny"
