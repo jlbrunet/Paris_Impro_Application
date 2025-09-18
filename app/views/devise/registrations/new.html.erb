@@ -35,7 +35,7 @@
                     error: "Le mot de passe ne correspond pas",
                     input_html: { autocomplete: "new-password" } %>
         <%= f.label :course_id, label: "Sélectionner votre cours" %>
-        <%= f.collection_select(:course_id, Course.all.sort_by {|co| co[:level] }, :id, lambda {|course| "#{course.level} - #{course.day} #{course.hour.hour}h#{course.minute if course.minute > 0} - #{course.location}"}, {include_blank: ""}, {class: resource.errors.has_key?(:course_id) ? "req" : "" })%>
+        <%= f.collection_select(:course_id, Course.all.sort_by {|co| co[:level].chars.last.to_i }, :id, lambda {|course| "#{course.level} - #{course.day} #{course.hour.hour}h#{course.minute if course.minute > 0} - #{course.location}"}, {include_blank: ""}, {class: resource.errors.has_key?(:course_id) ? "req" : "" })%>
         <% if resource.errors.has_key?(:course_id) %>
           <div class="text-danger" style="font-size: 14px"><%= resource.errors[:course_id].first %></div>
         <% end %>

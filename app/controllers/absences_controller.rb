@@ -36,12 +36,16 @@ class AbsencesController < ApplicationController
   def more_than_13h?(lesson)
     if (lesson.course.hour.hour == 20)
       ((lesson.occurs_on - DateTime.now) / 3600) > 7
+    elsif (lesson.course.hour.hour == 19)
+      ((lesson.occurs_on - DateTime.now) / 3600) > 6
     elsif (lesson.course.hour.hour == 18)
       ((lesson.occurs_on - DateTime.now) / 3600) > 5
     elsif (lesson.course.hour.hour == 13)
       ((lesson.occurs_on - DateTime.now) / 3600) > 24
-    else
+    elsif (lesson.course.hour.hour == 10)
       ((lesson.occurs_on - DateTime.now) / 3600) > 21
+    else
+      ((lesson.occurs_on - DateTime.now) / 3600) > 24
     end
   end
 end
