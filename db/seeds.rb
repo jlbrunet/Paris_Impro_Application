@@ -1,26 +1,6 @@
-require "csv"
-lessons_csv_file = File.join("app/assets/data/lessons.csv")
-
 course = Course.find_by({location: "Lepeltier"})
-hour = Time.new(2001, 1, 1, 20, 0, 0)
-course.hour = hour
+course.minute = 0
 course.save!
-
-count = 0
-lessons = Lesson.where(course_id: course.id)
-lessons.map do |lesson|
-  CSV.foreach(lessons_csv_file, headers: :first_row, header_converters: :symbol) do |row|
-    if row[:location] == course.location
-      if Time.new(row[:occurs_on_year], row[:occurs_on_month], row[:occurs_on_day], row[:occurs_on_hour], row[:occurs_on_minutes], row[:occurs_on_seconds]) == lesson.occurs_on
-        count += 1
-        occurs_on_created = Time.new(row[:occurs_on_year], row[:occurs_on_month], row[:occurs_on_day], row[:occurs_on_hour], 0, row[:occurs_on_seconds])
-        lesson.occurs_on = occurs_on_created
-        lesson.save!
-      end
-    end
-  end
-end
-print count
 
 # require "csv"
 
