@@ -1,8 +1,13 @@
-course = Course.find_by({location: "Petits carreaux"})
-print course
-course.level = "Intermédiaire | 3"
+course = Course.find_by({location: "Volontaires"})
+course.hour = Time.new(2001, 1, 1, 19, 45, 0)
+course.minute = 45
 course.save!
-print course
+
+Lesson.where({course_id: course.id}).each do |lesson|
+  date = lesson.occurs_on
+  lesson.occurs_on = Time.new(date.year, date.month, date.day, 19, 45, 0)
+  lesson.save!
+end
 
 # require "csv"
 
