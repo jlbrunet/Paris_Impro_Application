@@ -52,18 +52,12 @@ class LessonsController < ApplicationController
   end
 
   def same_level?(lesson)
-    if current_user.course.level == "Débutant | 1"
-      lesson.course.level == current_user.course.level
-    elsif current_user.course.level == "Initié | 2" || current_user.course.level == "Intermédiaire | 3" || current_user.course.level == "Confirmé | 4"
+    if current_user.course.level != "Débutant | 1"
+      return true
+    else
       lesson_level = lesson.course.level.chars.last.to_i
       next_level = current_user.course.level.chars.last.to_i + 1
       lesson.course.level == current_user.course.level || next_level == lesson_level
-    elsif current_user.course.level == "Expert | 5"
-      lesson_level = lesson.course.level.chars.last.to_i
-      precedent_level = current_user.course.level.chars.last.to_i - 1
-      lesson.course.level == current_user.course.level || precedent_level == lesson_level
-    else
-      false
     end
   end
 
