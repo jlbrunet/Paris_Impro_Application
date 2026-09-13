@@ -339,6 +339,33 @@
   text-decoration: none;
 }
 
+button.btn-admin-toggle {
+  border: none;
+  color: white;
+  cursor: pointer;
+  display: block;
+  width: 140px;
+  height: auto;
+  min-height: 45px;
+  font-size: 13px;
+  line-height: 1.2;
+  white-space: normal;
+}
+
+button.btn-admin-toggle:hover {
+  background-color: $medium-red;
+  color: white;
+}
+
+button.btn-admin-locked {
+  background-color: #7a7a7a;
+}
+
+button.btn-admin-locked:hover {
+  background-color: #5e5e5e;
+  color: white;
+}
+
 .btn-delete-eleve {
   width: 40px;
   height: 40px;

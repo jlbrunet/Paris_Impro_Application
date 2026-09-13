@@ -23,4 +23,15 @@ class CoursesController < ApplicationController
       end
     end
   end
+
+  def toggle_rattrapages
+    if current_user.status != "admin"
+      redirect_to current_user.status == "student" ? root_path : courses_path
+    else
+      course = Course.find(params[:id])
+      course.update(rattrapages_locked: !course.rattrapages_locked)
+      redirect_to courses_path
+    end
+  end
 end
+

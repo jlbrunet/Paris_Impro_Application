@@ -24,6 +24,11 @@
                     <p class="no-text-deco">Élèves<i class="fa-solid fa-circle-chevron-right space-chevron"></i></p>
                   <% end %>
                 </div>
+                <% if current_user.status == "admin" %>
+                  <%= button_to toggle_rattrapages_course_path(course), method: :patch, class: "btn-admin btn-admin-toggle#{' btn-admin-locked' if course.rattrapages_locked?}" do %>
+                    <%= course.rattrapages_locked? ? "Débloquer les rattrapages" : "Bloquer les rattrapages" %>
+                  <% end %>
+                <% end %>
               </div>
             </div>
             <% if index != @courses.size - 1 %>

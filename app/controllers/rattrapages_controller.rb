@@ -4,7 +4,9 @@ class RattrapagesController < ApplicationController
       redirect_to courses_path
     else
       redirect_to root_path if Rattrapage.where(user: current_user).count >= 9
-      @rattrapage_lessons = Lesson.where(id: session[:available_lessons_ids])
+      @rattrapage_lessons = Lesson.where(id: session[:available_lessons_ids]).includes(:course).reject do |lesson|
+        lesson.course.rattrapages_locked?
+      end
       @lesson = Lesson.new
     end
   end
@@ -13,6 +15,11 @@ class RattrapagesController < ApplicationController
     occurs_on = params[:lesson][:occurs_on]
     course_id = params[:lesson][:course_id].to_i
     lesson = Lesson.where("DATE_TRUNC('day', occurs_on) = ?", occurs_on.to_date).find_by(course_id: course_id)
+
+    if lesson.course.rattrapages_locked?
+      redirect_to root_path
+      return
+    end
 
     places_ouvertes = Absence.where(lesson_id: lesson.id, is_taken: false).joins(:user).where(users: { status: "admin" })
     absences = Absence.where(lesson_id: lesson.id).joins(:user).where(users: { status: "student" })

@@ -28,7 +28,7 @@ class LessonsController < ApplicationController
       redirect_to courses_path
     else
       redirect_to root_path if Rattrapage.where(user: current_user).count >= 9
-      lessons = Lesson.where.not(course_id: current_user.course_id)
+      lessons = Lesson.where.not(course_id: current_user.course_id).includes(:course)
       available_lessons = lessons.select do |lesson|
         available_lesson?(lesson)
       end
@@ -39,8 +39,8 @@ class LessonsController < ApplicationController
 
   def create
     occurs_on = params[:lesson][:occurs_on]
-    lessons = Lesson.where("DATE_TRUNC('day', occurs_on) = ?", occurs_on.to_date)
-    available_lessons = lessons.select { |lesson| same_level?(lesson) && available_absence?(lesson) }
+    lessons = Lesson.where("DATE_TRUNC('day', occurs_on) = ?", occurs_on.to_date).includes(:course)
+    available_lessons = lessons.select { |lesson| same_level?(lesson) && available_absence?(lesson) && rattrapages_open?(lesson) }
     session[:available_lessons_ids] = available_lessons.map(&:id)
     redirect_to rattrapages_new_path
   end
@@ -48,7 +48,11 @@ class LessonsController < ApplicationController
   private
 
   def available_lesson?(lesson)
-    same_level?(lesson) && other_day?(lesson) && future_date?(lesson) && available_absence?(lesson)
+    same_level?(lesson) && other_day?(lesson) && future_date?(lesson) && available_absence?(lesson) && rattrapages_open?(lesson)
+  end
+
+  def rattrapages_open?(lesson)
+    !lesson.course.rattrapages_locked?
   end
 
   def same_level?(lesson)

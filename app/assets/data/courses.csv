@@ -1,30 +1,33 @@
 level,location,day,hour,minute,info,teacher
-Débutant | 1,Hauteville,Lundi,20,15,Studios 27 BIS | 27 BIS rue chabrol (entrée sur la rue) 75010 paris | Métro gare de l'est ou poissonnières,Julien Bertrand
-Débutant | 1,Pont Marie,Mardi,20,0,Cité des arts studio 5 | 18 rue de l'hôtel de ville 75004 paris | Métro pont marie ou st paul,Pierre de Quelen
-Débutant | 1,Hôtel de ville,Mercredi,20,0,Cité des arts studio 5 | 18 rue de l'hôtel de ville 75004 paris | Métro pont marie ou st paul,Florine Gillet
-Débutant | 1,Le Peletier,Mercredi,20,15,Les Studios 27 BIS (salle en haut qui donne sur la rue) | 27 BIS rue chabrol 75010 paris | Métro gare de l'est ou poissonnières,Bertand Cayla
-Initié | 2,Cambronne,Lundi,20,0,Théâtre la croisée des chemins | 43 rue Mathurin Régnier 75015 paris | Métro volontaires,T1 Lucas Riway T2 Cathy Nouchi T3 Arnaud Pierre
-Initié | 2,Saint Denis,Lundi,20,0,Les Studios 27 BIS | 27 BIS rue Chabrol 75010 Paris | Métro gare de l'est ou poissonnières,T1 Romain Nardelli T2 Cindy David T3 Aurélien Cunat
-Initié | 2,Magenta,Mardi,20,15,Studios 27 bis (en haut) | 27 BIS rue chabrol 75010 Paris | Métro gare de l'est ou poissonnières,T1 Cindy David T2 Florine Gillet T3 David Salmon
-Initié | 2,Diderot,Mercredi,20,0,Studios bleus (salle shakespeare) | 10 rue erard 75012 paris | Métro reuilly-diderot ou montgallet,T1 Aurélien Cunat T2 Pierre De Quelen T3 Julien Bertrand
-Initié | 2,Bisounours,Jeudi,20,0,Cité des arts - Studio 1 | 18 rue de l'hôtel de ville 75004 paris | Métro pont marie ou st paul,T1 David Salmon T2 Juan Espin Alonso T3 Victoire Panouillet
-Initié | 2,Provence,Jeudi,20,0,Les Studios 27 BIS (salle en haut qui donne sur la rue) | 27 BIS rue chabrol 75010 paris | Métro gare de l'est ou poissonnières,T1 Evantias T2 Antoine Alberola T3 Emilie Leconte
-Intermédiaire | 3,Chabrol,Lundi,20,0,Local du Faubourg | 83 faubourg st denis 75010 paris | Métro réaumur sébastopol,T1 Eve Béguin T2 Mathilde Mir T3 Erwan Sturel
-Intermédiaire | 3,Les Krais,Mercredi,20,0,Maison de Mai des studios 27 | 23 rue chabrol (entrée dans l'impasse) 75010 paris | Métro gare de l'est ou poissonnières,T1 Erwan Sturel T2 Romain Nardelli T3 Eve Béguin
-Intermédiaire | 3,La Sympatchim,Mercredi,20,0,Porte du soleil | 57 rue des vinaigriers 75010 paris | Métro gare de l'est,T1 Simon Coulm T2 Eve Béguin T3 Poloche (Nicolas Perruchon)
-Intermédiaire | 3,Les Louves Astrales,Jeudi,20,10,Salle spectacle (en bas) des studios 27 | 27 rue chabrol 75010 paris | Métro gare de l'est ou poissonnières,T1 Victoire Panouillet T2 Lowen Moritz T3 Antoine Alberola
-Intermédiaire | 3,Delta,Dimanche,18,0,Les Studios 27 BIS (salle en haut qui donne sur la rue) | 27 BIS rue chabrol 75010 paris | Métro gare de l'est ou poissonnières,T1 Lucas Riway T2 David Salmon T3 Léandre Philippon
-Confirmé | 4,Les Feux d'artichaut,Lundi,19,30,Studios 27 (salle spectacle en bas) | 27 rue chabrol 75010 paris | Métro gare de l'est ou poissonnières,T1 Arnaud Pierre T2 Lucas Riway T3 Lowen Moritz
-Confirmé | 4,Zouplaboum,Mardi,19,30,Théâtre la croisée des chemins | 43 rue Mathurin Régnier 75015 paris | Métro volontaires,T1 Lowen Moritz T2 Florine Moreau T3 Ingrid Dupont
-Confirmé | 4,Les Gégettes Paillettes,Mardi,20,0,Local du Faubourg | 83 faubourg st denis 75010 paris | Métro réaumur sébastopol,T1 Antoine Alberola T2 Etienne Jeannot T3 L'ourson (Gabriel Chardon)
-Expert | 5,Monday Morning,Lundi,10,30,Studios 27 BIS | 27 BIS rue chabrol (entrée sur la rue) 75010 paris | Métro gare de l'est ou poissonnières,T1 Pablo Reva T2 Léandre Philippon T3 Arnaud Pierre
-Expert | 5,El Ekulipt,Lundi,20,0,Porte du soleil | 57 rue des vinaigriers 75010 paris | Métro gare de l'est,T1 Lowen Moritz T2 Arnaud Pierre T3 Lucas Riway
-Expert | 5,Tuesday morning,Mardi,10,30,Maison de Mai des studios 27 | 23 rue chabrol (entrée dans l'impasse) 75010 paris | Métro gare de l'est ou poissonnières,T1 Lucas Riway T2 Elodie Decker T3 Houdia Ponty
-Expert | 5,Château d'eau,Mardi,19,30,"Les studios 27, salle spectacle | 27 rue Chabrol (entrée côté impasse) 75010 Paris | Métro gare de l'est ou poissonnières",T1 Léandre Philippon T2 Marie Manu Ait-Said T3 Nathan Lazaro
-Expert | 5,CETAITPASCITÉ,Mardi,20,15,Les Studios 27 BIS (salle en haut qui donne sur la rue) | 27 BIS rue chabrol 75010 paris | Métro gare de l'est ou poissonnières,Julien Bertrand and Co
-Expert | 5,Petits carreaux,Mardi,20,15,Porte du soleil | 57 rue des vinaigriers 75010 paris | Métro gare de l'est,T1 Etienne Jeannot T2 Victoire Panouillet T3 Lowen Moritz
-Expert | 5,Wednesday Morning,Mercredi,10,30,Les Studios 27 BIS (salle en haut qui donne sur la rue) | 27 BIS rue chabrol 75010 paris | Métro gare de l'est ou poissonnières,T1 Houdia Ponty T2 Pierre Huntzinger T3 Bastite De Oliveira
-Expert | 5,Faubourg,Mercredi,20,0,Local du Faubourg | 83 faubourg st denis 75010 paris | Métro réaumur sébastopol,T1 L'ourson (Gabriel Chardon) T2 Erwan Sturel T3 Baba
-Expert | 5,Rivoli,Mercredi,20,0,Cité des arts - Studio 1 | 18 rue de l'hôtel de ville 75004 paris | Métro pont marie ou st paul,T1 Nathan Lazaro T2 L'ourson (Gabriel Chardon) T3 Arnaud Pierre
-Expert | 5,Saint Paul,Mercredi,20,0,Cité des arts - Studio 3 | 18 rue de l'hôtel de ville 75004 paris | Métro pont marie ou st paul,T1 Pierre Huntzinger T2 Elodie Decker T3 Romain Nardelli
-Expert | 5,Notre Dame,Samedi,13,0,Les Studios 27 BIS (salle en haut qui donne sur la rue) | 27 BIS rue chabrol 75010 paris | Métro gare de l'est ou poissonnières,T1 Marie Manu Ait Said T2 Lowen Moritz T3 Pierre Huntzinger
+Débutant | 1,Équipe Hauteville,Lundi,20,15,Studios 27 BIS | 27 BIS rue chabrol (entrée sur la rue) 75010 paris | Métro gare de l'est ou poissonnières,Julien Bertrand
+Débutant | 1,Équipe Pont Marie,Mardi,20,0,Cité des arts studio 5 | 18 rue de l'hôtel de ville 75004 paris | Métro pont marie ou st paul,Pierre de Quelen
+Débutant | 1,Équipe Hôtel de ville,Mercredi,20,0,Cité des arts studio 5 | 18 rue de l'hôtel de ville 75004 paris | Métro pont marie ou st paul,Florine Gillet
+Débutant | 1,Équipe Le Peletier,Mercredi,20,15,Les Studios 27 BIS (salle en haut qui donne sur la rue) | 27 BIS rue chabrol 75010 paris | Métro gare de l'est ou poissonnières,Bertand Cayla
+Initié | 2,Équipe Cambronne,Lundi,20,0,Théâtre la croisée des chemins | 43 rue Mathurin Régnier 75015 paris | Métro volontaires,T1 Lucas Riway T2 Cathy Nouchi T3 Arnaud Pierre
+Initié | 2,Équipe Saint Denis,Lundi,20,0,Les Studios 27 BIS | 27 BIS rue Chabrol 75010 Paris | Métro gare de l'est ou poissonnières,T1 Romain Nardelli T2 Cindy David T3 Aurélien Cunat
+Initié | 2,Équipe Magenta,Mardi,20,15,Studios 27 bis (en haut) | 27 BIS rue chabrol 75010 Paris | Métro gare de l'est ou poissonnières,T1 Cindy David T2 Florine Gillet T3 David Salmon
+Initié | 2,Équipe Diderot,Mercredi,20,0,Studios bleus (salle shakespeare) | 10 rue erard 75012 paris | Métro reuilly-diderot ou montgallet,T1 Aurélien Cunat T2 Pierre De Quelen T3 Julien Bertrand
+Initié | 2,Équipe des Bisounours,Jeudi,20,0,Cité des arts - Studio 1 | 18 rue de l'hôtel de ville 75004 paris | Métro pont marie ou st paul,T1 David Salmon T2 Nathan Lazaro T3 Victoire Panouillet
+Initié | 2,Équipe Provence,Jeudi,20,5,Les Studios 27 BIS (salle en haut qui donne sur la rue) | 27 BIS rue chabrol 75010 paris | Métro gare de l'est ou poissonnières,T1 Evantias T2 Antoine Alberola T3 Emilie Lecomte
+Intermédiaire | 3,Équipe Monday Morning,Lundi,10,30,Studios 27 BIS | 27 BIS rue chabrol (entrée sur la rue) 75010 paris | Métro gare de l'est ou poissonnières,T1 Pablo Reva T2 Léandre Philippon T3 Arnaud Pierre
+Intermédiaire | 3,Équipe Chabrol,Lundi,20,0,"Local du Faubourg | 83 faubourg st denis 75010 paris | Porte cochère: 1754B (elle est souvent déjà ouverte)
+2 eme Porte : 8360B (la blanche derrière le palmier) | Métro réaumur sébastopol",T1 Eve Béguin T2 Mathilde Mir T3 Erwan Sturel
+Intermédiaire | 3,Équipe Tuesday morning,Mardi,10,30,Maison de Mai des studios 27 | 23 rue chabrol (entrée dans l'impasse) 75010 paris | Métro gare de l'est ou poissonnières,T1 Lucas Riway T2 Elodie Decker T3 Houdia Ponty
+Intermédiaire | 3,Équipe Wednesday Morning,Mercredi,10,30,Les Studios 27 BIS (salle en haut qui donne sur la rue) | 27 BIS rue chabrol 75010 paris | Métro gare de l'est ou poissonnières,T1 Houdia Ponty T2 Pierre Huntzinger T3 Batiste De Oliveira
+Intermédiaire | 3,Équipe Les Krais,Mercredi,20,0,Maison de Mai des studios 27 | 23 rue chabrol (entrée dans l'impasse) 75010 paris | Métro gare de l'est ou poissonnières,T1 Erwan Sturel T2 Romain Nardelli T3 Eve Béguin
+Intermédiaire | 3,Équipe La Sympatchim,Mercredi,20,0,Porte du soleil | 57 rue des vinaigriers 75010 paris | code porte 8342 et interphone 20 | Métro gare de l'est,T1 Simon Coulm T2 Eve Béguin T3 Poloche (Nicolas Perruchon)
+Intermédiaire | 3,Équipe Les Louves Astrales,Jeudi,20,10,Salle spectacle (en bas) des studios 27 | 27 rue chabrol 75010 paris | Métro gare de l'est ou poissonnières,T1 Victoire Panouillet T2 Lowen Moritz T3 Antoine Alberola
+Intermédiaire | 3,Équipe Delta,Dimanche,18,0,Les Studios 27 BIS (salle en haut qui donne sur la rue) | 27 BIS rue chabrol 75010 paris | Métro gare de l'est ou poissonnières,T1 Lucas Riway T2 David Salmon T3 Léandre Philippon
+Confirmé | 4,Équipe Les Feux d'artichaut,Lundi,19,30,Studios 27 (salle spectacle en bas) | 27 rue chabrol 75010 paris | Métro gare de l'est ou poissonnières,T1 Arnaud Pierre T2 Lucas Riway T3 Lowen Moritz
+Confirmé | 4,Équipe Zouplaboum,Mardi,19,30,Théâtre la croisée des chemins | 43 rue Mathurin Régnier 75015 paris | Métro volontaires,T1 Lowen Moritz T2 Florine Moreau T3 Ingrid Dupont
+Confirmé | 4,Équipe Les Gégettes Paillettes,Mardi,20,0,"Local du Faubourg | 83 faubourg st denis 75010 paris | Porte cochère: 1754B (elle est souvent déjà ouverte)
+2 eme Porte : 8360B (la blanche derrière le palmier) | Métro réaumur sébastopol",T1 Antoine Alberola T2 Etienne Jeannot T3 L'ourson (Gabriel Chardon)
+Expert | 5,Équipe El Ekulipt,Lundi,20,0,Porte du soleil | 57 rue des vinaigriers 75010 paris | code porte 8342 et interphone 20 | Métro gare de l'est,T1 Lowen Moritz T2 Arnaud Pierre T3 Lucas Riway
+Expert | 5,Équipe Château d'eau,Mardi,19,30,"Les studios 27, salle spectacle | 27 rue Chabrol (entrée côté impasse) 75010 Paris | Métro gare de l'est ou poissonnières",T1 Léandre Philippon T2 Marie Manu Ait-Said T3 Nathan Lazaro
+Expert | 5,Équipe CETAITPASCITÉ,Mardi,20,0,Maison de Mai des studios 27 | 23 rue chabrol (entrée dans l'impasse) 75010 paris | Métro gare de l'est ou poissonnières,Julien Bertrand and Co
+Expert | 5,Équipe Petits carreaux,Mardi,20,15,Porte du soleil | 57 rue des vinaigriers 75010 paris | code porte 8342 et interphone 20 | Métro gare de l'est,T1 Etienne Jeannot T2 Victoire Panouillet T3 Lowen Moritz
+Expert | 5,Équipe Faubourg,Mercredi,20,0,"Local du Faubourg | 83 faubourg st denis 75010 paris | Porte cochère: 1754B (elle est souvent déjà ouverte)
+2 eme Porte : 8360B (la blanche derrière le palmier) | Métro réaumur sébastopol",T1 L'ourson (Gabriel Chardon) T2 Erwan Sturel T3 Baba
+Expert | 5,Équipe Rivoli,Mercredi,20,0,Cité des arts - Studio 1 | 18 rue de l'hôtel de ville 75004 paris | Métro pont marie ou st paul,T1 Nathan Lazaro T2 L'ourson (Gabriel Chardon) T3 Arnaud Pierre
+Expert | 5,Équipe Saint Paul,Mercredi,20,0,Cité des arts - Studio 3 | 18 rue de l'hôtel de ville 75004 paris | Métro pont marie ou st paul,T1 Pierre Huntzinger T2 Elodie Decker T3 Romain Nardelli
+Expert | 5,Équipe Notre Dame,Samedi,13,0,Les Studios 27 BIS (salle en haut qui donne sur la rue) | 27 BIS rue chabrol 75010 paris | Métro gare de l'est ou poissonnières,T1 Marie Manu Ait Said T2 Lowen Moritz T3 Pierre Huntzinger

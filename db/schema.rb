@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2024_09_08_181259) do
+ActiveRecord::Schema[7.0].define(version: 2026_09_13_151400) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
@@ -34,6 +34,7 @@ ActiveRecord::Schema[7.0].define(version: 2024_09_08_181259) do
     t.string "info"
     t.string "teacher"
     t.integer "minute"
+    t.boolean "rattrapages_locked", default: false, null: false
   end
 
   create_table "lessons", force: :cascade do |t|

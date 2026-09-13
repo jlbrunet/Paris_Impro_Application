@@ -12,7 +12,11 @@ Rails.application.routes.draw do
   resources :courses, only: %i[index show] do
     resources :lessons, only: [:index]
     post "lessons", to: "lessons#create_place", as: :create_place
+    member do
+      patch :toggle_rattrapages
+    end
   end
+
 
   get '/users', to: redirect('/users/sign_up')
   patch "profiles/:id", to: "profiles#update", as: :profile_update
