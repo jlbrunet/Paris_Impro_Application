@@ -56,7 +56,9 @@ class LessonsController < ApplicationController
   end
 
   def same_level?(lesson)
-    if current_user.course.level != "Débutant | 1"
+    if lesson.course.location == "Équipe Long Form"
+      return false
+    elsif current_user.course.level != "Débutant | 1"
       return true
     else
       lesson_level = lesson.course.level.chars.last.to_i

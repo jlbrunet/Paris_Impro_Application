@@ -1,13 +1,21 @@
 require "csv"
 
-User.destroy_all
-Rattrapage.destroy_all
-Absence.destroy_all
-Lesson.destroy_all
-Course.destroy_all
+course = Course.find_by(location: "Équipe Delta")
+p course
 
-courses_csv_file = File.join("app/assets/data/courses.csv")
-lessons_csv_file = File.join("app/assets/data/lessons.csv")
+date1 = Time.new(2026, 12, 20, 18, 0, 0)
+lesson1 = Lesson.find_by(course_id: course.id, occurs_on:date1)
+lesson1.destroy!
+
+date2 = Time.new(2026, 9, 20, 18, 0, 0)
+lesson2 = Lesson.new(occurs_on: date2, course_id: course.id, location: course.location)
+lesson2.save!
+
+lessons = Lesson.where(course_id: course.id)
+p lessons.count
+
+courses_csv_file = File.join("app/assets/data/courses2.csv")
+lessons_csv_file = File.join("app/assets/data/lessons2.csv")
 
 CSV.foreach(courses_csv_file, headers: :first_row, header_converters: :symbol) do |row|
   row[:hour] = Time.new(2001, 1, 1, row[:hour], row[:minute], 0)
@@ -22,26 +30,48 @@ CSV.foreach(lessons_csv_file, headers: :first_row, header_converters: :symbol) d
   lesson.save!
 end
 
-user1 = User.new({
-  email: "ateliers@paris-impro.com", password: "123456", course_id: Course.first.id, first_name: "Professeur", last_name: "Professeur", status: "teacher"
-})
+# User.destroy_all
+# Rattrapage.destroy_all
+# Absence.destroy_all
+# Lesson.destroy_all
+# Course.destroy_all
 
-user1.save!
+# courses_csv_file = File.join("app/assets/data/courses.csv")
+# lessons_csv_file = File.join("app/assets/data/lessons.csv")
 
-user2 = User.new({
-  email: "professeur-support@paris-impro.com", password: "123456", course_id: Course.first.id, first_name: "Professeur-support", last_name: "Professeur-support", status: "teacher"
-})
+# CSV.foreach(courses_csv_file, headers: :first_row, header_converters: :symbol) do |row|
+#   row[:hour] = Time.new(2001, 1, 1, row[:hour], row[:minute], 0)
+#   course = Course.new(row)
+#   course.save!
+# end
 
-user2.save!
+# CSV.foreach(lessons_csv_file, headers: :first_row, header_converters: :symbol) do |row|
+#   occurs_on_created = Time.new(row[:occurs_on_year], row[:occurs_on_month], row[:occurs_on_day], row[:occurs_on_hour], row[:occurs_on_minutes], row[:occurs_on_seconds])
+#   row[:course_id] = Course.where(location: row[:location])[0].id.to_i
+#   lesson = Lesson.new(occurs_on: occurs_on_created, course_id: row[:course_id], location: row[:location])
+#   lesson.save!
+# end
 
-user3 = User.new({
-  email: "contact@paris-impro.com", password: "123456", course_id: Course.first.id, first_name: "Admin", last_name: "Admin", status: "admin"
-})
+# user1 = User.new({
+#   email: "ateliers@paris-impro.com", password: "123456", course_id: Course.first.id, first_name: "Professeur", last_name: "Professeur", status: "teacher"
+# })
 
-user3.save!
+# user1.save!
 
-user4 = User.new({
-  email: "admin-support@paris-impro.com", password: "123456", course_id: Course.first.id, first_name: "Admin-Support", last_name: "Admin-Support", status: "admin"
-})
+# user2 = User.new({
+#   email: "professeur-support@paris-impro.com", password: "123456", course_id: Course.first.id, first_name: "Professeur-support", last_name: "Professeur-support", status: "teacher"
+# })
 
-user4.save!
+# user2.save!
+
+# user3 = User.new({
+#   email: "contact@paris-impro.com", password: "123456", course_id: Course.first.id, first_name: "Admin", last_name: "Admin", status: "admin"
+# })
+
+# user3.save!
+
+# user4 = User.new({
+#   email: "admin-support@paris-impro.com", password: "123456", course_id: Course.first.id, first_name: "Admin-Support", last_name: "Admin-Support", status: "admin"
+# })
+
+# user4.save!
