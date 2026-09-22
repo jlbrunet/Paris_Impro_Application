@@ -4,7 +4,7 @@ class LessonsController < ApplicationController
       redirect_to root_path
     else
       @course = Course.find(params[:course_id])
-      @lessons = Lesson.where(course_id: @course.id).select { |lesson| lesson.occurs_on > DateTime.now }
+      @lessons = Lesson.where(course_id: @course.id).where("occurs_on > ?", DateTime.now).order(:occurs_on)
       @absences = Absence.joins(:user).where(users: { status: "student" })
       places_ouvertes = Absence.joins(:user).where(users: { status: "admin" })
       @rattrapages_and_places_ouvertes = Rattrapage.all + places_ouvertes

@@ -1,32 +1,19 @@
 require "csv"
 
-course = Course.find_by(location: "Équipe Delta")
-p course
-
-date1 = Time.new(2026, 12, 20, 18, 0, 0)
-lesson1 = Lesson.find_by(course_id: course.id, occurs_on:date1)
-lesson1.destroy!
-
-date2 = Time.new(2026, 9, 20, 18, 0, 0)
-lesson2 = Lesson.new(occurs_on: date2, course_id: course.id, location: course.location)
-lesson2.save!
+course = Course.find_by(location: "Équipe Les Louves Astrales")
+course.minute = 0
+course.hour = Time.new(2001, 1, 1, 20, 0, 0)
+course.save!
 
 lessons = Lesson.where(course_id: course.id)
-p lessons.count
-
-courses_csv_file = File.join("app/assets/data/courses2.csv")
-lessons_csv_file = File.join("app/assets/data/lessons2.csv")
-
-CSV.foreach(courses_csv_file, headers: :first_row, header_converters: :symbol) do |row|
-  row[:hour] = Time.new(2001, 1, 1, row[:hour], row[:minute], 0)
-  course = Course.new(row)
-  course.save!
-end
-
-CSV.foreach(lessons_csv_file, headers: :first_row, header_converters: :symbol) do |row|
-  occurs_on_created = Time.new(row[:occurs_on_year], row[:occurs_on_month], row[:occurs_on_day], row[:occurs_on_hour], row[:occurs_on_minutes], row[:occurs_on_seconds])
-  row[:course_id] = Course.where(location: row[:location])[0].id.to_i
-  lesson = Lesson.new(occurs_on: occurs_on_created, course_id: row[:course_id], location: row[:location])
+lessons.each do |lesson|
+  year = lesson.occurs_on.year
+  month = lesson.occurs_on.month
+  day = lesson.occurs_on.day
+  hour = 20
+  minute = 0
+  second = 0
+  lesson.occurs_on = Time.new(year, month, day, hour, minute, second)
   lesson.save!
 end
 
