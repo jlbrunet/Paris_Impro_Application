@@ -1,3 +1,47 @@
+.past-lessons {
+  margin: 24px 20px 0 20px;
+  width: 90%;
+}
+
+.past-lessons-summary {
+  list-style: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: $super-light-red;
+  border: solid 2px $light-red;
+  border-radius: 20px;
+  padding: 14px 20px;
+  color: $medium-red;
+  font-family: $headers;
+  font-size: 18px;
+}
+
+.past-lessons-summary::-webkit-details-marker,
+.past-lessons-summary::marker {
+  content: "";
+  display: none;
+}
+
+.past-lessons-chevron {
+  color: $medium-red;
+  transition: transform 0.2s ease;
+}
+
+.past-lessons[open] .past-lessons-chevron {
+  transform: rotate(180deg);
+}
+
+.past-lessons-body .rectangles:first-child {
+  margin-top: 16px;
+}
+
+.past-lessons-empty {
+  margin: 16px 8px 0 8px;
+  color: $font-grey;
+}
+
 .courses {
   text-align: center;
   color: $medium-red;
