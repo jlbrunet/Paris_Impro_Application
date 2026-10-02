@@ -1,9 +1,10 @@
 require "csv"
 
-course = Course.find_by(location: "Équipe Les Louves Astrales")
+course = Course.find_by(location: "Équipe Le Peletier")
 course.minute = 0
-course.hour = Time.new(2001, 1, 1, 20, 0, 0)
+course.hour = Time.new(2001, 1, 1, 20, 5, 0)
 course.save!
+p course
 
 lessons = Lesson.where(course_id: course.id)
 lessons.each do |lesson|
@@ -11,11 +12,12 @@ lessons.each do |lesson|
   month = lesson.occurs_on.month
   day = lesson.occurs_on.day
   hour = 20
-  minute = 0
+  minute = 5
   second = 0
   lesson.occurs_on = Time.new(year, month, day, hour, minute, second)
   lesson.save!
 end
+p lessons[0]
 
 # User.destroy_all
 # Rattrapage.destroy_all
