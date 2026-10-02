@@ -1,7 +1,7 @@
 require "csv"
 
 course = Course.find_by(location: "Équipe Le Peletier")
-course.minute = 0
+course.minute = 5
 course.hour = Time.new(2001, 1, 1, 20, 5, 0)
 course.save!
 p course
