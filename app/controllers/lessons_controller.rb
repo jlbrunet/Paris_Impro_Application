@@ -1,4 +1,8 @@
 class LessonsController < ApplicationController
+  # Two courses on the same day starting closer than this overlap: a student
+  # can't follow both (e.g. 20h and 20h15, but 10h30 and 20h are fine).
+  COURSE_DURATION = 2.5.hours
+
   def index
     if current_user.status == "student"
       redirect_to root_path
@@ -42,8 +46,8 @@ class LessonsController < ApplicationController
 
   def create
     occurs_on = params[:lesson][:occurs_on]
-    lessons = Lesson.where("DATE_TRUNC('day', occurs_on) = ?", occurs_on.to_date).includes(:course)
-    available_lessons = lessons.select { |lesson| same_level?(lesson) && available_absence?(lesson) && rattrapages_open?(lesson) }
+    lessons = Lesson.where.not(course_id: current_user.course_id).where("DATE_TRUNC('day', occurs_on) = ?", occurs_on.to_date).includes(:course)
+    available_lessons = lessons.select { |lesson| available_lesson?(lesson) }
     session[:available_lessons_ids] = available_lessons.map(&:id)
     redirect_to rattrapages_new_path
   end
@@ -51,7 +55,7 @@ class LessonsController < ApplicationController
   private
 
   def available_lesson?(lesson)
-    same_level?(lesson) && other_day?(lesson) && future_date?(lesson) && available_absence?(lesson) && rattrapages_open?(lesson)
+    same_level?(lesson) && compatible_schedule?(lesson) && future_date?(lesson) && available_absence?(lesson) && rattrapages_open?(lesson)
   end
 
   def rattrapages_open?(lesson)
@@ -70,8 +74,18 @@ class LessonsController < ApplicationController
     end
   end
 
-  def other_day?(lesson)
-    lesson.course.day != current_user.course.day
+  def compatible_schedule?(lesson)
+    user_course = current_user.course
+    return true if lesson.course.day != user_course.day
+    return true if (lesson.course.hour - user_course.hour).abs >= COURSE_DURATION
+
+    own_absence_dates.include?(lesson.occurs_on.to_date)
+  end
+
+  def own_absence_dates
+    @own_absence_dates ||= Lesson.joins(:absences)
+                                 .where(course_id: current_user.course_id, absences: { user_id: current_user.id })
+                                 .map { |lesson| lesson.occurs_on.to_date }
   end
 
   def future_date?(lesson)
