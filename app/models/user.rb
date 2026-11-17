@@ -9,4 +9,15 @@ class User < ApplicationRecord
   validates :first_name, presence: true
   validates :last_name, presence: true
   validates :course_id, presence: { message: "Cours requis" }
+
+  MAX_RATTRAPAGES = 9
+
+  def rattrapage_left?
+    booked = rattrapages.count
+    booked < MAX_RATTRAPAGES && booked < absences.count
+  end
+
+  def rattrapage_lessons
+    Lesson.joins(:rattrapages).where(rattrapages: { user_id: id })
+  end
 end

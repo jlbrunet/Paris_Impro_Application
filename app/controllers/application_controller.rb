@@ -10,4 +10,14 @@ class ApplicationController < ActionController::Base
     # For additional in app/views/devise/registrations/edit.html.erb
     devise_parameter_sanitizer.permit(:account_update, keys: [:first_name, :last_name, :status,:course_id])
   end
+
+  private
+
+  # A student can't book more rattrapages than declared absences (max 9).
+  def require_rattrapage_left
+    return unless current_user.status == "student"
+    return if current_user.rattrapage_left?
+
+    redirect_to root_path, alert: "Tu n'as plus d'absence à rattraper."
+  end
 end

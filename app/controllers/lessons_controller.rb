@@ -1,7 +1,5 @@
 class LessonsController < ApplicationController
-  # Two courses on the same day starting closer than this overlap: a student
-  # can't follow both (e.g. 20h and 20h15, but 10h30 and 20h are fine).
-  COURSE_DURATION = 2.5.hours
+  before_action :require_rattrapage_left, only: %i[new create]
 
   def index
     if current_user.status == "student"
@@ -34,7 +32,6 @@ class LessonsController < ApplicationController
     if current_user.status == "teacher" || current_user.status == "admin"
       redirect_to courses_path
     else
-      redirect_to root_path if Rattrapage.where(user: current_user).count >= 9
       lessons = Lesson.where.not(course_id: current_user.course_id).includes(:course)
       available_lessons = lessons.select do |lesson|
         available_lesson?(lesson)
@@ -55,7 +52,7 @@ class LessonsController < ApplicationController
   private
 
   def available_lesson?(lesson)
-    same_level?(lesson) && compatible_schedule?(lesson) && future_date?(lesson) && available_absence?(lesson) && rattrapages_open?(lesson)
+    same_level?(lesson) && compatible_schedule?(lesson) && no_rattrapage_clash?(lesson) && future_date?(lesson) && available_absence?(lesson) && rattrapages_open?(lesson)
   end
 
   def rattrapages_open?(lesson)
@@ -77,9 +74,15 @@ class LessonsController < ApplicationController
   def compatible_schedule?(lesson)
     user_course = current_user.course
     return true if lesson.course.day != user_course.day
-    return true if (lesson.course.hour - user_course.hour).abs >= COURSE_DURATION
+    return true if (lesson.course.hour - user_course.hour).abs >= Lesson::COURSE_DURATION
 
     own_absence_dates.include?(lesson.occurs_on.to_date)
+  end
+
+  # Excludes lessons already booked and lessons overlapping a booked one.
+  def no_rattrapage_clash?(lesson)
+    @booked_lessons ||= current_user.rattrapage_lessons.to_a
+    @booked_lessons.none? { |booked| booked.overlaps?(lesson) }
   end
 
   def own_absence_dates

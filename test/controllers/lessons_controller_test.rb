@@ -9,7 +9,19 @@ class LessonsControllerTest < ActionDispatch::IntegrationTest
     @course = create_course(day: "Lundi", hour: 20)
     @own_lesson = create_lesson(@course, 20)
     @student = create_user(@course, "student@example.com")
+    # An absence two weeks later, so the student has a rattrapage to book.
+    Absence.create!(user: @student, lesson: Lesson.create!(course: @course, occurs_on: @own_lesson.occurs_on + 2.weeks))
     sign_in @student
+  end
+
+  test "redirects once every absence has its rattrapage" do
+    Rattrapage.create!(user: @student, lesson: open_lesson(day: "Mardi", hour: 20, on: @monday + 1))
+
+    get lessons_new_path
+    assert_redirected_to root_path
+
+    post lessons_path, params: { lesson: { occurs_on: @monday.to_s } }
+    assert_redirected_to root_path
   end
 
   test "offers a lesson far enough from the student's course on the same day" do
@@ -63,6 +75,23 @@ class LessonsControllerTest < ActionDispatch::IntegrationTest
     assert_empty session[:available_lessons_ids]
   end
 
+  test "does not offer lessons overlapping a booked rattrapage" do
+    tuesday = @monday + 1
+    booked = open_lesson(day: "Mardi", hour: 20, on: tuesday)
+    same_slot = open_lesson(day: "Mardi", hour: 20, on: tuesday)
+    close_slot = open_lesson(day: "Mardi", hour: 21, on: tuesday)
+    morning = open_lesson(day: "Mardi", hour: 10, minute: 30, on: tuesday)
+    Rattrapage.create!(user: @student, lesson: booked)
+    Absence.create!(user: @student, lesson: @own_lesson)
+
+    get lessons_new_path
+    [booked, same_slot, close_slot].each { |lesson| assert_not_includes response.body, date_string(lesson) }
+    assert_includes response.body, date_string(morning)
+
+    post lessons_path, params: { lesson: { occurs_on: tuesday.to_s } }
+    assert_equal [morning.id], session[:available_lessons_ids]
+  end
+
   private
 
   def date_string(lesson)
@@ -74,8 +103,8 @@ class LessonsControllerTest < ActionDispatch::IntegrationTest
                    hour: Time.utc(2000, 1, 1, hour, minute), minute: minute)
   end
 
-  def create_lesson(course, hour, minute = 0)
-    Lesson.create!(course: course, occurs_on: Time.utc(@monday.year, @monday.month, @monday.day, hour, minute))
+  def create_lesson(course, hour, minute = 0, on: @monday)
+    Lesson.create!(course: course, occurs_on: Time.utc(on.year, on.month, on.day, hour, minute))
   end
 
   def create_user(course, email)
@@ -89,7 +118,7 @@ class LessonsControllerTest < ActionDispatch::IntegrationTest
   end
 
   # A lesson of another course with a free place.
-  def open_lesson(day:, hour:, minute: 0)
-    create_lesson(create_course(day: day, hour: hour, minute: minute), hour, minute).tap { |lesson| create_absence(lesson) }
+  def open_lesson(day:, hour:, minute: 0, on: @monday)
+    create_lesson(create_course(day: day, hour: hour, minute: minute), hour, minute, on: on).tap { |lesson| create_absence(lesson) }
   end
 end
